@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1920"/>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/imask" defer></script>
+    <script type="text/javascript" src="./JS/script.js" defer></script>
+    <title>Центр дентальной травматологии ICEBERG</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container wrap">
+          <div class="header-up">
+            <div class="header-up__logo">
+                <a href="#"><img src="./img/logo.svg" alt="Логотип айсберг"></a>
+                <p>Центр дентальной <br> травматологии</p>
+            </div>
+            <div class="header-up__metro">
+                <img src="./img/metro.svg" alt="Логотип метро">
+                <div class="header-up__metro-adress">
+                    <p>м. Октябрьская, ул. Крымский вал, 3с2</p>
+                    <p>м. Щукинская, ул. Щукинская 2, под. 8</p>
+                </div>    
+            </div>
+            <div class="header-up__opening-hours">
+                <img src="./img/watch.svg" alt="Логотип часов">
+                    <p>Работаем для вас <br>
+                    ежедневно с 09:00 до 21:00</p>
+            </div>
+            <div class="header-up__messenger">
+                <a href="https://api.whatsapp.com/send?phone=79000000000" target="_blank"
+                  title="Написать в Whatsapp" rel="noopener noreferrer">
+                    <img src="./img/whatsapp.svg"
+                  class="header-up__messenger_whatsapp" alt="Ватсап"></a>
+                  <a href="https://t.me/your_name" target="_blank" title="Написать в Telegram" rel="noopener noreferrer">
+                    <img src="./img/telegram.svg"
+                    class="header-up__messenger_telegram" alt="Телеграм">
+                  </a>
+            </div>
+            <div class="header-up__version-visually-impaired">
+                <img src="./img/version-visually-impaired.svg" alt="версия для слабовидящих">
+            </div>
+            <div class="header-up__telephone">
+                <a href="tel:+7 (499) 951-03-03">+7 (499) 951-03-03</a>
+                <p>Единый номер для записи</p>
+            </div>
+         </div>
+            <hr>
+         <ul class="header-menu">
+            <li><a href="#technology" class="header-menu__technology">Технология All on 4 </a></li>
+            <li><a href="#cost" class="header-menu__cost">Стоимость</a></li>
+            <li><a href="#doctors" class="header-menu__doctors">Врачи</a></li>
+            <li><a href="#reviews" class="header-menu__reviews">Отзывы</a></li>
+            <li><a href="#credit" class="header-menu__credit">Лечение в рассроку</a></li>
+            <li><a href="#about" class="header-menu__about">О клинике</a></li>
+            <li><a href="#FAQ" class="header-menu__FAQ">FAQ</a></li>
+            <li><a href="#contacts" class="header-menu__contacts">Контакты</a></li>
+            <button class="header-menu__button">Задать вопрос</button>
+         </ul>
+        </div>
+    </header>
+
+    <!-- Видео о технологии восстановления зубов на 4-6 имплантах -->
+    <div class="overlay">
+        <div class="close__video"></div>
+        <video class="main__content_video-video" controls="controls" loop="loop">
+
+            <source src="video/video.mp4" type="video/mp4"/> 
+            <!-- <source src="video/Одуванчики.ogv" type="video/ogv"/>
+            <source src="video/Одуванчики.webm" type="video/webp"/> --> 
+        </video>
+    </div>
+
+    <main class="main">
+        <div class="container wrap">
+            <h1 id="technology" class="h1">Все зубы за 1 день на 4 имплантах</h1>
+            <p>в одной из лучших цифровых <br> стоматологий Москвы </p>
+            <section class="main__content">
+                <div class="main__content-block">
+                    <ul class="main__content_ul">
+                        <li class="main__content_list">Бесплатная консультация</li>
+                        <li class="main__content_list">Приживаемость имплантов 99,8%</li>
+                        <li class="main__content_list">Быстрая установка – все зубы за 1 час</li>
+                        <li class="main__content_list">Без стресса</li>
+                    </ul>
+                    <form action="" id="form-1" method="post">
+                        <input class="main__content-block_input" id="fb_phone" name="phone"
+                         type="tel" placeholder="Ваш номер телефона" required>
+    <!-- Кнопка получить бесплатную консультацию -->
+                        <button class="main__content-block_button">
+                            Получить бесплатную консультацию
+                            <span class="main__content-3_button_flare"></span>                  
+                          </button>
+
+                        <div class="main__content-block_personal-data">
+                            <input class="main__content-block_input-checkbox" name="checkbox-policy" type="checkbox" checked>
+                            <span class="main__content-block_span">Я согласен с <a href="https://iceberg.dental/policy/"
+                                 class="main__content-block_policy" target="_blank">Политикой обработки персональных данных</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="main__content_video-block">
+                    <img class="main__content_icons-video" src="./img/Значок Видео.png" alt="значок плей видео">
+                    <div class="main__content_video-wrapper">
+
+                        <div class="main__content_video-img">
+                            <!-- Заставка для видео -->
+                        </div>
+ 
+                        
+                     </div>
+                     <div class="main__content_desc">
+                        Видео о технологии восстановления зубов на 4-6 имплантах
+                     </div>
+                </div>
+                <div class="main__content-photo">
+                    <p class="main__content-photo_name">Тишкина <br> Ольга Сергеевна</p>
+                    <ul class="main__content-photo_ul">
+                        <li class="main__content-photo_list">Кандидат медицинских наук,<br> действительный член Международной<br> ассоциации дентальной травматологии</li>
+                        <li class="main__content-photo_list">Владелец компании</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="regalia">
+                <div class="regalia__1">
+                  <p><span class="regalia__span">Центр № 1</span> по оказанию первой помощи <span class="regalia__span">при травмах зубов</span> </p> 
+                </div>
+                <div class="regalia__2">
+                   <p><span class="regalia__span">ТОП 2</span> в рейтинге лучших стоматологических <span class="regalia__span">клиник Москвы</span></p>
+                </div>
+                <div class="regalia__3">
+                  <p><span class="regalia__span">2-ое место</span> в профессиональном рейтинге <span class="regalia__span">STARTSMILE*</span> </p> 
+                </div>
+                <div class="regalia__4">
+                   <p> в <span class="regalia__span">ТОП-5</span> рейтинга лучших клиник России по версии <span class="regalia__span">ИД “Коммерсант”</span> </p>
+                </div>
+            </section>
+
+            <section class="main__content-2">
+                <div class="main__content-2_block-1">
+                    <div class="main__content-2_block-1_left">
+                        <p class="main__content-2_block-1_name">Болячин Алексей
+                            Вячеславович</p>
+                            <ul class="main__content-2_block-1_ul">
+                                <li class="main__content-2_block-1_list">Владелец компании и главный врач Iceberg Clinic, врач эндодонтист</li>
+                                <li class="main__content-2_block-1_list">Кандидат медицинских наук </li>
+                                <li class="main__content-2_block-1_list">Past president эндодонтической секции СтАР</li>
+                                <li class="main__content-2_block-1_list">Главный редактор журнала "Эндодонтия"</li>
+                                <li class="main__content-2_block-1_list">Член Американской эндодонтической ассоциации</li>
+                            </ul>
+                    </div>
+                        <div class="main__content-2_block-1_right">
+                            <img src="./img/Фото-Болячин.png" class="main__content-2_block-1_img" alt="фото доктора">
+                        </div>
+                       
+                </div>
+                <div class="main__content-2_block-2">
+                    <p class="main__content-2_block-2_specialist">Специалисты нашей клиники - <br> <span>врачи, а не бизнесмены и <br> это наше призвание!</span></p>
+                    <p class="main__content-2_block-2_descripton">Перечень услуг, их стоимость в стоматологиях Москвы примерно одинаковые,
+                         но качество сервиса может существенно отличаться в разы.
+                         Многие сетевые стоматологии стремятся заработать больше денег на своих пациентах. <br><br>
+                        В нашем центре “Iceberg” совсем другой подход. Стоматология для нас - это наша жизнь и помощь людям, а не только работа. Ваши улыбки и ваше доверие этому лучшее доказательство.</p>
+                </div>
+            </section>
+        </div>
+            <section class="main__content-3">
+              <div class="container wrap">
+                <p id="cost" class="main__content-3_header">Выберите оптимальную <span>стоимость имплантации</span></p>
+                
+                    <!-- <select name="select-implant" class="main__content-3_select"/>
+                            <option class="main__content-3_select-option-1" value="1">Имплант Neodent, Швейцария</option>                          
+                            <option class="main__content-3_select-option-2" value="2">Имплант Noris, Израиль</option>
+                            <option class="main__content-3_select-option-3" value="3">Имплант Osstem, Южная Корея</option>
+                            <option class="main__content-3_select-option-4" value="4">Имплант Straumann, Швейцария</option>
+                    </select>    -->
+                    
+  <!-- -------------------------------------------------->
+ 
+    <div class="dropdown">
+        <button class="dropdown__button">Имплант Neodent, Швейцария</button>
+        <ul class="dropdown__list">
+            <li class="dropdown__list-item dropdown__list-item-1" data-value="Neodent">Имплант Neodent, Швейцария</li>
+            <li class="dropdown__list-item dropdown__list-item-2" data-value="Noris">Имплант Noris, Израиль</li>
+            <li class="dropdown__list-item dropdown__list-item-3" data-value="Osstem">Имплант Osstem, Южная Корея</li>
+            <li class="dropdown__list-item dropdown__list-item-4" data-value="Straumann">Имплант Straumann, Швейцария</li>
+        </ul>
+        <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+    </div>
+
+<!-- --------------------------------------- -->
+               <div class="main__content-3_block">
+                   <div class="main__content-3_block-1">
+                        <p class="main__content-3_block_checkbox">
+                            <input type="checkbox" id="checkbox-1" name="checkbox-cost"/>
+                            <label for="checkbox-1">Индивидуальный абатмент под коронку</label>                       
+                        </p>
+                        <p class="main__content-3_block_checkbox">
+                            <input type="checkbox" id="checkbox-2" name="checkbox-cost"/>
+                            <label for="checkbox-2">Имплант с установкой</label>
+                        </p>
+                        <div class="main__content-3_var-1">
+                         <div class="main__content-3_var-1_up">
+                            Вариант 1
+                         </div>
+                            <p class="main__content-3_var-1_desc">Имплант + установка</p>
+                            <p class="main__content-3_var-1_cost">16 000 ₽</p>
+                            <p class="main__content-3_var-1_nocost">30 800 ₽</p>
+
+                        </div>
+                   </div> 
+                   <div class="main__content-3_block-2">
+                    <p class="main__content-3_block_checkbox">
+                        <input type="checkbox" id="checkbox-3" name="checkbox-cost"/>
+                        <label for="checkbox-3">Коронка с установкой (металлокерамика)</label>
+                    </p>
+                    <p class="main__content-3_block_checkbox">
+                        <input type="checkbox" id="checkbox-4" name="checkbox-cost"/>
+                        <label for="checkbox-4">Формирователь десны</label>
+                    </p>
+                    <div class="main__content-3_var-1">
+                     <div class="main__content-3_var-1_up">
+                        Вариант 2
+                     </div>
+                        <p class="main__content-3_var-1_desc">Полная имплантация ПОД КЛЮЧ</p>
+                        <p class="main__content-3_var-1_cost">39 000 ₽</p>
+                        <p class="main__content-3_var-1_nocost">53 800 ₽</p>
+                    </div>
+                   </div> 
+               </div>
+                <!-- Кнопка Закрепить стоимость по акции  -->
+                <button class="main__content-3_button">
+                    Закрепить стоимость по акции
+                    <span class="main__content-3_button_flare"></span>                  
+                  </button>
+            
+             </div>
+            </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <!-- Форма отправки -->
+    <form id="form-2" class="form-2" action="">
+        <div class="form-2__block">
+            <p class="form-2__header">Записаться на приём</p>
+            <p>
+                <input class="form-2__name" name="name" type="text" placeholder="Ваше имя" required>
+            </p>
+            <p>
+                <input class="form-2__telephone" id="fb_phone" name="phone" type="tel" placeholder="Ваш номер телефона" required>
+            </p>
+            <p class="form-2__header_blocl-time">
+                <input class="form-2__date" type="date" name="date" placeholder="Дата" required>
+                <input class="form-2__time" type="time" name="time" placeholder="Время" required>
+            </p>
+            <button class="main__content-block_button">
+                Отправить
+                <span class="main__content-3_button_flare"></span>                  
+              </button>
+              <p class="form-2__policy">
+                Оставляя заявку, Вы соглашаетесь с <a href="https://iceberg.dental/user-agreement-terms/" target="_blank">Положением об обработке персональных данных</a> 
+                 и с <a href="https://iceberg.dental/policy/" target="_blank">Политикой конфиденциальности.</a> 
+              </p>
+        </div>
+    </form>
+</body>
+</html>
