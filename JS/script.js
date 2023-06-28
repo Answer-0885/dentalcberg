@@ -1,6 +1,5 @@
 'use strict'
 
-const form1 = document.getElementById('fb_phone');
 const form2 = document.querySelector('.form-2');
 const buttonVideo = document.querySelector('.main__content_icons-video');
 const buttonVideo2 = document.querySelector('.main__content-4_header_right-video-icons');
@@ -10,20 +9,10 @@ const body = document.querySelector('body');
 const menuHeader = document.querySelector('.header-menu');
 const buttonQuestions = document.querySelector('.header-menu__button');
 
-
 // Маска для набора номера телефона из библиотеки IMask
-
-const maskOptions = {
-    mask: '+{7}(000) 000-00-00'
-};
-IMask(form1, maskOptions);
-
-
-// form.forEach( () => {
-
-// });
-
-
+document.querySelectorAll('.phone-mask').forEach((e) => {
+    const phoneMask = IMask( e, { mask: '+{7}(000)000-00-00' })
+  })
 
 
 const videoHeader = () => {
