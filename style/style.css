@@ -1,4 +1,6 @@
 @import url("wrap.css");
+@import url("form.css");
+@import url("header.css");
 @font-face {
     font-family: 'Muller';
     src: local('Muller Ultra Light'), local('Muller-Ultra-Light'),
@@ -25,222 +27,7 @@ body{
 }
 
 
-/* Шапка сайта */
-.header{
-    margin-top: 20px;
-}
 
-.header-up{
-    display: flex;
-}
-
-.header-up__logo {
-    display: flex;
-}
-.header-up__logo>p {
-    font-size: 15px;
-    margin-left: 18px;
-    line-height: 130%;
-    display: flex;
-    align-items: center;
-}
-
-.header-up__metro {
-    display: flex;
-    margin-left: 35px;
-}
-.header-up__metro img {
-    width: 30px;
-    height: 30px;
-    margin-top: 8px;
-    margin-right: 9px;
-}
-
-.header-up__metro-adress{
-    font-size: 15px;
-    line-height: 140%;
-}
-
-.header-up__opening-hours{
-    display: flex;
-    margin-left: 30px;
-}
-
-.header-up__opening-hours img {
-    width: 30px;
-    height: 30px;
-    margin-top: 8px;
-    margin-right: 9px;
-}
-
-.header-up__opening-hours p {
-    font-size: 15px;
-    line-height: 140%;
-}
-
-.header-up__messenger{
-    margin-left: 30px;
-}
-
-.header-up__messenger img {
-    width: 30px;
-    height: 30px;
-    margin-top: 8px;
-    cursor: pointer;
-
-}
-
-.header-up__messenger img:first-child {
-    margin-right: 10px;
-}
-
-.header-up__version-visually-impaired{
-    margin-left: 59px;
-    cursor: pointer;
-}
-
-.header-up__telephone{
-    margin-left: 30px;
-}
-
-.header-up__telephone>a {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-decoration: none;
-    text-align: center;
-    color: #272727;
-}
-
-.header-up__telephone>p{
-    font-size: 13px;
-    line-height: 140%;
-    font-weight: 400;
-    margin-top: 6px;
-}
-
-
-hr {
-    margin-top: 13px;
-    width: 1170px;
-}
-/* Нижняя часть шапки */
-.header-menu{
-    display: flex;
-    margin-top: 1.375em;  
-    list-style-type: none;
-    margin-right: 0;
-}
-
-.header-menu>li{
-    margin-right: 37px;
-    font-size: 15px;
-    line-height: 100%;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-.header-menu>li>a{
-    font-size: 15px;
-    line-height: 100%;
-    text-decoration: none;
-    color: #272727;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.header-menu>li:hover {
-    display: block;
-    transition: 0.5s;
-    transform: scale(1.2);
-    color: #409AF8;
-}
-
-.header-menu>li>a:hover {
-
-    transition: 0.5s;
-
-    color: #409AF8;
-}
-
-
-.header-menu__technology::before{
-    margin-right: 8px;
-    content:url(../img/technology.svg);
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-menu__cost::before{
-    margin-right: 8px;
-    content:url(../img/cost.svg);
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-menu__doctors::before{
-    margin-right: 8px;
-    content:url(../img/doctors.svg);
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-menu__reviews::before{
-    margin-right: 8px;
-    content:url(../img/reviews.svg);
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-menu__credit::before{
-    margin-right: 8px;
-    content:url(../img/credit.svg);
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-menu__about::before{
-    margin-right: 8px;
-    content:url(../img/about.svg);
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-menu__FAQ::before{
-    margin-right: 8px;
-    content:url(../img/FAQ.svg);
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-menu__contacts::before{
-    margin-right: 8px;
-    content:url(../img/contacts.svg);
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-menu__button{
-    margin-top: -1.375em;
-    width: 190px;
-    height: 42px;
-    background: #409AF8;
-    border-radius: 25.5px;
-    font-size: 14px;
-    line-height: 120%;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-
-}
-
-.header-menu__button::before{
-    content:url(../img/FAQ-white.svg);  
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 9px;
-}
 
 /* Основной контент */
 
@@ -947,78 +734,233 @@ Select c dropdown на JS
     }
 }
 
-/* Всплывающая форма */
-.form-2{
-    position: absolute;
-    z-index: 10;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    top: 150px;
-    text-align: center;
-    max-width: 600px;
-    max-height: 500px;
-    background-color:#d8dadb;
-    border-radius: 30px;
-    display: none;
-}
-.form-2__block {
-    padding: 50px;
+/* Блок 4 */
+
+.main__content-4_header{
+    margin-top: 120px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    margin-bottom: 80px;
+}
+
+
+.main__content-4_header_left p{
+/* Улыбка, как в молодости ВСЕГО ЗА 1 ДЕНЬ */
+    width: 570px;
+    height: 98px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #409AF8;
+}
+
+.main__content-4_header_left p span{
+    font-weight: 500;
+    color: #272727;
+}
+
+.main__content-4_header_left-ul {
+    /* Список UL */
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 140%;
+    list-style-type: none;
+
+}
+
+.main__content-4_header_left-list {
+    /* Список LI */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main__content-4_header_left-list::before {
+    content: '';
+    background-image: url('../img/галка.png');
+    width: 28px;
+    height: 28px;
+
+    margin-right: 15px;
+}
+/* Правый блок */
+.main__content-4_header_right {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.form-2__header {
-    margin-bottom: 2rem;
-    font-weight: 500;
-    text-align: center;
-    font-size: 28px;
-    text-transform: uppercase;
-    color: #6A5AF3;
+.main__content-4_header_right-text  {
+    width: 570px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background: linear-gradient(167deg, #FFF 8.12%, rgba(255, 255, 255, 0.00) 93.58%);
+    box-shadow: 10px 10px 50px 0px rgba(47, 138, 244, 0.20);
+    padding: 25px;
 }
 
-.form-2__name,
-.form-2__telephone{
-    width: 420px;
-    font-size: 15px;
-    text-align: center;
-    height: 50px;
-    border-radius: 30px;
-    padding: 0 1rem;
-    border: none;
-    line-height: 50px;
-    margin-bottom: 1rem;
-    font-size: 24px;
-    color: #409AF8;
-}
-
-.form-2__header_blocl-time{
-    display: flex;
-    width: 420px;
-    justify-content: space-between;
-}
-
-.form-2__date,
-.form-2__time{
-    width: 200px;
+.main__content-4_header_right-text p {
+    /* Цифровая стоматология - это: */
+    width: 295px;
+    height: 25px;
+    font-weight: 700;
     font-size: 18px;
-    text-align: center;
-    height: 50px;
-    border-radius: 30px;
-    padding: 0 1rem;
-    border: none;
-    line-height: 50px;
+    line-height: 140%;
+    margin-bottom: 15px;
 }
 
-.form-2__policy {
-    width: 420px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 15px;
+.main__content-4_header_right-ul{
+    list-style: circle;
+    width: 330px;
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 140%;
 }
+
+/* Видео 2 */
+
+.main__content-4_header_right-video {
+    position: relative;
+    margin-left: -140px;
+    margin-top: 50px;
+}
+
+.main__content-4_header_right-video-icons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main__content-4_header_right-video-icons:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+.main__content-4_header_right-video-wrapper {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    border: 3px solid #409AF8;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.main__content-4_header_right-video-img{
+    width: 230px;
+    height: 230px;
+    border-radius: 125px;
+    background-image: url(../img/Постер_к_Видео-2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* Видеоотзыв */
+.main__content-4_main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.main__content-4_main-block-video {
+    position: relative;
+}
+
+.main__content-4_main-block-video-icons {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    transition: 0.5s;   
+}
+
+.main__content-4_main-block-video-icons:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+/* 4 блок описание */
+.main__content-4_main-block-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 480px;
+    height: 270px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+    padding: 30px 21px;
+}
+
+
+.main__content-4_main-block-desc-1 img{
+    margin-bottom: 20px;
+}
+
+.main__content-4_main-block-desc-1 div{
+    width: 290px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.main__content-4_main-block-desc-1 p{
+    font-size: 16px;
+    line-height: 130%;
+    width: 386px;
+}
+
+.main__content-4_main-block-desc-img {
+    z-index: 10;
+    margin-left: 40px;
+}
+
+.main__content-4_main-button {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 130%;
+    width: 345px;
+    height: 70px;
+    padding: 22px 30px;
+    gap: 10px;
+    border: none;
+    border-radius: 35px;
+    background: #409AF8;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.main__content-4_main-button::before {
+    content:url(../img/обновить.png);
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main__content-4_main-button::after {
+    content:url(../img/Стрелка\ вниз.png);
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,24 +1,41 @@
 'use strict'
 
-const element = document.getElementById('fb_phone');
-const form = document.getElementById('form-2');
+const form1 = document.getElementById('fb_phone');
+const form2 = document.querySelector('.form-2');
 const buttonVideo = document.querySelector('.main__content_icons-video');
+const buttonVideo2 = document.querySelector('.main__content-4_header_right-video-icons');
 const video = document.querySelector('.main__content_video-video');
 const overlay = document.querySelector('.overlay');
 const body = document.querySelector('body');
 const menuHeader = document.querySelector('.header-menu');
 const buttonQuestions = document.querySelector('.header-menu__button');
 
+
 // Маска для набора номера телефона из библиотеки IMask
+
 const maskOptions = {
     mask: '+{7}(000) 000-00-00'
 };
+IMask(form1, maskOptions);
 
-IMask(element, maskOptions);
+
+// form.forEach( () => {
+
+// });
+
+
+
 
 const videoHeader = () => {
         // Запуск видео при нажатии на кнопку
     buttonVideo.addEventListener('click',() => {
+        video.style.display = 'block';
+        overlay.style.display = 'block';
+        // body.style.overflow = 'hidden';
+        video.play();
+
+    });
+    buttonVideo2.addEventListener('click',() => {
         video.style.display = 'block';
         overlay.style.display = 'block';
         // body.style.overflow = 'hidden';
@@ -31,7 +48,7 @@ const videoHeader = () => {
         if (e.target.closest('.overlay') || e.target.classList.contains('close__video')) {
             video.style.display = 'none';
             overlay.style.display = 'none';
-            form.style.display = 'none';
+            form2.style.display = 'none';
             // body.style.overflow = 'auto';
             video.pause();
         };
@@ -41,7 +58,7 @@ const videoHeader = () => {
 const popUp = () => {
     // Открываем форму при нажатии
     buttonQuestions.addEventListener('click', (e) => {
-        form.style.display = 'block';
+        form2.style.display = 'block';
         overlay.style.display = 'block';
     })
 }
