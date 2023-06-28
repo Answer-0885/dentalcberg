@@ -1,0 +1,70 @@
+.spasibo {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.spasibo-header {
+    color: #409AF8;
+    font-size: 48px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.spasibo-paragraph {
+    color: #272727;
+    font-size: 25px;
+    line-height: 140%;
+}
+
+.spasibo-paragraph:first-child {
+    margin-bottom: 10px;
+}
+
+.spasibo a {
+    text-decoration: none;
+}
+
+.spasibo-button {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    line-height: 130%;
+    border-radius: 35px;
+    background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
+    display: flex;
+    width: 316px;
+    height: 70px;
+    padding: 22px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden; 
+    cursor: pointer;
+}
+
+.main__content-3_button_flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-45deg);
+    animation: flareAnimation;
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 5s infinite linear;
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
