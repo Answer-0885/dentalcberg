@@ -717,7 +717,8 @@ Select c dropdown на JS
 }
 
 .main__content-3_button_flare,
-.main__content-5_desc-button_flare {
+.main__content-5_desc-button_flare,
+.flare {
     position: absolute;
     top: 0;
     height: 100%;
@@ -1167,6 +1168,14 @@ Select c dropdown на JS
     font-weight: 700;
 }
 
+.main__content-6_block {
+    display: flex;
+}
+
+.main__content-6_tab-block {
+    margin-top: 32px;
+}
+
 .main__content-6_tab {
     width: 270px;
     height: 60px;
@@ -1179,15 +1188,20 @@ Select c dropdown на JS
     line-height: 140%;
     padding: 20px;
     margin-bottom: 12px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .main__content-6_tab_active {
     color: #FFF;
-    font-weight: 700;
+    font-weight: 500;
     background-color:#409AF8;
 }
 
-.main__content-6_main {
+.main__content-6_main_tab-1,
+.main__content-6_main_tab-2,
+.main__content-6_main_tab-3 {
     width: 1200px;
     height: 660px;
     border-radius: 20px;
@@ -1195,9 +1209,18 @@ Select c dropdown на JS
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
     padding-left: 90px;
     padding-top: 40px;
+    margin-left: -60px;
+    display: flex;
 }
 
-.main__content-6_main h3{
+
+.d-none {
+    display: none;
+}
+
+.main__content-6_main_tab-1 h3,
+.main__content-6_main_tab-2 h3,
+.main__content-6_main_tab-3 h3{
     font-size: 25px;
     font-weight: 700;
     line-height: 140%;
@@ -1205,11 +1228,9 @@ Select c dropdown на JS
     width: 499px;
 }
 
-.main__content-6_main h3:last-child{
-    margin-top: 40px;
-}
-
-.main__content-6_main h3 span{
+.main__content-6_main_tab-1 h3 span,
+.main__content-6_main_tab-2 h3 span,
+.main__content-6_main_tab-3 h3 span{
     font-weight: 500;
 }
 
@@ -1236,10 +1257,13 @@ Select c dropdown на JS
     margin-right: 10px;
 }
 
+.main__content-6_main_block-span {
+    display: flex;
+
+}
+
 .main__content-6_main_span {
-    display: inline-block;
     width: 286px;
-    height: 44px;
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
@@ -1247,6 +1271,246 @@ Select c dropdown на JS
     margin-top: 15px;
 }
 
+.main__content-6_main_advantage-header{
+    margin-top: 40px;
+}
+
+.main__content-6_main_advantage {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 11px;
+}
+
+.main__content-6_main_advantage-1,
+.main__content-6_main_advantage-1_tab-2,
+.main__content-6_main_advantage-1_tab-3 {
+    margin-top: 22px;
+}
+
+.main__content-6_main_advantage-1, 
+.main__content-6_main_advantage-2, 
+.main__content-6_main_advantage-3,
+.main__content-6_main_advantage-1_tab-2, 
+.main__content-6_main_advantage-2_tab-2, 
+.main__content-6_main_advantage-3_tab-2,
+.main__content-6_main_advantage-1_tab-3,
+.main__content-6_main_advantage-2_tab-3, 
+.main__content-6_main_advantage-3_tab-3 {
+    margin-bottom: 11px;
+    
+
+}
+.main__content-6_main_advantage-1_tab-2, 
+.main__content-6_main_advantage-2_tab-2, 
+.main__content-6_main_advantage-3_tab-2 {
+    width: 450px;
+    white-space: pre;
+}
+
+.main__content-6_main_advantage-1 span, 
+.main__content-6_main_advantage-2 span, 
+.main__content-6_main_advantage-3 span,
+.main__content-6_main_advantage-1_tab-2 span, 
+.main__content-6_main_advantage-2_tab-2 span, 
+.main__content-6_main_advantage-3_tab-2 span{
+    font-weight: 700;
+}
+
+.main__content-6_main_advantage-1:before, 
+.main__content-6_main_advantage-2:before, 
+.main__content-6_main_advantage-3:before,
+.main__content-6_main_advantage-1_tab-2:before, 
+.main__content-6_main_advantage-2_tab-2:before, 
+.main__content-6_main_advantage-3_tab-2:before,
+.main__content-6_main_advantage-1_tab-3:before, 
+.main__content-6_main_advantage-2_tab-3:before, 
+.main__content-6_main_advantage-3_tab-3:before {
+    content: url(../img/галка.png);
+    vertical-align: middle; 
+    margin-right: 10px;
+
+}
+
+.main__content-6_main_cost {
+    display: flex;
+}
+
+.main__content-6_main_cost-left {
+    width: 240px;
+    height: 145px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: linear-gradient(270deg, #E1EAFA 10.12%, #F1F5FC 100%);
+    padding-left: 20px;
+    padding-top: 23px;
+}
+
+.main__content-6_main_cost-left h4{
+    width: 114px;
+    color: #8FA7C1;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.main__content-6_main_cost-left p{
+    color: #8FA7C1;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    margin-top: 40px;
+}
+
+.main__content-6_main_cost-right {
+    width: 330px;
+    height: 145px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #409AF8;
+    padding-left: 20px;
+    padding-top: 23px;
+}
+
+.main__content-6_main_cost-right h4{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+.main__content-6_main_cost-right_block {
+    display: flex;
+}
+
+.main__content-6_main_cost-right_block p{
+    color:#fff;
+}
+
+.main__content-6_main_cost-right-1,
+.main__content-6_main_cost-right-3 {
+    font-size: 12px;
+    line-height: 140%;
+}
+
+.main__content-6_main_cost-right-2,
+.main__content-6_main_cost-right-4 {
+    margin-top: 20px;
+
+}
+
+.main__content-6_main_cost-right-2 {
+    font-size: 16px;
+    line-height: 140%;
+    text-decoration-line:line-through;
+    margin-top: 30px;
+}
+
+.main__content-6_main_cost-right-4 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.main__content-6_main_cost-right-3::before {
+    content: url(../img/procent-2.png);
+}
+
+.main__content-6_main_cost-right_regular-price {
+    margin-right: 30px;
+}
+
+
+.main__content-6_main_right {
+    position: relative;
+
+}
+
+.main__content-6_button_sign_up {
+    margin-top: 190px;
+}
+
+.main__content-6_button_sign_up_tab-2 {
+    margin-top: 190px;
+    margin-right: 30px;
+}
+
+.main__content-6_button_sign_up_tab-3 {
+    margin-top: 190px;
+    margin-right: 20px;
+    border: 1px solid red;
+}
+
+.main__content-6_main_right_img-video {
+    margin-left: 30px;
+}
+
+
+.main__content-6_main_right_icons-video {
+    position: absolute;
+    right: 80px;
+    top: 240px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main__content-6_main_right_icons-video:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+.main__content-6_button_sign_up,
+.main__content-6_button_sign_up_tab-2,
+.main__content-6_button_sign_up_tab-3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 130%;
+    width: 400px;
+    height: 70px;
+    padding: 22px 30px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
+    /* ------------------------ */
+    position: relative;
+    overflow: hidden; 
+}
+
+.main__content-6_button_sign_up:before,
+.main__content-6_button_sign_up_tab-2:before,
+.main__content-6_button_sign_up_tab-3:before {
+    content: url(../img/запись.png)
+}
+
+.main__content-6_main_li_tab-2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+    display: flex;
+    align-items:center;
+}
+
+.main__content-6_main_li_tab-2:before {
+    content: url(../img/галка.png);
+    margin-right: 10px;
+}
+
+.main__content-6_main_advantage-3_tab-2 {
+    margin-bottom: 46px;
+}
+
+.main__content-6_main_advantage-block-2 {
+    margin-bottom: 80px;
+}
+
+.main__content-6_main_advantage-block-3 {
+    margin-bottom: 50px;
+}
 
 
 

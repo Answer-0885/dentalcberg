@@ -10,6 +10,48 @@ const menuHeader = document.querySelector('.header-menu');
 const buttonQuestions = document.querySelector('.header-menu__button');
 
 
+
+
+
+
+
+const tabs = () => {
+    const tabPanel = document.querySelector('.main__content-6_tab-block');
+    const tabs = document.querySelectorAll('.main__content-6_tab');
+    const tabContent = document.querySelectorAll('.tab');
+ 
+    tabPanel.addEventListener('click', (e) => {
+ 
+       if (e.target.closest('.main__content-6_tab')) {
+          const tabBtn = e.target.closest('.main__content-6_tab');
+          tabs.forEach((tab, index) => {
+             if (tab === tabBtn) {
+                tab.classList.add('main__content-6_tab_active');
+                tabContent[index].classList.remove('d-none');
+             } else {
+                tab.classList.remove('main__content-6_tab_active');
+                tabContent[index].classList.add('d-none');
+             };
+          });
+       };
+    });
+ };
+tabs()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Маска для набора номера телефона из библиотеки IMask
 document.querySelectorAll('.phone-mask').forEach((e) => {
     const phoneMask = IMask( e, { mask: '+{7}(000)000-00-00' })
