@@ -1152,6 +1152,7 @@ Select c dropdown на JS
 /* Цена лечения зависит от ситуации: чем проще — тем дешевле! */
 .main__content-6 {
     margin-top: 140px;
+    padding-bottom: 120px;
 }
 
 .main__content-6_h2{
@@ -1512,8 +1513,113 @@ Select c dropdown на JS
     margin-bottom: 50px;
 }
 
+/* Седбмой блок */
+/* ПРОВОДИМ ЛЕЧЕНИЕ ПО
+МЕЖДУНАРОДНЫМ СТАНДАРТАМ КАЧЕСТВА */
+.main__content-7 {
+    background-color: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
+.main__content-7-block-h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 130%;
+}
 
+.main__content-7-block-h2 span {
+    color: #409AF8;
+    font-weight: 700;
+}
+
+.main__content-7-block-flex {
+    display: flex;
+    gap: 50px 30px;
+    flex-wrap: wrap;
+}
+
+.main__content-7-block-flex-1, 
+.main__content-7-block-flex-2, 
+.main__content-7-block-flex-3, 
+.main__content-7-block-flex-4 {
+    border-radius: 20px;
+    background: #F1F5FC;
+    max-width: 690px;
+    height: 300px;
+}
+
+.main__content-7-block-flex-1 {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+}
+
+.main__content-7-block-flex-1_img {
+position: relative;
+}
+.main__content-7-block-flex-1_img img:first-child{
+    margin-top: -10px;
+}
+
+.main__content-7-block-flex-1_content p:first-child,
+.main__content-7-block-flex-2_content p:first-child  {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.main__content-7-block-flex-2_content p:first-child {
+    font-weight: 500;
+    margin-top: 30px;
+    max-width: 432px;
+    height: 105px;
+}
+
+.main__content-7-block-flex-1_content p:first-child span{
+    font-weight: 500;
+}
+
+.main__content-7-block-flex-1_content ul,
+.main__content-7-block-flex-2_content ul {
+    margin-top: 20px;
+    list-style-type: circle;
+    padding-left: 20px;
+    max-width: 369px;
+}
+
+.main__content-7-block-flex-1_content ul li,
+.main__content-7-block-flex-2_content ul li{
+    margin-bottom: 10px;
+}
+
+/* Кнопка запуска видео */
+
+.main__content-7-block-flex-1_img-videoplay{
+    position: absolute;
+    left: -10px;
+    top: 135px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main__content-7-block-flex-1_img-videoplay:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+.main__content-7-block-flex-2_content p:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 15px;
+}
+
+.main__content-7-block-flex-2_content p:last-child span{
+    font-weight: 700;
+}
 
 
 
