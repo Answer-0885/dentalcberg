@@ -1519,7 +1519,7 @@ Select c dropdown на JS
 .main__content-7 {
     background-color: #FFF;
     padding-top: 120px;
-    padding-bottom: 120px;
+
 }
 
 .main__content-7-block-h2 {
@@ -1537,6 +1537,7 @@ Select c dropdown на JS
     display: flex;
     gap: 50px 30px;
     flex-wrap: wrap;
+    max-height: 760px;
 }
 
 .main__content-7-block-flex-1, 
@@ -1564,7 +1565,9 @@ position: relative;
 }
 
 .main__content-7-block-flex-1_content p:first-child,
-.main__content-7-block-flex-2_content p:first-child  {
+.main__content-7-block-flex-2_content p:first-child,
+.main__content-7-block-flex-3_content p:first-child,  
+.main__content-7-block-flex-4_content p:first-child  {
     font-size: 25px;
     font-weight: 700;
     line-height: 140%;
@@ -1572,7 +1575,9 @@ position: relative;
     margin-top: 30px;
 }
 
-.main__content-7-block-flex-2_content p:first-child {
+.main__content-7-block-flex-2_content p:first-child span,
+.main__content-7-block-flex-3_content p:first-child span,
+.main__content-7-block-flex-4_content p:first-child span {
     font-weight: 500;
     margin-top: 30px;
     max-width: 432px;
@@ -1583,16 +1588,14 @@ position: relative;
     font-weight: 500;
 }
 
-.main__content-7-block-flex-1_content ul,
-.main__content-7-block-flex-2_content ul {
+.main__content-7-block-flex-1_content ul {
     margin-top: 20px;
     list-style-type: circle;
     padding-left: 20px;
     max-width: 369px;
 }
 
-.main__content-7-block-flex-1_content ul li,
-.main__content-7-block-flex-2_content ul li{
+.main__content-7-block-flex-1_content ul li {
     margin-bottom: 10px;
 }
 
@@ -1610,21 +1613,158 @@ position: relative;
     transform: scale(1.2) rotate(360deg);
 }
 
-.main__content-7-block-flex-2_content p:last-child {
+.main__content-7-block-flex-2_content p:last-child, 
+.main__content-7-block-flex-3_content p:last-child,
+.main__content-7-block-flex-4_content p:last-child  {
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
     margin-top: 15px;
 }
 
-.main__content-7-block-flex-2_content p:last-child span{
+.main__content-7-block-flex-2_content p:last-child span,
+.main__content-7-block-flex-3_content p:last-child span,
+.main__content-7-block-flex-4_content p:last-child span{
     font-weight: 700;
 }
 
 
+/* Восьмой блок РЕЗУЛЬТАТЫ ДО/ПОСЛЕ */
+.main__content-8 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+}
 
+.main__content-8 h2{
+    color: #409AF8;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+}
 
+.main__content-8 h2 span{
+    color: #272727;
+    font-weight: 500;
+}
 
+/* - СЛАЙДЕР - */
+.main__content-8_swiper-list {
+    position: relative;
+    height: 650px;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 40px;
+}
+.main__content-8_swiper-item{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    opacity:0;
+    transition:opacity .5s
+}
+
+.main__content-8_swiper-item img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 930px;
+    height: 560px;
+    transform:translate(-50%,-50%)
+}
+
+.swiper-item-active{
+    opacity:1;
+    transition:opacity .5s
+}
+
+.main__content-8_swiper-btn{
+    position:absolute;
+    cursor:pointer;
+    top:50%;
+    z-index:5;
+    width:65px;
+    height:50px;
+}
+
+.main__content-8_swiper-btn{
+    width:40px;
+    height:40px
+}
+.main__content-8_swiper-btn.next{
+    right:20px
+}
+.main__content-8_swiper-btn.prev{
+    left:20px
+}
+
+.main__content-8_swiper-btn.prev{
+    left:180px;
+    background-image:url(../img/Стрелка\ влево.png);
+    background-position:50% 50%;
+}
+
+.main__content-8_swiper-btn.next{
+    right:180px;
+    background-image:url(../img/Стрелка\ вправо.png);
+    background-position:50% 50%
+}
+
+.main__content-8_swiper-dots{
+    position:absolute;
+    top: 100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    z-index:5;
+}
+
+.main__content-8_swiper-dots .dot{
+    cursor:pointer;
+    height:16px;
+    width:16px;
+    margin:0 10px;
+    border-radius:50%;
+    border:solid #CED9E5;
+    display:inline-block;
+    transition:background-color,transform .4s;
+}
+.main__content-8_swiper-dots .dot-active{
+    background-color:#19b5fe;
+    transform:scale(1.2);
+}
+.main__content-8_swiper-dots .dot:hover{
+    background-color:#53c6fe;
+    transform:scale(1.2);
+}
+
+.main__content-8_swiper_span {
+    border-radius: 25px;
+    background: #6A5AF3;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 140%;
+    z-index: 10;
+    padding: 10px 20px;
+}
+
+.main__content-8_swiper_span.left {
+    position: absolute;
+    left: 230px;
+    top: 65px
+}
+
+.main__content-8_swiper_span.right {
+    position: absolute;
+    right: 230px;
+    top: 65px
+}
 
 
 
