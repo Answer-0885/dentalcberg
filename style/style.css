@@ -1695,22 +1695,17 @@ position: relative;
     width:40px;
     height:40px
 }
-.main__content-8_swiper-btn.next{
-    right:20px
-}
-.main__content-8_swiper-btn.prev{
-    left:20px
-}
+
 
 .main__content-8_swiper-btn.prev{
     left:180px;
-    background-image:url(../img/Стрелка\ влево.png);
+    background-image:url(../img/arrow_left.png);
     background-position:50% 50%;
 }
 
 .main__content-8_swiper-btn.next{
     right:180px;
-    background-image:url(../img/Стрелка\ вправо.png);
+    background-image:url(../img/arrow_right.png);
     background-position:50% 50%
 }
 
@@ -1765,6 +1760,228 @@ position: relative;
     right: 230px;
     top: 65px
 }
+
+/* Девятый блок */
+.main__content-9 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #fff;
+}
+
+.main__content-9 h2{
+    color: #409AF8;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.main__content-9 h2 span{
+    color: #272727;
+    font-weight: 500;
+}
+
+/* Первый шаг */
+.main__content-9_step-1 {
+    padding-top: 40px;
+    padding-left: 33px;
+    border-radius: 20px;
+    background: #E1EAFA;
+    display: flex;
+}
+
+.step-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 57px;
+}
+
+.step-1_5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-right: 10px;
+}
+
+.step-1_procent {
+    width: 925px;
+    height: 4px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.step-1_procent-load {
+    width: 185px;
+    height: 4px;
+    border-radius: 10px;
+    background: #409AF8;
+}
+
+.main__content-9_step-1_left h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.main__content-9_step-1_left h3 span{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.main__content-9_step-1_left-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.main__content-9_step-1_left-flex-1 button, 
+.main__content-9_step-1_left-flex-2 button, 
+.main__content-9_step-1_left-flex-3 button, 
+.main__content-9_step-1_left-flex-4 button {
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: -20px;
+    border: none;
+    background: transparent;
+}
+
+.main__content-9_step-1_left-flex-1 button .img-2, 
+.main__content-9_step-1_left-flex-2 button .img-2, 
+.main__content-9_step-1_left-flex-3 button .img-2, 
+.main__content-9_step-1_left-flex-4 button .img-2 {
+    display: none;
+}
+
+.main__content-9_step-1_left-flex-1 button:hover .img-1, 
+.main__content-9_step-1_left-flex-2 button:hover .img-1, 
+.main__content-9_step-1_left-flex-3 button:hover .img-1, 
+.main__content-9_step-1_left-flex-4 button:hover .img-1{
+    display: none;
+}
+
+.main__content-9_step-1_left-flex-1 button:hover .img-2, 
+.main__content-9_step-1_left-flex-2 button:hover .img-2, 
+.main__content-9_step-1_left-flex-3 button:hover .img-2, 
+.main__content-9_step-1_left-flex-4 button:hover .img-2{
+    display: block;  
+    border-bottom: 5px solid transparent;
+}
+
+.main__content-9_step-1_left-flex-1 p, 
+.main__content-9_step-1_left-flex-2 p, 
+.main__content-9_step-1_left-flex-3 p, 
+.main__content-9_step-1_left-flex-4 p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.main__content-9_step-1_left-radio {
+    margin-top: 39px;
+}
+
+.main__content-9_step-1_left-radio label{
+    margin-left: 10px;
+}
+
+input[type=radio] {
+    transform:scale(1.6);
+}
+
+
+.main__content-9_step-1_left-radio .input-1{
+    margin-bottom: 25px;
+}
+
+.main__content-9_step-1_left-radio p {
+   width: 450px;
+   display:flex;
+   align-items:baseline;
+} 
+
+.main__content-9_step-1_left-radio p .label-1{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+} 
+
+.main__content-9_step-1_left-radio p .label-2{
+    color: #8FA7C1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.main__content-9_step-1_right {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.main__content-9_step-1_right img:first-child {
+    margin-top: -25px;
+}
+
+.main__content-9_step-1_right .doctor {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.main__content-9_step-1_right .doctor span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.main__content-9_step-1_right .desc {
+    margin-top: 15px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.main__content-9_step-1_right .end-test {
+    margin-top: 20px;
+}
+
+.main__content-9_step-1_right .cost_calculation{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.main__content-9_step-1_right .cost_calculation span {
+    font-weight: 400;    
+}
+
+.main__content-9_step-1_right .gift {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.main__content-9_step-1_right .gift span{
+    font-weight: 400;
+}
+
+.cost_calculation-img {
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+
+
+
+
 
 
 
