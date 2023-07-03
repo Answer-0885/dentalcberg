@@ -84,7 +84,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 	dropDownListItems.forEach(function (listItem) {
 		listItem.addEventListener('click', function (e) {
 			e.stopPropagation();
-			dropDownBtn.innerText = this.innerText;            
+			dropDownBtn.innerText = this.innerText;           
 			dropDownBtn.focus();
 			dropDownInput.value = this.dataset.value;
 			dropDownList.classList.remove('dropdown__list--visible');

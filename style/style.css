@@ -1761,7 +1761,10 @@ position: relative;
     top: 65px
 }
 
+
+
 /* Девятый блок */
+
 .main__content-9 {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1797,11 +1800,15 @@ position: relative;
     margin-bottom: 57px;
 }
 
-.step-1_5 {
+.step-1_5,
+.step-2_5,
+.step-3_5 {
     font-size: 18px;
     font-weight: 600;
     line-height: 150%;
     margin-right: 10px;
+    width: 90px;
+    border:1px solid red;
 }
 
 .step-1_procent {
@@ -1813,6 +1820,20 @@ position: relative;
 
 .step-1_procent-load {
     width: 185px;
+    height: 4px;
+    border-radius: 10px;
+    background: #409AF8;
+}
+
+.step-2_procent-load {
+    width: 370px;
+    height: 4px;
+    border-radius: 10px;
+    background: #409AF8;
+}
+
+.step-3_procent-load {
+    width: 555px;
     height: 4px;
     border-radius: 10px;
     background: #409AF8;
@@ -1885,10 +1906,12 @@ position: relative;
 
 .main__content-9_step-1_left-radio label{
     margin-left: 10px;
+    cursor: pointer;
 }
 
 input[type=radio] {
     transform:scale(1.6);
+    cursor: pointer;
 }
 
 
@@ -1978,11 +2001,66 @@ input[type=radio] {
     margin-bottom: -5px;
 }
 
+.main__content-9_step-1_left .input_radio {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap ;
+}
 
+.main__content-9_step-1_left .input_radio input{
+    margin-right: 10px;
+    cursor: pointer;
+}
 
+.main__content-9_step-1_left .input_radio label{
+    cursor: pointer;
+}
 
+.main__content-9_step-1_left .input_radio-1,
+.main__content-9_step-1_left .input_radio-2,
+.main__content-9_step-1_left .input_radio-3,
+.main__content-9_step-1_left .input_radio-4,
+.main__content-9_step-1_left .input_radio-5,
+.main__content-9_step-1_left .input_radio-6 {
+    border-radius: 30px;
+    background: #FFF;
+    display: flex;
+    width: 320px;
+    padding: 14px 20px 14px 20px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
 
+.main__content-9_step-2_left-radio {
+    margin-top: 280px; 
+}
 
+.main__content-9_step-2_right {
+    margin-left: 35px;
+}
+
+.main__content-9_step-2_left-radio .step_back{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.step_back:before{
+    content: url(../img/шаг_назад.png);
+    margin-right: 10px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+.main__content-9_step-1_left .variant {
+    font-size: 16px;
+}
 
 
 
