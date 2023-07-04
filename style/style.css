@@ -133,7 +133,7 @@ input::placeholder{
 .main__content-block_span{
     font-family: 'Muller';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 14.5px;
     line-height: 130%;  
     color: #8FA7C1;
@@ -1802,13 +1802,14 @@ position: relative;
 
 .step-1_5,
 .step-2_5,
-.step-3_5 {
+.step-3_5,
+.step-4_5,
+.step-5_5 {
     font-size: 18px;
     font-weight: 600;
     line-height: 150%;
     margin-right: 10px;
     width: 90px;
-    border:1px solid red;
 }
 
 .step-1_procent {
@@ -1839,10 +1840,50 @@ position: relative;
     background: #409AF8;
 }
 
+.step-4_procent-load {
+    width: 740px;
+    height: 4px;
+    border-radius: 10px;
+    background: #409AF8;
+}
+
+.step-5_procent-load {
+    width: 925px;
+    height: 4px;
+    border-radius: 10px;
+    background: #409AF8;
+}
+
 .main__content-9_step-1_left h3 {
     font-weight: 600;
     margin-bottom: 20px;
     font-weight: 500;
+}
+
+.step-5-p1 {
+    font-size: 22px;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.step-5-p2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.step-5-p3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.step-5-p4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
 }
 
 .main__content-9_step-1_left h3 span{
@@ -1904,7 +1945,22 @@ position: relative;
     margin-top: 39px;
 }
 
-.main__content-9_step-1_left-radio label{
+.main__content-9_step-2_left-radio {
+    margin-top: 280px;
+}
+
+.main__content-9_step-3_left-radio {
+    margin-top: 185px;
+}
+
+.main__content-9_step-4_left-radio {
+    margin-top: 328px;
+}
+
+.main__content-9_step-1_left-radio label,
+.main__content-9_step-2_left-radio label,
+.main__content-9_step-3_left-radio label,
+.main__content-9_step-4_left-radio label{
     margin-left: 10px;
     cursor: pointer;
 }
@@ -1914,25 +1970,34 @@ input[type=radio] {
     cursor: pointer;
 }
 
-
-.main__content-9_step-1_left-radio .input-1{
+.main__content-9_step-1_left-radio .input_1-1,
+.main__content-9_step-2_left-radio .input_2-4,
+.main__content-9_step-1_left-radio .label_1-1,
+.main__content-9_step-2_left-radio .label_2-1{
     margin-bottom: 25px;
 }
 
-.main__content-9_step-1_left-radio p {
+.main__content-9_step-1_left-radio p,
+.main__content-9_step-2_left-radio p,
+.main__content-9_step-3_left-radio p,
+.main__content-9_step-4_left-radio p{
    width: 450px;
    display:flex;
-   align-items:baseline;
+   align-items:center;
 } 
 
-.main__content-9_step-1_left-radio p .label-1{
+.main__content-9_step-1_left-radio p .label_1-1,
+.main__content-9_step-1_left-radio p .label_2-1{
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
 } 
 
-.main__content-9_step-1_left-radio p .label-2{
+.main__content-9_step-1_left-radio p .label_1-2,
+.main__content-9_step-2_left-radio p .label_2-2,
+.main__content-9_step-3_left-radio p .label_3-7,
+.main__content-9_step-4_left-radio p .label_4-4{
     color: #8FA7C1;
     font-size: 16px;
     font-weight: 400;
@@ -1941,7 +2006,7 @@ input[type=radio] {
 
 .main__content-9_step-1_right {
     text-align: center;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .main__content-9_step-1_right img:first-child {
@@ -2008,21 +2073,37 @@ input[type=radio] {
     flex-wrap: wrap ;
 }
 
-.main__content-9_step-1_left .input_radio input{
+.main__content-9_step-1_left .input_radio-3 {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 310px 310px;
+    gap: 20px 30px;
+}
+
+.main__content-9_step-1_left .input_radio input,
+.main__content-9_step-1_left .input_radio-3 input{
     margin-right: 10px;
     cursor: pointer;
 }
 
-.main__content-9_step-1_left .input_radio label{
+.main__content-9_step-1_left .input_radio label,
+.main__content-9_step-1_left .input_radio-3 label{
     cursor: pointer;
 }
 
-.main__content-9_step-1_left .input_radio-1,
-.main__content-9_step-1_left .input_radio-2,
-.main__content-9_step-1_left .input_radio-3,
-.main__content-9_step-1_left .input_radio-4,
-.main__content-9_step-1_left .input_radio-5,
-.main__content-9_step-1_left .input_radio-6 {
+.main__content-9_step-1_left .input_radio_2-1,
+.main__content-9_step-1_left .input_radio_2-2,
+.main__content-9_step-1_left .input_radio_2-3,
+.main__content-9_step-1_left .input_radio_3-1,
+.main__content-9_step-1_left .input_radio_3-2,
+.main__content-9_step-1_left .input_radio_3-3,
+.main__content-9_step-1_left .input_radio_3-4,
+.main__content-9_step-1_left .input_radio_3-5,
+.main__content-9_step-1_left .input_radio_3-6,
+.main__content-9_step-1_left .input_radio_4-1,
+.main__content-9_step-1_left .input_radio_4-2,
+.main__content-9_step-1_left .input_radio_4-3,
+.main__content-9_step-1_left .input_radio_4-4 {
     border-radius: 30px;
     background: #FFF;
     display: flex;
@@ -2033,15 +2114,10 @@ input[type=radio] {
     gap: 10px;
 }
 
-.main__content-9_step-2_left-radio {
-    margin-top: 280px; 
-}
 
-.main__content-9_step-2_right {
-    margin-left: 35px;
-}
-
-.main__content-9_step-2_left-radio .step_back{
+.main__content-9_step-2_left-radio .step_back,
+.main__content-9_step-3_left-radio .step_back,
+.main__content-9_step-4_left-radio .step_back{
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
@@ -2061,6 +2137,86 @@ input[type=radio] {
 .main__content-9_step-1_left .variant {
     font-size: 16px;
 }
+
+/* Пятый шаг инпуты */
+.block_input-5 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.block_input-5_name,
+.block_input-5_tel {
+    width: 300px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    border: none;
+    text-align: center;
+    color: #409AF8;
+}
+
+.block_input-5_name::placeholder,
+.block_input-5_tel::placeholder {
+    color: #8FA7C1;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.block_input-5_messenger {
+    width: 300px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #25D266;
+    border: none;
+}
+
+.block_input-5_messenger span{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.block_input-5_messenger span:before{
+    content: url(../img/белая_стрелка_вниз.png);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.block_input-5_messenger span:after{
+    content: url(../img/whatsapp.svg);
+    margin-left: 130px;
+    margin-right: 7px;
+}
+
+.block_input-5_record {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    padding: 22px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    line-height: 100%;
+    border: none;
+}
+
 
 
 
