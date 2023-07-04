@@ -661,7 +661,9 @@
         </ul>
     </div>
 </section>
+
 <!-- Девятый блок - УЗНАЙТЕ СТОИМОСТЬ ЛЕЧЕНИЯ ВСЕГО ЗА 1 МИНУТУ -->
+
 <section class="main__content-9">
     <div class="container wrap">
         <h2>УЗНАЙТЕ СТОИМОСТЬ <span>ЛЕЧЕНИЯ ВСЕГО ЗА 1 МИНУТУ</span></h2>
@@ -938,12 +940,13 @@
                 <p class="step-5-p2">Приступаем к расчету стоимости</p>
                 <p class="step-5-p3">Выберите удобный мессенджер </p>
                 <p class="step-5-p4">Свяжемся с вами, уточним детали и вышлем результат</p>
-              <div class="block_input-5">
+              <form class="block_input-5" id="form-3" method='POST' action="spasibo.html">
                 <p>
                     <input type="text" placeholder="Ваше имя" class="block_input-5_name" name="block_input-5_name">
                 </p>
                 <p>
-                    <button class="block_input-5_messenger"><span>WhatsApp</span></button>
+                    <a class="block_input-5_link" href="https://api.whatsapp.com/send?phone=79000000000" target="_blank"
+                    title="Написать в Whatsapp" rel="noopener noreferrer"><p class="block_input-5_messenger">WhatsApp</p></a>
                 </p>
                 <p>
                     <input type="tel" placeholder="+7 (900) 000-00-00" class="block_input-5_tel phone-mask">
@@ -956,7 +959,7 @@
                     <span class="main__content-block_span">Я согласен с <a href="https://iceberg.dental/policy/"
                             class="main__content-block_policy" target="_blank">Политикой обработки персональных данных</a></span>
                 </div>
-            </div>
+            </form>
             </div>
             <div class="main__content-9-block_right-img">
                 <img src="./img/step_5.png" alt="картинка">
@@ -964,8 +967,55 @@
         </div>           
     </div>
 </div>
-
-
+    </div>
+</section>
+<section class="main__content-10">
+    <div class="container wrap">
+        <h2 class="h2">24 ВАРИАНТА <span>ВОССТАНОВЛЕНИЯ ЗУБОВ</span> ПОД КЛЮЧ</h2>
+        <p class="paragraph">Ставим разные системы имплантов любых производителей по вашему предпочтению</p>
+        <div class="main__content-10_button">
+            <button class="button-1 button_active">Одноэтапный способ</button>
+            <button class="button-2">Двухэтапный способ</button>
+        </div>
+        <div class="main__content-10_flex">
+            <div class="flex-1">
+                <p class="title">Neodent</p>
+                <p class="country">Швейцария</p>
+                <img src="./img/Switzerland.svg" alt="Швейцария">
+                <h3 class="h3">Имплантация <span>All on 4</span></h3>
+                <div class="consultation_doctor">
+                    КОНСУЛЬТАЦИЯ ВРАЧА И ПЛАН ЛЕЧЕНИЯ БЕСПЛАТНО
+                </div>
+                <div class="osstem">
+                    <p class="desc">Osstem 4 импланта с установкой</p>
+                    <p class="price">120 000 ₽</p>
+                </div>
+                <div class="prosthesis">
+                    <p class="desc">Постоянный армированный протез</p>
+                    <p class="price">140 000 ₽</p>
+                </div>
+                <div class="warranty_implant">
+                    <p class="desc">Гарантия на импланты</p>
+                    <p class="price">пожизненно</p>
+                </div>
+                <div class="warranty_doctors">
+                    <p class="desc">Гарантия на работу врача</p>
+                    <p class="price">15 лет</p>
+                </div>
+                <div class="time">
+                    <p class="desc">Время приживления</p>
+                    <p class="price">ускоренное</p>
+                </div>
+                <div class="tooth_extraction">
+                    <p class="desc">Удаление зубов</p>
+                    <p class="price">Бесплатно<br><span>Акция до 20 июня</span></p>
+                </div>
+            </div>
+            <div class="flex-2"></div>
+            <div class="flex-3"></div>
+        </div>
+        <div class="arrow_left_10-block"></div>
+        <div class="arrow_right_10-block"></div>
     </div>
 </section>
 

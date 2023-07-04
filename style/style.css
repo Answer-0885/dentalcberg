@@ -1931,6 +1931,22 @@ position: relative;
     border-bottom: 5px solid transparent;
 }
 
+
+.main__content-9_step-1_left-flex-1 button:focus .img-1, 
+.main__content-9_step-1_left-flex-2 button:focus .img-1, 
+.main__content-9_step-1_left-flex-3 button:focus .img-1, 
+.main__content-9_step-1_left-flex-4 button:focus .img-1{
+    display: none;
+}
+
+.main__content-9_step-1_left-flex-1 button:focus .img-2, 
+.main__content-9_step-1_left-flex-2 button:focus .img-2, 
+.main__content-9_step-1_left-flex-3 button:focus .img-2, 
+.main__content-9_step-1_left-flex-4 button:focus .img-2{
+    display: block;  
+    border-bottom: 5px solid transparent;
+}
+
 .main__content-9_step-1_left-flex-1 p, 
 .main__content-9_step-1_left-flex-2 p, 
 .main__content-9_step-1_left-flex-3 p, 
@@ -2167,17 +2183,18 @@ input[type=radio] {
     line-height: 100%;
 }
 
+.block_input-5_link  {
+    text-decoration: none;
+    color: #FFF;
+}
+
 .block_input-5_messenger {
     width: 300px;
     height: 50px;
-    flex-shrink: 0;
     border-radius: 30px;
     background: #25D266;
     border: none;
-}
-
-.block_input-5_messenger span{
-    color: #FFF;
+    cursor:pointer;
     font-size: 15px;
     font-weight: 400;
     line-height: 100%;
@@ -2187,13 +2204,13 @@ input[type=radio] {
 
 }
 
-.block_input-5_messenger span:before{
+.block_input-5_messenger:before{
     content: url(../img/белая_стрелка_вниз.png);
     margin-left: 15px;
     margin-right: 15px;
 }
 
-.block_input-5_messenger span:after{
+.block_input-5_messenger:after{
     content: url(../img/whatsapp.svg);
     margin-left: 130px;
     margin-right: 7px;
@@ -2215,6 +2232,7 @@ input[type=radio] {
     font-size: 14px;
     line-height: 100%;
     border: none;
+    cursor:pointer;
 }
 
 .main__content-9-block {
@@ -2225,6 +2243,113 @@ input[type=radio] {
 .main__content-9-block_right-img {
     margin-left: 110px;
     margin-bottom: -10px;
+}
+
+/* Десятый блок */
+/* 24 ВАРИАНТА ВОССТАНОВЛЕНИЯ ЗУБОВ ПОД КЛЮЧ */
+
+.main__content-10 {
+    padding-top: 120px;
+}
+
+.main__content-10 h2{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.main__content-10 h2 span{
+    font-weight: 700;
+    color: #409AF8;
+}
+
+.main__content-10 .paragraph{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.main__content-10_button {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.main__content-10_button button{
+    color: #8FA7C1;
+    text-align: center;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 17px 45px;
+    border-radius: 30px;
+    border: 1px solid #D6DFE8;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.main__content-10_button .button_active {
+    background: #409AF8;
+    color: #fff;
+    font-weight: 700;
+}
+
+.main__content-10_flex {
+    margin-top: 40px;
+}
+
+.main__content-10_flex .flex-1,
+.main__content-10_flex .flex-2,
+.main__content-10_flex .flex-3 {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+}
+
+.flex-1 .title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.flex-1 .country{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.flex-1 .h3{
+    margin-top: 20px;
+    color: #272727;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.flex-1 .h3 span{
+    font-weight: 700;
+}
+
+.main__content-10_flex .flex-1 img {
+    position: absolute;
+    right:20px;
+    top:28px;
+}
+
+.main__content-10_flex .consultation_doctor {
+    background: #409AF8;
+    width: 100%;
+    height: 46px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-top: 20px;
 }
 
 
