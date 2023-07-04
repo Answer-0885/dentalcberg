@@ -2217,6 +2217,15 @@ input[type=radio] {
     border: none;
 }
 
+.main__content-9-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__content-9-block_right-img {
+    margin-left: 110px;
+    margin-bottom: -10px;
+}
 
 
 
