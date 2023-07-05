@@ -19,6 +19,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1em;
+    line-height: 140%;
     background-color: #F5F8FD;
     background-image: url(../img/Фон-1.png);
     background-position: top center;
@@ -2294,6 +2295,10 @@ input[type=radio] {
 }
 
 .main__content-10_flex {
+    display: flex;
+    gap: 30px;
+    align-items:center;
+    justify-content: center;
     margin-top: 40px;
 }
 
@@ -2350,7 +2355,135 @@ input[type=radio] {
     font-weight: 700;
     line-height: 120%;
     margin-top: 20px;
+    padding: 14px 20px;
 }
+
+.flex-1 .osstem,
+.flex-1 .prosthesis,
+.flex-1 .warranty_implant,
+.flex-1 .warranty_doctors,
+.flex-1 .time,
+.flex-1 .tooth_extraction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.flex-1 .osstem .price{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.flex-1 .prosthesis .price{
+    color: #EC3030;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.flex-1 .prosthesis .price span{
+    display: block;
+    color: #8FA7C1;
+    text-align: right;
+    font-size: 12px;
+    text-decoration:line-through;
+}
+
+.flex-1 .warranty_implant .price{
+    text-align: right;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.flex-1 .osstem p:first-child,
+.flex-1 .prosthesis p:first-child,
+.flex-1 .warranty_implant p:first-child,
+.flex-1 .warranty_doctors p:first-child,
+.flex-1 .time p:first-child{
+    color: #8FA7C1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    width: 195px;
+}
+
+.flex-1 .hr-10,
+.flex-2 .hr-10,
+.flex-3 .hr-10 {
+    max-width: 410px;
+    width: 100%;
+    border:1px solid #DCDCE0
+}
+
+.flex-1 .tooth_extraction {
+    background: #E1EAFA;
+}
+
+.flex-1 .tooth_extraction .desc {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.flex-1 .tooth_extraction .price {
+    color: #EC3030;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.flex-1 .tooth_extraction .price span{
+    color: #8FA7C1;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.flex-1 .stock {
+    display: flex;  
+    align-items: center;
+    justify-content: center;  
+    margin-top: 30px;
+    gap: 11px;
+} 
+
+.flex-1 .stock .stock-1 {
+    padding: 16px 15px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #409AF8;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 100%;
+    height: 46px;
+
+} 
+
+.flex-1 .stock .stock-2 {
+    display: inline-flex;
+    padding: 8px 15px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: #EC3030;
+    color: #FFF;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 100%;
+    height: 46px;
+
+} 
+
+.flex-1 .stock .stock-2:after {
+    content: url(../img/procent-10.png);
+} 
+
+
 
 
 
