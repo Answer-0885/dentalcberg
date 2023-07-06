@@ -47,9 +47,9 @@ const slider = () => {
        prevSlide(slides, currentSlide, 'swiper-item-active');
        prevSlide(dots, currentSlide, 'dot-active');
  
-       if (e.target.matches('#arrow-right')) {
+       if (e.target.matches('#arrow-right-8')) {
           currentSlide++;
-       } else if (e.target.matches('#arrow-left')) {
+       } else if (e.target.matches('#arrow-left-8')) {
           currentSlide--;
        } else if (e.target.classList.contains('dot')) {
           dots.forEach((dot, index) => {
