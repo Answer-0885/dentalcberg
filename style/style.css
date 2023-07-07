@@ -2291,7 +2291,8 @@ input[type=radio] {
     cursor: pointer;
 }
 
-.main__content-10_button .button_active {
+.main__content-10_button .button_active,
+.content-14 .button_active {
     background: #409AF8;
     color: #fff;
     font-weight: 700;
@@ -3049,6 +3050,7 @@ input[type=radio] {
     padding-top: 50px;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 50px;
 }
 
 .block-1_5 .result {
@@ -3381,4 +3383,202 @@ input[type=radio] {
 
 .watch-13 .metro a{
     color: #272727;   
+}
+
+
+/* -----Четырнадцатый блок -----*/
+
+.main__content-14 {
+    margin-top: 120px;
+}
+
+.main__content-14 h2{
+    color: #272727;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.main__content-14 h2 span{
+    font-weight: 700;
+    color: #409AF8;
+}
+
+.list-14 {
+    margin-top: 20px;
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.list-14 .item-14 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 130%;
+}
+
+.content-14 {
+    margin-top: 40px;
+}
+
+.content-14 button {
+    width: 290px;
+    max-width: 290px;
+    max-height: 47px;
+    flex-shrink: 0;
+    color: #8FA7C1;
+    text-align: center;
+    font-size: 16px;
+    line-height: 140%;
+    background: linear-gradient(140.32deg, #FFFFFF 48.01%, rgba(255, 255, 255, 0) 110.28%);
+    box-shadow: 10px 10px 20px rgba(47, 138, 244, 0.2);
+    border-radius: 10px;
+    padding: 10px 20px;
+    border:none;
+    cursor: pointer;
+}
+
+.content-14 button:first-child {
+    margin-right: 30px;
+}
+
+.no_one_tooth-14 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nobel-14,
+.osstem-14,
+.straumann-14,
+.no_all_tooth-14 {
+    padding: 30px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.desc-14 {
+    margin-left: 30px;
+}
+
+.h3-14 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.country-14 {
+    display: inline-block;
+    color: #96B1CE;
+    font-size: 12px;
+    line-height: 130%;
+    margin-top: 13px;
+}
+
+.nobel-14 .country-14:before,
+.straumann-14 .country-14:before {
+    content: url(../img/Switzerland.svg);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.osstem-14 .country-14:before {
+    content: url(../img/SouthKorea.svg);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.desc-14-list {
+    margin-top: 21px;
+    list-style-type: circle;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.garanty-14 {
+    border-radius: 10px;
+    background: #409AF8;
+    padding: 30px;
+}
+
+.garanty-14 .for_life {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.garanty-14 .for_life:before {
+    content: url(../img/галка-14.png);
+    margin-right: 10px;
+}
+
+.garanty-14 .flex-14 {
+    margin-top: 20px;
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.garanty-14 .flex-14 .action,
+.garanty-14 .flex-14 .regular_price {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 140%;
+}
+
+.garanty-14 .flex-14 .action>span{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.garanty-14 .flex-14 .regular_price>span{
+    color: #FFF;
+    font-size: 16px;
+    line-height: 250%;
+    text-decoration:line-through;
+
+}
+
+.garanty-14 .includes{
+    color: #FFF;
+    font-size: 12px;
+    line-height: 140%;
+    margin-top: 15px;
+}
+
+.garanty-14 .includes span{
+    font-weight: 700;
+}
+
+.no_all_tooth-14 .video-14 {
+    position: relative;
+}
+
+.no_all_tooth-14 .video-14 .video-14-icons {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.no_all_tooth-14 .video-14 .video-14-icons:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+.no_all_tooth-14 .desc-14 {
+    align-self: flex-start;
+    margin-left: -220px;
 }
