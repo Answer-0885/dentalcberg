@@ -6,7 +6,6 @@ const buttonVideo2 = document.querySelector('.main__content-4_header_right-video
 const video = document.querySelector('.main__content_video-video');
 const overlay = document.querySelector('.overlay');
 const body = document.querySelector('body');
-const menuHeader = document.querySelector('.header-menu');
 const buttonQuestions = document.querySelector('.header-menu__button');
 
 
@@ -33,7 +32,7 @@ const videoHeader = () => {
 
     });
 
-    // Закрываем видео при нажатии на крестик или оверлай 
+    // Закрываем и формувидео при нажатии на крестик или оверлай 
     window.addEventListener('click', (e) => {
         if (e.target.closest('.overlay') || e.target.classList.contains('close__video')) {
             video.style.display = 'none';
@@ -53,19 +52,7 @@ const popUp = () => {
     })
 }
 
-const menu = () => {
-    menuHeader.addEventListener('click', (e) => {
-          // Плавно перемещаемся к выбранному блоку из списка меню
-        if (menuHeader.contains(e.target)) {
-          e.preventDefault();
-          const block = e.target.getAttribute('href');
-          document.querySelector(block).scrollIntoView({
-             behavior: 'smooth',
-             block: 'start'
-          });
-       } 
-    });
- };
+
 
 
 document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
@@ -110,6 +97,5 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 
 
 videoHeader();
-menu();
 popUp();
 
