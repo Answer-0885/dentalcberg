@@ -3873,7 +3873,7 @@ input[type=radio] {
     background: #409AF8;
     max-width: 290px;
     max-height: 80px;
-    padding: 20px 20px 20px 30px;
+    padding: 20px 20px 20px 20px;
     z-index: 5;
     margin-top: -20px;
 }
@@ -3887,7 +3887,7 @@ input[type=radio] {
 
 .content-16-flex .flex-box-right .insurance p:before{
     content: url(../img/галка-14.png);
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .content-16-flex .flex-box-right .insurance-2 {
@@ -3917,4 +3917,138 @@ input[type=radio] {
     margin-top: 10px;
 }
 
+/* Семнадцатый блок
+ОТВЕЧАЕМ НА ВАШИ ВОПРОСЫ  */
+.main__content-17 {
+    padding-top: 120px;
+    background: #FFF;
+}
 
+.h2-17 {
+    font-size: 36px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.h2-17 span{
+    color: #409AF8;
+    font-size: 36px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.content-17-flex {
+    display: flex;
+    margin-top: 30px;
+}
+
+.content-17-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 39px;
+    flex-wrap: wrap;
+}
+
+.content-17-left .block {
+    border-radius: 15px;
+    background: #F1F5FC;
+    padding: 17px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Кнопка запуска видео */
+
+.content-17-left .icons_video-17,
+.content-17-right .icons_video-17 {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icons_video-17:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+.content-17-right {
+    max-width: 600px;
+    margin-left: 30px;
+}
+
+.content-17-right .img-screen {
+    position: relative;
+ 
+}
+
+.content-17-right .img-screen p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.content-17-right p span{
+    font-weight: 500;
+}
+
+.icons_video-17-position {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.buttons-17 {
+    margin-top: 55px;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons-17 .questions{
+    border-radius: 40px;
+    background: #409AF8;
+    display: flex;
+    padding: 22px 20px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 10px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;    
+    line-height: 100%;
+    width: 290px;
+}
+
+.buttons-17 .questions:before{
+    content:url(../img/FAQ-white.svg); 
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+
+.buttons-17 .make_an_appointment{
+    border-radius: 35px;
+    background: linear-gradient(270deg, #4E39FF 0%, #6A5AF3 100%);
+    width: 290px;
+    padding: 23px 41px;
+    gap: 10px;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    /* ------------------------ */
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.buttons-17 .make_an_appointment:before {
+    content: url(../img/запись.png);
+}
