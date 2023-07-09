@@ -4237,3 +4237,70 @@ input[type=radio] {
     right: 0;
     bottom:0;  
 }
+
+
+/* Девятнадцатый блок */
+/* РЕЙТИНГИ */
+.main__content-19 {
+    padding-top: 120px;
+}
+
+.h2-19 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.slides-19 {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+}
+
+.slides-19 .slide-1,
+.slides-19 .slide-2,
+.slides-19 .slide-3,
+.slides-19 .slide-4,
+.slides-19 .slide-5,
+.slides-19 .slide-6,
+.slides-19 .slide-7 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    width: 230px;
+    max-height: 190px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 3px 20px 0px rgba(37, 38, 80, 0.20);  
+}
+
+.slides-19 .img-19 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.slides-19 p {
+    margin-top: 20px;
+}
+
+.slides-19 p{
+    color: #272727;
+    text-align: center;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.slides-19 p span{
+    color: #949494;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+}
