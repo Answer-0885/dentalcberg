@@ -1685,7 +1685,7 @@ position: relative;
 
 .swiper-item-active{
     opacity:1;
-    transition:opacity .5s
+    transition:opacity .5s;
 }
 
 .main__content-8_swiper-btn{
@@ -2293,8 +2293,13 @@ input[type=radio] {
     cursor: pointer;
 }
 
+
+/* Кнопка ACTIVE */
+
 .main__content-10_button .button_active,
-.content-14 .button_active {
+.content-14 .button_active,
+.button-18 .btn-left.button_active,
+.button-18 .btn-right.button_active{
     background: #409AF8;
     color: #fff;
     font-weight: 700;
@@ -2935,10 +2940,6 @@ input[type=radio] {
 /* слайдер 11 блока */
 .slider_doctors {
     position: relative;
-}
-
-.slider_doctors_left {
-
 }
 
 .slider_doctors_right {
@@ -3922,6 +3923,7 @@ input[type=radio] {
 .main__content-17 {
     padding-top: 120px;
     background: #FFF;
+    padding-bottom: 120px;
 }
 
 .h2-17 {
@@ -3971,8 +3973,13 @@ input[type=radio] {
 }
 
 .content-17-right {
-    max-width: 600px;
+    width: 690px;
     margin-left: 30px;
+}
+
+.content-17-left .text-17 {
+    font-size: 14px;
+    line-height: 130%; 
 }
 
 .content-17-right .img-screen {
@@ -4003,6 +4010,7 @@ input[type=radio] {
 .buttons-17 {
     margin-top: 55px;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -4020,6 +4028,7 @@ input[type=radio] {
     font-size: 16px;    
     line-height: 100%;
     width: 290px;
+    cursor: pointer;
 }
 
 .buttons-17 .questions:before{
@@ -4030,7 +4039,8 @@ input[type=radio] {
 }
 
 
-.buttons-17 .make_an_appointment{
+.buttons-17 .make_an_appointment,
+.record-18 .make_an_appointment{
     border-radius: 35px;
     background: linear-gradient(270deg, #4E39FF 0%, #6A5AF3 100%);
     width: 290px;
@@ -4043,12 +4053,187 @@ input[type=radio] {
     display: flex;
     align-items:center;
     justify-content: center;
+    z-index: 5;
+    cursor: pointer;
     /* ------------------------ */
     position: relative;
     overflow: hidden; 
 }
 
 
-.buttons-17 .make_an_appointment:before {
+.buttons-17 .make_an_appointment:before,
+.record-18 .make_an_appointment:before {
     content: url(../img/запись.png);
+}
+
+
+/* Восемнадцатый блок */
+/* фото Iceberg Clinic  */
+
+.main__content-18 {
+    padding-top: 120px;
+}
+
+.h2-18 {
+    font-size: 36px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.p-18 {
+    margin-top: 10px;
+    color: #272727;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.button-18 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button-18 .btn-left,
+.button-18 .btn-right {
+    border-radius: 35px;
+    border: 1px solid #D6DFE8;
+    background: #FFF;
+    color: #8FA7C1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 16px 30px;
+    cursor: pointer;
+}
+
+.button-18 .btn-right{
+    margin-left: 15px;
+}
+
+.slides-18 {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 120px;
+}
+
+.slides-18 .slide-1,
+.slides-18 .slide-2,
+.slides-18 .slide-3,
+.slides-18 .slide-4 {
+    cursor: pointer;
+}
+
+/* DOTS-18 */
+
+.slider-18-dots {
+    list-style-type: none;
+    position:absolute;
+    top: 100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    z-index:5;
+    margin-top: 30px;
+}
+
+.slider-18-dots .dot-18{
+    cursor:pointer;
+    height:16px;
+    width:16px;
+    margin:0 10px;
+    border-radius:50%;
+    border:solid #CED9E5;
+    display:inline-block;
+    transition:background-color,transform .4s;
+}
+
+.slider-18-dots .dot-active{
+    background-color:#409AF8;
+    transform:scale(1.2);
+}
+.slider-18-dots .dot-18:hover{
+    background-color:#409AF8;
+    transform:scale(1.2);
+}
+
+/* Улыбка 18 блок */
+
+.smile-18 {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    padding: 20px 0px 20px 20px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #E1EAFA 0%, #F1F5FC 100%);
+}
+
+/* Кнопка запуска видео */
+
+.video_icons-18 {
+    position: absolute;
+    left: 460px;
+    top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.video_icons-18:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+/* ----------------------------- */
+
+.smile_desc {
+    padding-top: 10px;
+    max-width: 594px;
+}
+
+.h3-18 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.h3-18 span{
+    color: #409AF8;
+    font-weight: 700;
+}
+
+.smile_desc .treatment {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+    max-width: 391px;
+}
+
+.smile_desc .treatment span{
+    font-weight: 500;
+}
+
+.record-18 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.record-18 span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.record-18 img {
+    position: absolute;
+    top: -20px;
+    left: 240px;
+}
+
+.photo-doctor-18 {
+    position: absolute;
+    right: 0;
+    bottom:0;  
 }
