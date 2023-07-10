@@ -4963,3 +4963,144 @@ input[type=radio] {
     height: 730px;
 }
 
+
+/* ФУТЕР */
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #2B68A8;
+}
+
+.hr-footer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-left .address{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.iceberg-footer {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.iceberg-footer:before {
+    content: url(../img/iceberg-footer.png);
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.footer-left .text {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.footer-left .text span {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.footer-left .metro-1,
+.footer-left .metro-2 {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left .metro-1:before {
+    content: url(../img/metro-footer.png);
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.footer-left .metro-2:before {
+    content: url(../img/metro-footer.png);
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.footer-left .tinkoff {
+    border-radius: 10px;
+    background: #1B548F;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    max-width: 810px;
+    max-height: 70px;
+}
+
+.footer-left .tinkoff p{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 00;
+    line-height: 160%;
+    max-height: 70px;
+    max-width: 803px;
+}
+
+.footer-left .tinkoff p:after{
+    content: url(../img/тинькоф.png);
+    margin-left: 37px;
+    vertical-align: middle;
+}
+
+.footer-left .tinkoff p span{
+    font-weight: 700;
+}
+
+.middle-block-footer {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.requisites-footer .year,
+.requisites-footer .legal_address,
+.requisites-footer .requisites-iceberg,
+.requisites-footer .license {
+    color: #E9EDF8;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+.requisites-footer .legal_address span,
+.requisites-footer .requisites-iceberg span,
+.requisites-footer .license span{
+    font-weight: 700;
+}
+
+.list-footer {
+    list-style-type: none;
+}
+
+.list-footer a{
+    text-decoration: none;
+    color: #E9EDF8;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+.list-footer .item{
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
