@@ -4710,3 +4710,256 @@ input[type=radio] {
 .icons-video-23:hover {
     transform: scale(1.2) rotate(360deg);
 }
+
+/* Двадцать четвертый блок */
+/* Лицензии и сертификаты */
+
+.main__content-24 {
+    margin-top: 120px;
+}
+
+.h2-24 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.license-24 {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.license-24 .license-1{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    max-width: 330px;
+    height: 480px;
+    padding: 19px 14px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+}
+
+.license-24 .license-1 img{
+    max-width: 302px;
+    max-height: 442px;
+ 
+}
+
+/* DOTS-24 */
+.main__content-24 .slider-24-dots {
+    list-style-type: none;
+    height: 20px;
+    display:flex;
+    justify-content:center;
+    z-index:5;
+    margin-top: 30px;
+}
+
+.main__content-24 .slider-24-dots .dot-24{
+    cursor:pointer;
+    height:16px;
+    width:16px;
+    margin:0 10px;
+    border-radius:50%;
+    border:solid #CED9E5;
+    display:inline-block;
+    transition:background-color,transform .4s;
+}
+
+.main__content-24 .slider-24-dots .dot-active{
+    background-color:#409AF8;
+    transform:scale(1.2);
+}
+.main__content-24 .slider-24-dots .dot-24:hover{
+    background-color:#409AF8;
+    transform:scale(1.2);
+}
+
+/* Двадцать пятый блок */
+/* адреса Iceberg Clinic в москве */
+.main__content-25 {
+    margin-top: 120px;
+}
+
+.h2-25 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.tabs-25 {
+    margin-top: 30px;
+    display: flex;
+    gap: 60px;
+}
+
+.tabs-25 .tab-1,
+.tabs-25 .tab-2 {
+    max-width: 400px;
+    cursor: pointer;
+}
+
+.tabs-25 .address{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 5px;
+}
+
+.tabs-25 .metro,
+.tabs-25 .walking_time {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.tabs-25 .walking_time {
+    margin-left: 20px;
+}
+
+.tabs-25 .metro::before {
+    content: url(../img/metro-blue.png);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.tabs-25 .walking_time::before {
+    content: url(../img/human.png);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.hr-25 {
+    height: 1px;
+    opacity: 0.99;
+    background: #8FA7C1;
+    margin-top: 25px;
+}
+
+.tabs-25 .tab-1 {
+    position: relative;
+}
+
+.tab-1 .contacts-25{
+    position: absolute;
+    left: 0px;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    z-index: 5;
+}
+
+.no-active-25{
+    opacity: 0.5;
+    color: #8FA7C1;
+}
+
+.tab-2 .contacts-25{
+    display: none !important;
+    position: absolute;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.contacts-25 .address-1,
+.contacts-25 .telephone,
+.contacts-25 .time,
+.contacts-25 .parking{
+    flex-shrink: 0;
+    max-width: 280px;
+    padding: 18px 50px 18px 18px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+}
+
+.contacts-25 .telephone,
+.contacts-25 .time,
+.contacts-25 .parking{
+   max-height: 140px;
+}
+
+.contacts-25 .address-1 h3,
+.contacts-25 .telephone h3,
+.contacts-25 .time h3,
+.contacts-25 .parking h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+
+.contacts-25 .address-1 h3::before {
+    content: url(../img/иконка-местоположение.png);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contacts-25 .telephone h3::before {
+    content: url(../img/icons-tel.png);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contacts-25 .time h3::before {
+    content: url(../img/watch-blue.png);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contacts-25 .parking h3::before {
+    content: url(../img/parking.png);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contacts-25 .address-1 .city,
+.contacts-25 .address-1 .street {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.contacts-25 .address-1 .travel {
+    margin-top: 10px;
+    border-radius: 30px;
+    background: #409AF8;
+    padding: 5px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 195px;
+}
+
+.contacts-25 .address-1 .travel p{
+    color: #FFF;
+    font-size: 15px;
+    line-height: 100%;
+}
+
+.contacts-25 .address-1 .telephone p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+/* Двадцать шестой блок */
+/* Карта местоположения клиники */
+.map-26 {
+    margin-top: 80px;
+}
+.map-26 iframe{
+    display: block;
+    text-align: center;
+    width: 1920px;
+    height: 730px;
+}
+
