@@ -931,7 +931,8 @@ Select c dropdown на JS
     margin-left: 40px;
 }
 
-.main__content-4_main-button {
+.main__content-4_main-button,
+.btn_feedback-22 {
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -947,14 +948,16 @@ Select c dropdown на JS
     cursor: pointer;
 }
 
-.main__content-4_main-button::before {
+.main__content-4_main-button::before, 
+.btn_feedback-22::before {
     content:url(../img/обновить.png);
     margin-right: 10px;
     display: inline-block;
     vertical-align: middle;
 }
 
-.main__content-4_main-button::after {
+.main__content-4_main-button::after,
+.btn_feedback-22::after {
     content:url(../img/Стрелка\ вниз.png);
     margin-left: 10px;
     display: inline-block;
@@ -3672,6 +3675,9 @@ input[type=radio] {
     font-size: 14px;
     line-height: 100%;
     cursor: pointer;
+    /* -------------- */
+    position: relative;
+    overflow: hidden;
 }
 
 .block-15-checkbox {
@@ -4518,4 +4524,189 @@ input[type=radio] {
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
+}
+
+.btn_feedback-22 {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/* Двадцать третий блок */
+/* САМОЕ ВРЕМЯ ЗАПИСАТЬСЯ НА БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ */
+
+.main__content-23 {
+    margin-top: 120px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background: #FFF;
+}
+
+.h2-23 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.h2-23 span{
+    color: #409AF8;
+    font-weight: 700;
+}
+
+.blocks-23-flex {
+    display: flex;
+    align-items:center;
+    gap: 100px;
+}
+
+.block-23-desc .text-23 {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.block-23-desc-grid {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+    
+}
+
+.block-23-desc-grid .block-grid{
+    display: flex;
+    gap: 20px;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+.block-23-desc-grid .block-grid p{
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/* Форма 23 блока */
+
+.block-23-form {
+    margin-top: 40px;
+}
+
+.block-23-form .block-23-input {
+    display: flex;
+    align-items: center;    
+    gap: 20px;
+}
+
+.block-23-form input {
+    padding: 12px 45px;
+    border-radius: 30px;
+    background: #F1F5FC;
+    border:none;
+    max-width: 330px;
+    color: #409AF8;
+    text-align: center;
+    font-size: 20px;
+    padding: 23px 41px;
+}
+
+.block-23-form input::placeholder {
+    color: #8FA7C1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.block-23-form button{
+    display: flex;
+    max-width: 330px;
+    padding: 21px 41px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border:none;
+    border-radius: 35px;
+    background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
+    color: #FFF;
+    font-size: 16px;
+    line-height: 100%;
+    cursor: pointer;
+    /* ------------------------ */
+    position: relative;
+    overflow: hidden; 
+}
+
+.block-23-form button::before{
+    content: url(../img/запись.png);
+}
+
+.block-23-checkbox {
+    margin-top: 21px;
+    margin-left: 50px;
+}
+
+.block-23-input-checkbox {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.block-23_span,
+.block-23_span a{
+    color: #8FA7C1;
+    font-size: 14px;
+    font-family: Muller;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.block-23-form .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.block-23-form .contacts .call{
+    font-size: 12px;
+    line-height: 130%;
+    display: flex;
+    align-items: baseline;
+}
+
+.block-23-form .contacts .call:before{
+    content: url(../img/Метка-онлайн-фиолет.png);
+    padding-right: 9px;
+}
+
+.block-23-form .contacts .telephone a{
+    color: #272727;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+/* Кнопка запуска видео */
+
+.block-23-video {
+    position: relative;
+}
+
+.icons-video-23 {
+    position: absolute;
+    left: 30px;
+    top:30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icons-video-23:hover {
+    transform: scale(1.2) rotate(360deg);
 }
