@@ -8,22 +8,22 @@
         url('../fonts/MullerUltraLight.woff') format('woff'),
         url('../fonts/MullerUltraLight.ttf') format('truetype'),
         url("../fonts/MullerUltraLight.eot") format("eot");
-  }
+}
 
+html {
+    font-size: 62.5%;
+}  
 
 
 body{
-    max-width: 100vw;
-    min-height: 100vh;
-    margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.6rem;
     line-height: 140%;
     background-color: #F5F8FD;
     background-image: url(../img/Фон-1.png);
     background-position: top center;
-    background-size: 110% 900px;
+    background-size: 100% 90rem;
     background-repeat: no-repeat;
     color: #272727;
 }
@@ -35,22 +35,22 @@ body{
 
 
 .h1{
-    margin-top: 108px;
+    margin-top: 10.8rem;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3.5rem;
     line-height: 130%;
     text-transform: uppercase;
     color: #409AF8;
 }
 
 .main > .container > p {
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 130%;
     color: #272727;
 }
 
 .main__content {
-    margin-top: 30px;
+    margin-top: 3rem;
     display: flex;
     position: relative;
 }
@@ -60,31 +60,31 @@ body{
 }
 
 .main__content_list {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 150%;
 }
 
 .main__content_list:before {
     content: url(../img/Ellipse.png);
-    margin-right: 10px;
+    margin-right: 1rem;
 
 }
 
 .main__content-block_input{
     display: flex;
-    width: 420px;
-    height: 70px;
+    width: 42rem;
+    height: 7rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #FFFFFF;
-    border: 1px solid #D6DFE8;
-    border-radius: 35px;
-    margin-top: 52px;
+    border: 0.1rem solid #D6DFE8;
+    border-radius: 3.5rem;
+    margin-top: 5.2rem;
 }
 
 .main__content-block_input {
-    font-size: 24px;
+    font-size: 2.4rem;
     text-align: center;
     color: #409AF8;
 }
@@ -92,7 +92,7 @@ body{
 input::placeholder{
     color: #8FA7C1;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .main__content-block_button,
@@ -100,16 +100,16 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: center;
     color: #FFFFFF;
-    margin-top: 21px;
-    padding: 1.375em 10px;
-    gap: 10px;
-    width: 420px;
-    height: 70px;
+    margin-top: 2.1rem;
+    padding: 2.2rem 1rem;
+    gap: 1rem;
+    width: 42rem;
+    height: 7rem;
     background: linear-gradient(90deg, #409AF8 9.76%, #5D4DE8 90.36%);
-    border-radius: 35px;
+    border-radius: 3.5rem;
     border: none;
     cursor: pointer;
     /* ------------------------ */
@@ -123,42 +123,42 @@ input::placeholder{
 }
 
 .main__content-block_personal-data{
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .main__content-block_input-checkbox {
-    width: 15px;
-    height: 15px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .main__content-block_span{
     font-family: 'Muller';
     font-style: normal;
     font-weight: 300;
-    font-size: 14.5px;
+    font-size: 1.45rem;
     line-height: 130%;  
     color: #8FA7C1;
 }
 /* Блок с видео */
 .main__content_video-block {
     position: relative;
-    margin-left: 162px;
+    margin-left: 16.2rem;
 }
 
 .main__content_video-wrapper {
-    width: 250px;
-    height: 250px;
-    border-radius: 125px;
-    border: 3px solid #409AF8;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 12.5rem;
+    border: 0.3rem solid #409AF8;
     display: flex;
     align-items:center;
     justify-content: center;
 }
 
 .main__content_video-img{
-    width: 230px;
-    height: 230px;
-    border-radius: 125px;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 12.5rem;
     background-image: url(../img/Постер\ к\ видео.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -169,7 +169,7 @@ input::placeholder{
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
-    top: 150px;
+    top: 15rem;
     left: 0;
     right: 0;
     text-align: center;
@@ -193,12 +193,12 @@ input::placeholder{
   /* Кнопка закрытия видео */
   .close__video{
     position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 55px;
-    height: 55px;
+    top: 2.5rem;
+    right: 2.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     cursor: pointer;
-    border: 4px solid #409AF8;
+    border: 0.4rem solid #409AF8;
     border-radius: 50%;
 }
 
@@ -206,10 +206,10 @@ input::placeholder{
 .close__video:after {
     content: "";
     position: absolute;
-    top: 21px;
-    left: 11px;
-    width: 26px;
-    height: 4px;
+    top: 2.1rem;
+    left: 1.1rem;
+    width: 2.6rem;
+    height: 0.4rem;
     background: #409AF8;
 }
 
@@ -225,8 +225,8 @@ input::placeholder{
 
 .main__content_icons-video {
     position: absolute;
-    left: -50px;
-    top: 143px;
+    left: -5rem;
+    top: 14.3rem;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -238,49 +238,49 @@ input::placeholder{
 /* Описание к видео */
 .main__content_desc{
     position: absolute;
-    right: -50px;
-    padding: 1.375em 25px;
+    right: -5rem;
+    padding: 1.375em 2.5rem;
+    font-size: 1.6rem;
     text-align: center;
     background: #FFFFFF;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.16);
-    border-radius: 20px;
-    margin-left: -80px;
+    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.16);
+    border-radius: 2rem;
+    margin-left: -8rem;
 }
 
 .main__content-photo {
-    width: 686px;
-    height: 750px;
+    width: 68.6rem;
+    height: 75rem;
     background-image: url("../img/Фото-доктора.png");
     background-repeat: no-repeat;
-    background-position: 0 75px;
-    margin-top: -280px;
-    margin-right: -50px;
-
+    background-position: 0 7.5rem;
+    margin-top: -28rem;
+    margin-right: -5rem;
 }
 
 .main__content-photo_name{
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 130%;
     text-align: right;
     text-transform: uppercase;
     color: #272727;
-    margin-top: 510px;
-    margin-right: 50px;
+    margin-top: 51rem;
+    margin-right: 5rem;
 }
 
 .main__content-photo_ul{
     list-style-type: none;
     font-weight: 500;
-    font-size: 13.5px;
+    font-size: 1.35rem;
     line-height: 130%;
     text-align: right;
     color: #272727;
-    margin-top: 15px;
-    margin-right: 50px;
+    margin-top: 1.5rem;
+    margin-right: 5rem;
 }
 
 .main__content-photo_list:last-child{
-    margin-top: 5px;
+    margin-top: 0.5rem;
 }
 
 
@@ -288,24 +288,24 @@ input::placeholder{
 
 .regalia {
     position: relative;
-    max-width: 1410px;
-    max-height: 150px;
-    margin-top: -20px;
+    max-width: 141rem;
+    max-height: 15rem;
+    margin-top: -2rem;
     background: #409AF8;
-    border-radius: 20px;
+    border-radius: 2rem;
     display: flex;
     align-items:flex-start;
     justify-content:space-between;
-    padding: 20px 50px;
+    padding: 2rem 5rem;
 }
 
 .regalia__1, .regalia__2, .regalia__3, .regalia__4 {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 140%;
     text-align: center;
     color: #FFFFFF;
-    margin-right: 34px;
+    margin-right: 3.4rem;
 }
 
 .regalia__span{
@@ -315,7 +315,7 @@ input::placeholder{
 .regalia__1::before {
     content: url(../img/regalia/regalia-1.png); 
     display: inline-block;
-    margin-bottom: 7px;
+    margin-bottom: 0.7rem;
 }
 
 .regalia__2::before {
@@ -339,59 +339,59 @@ input::placeholder{
 /* Блок-2 */
 .main__content-2 {
     display: flex;
-    gap: 30px;
-    margin-top: 120px;
-    flex: 1 1 0px;
+    gap: 3rem;
+    margin-top: 12rem;
+    flex: 1 1 0rem;
 }
 
 .main__content-2_block-1 {
     display: flex;
-    width: 690px;
-    height: 380px;
+    width: 69rem;
+    height: 38rem;
     background: linear-gradient(180deg, #E1EAFA 0%, #F1F5FC 100%);
-    border-radius: 20px;
+    border-radius: 2rem;
 }
 
 
 .main__content-2_block-1_left {
-    padding-top: 30px;
-    padding-left: 20px;
+    padding-top: 3rem;
+    padding-left: 2rem;
 }
 
 .main__content-2_block-1_name{
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 130%;
     text-transform: uppercase;
     color: #272727;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .main__content-2_block-1_ul {
-    width: 334px;
+    width: 33.4rem;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 130%;
     color: #272727;
-    padding-left: 20px;
+    padding-left: 2rem;
 }
 
 .main__content-2_block-1_img {
-    margin-left: -153px;
-    margin-top: -20px;
+    margin-left: -15.3rem;
+    margin-top: -2rem;
 }
 
 .main__content-2_block-2_specialist{
     font-weight: 400;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 130%;
     color: #272727;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .main__content-2_block-2_specialist span{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 130%;
     text-transform: uppercase;
     color: #409AF8;
@@ -399,7 +399,7 @@ input::placeholder{
 
 .main__content-2_block-2_descripton {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 130%;
     color: #272727;
 }
@@ -407,7 +407,7 @@ input::placeholder{
 /* Блок-3 */
 
 .main__content-3 {
-    margin-top: 120px;
+    margin-top: 12rem;
     width: 100%;
     height: 100%;
     background-image: url(../img/фон_блок_3.png);
@@ -416,21 +416,16 @@ input::placeholder{
 }
 
 .main__content-3_block {
-    max-width: 690px;
+    max-width: 69rem;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    gap: 30px;
+    gap: 3rem;
 }
 
-/* .main__content-3_block-1,
-.main__content-3_block-2 {
-    border: 1px solid red;
-} */
-
 .main__content-3_header {
-    padding-top: 120px;
-    font-size: 35px;
+    padding-top: 12rem;
+    font-size: 3.5rem;
     line-height: 140%;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -441,14 +436,14 @@ input::placeholder{
 }
 
 /* .main__content-3_select {
-    padding: 1.375em 30px;
-    width: 690px;
-    height: 70px;
-    margin-top: 30px;
+    padding: 1.375em 3rem;
+    width: 69rem;
+    height: 7rem;
+    margin-top: 3rem;
     background: #FFFFFF;
-    border: 1px solid #D6DFE8;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.16);
-    border-radius: 35px;
+    border: 0.1rem solid #D6DFE8;
+    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.16);
+    border-radius: 3.5rem;
     appearance: none;
     background: url("../img/Стрелка.svg") 96% / 15% no-repeat #eee;
     background-size: 10% 10%;
@@ -457,14 +452,13 @@ input::placeholder{
 
 select option{
     background: #FFFFFF;
-    border: 1px solid #D6DFE8;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.16);
-    border-radius: 35px;
+    border: 0.1rem solid #D6DFE8;
+    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.16);
+    border-radius: 3.5rem;
 }
 
 select option[value="1"]:after{
     background-image: '../img/Switzerland.svg';
-    border: 1px solid red;
 } */
 
 
@@ -484,14 +478,14 @@ Select c dropdown на JS
 	width: 100%;
 	text-align: left;
     z-index: 2;
-    padding: 1.375em 30px;
-    width: 690px;
-    height: 70px;
-    margin-top: 30px;
+    padding: 1.375em 3rem;
+    width: 69rem;
+    height: 7rem;
+    margin-top: 3rem;
     background: #FFFFFF;
-    border: 1px solid #D6DFE8;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.16);
-    border-radius: 35px;
+    border: 0.1rem solid #D6DFE8;
+    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.16);
+    border-radius: 3.5rem;
     appearance: none;
     background: url("../img/Стрелка.svg") 96% / 15% no-repeat #eee;
     background-size: 10% 10%;
@@ -500,33 +494,33 @@ Select c dropdown на JS
 
 /* .dropdown__button::after {
     content:url(../img/Switzerland.svg);
-    margin-left: 10px;
+    margin-left: 1rem;
     vertical-align: middle;
 } */
 
 .dropdown__button:focus, .dropdown__button--active {
 	outline: none;
-	box-shadow: 0px 0px 0px 2px rgb(245, 69, 69);
+	box-shadow: 0rem 0rem 0rem 0.2rem rgb(245, 69, 69);
 }
 
 
 
 .dropdown__list {
 	display: none;
-    width: 690px;
+    width: 69rem;
 	position: absolute;
 	left: 0;
-	top: 50px;
+	top: 5rem;
 
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 
 	background: #FFFFFF;
-	box-shadow: 0px 4px 8px rgba(176, 198, 225, 0.6);
+	box-shadow: 0rem 0.4rem 0.8rem rgba(176, 198, 225, 0.6);
 	overflow: hidden;
     color: #8FA7C1;
-	border-radius: 5px 5px 35px 35px;
+	border-radius: 0.5rem 0.5rem 3.5rem 3.5rem;
 	width: 100%;
 
 	z-index: 1;
@@ -534,38 +528,38 @@ Select c dropdown на JS
 
 .dropdown__list--visible {
 	display: block;
-    width: 690px;
+    width: 69rem;
 }
 
 .dropdown__list-item {
-    width: 690px;
-    height: 65px;
+    width: 69rem;
+    height: 6.5rem;
 	margin: 0;
 	padding: 0;
-	padding: 40px 20px;
+	padding: 4rem 2rem;
 	cursor: pointer;
 }
 
 .dropdown__list-item:first-child {
-	border-radius: 6px 6px 0 0;
+	border-radius: 0.6rem 0.6rem 0 0;
 }
 
 .dropdown__list-item-1::after,
 .dropdown__list-item-4::after {
     content:url(../img/Switzerland.svg);
-    margin-left: 10px;
+    margin-left: 1rem;
     vertical-align: middle;
 }
 
 .dropdown__list-item-2::after {
     content:url(../img/Israel.svg);
-    margin-left: 10px;
+    margin-left: 1rem;
     vertical-align: middle;
 }
 
 .dropdown__list-item-3::after {
     content:url(../img/SouthKorea.svg);
-    margin-left: 10px;
+    margin-left: 1rem;
     vertical-align: middle;
 }
 
@@ -588,55 +582,55 @@ Select c dropdown на JS
 
 .main__content-3_var-1{
     position: relative;
-    width: 330px;
-    height: 210px;
+    width: 33rem;
+    height: 21rem;
     background: #FFFFFF;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.16);
-    border-radius: 20px;
-    margin-top: 58px;
+    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.16);
+    border-radius: 2rem;
+    margin-top: 5.8rem;
 }
 
 .main__content-3_var-1_up{
     position: absolute;
-    left:30%;
-    top: -20px;
+    left: 30%;
+    top: -2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.375em 30px;
-    width: 140px;
-    height: 44px;
+    padding: 1.375em 3rem;
+    width: 14rem;
+    height: 4.4rem;
     background: #6A5AF3;
-    border-radius: 35px;
+    border-radius: 3.5rem;
     font-family: 'Muller';
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 130%;
     color: #FFFFFF;
     margin: 0 auto;
 }
 
 .main__content-3_var-1_desc{
-    padding-top: 56px;
+    padding-top: 5.6rem;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 140%;
     text-align: center;
 }
 
 .main__content-3_var-1_cost{
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3.5rem;
     line-height: 140%;
     text-align: center;
     color: #6A5AF3;
-    padding-top: 32px;
+    padding-top: 3.2rem;
 }
 
 .main__content-3_var-1_nocost{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 140%;
     text-align: center;
     text-decoration-line: line-through;
@@ -644,7 +638,7 @@ Select c dropdown на JS
 }
 
 .main__content-3_block {
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .main__content-3_block_checkbox input{
@@ -656,7 +650,7 @@ Select c dropdown на JS
 
 .main__content-3_block_checkbox label{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 140%;
     color: #FFFFFF;
     cursor: pointer;
@@ -666,19 +660,19 @@ Select c dropdown на JS
 }
 
 .main__content-3_block_checkbox {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .main__content-3_block_checkbox input + label:before{
     content: '';
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.6rem;
+    height: 1.6rem;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 1px solid #adb5bd;
-    border-radius: 1em;
-    margin-right: 0.5em;
+    border: 0.1rem solid #adb5bd;
+    border-radius: 1.6rem;
+    margin-right: 0.8rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
@@ -696,23 +690,23 @@ Select c dropdown на JS
 
 .main__content-3_button::before {
     content: url(../img/procent.svg);
-    margin-right: 11px;
+    margin-right: 1.1rem;
 }
 
 .main__content-3_button {
-    margin-top: 40px;
-    padding: 19px 58px;
-    width: 690px;
-    height: 70px;
+    margin-top: 4rem;
+    padding: 1.9rem 5.8rem;
+    width: 69rem;
+    height: 7rem;
     background-image: linear-gradient(270deg, #4E39FF 6.01%, #6A5AF3 95.36%);
     background-repeat: no-repeat;
     background-position: 60% 50%;
-    border-radius: 35px;
+    border-radius: 3.5rem;
     border: none;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
     color: #FFFFFF;
-    margin-bottom: 120px;
+    margin-bottom: 12rem;
     cursor: pointer;
 /* ----------------------------------------------- */
     position: relative;
@@ -725,7 +719,7 @@ Select c dropdown на JS
     position: absolute;
     top: 0;
     height: 100%;
-    width: 45px;
+    width: 4.5rem;
     transform: skewX(-45deg);
     animation: flareAnimation;
     left: -150%;
@@ -748,21 +742,21 @@ Select c dropdown на JS
 /* Блок 4 */
 
 .main__content-4_header{
-    margin-top: 120px;
+    margin-top: 12rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 70px;
-    margin-bottom: 80px;
+    gap: 7rem;
+    margin-bottom: 8rem;
 }
 
 
 .main__content-4_header_left p{
 /* Улыбка, как в молодости ВСЕГО ЗА 1 ДЕНЬ */
-    width: 570px;
-    height: 98px;
+    width: 57rem;
+    height: 9.8rem;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3.5rem;
     line-height: 140%;
     text-transform: uppercase;
     color: #409AF8;
@@ -775,8 +769,8 @@ Select c dropdown на JS
 
 .main__content-4_header_left-ul {
     /* Список UL */
-    margin-top: 30px;
-    font-size: 18px;
+    margin-top: 3rem;
+    font-size: 1.8rem;
     line-height: 140%;
     list-style-type: none;
 
@@ -784,7 +778,7 @@ Select c dropdown на JS
 
 .main__content-4_header_left-list {
     /* Список LI */
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
 }
@@ -792,10 +786,10 @@ Select c dropdown на JS
 .main__content-4_header_left-list::before {
     content: '';
     background-image: url('../img/галка.png');
-    width: 28px;
-    height: 28px;
+    width: 2.8rem;
+    height: 2.8rem;
 
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 /* Правый блок */
 .main__content-4_header_right {
@@ -805,29 +799,29 @@ Select c dropdown на JS
 }
 
 .main__content-4_header_right-text  {
-    width: 570px;
-    margin-top: 50px;
-    border-radius: 20px;
+    width: 57rem;
+    margin-top: 5rem;
+    border-radius: 2rem;
     background: linear-gradient(167deg, #FFF 8.12%, rgba(255, 255, 255, 0.00) 93.58%);
-    box-shadow: 10px 10px 50px 0px rgba(47, 138, 244, 0.20);
-    padding: 25px;
+    box-shadow: 1rem 1rem 5rem 0rem rgba(47, 138, 244, 0.20);
+    padding: 2.5rem;
 }
 
 .main__content-4_header_right-text p {
     /* Цифровая стоматология - это: */
-    width: 295px;
-    height: 25px;
+    width: 29.5rem;
+    height: 2.5rem;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 140%;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .main__content-4_header_right-ul{
     list-style: circle;
-    width: 330px;
-    padding-left: 22px;
-    font-size: 16px;
+    width: 33rem;
+    padding-left: 2.2rem;
+    font-size: 1.6rem;
     line-height: 140%;
 }
 
@@ -835,8 +829,8 @@ Select c dropdown на JS
 
 .main__content-4_header_right-video {
     position: relative;
-    margin-left: -140px;
-    margin-top: 50px;
+    margin-left: -14rem;
+    margin-top: 5rem;
 }
 
 .main__content-4_header_right-video-icons {
@@ -852,19 +846,19 @@ Select c dropdown на JS
 }
 
 .main__content-4_header_right-video-wrapper {
-    width: 250px;
-    height: 250px;
-    border-radius: 125px;
-    border: 3px solid #409AF8;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 12.5rem;
+    border: 0.3rem solid #409AF8;
     display: flex;
     align-items:center;
     justify-content: center;
 }
 
 .main__content-4_header_right-video-img{
-    width: 230px;
-    height: 230px;
-    border-radius: 125px;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 12.5rem;
     background-image: url(../img/Постер_к_Видео-2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -874,7 +868,7 @@ Select c dropdown на JS
 .main__content-4_main {
     display: flex;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 7rem;
 }
 
 .main__content-4_main-block-video {
@@ -883,8 +877,8 @@ Select c dropdown на JS
 
 .main__content-4_main-block-video-icons {
     position: absolute;
-    left: 30px;
-    bottom: 30px;
+    left: 3rem;
+    bottom: 3rem;
     cursor: pointer;
     transition: 0.5s;   
 }
@@ -898,51 +892,51 @@ Select c dropdown на JS
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 480px;
-    height: 270px;
+    width: 48rem;
+    height: 27rem;
     flex-shrink: 0;
-    border-radius: 20px;
+    border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
-    padding: 30px 21px;
+    box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
+    padding: 3rem 2.1rem;
 }
 
 
 .main__content-4_main-block-desc-1 img{
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .main__content-4_main-block-desc-1 div{
-    width: 290px;
-    font-size: 18px;
+    width: 29rem;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 130%;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .main__content-4_main-block-desc-1 p{
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
-    width: 386px;
+    width: 38.6rem;
 }
 
 .main__content-4_main-block-desc-img {
     z-index: 10;
-    margin-left: 40px;
+    margin-left: 4rem;
 }
 
 .main__content-4_main-button,
 .btn_feedback-22 {
     color: #FFF;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
-    width: 345px;
-    height: 70px;
-    padding: 22px 30px;
-    gap: 10px;
+    width: 34.5rem;
+    height: 7rem;
+    padding: 2.2rem 3rem;
+    gap: 1rem;
     border: none;
-    border-radius: 35px;
+    border-radius: 3.5rem;
     background: #409AF8;
     margin: 0 auto;
     cursor: pointer;
@@ -951,7 +945,7 @@ Select c dropdown на JS
 .main__content-4_main-button::before, 
 .btn_feedback-22::before {
     content:url(../img/обновить.png);
-    margin-right: 10px;
+    margin-right: 1rem;
     display: inline-block;
     vertical-align: middle;
 }
@@ -959,14 +953,14 @@ Select c dropdown на JS
 .main__content-4_main-button::after,
 .btn_feedback-22::after {
     content:url(../img/Стрелка\ вниз.png);
-    margin-left: 10px;
+    margin-left: 1rem;
     display: inline-block;
     vertical-align: middle;
 }
 
 /* Пятый блок */
 .main__content-5 {
-    margin-top: 120px;
+    margin-top: 12rem;
 }
 
 .main__content-5_up {
@@ -974,21 +968,21 @@ Select c dropdown на JS
 }
 
 .main__content-5_all-on-4_layout {
-    width: 690px;
-    height: 262px;
-    padding: 30px;
+    width: 69rem;
+    height: 26.2rem;
+    padding: 3rem;
     z-index: 2;
 }
 
 .main__content-5_all-on-4_style {
-    border-radius: 20px;
+    border-radius: 2rem;
     background: linear-gradient(165deg, #FFF 19.79%, rgba(255, 255, 255, 0.5) 93.58%);
-    box-shadow: 10px 10px 50px 0px rgba(47, 138, 244, 0.20);
+    box-shadow: 1rem 1rem 5rem 0rem rgba(47, 138, 244, 0.20);
 }
 
 .main__content-5_all-on-4_h3 {
     color: #409AF8;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 140%;
     text-transform: uppercase;    
@@ -1000,30 +994,30 @@ Select c dropdown на JS
 }
 
 .main__content-5_all-on-4_p{
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 140%;
-    width: 630px;
-    min-height: 125px;
-    margin-top: 20px;
+    width: 63rem;
+    min-height: 12.5rem;
+    margin-top: 2rem;
 }
 
 .main__content-5_advantages_layout {
-    width: 750px;
-    height: 262px;
-    padding-top: 30px;
-    padding-left: 60px;
-    margin-left: -30px;
-    margin-top: 30px;
+    width: 75rem;
+    height: 26.2rem;
+    padding-top: 3rem;
+    padding-left: 6rem;
+    margin-left: -3rem;
+    margin-top: 3rem;
 }
 
 .main__content-5_advantages_style {
-    border-radius: 20px;
+    border-radius: 2rem;
     background: #6A5AF3;
 }
 
 .main__content-5_advantages_h3 {
     color: #FFF;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 140%;
     text-transform: uppercase;
@@ -1031,17 +1025,18 @@ Select c dropdown на JS
 
 .main__content-5_advantages_ul {
     list-style: none;   
-    margin-top: 30px; 
-    height: 120px;
+    margin-top: 3rem; 
+    height: 11rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .main__content-5_advantages_list {
     color: #FFF;
-    font-size: 18px;
-    width:380px;
+    font-size: 1.8rem;
+    line-height: 120%;
+    width: 38rem;
     display:flex;
     align-items:center;
 }
@@ -1050,20 +1045,20 @@ Select c dropdown на JS
     content: url(../img/галка.png);
     display: inline-block;
     vertical-align:top;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 /* Пятый блок нижняя часть */
 .main__content-5_down_layout {
-    width: 1350px;
-    height: 470px;
+    width: 135rem;
+    height: 47rem;
     display: flex;
-    padding: 30px;
-    margin-top: -100px;
-    margin-left: 30px;
+    padding: 3rem;
+    margin-top: -10rem;
+    margin-left: 3rem;
 }
 
 .main__content-5_down_style {
-    border-radius: 20px;
+    border-radius: 2rem;
     background: #E1EAFA;
 }
 
@@ -1075,9 +1070,9 @@ Select c dropdown на JS
 
 }
 .main__content-5_video_main p {
-    width: 305px;
-    margin-bottom: 90px;
-    font-size: 18px;
+    width: 30.5rem;
+    margin-bottom: 9rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 140%;
 }
@@ -1087,15 +1082,15 @@ Select c dropdown на JS
 }
 
 .main__content-5_video_main-wrap-1 {
-    width: 410px;
-    height: 410px;
-    border-radius: 410px;
-    border: 3px solid rgba(106, 90, 243, 0.50);
+    width: 41rem;
+    height: 41rem;
+    border-radius: 41rem;
+    border: 0.3rem solid rgba(106, 90, 243, 0.50);
     display: flex;
     align-items:center;
     justify-content: center;
-    margin-left: 45px;
-    margin-top: 60px;
+    margin-left: 4.5rem;
+    margin-top: 6rem;
 }
 
 .main__content-5_video_main-icons {
@@ -1108,19 +1103,19 @@ Select c dropdown на JS
 
 .main__content-5_video_main-wrap-2 {
     position: relative;
-    width: 250px;
-    height: 250px;
-    border-radius: 125px;
-    border: 3px solid #409AF8;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 12.5rem;
+    border: 0.3rem solid #409AF8;
     display: flex;
     align-items:center;
     justify-content: center;
 }
 
 .main__content-5_video_main-img{
-    width: 230px;
-    height: 230px;
-    border-radius: 125px;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 12.5rem;
     background-image: url(../img/Постер\ к\ видео.png);
     background-repeat: no-repeat;
     background-size:cover;
@@ -1129,13 +1124,13 @@ Select c dropdown на JS
 /* Описание в пятом блоке */
 
 .main__content-5_desc h3{
-    margin-top: 120px;
-    height: 84px;
+    margin-top: 12rem;
+    height: 8.4rem;
     font-weight: 700;
     text-align: right;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 140%;
-    margin-left: -100px;
+    margin-left: -10rem;
 
 }
 
@@ -1144,9 +1139,9 @@ Select c dropdown на JS
 }
 
 .main__content-5_desc p{
-    margin-top: 20px;
+    margin-top: 2rem;
     text-align: right;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 140%;
 }
@@ -1154,23 +1149,23 @@ Select c dropdown на JS
 .main__content-5_desc-button{
     margin-left: auto;
     margin-right: 0;
-    margin-top: 60px;
+    margin-top: 6rem;
 }
 
 /* Шестой блок */
 /* Цена лечения зависит от ситуации: чем проще — тем дешевле! */
 .main__content-6 {
-    margin-top: 140px;
-    padding-bottom: 120px;
+    margin-top: 14rem;
+    padding-bottom: 12rem;
 }
 
 .main__content-6_h2{
-    width: 810px;
-    font-size: 35px;
+    width: 81rem;
+    font-size: 3.5rem;
     line-height: 140%;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .main__content-6_h2 span{
@@ -1183,21 +1178,21 @@ Select c dropdown на JS
 }
 
 .main__content-6_tab-block {
-    margin-top: 32px;
+    margin-top: 3.2rem;
 }
 
 .main__content-6_tab {
-    width: 270px;
-    height: 60px;
-    border-radius: 10px;
+    width: 27rem;
+    height: 6rem;
+    border-radius: 1rem;
     background: #FFF;
-    box-shadow: 10px 10px 20px 0px rgba(47, 138, 244, 0.20);
+    box-shadow: 1rem 1rem 2rem 0rem rgba(47, 138, 244, 0.20);
     color: #8FA7C1;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 140%;
-    padding: 20px;
-    margin-bottom: 12px;
+    padding: 2rem;
+    margin-bottom: 1.2rem;
     position: relative;
     z-index: 2;
     cursor: pointer;
@@ -1212,14 +1207,14 @@ Select c dropdown на JS
 .main__content-6_main_tab-1,
 .main__content-6_main_tab-2,
 .main__content-6_main_tab-3 {
-    width: 1200px;
-    height: 660px;
-    border-radius: 20px;
+    width: 120rem;
+    height: 66rem;
+    border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
-    padding-left: 90px;
-    padding-top: 40px;
-    margin-left: -60px;
+    box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
+    padding-left: 9rem;
+    padding-top: 4rem;
+    margin-left: -6rem;
     display: flex;
 }
 
@@ -1231,11 +1226,11 @@ Select c dropdown на JS
 .main__content-6_main_tab-1 h3,
 .main__content-6_main_tab-2 h3,
 .main__content-6_main_tab-3 h3{
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 140%;
     text-transform: uppercase;
-    width: 499px;
+    width: 49.9rem;
 }
 
 .main__content-6_main_tab-1 h3 span,
@@ -1247,24 +1242,24 @@ Select c dropdown на JS
 .main__content-6_main_ul {
     list-style-type: none;
     display: flex;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .main__content-6_main_li {
-    width: 225px;
-    font-size: 18px;
+    width: 22.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
     display: flex;
     align-items:center;
 }
 .main__content-6_main_li:first-child {
-    margin-right: 90px;
+    margin-right: 9rem;
 }
 
 .main__content-6_main_li:before {
     content: url(../img/галка.png);
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .main__content-6_main_block-span {
@@ -1273,29 +1268,29 @@ Select c dropdown на JS
 }
 
 .main__content-6_main_span {
-    width: 286px;
-    font-size: 16px;
+    width: 28.6rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 140%;
-    margin-right: 25px;
-    margin-top: 15px;
+    margin-right: 2.5rem;
+    margin-top: 1.5rem;
 }
 
 .main__content-6_main_advantage-header{
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .main__content-6_main_advantage {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 140%;
-    margin-bottom: 11px;
+    margin-bottom: 1.1rem;
 }
 
 .main__content-6_main_advantage-1,
 .main__content-6_main_advantage-1_tab-2,
 .main__content-6_main_advantage-1_tab-3 {
-    margin-top: 22px;
+    margin-top: 2.2rem;
 }
 
 .main__content-6_main_advantage-1, 
@@ -1307,14 +1302,14 @@ Select c dropdown на JS
 .main__content-6_main_advantage-1_tab-3,
 .main__content-6_main_advantage-2_tab-3, 
 .main__content-6_main_advantage-3_tab-3 {
-    margin-bottom: 11px;
+    margin-bottom: 1.1rem;
     
 
 }
 .main__content-6_main_advantage-1_tab-2, 
 .main__content-6_main_advantage-2_tab-2, 
 .main__content-6_main_advantage-3_tab-2 {
-    width: 450px;
+    width: 45rem;
     white-space: pre;
 }
 
@@ -1338,7 +1333,7 @@ Select c dropdown на JS
 .main__content-6_main_advantage-3_tab-3:before {
     content: url(../img/галка.png);
     vertical-align: middle; 
-    margin-right: 10px;
+    margin-right: 1rem;
 
 }
 
@@ -1347,46 +1342,46 @@ Select c dropdown на JS
 }
 
 .main__content-6_main_cost-left {
-    width: 240px;
-    height: 145px;
+    width: 24rem;
+    height: 14.5rem;
     flex-shrink: 0;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     background: linear-gradient(270deg, #E1EAFA 10.12%, #F1F5FC 100%);
-    padding-left: 20px;
-    padding-top: 23px;
+    padding-left: 2rem;
+    padding-top: 2.3rem;
 }
 
 .main__content-6_main_cost-left h4{
-    width: 114px;
+    width: 11.4rem;
     color: #8FA7C1;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 140%;
 }
 
 .main__content-6_main_cost-left p{
     color: #8FA7C1;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 140%;
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .main__content-6_main_cost-right {
-    width: 330px;
-    height: 145px;
+    width: 33rem;
+    height: 14.5rem;
     flex-shrink: 0;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     background: #409AF8;
-    padding-left: 20px;
-    padding-top: 23px;
+    padding-left: 2rem;
+    padding-top: 2.3rem;
 }
 
 .main__content-6_main_cost-right h4{
     color: #FFF;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 700;
     line-height: 140%;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .main__content-6_main_cost-right_block {
@@ -1399,25 +1394,25 @@ Select c dropdown на JS
 
 .main__content-6_main_cost-right-1,
 .main__content-6_main_cost-right-3 {
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 140%;
 }
 
 .main__content-6_main_cost-right-2,
 .main__content-6_main_cost-right-4 {
-    margin-top: 20px;
+    margin-top: 2rem;
 
 }
 
 .main__content-6_main_cost-right-2 {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 140%;
     text-decoration-line:line-through;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .main__content-6_main_cost-right-4 {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -1426,7 +1421,7 @@ Select c dropdown на JS
 }
 
 .main__content-6_main_cost-right_regular-price {
-    margin-right: 30px;
+    margin-right: 3rem;
 }
 
 
@@ -1436,29 +1431,28 @@ Select c dropdown на JS
 }
 
 .main__content-6_button_sign_up {
-    margin-top: 190px;
+    margin-top: 19rem;
 }
 
 .main__content-6_button_sign_up_tab-2 {
-    margin-top: 190px;
-    margin-right: 30px;
+    margin-top: 19rem;
+    margin-right: 3rem;
 }
 
 .main__content-6_button_sign_up_tab-3 {
-    margin-top: 190px;
-    margin-right: 20px;
-    border: 1px solid red;
+    margin-top: 19rem;
+    margin-right: 2rem;
 }
 
 .main__content-6_main_right_img-video {
-    margin-left: 30px;
+    margin-left: 3rem;
 }
 
 
 .main__content-6_main_right_icons-video {
     position: absolute;
-    right: 80px;
-    top: 240px;
+    right: 8rem;
+    top: 24rem;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -1472,19 +1466,19 @@ Select c dropdown на JS
 .main__content-6_button_sign_up_tab-3 {
     color: #FFF;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 130%;
-    width: 400px;
-    height: 70px;
-    padding: 22px 30px;
-    border-radius: 35px;
+    width: 40rem;
+    height: 7rem;
+    padding: 2.2rem 3rem;
+    border-radius: 3.5rem;
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-left: 20px;
+    gap: 1rem;
+    margin-left: 2rem;
     background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
     /* ------------------------ */
     position: relative;
@@ -1498,7 +1492,7 @@ Select c dropdown на JS
 }
 
 .main__content-6_main_li_tab-2 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
     display: flex;
@@ -1507,19 +1501,23 @@ Select c dropdown на JS
 
 .main__content-6_main_li_tab-2:before {
     content: url(../img/галка.png);
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .main__content-6_main_advantage-3_tab-2 {
-    margin-bottom: 46px;
+    margin-bottom: 4.6rem;
+}
+
+.main__content-6_main_advantage-block p{
+    font-size: 1.6rem;
 }
 
 .main__content-6_main_advantage-block-2 {
-    margin-bottom: 80px;
+    margin-bottom: 8rem;
 }
 
 .main__content-6_main_advantage-block-3 {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 /* Седбмой блок */
@@ -1527,13 +1525,13 @@ Select c dropdown на JS
 МЕЖДУНАРОДНЫМ СТАНДАРТАМ КАЧЕСТВА */
 .main__content-7 {
     background-color: #FFF;
-    padding-top: 120px;
+    padding-top: 12rem;
 
 }
 
 .main__content-7-block-h2 {
-    margin-bottom: 40px;
-    font-size: 36px;
+    margin-bottom: 4rem;
+    font-size: 3.6rem;
     line-height: 130%;
 }
 
@@ -1544,53 +1542,53 @@ Select c dropdown на JS
 
 .main__content-7-block-flex {
     display: flex;
-    gap: 50px 30px;
+    gap: 5rem 3rem;
     flex-wrap: wrap;
-    max-height: 760px;
+    max-height: 76rem;
 }
 
 .main__content-7-block-flex-1, 
 .main__content-7-block-flex-2, 
 .main__content-7-block-flex-3, 
 .main__content-7-block-flex-4 {
-    border-radius: 20px;
+    border-radius: 2rem;
     background: #F1F5FC;
-    max-width: 690px;
-    height: 300px;
+    max-width: 69rem;
+    height: 30rem;
 }
 
 .main__content-7-block-flex-1 {
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
-    gap: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 2rem;
 }
 
 .main__content-7-block-flex-1_img {
 position: relative;
 }
 .main__content-7-block-flex-1_img img:first-child{
-    margin-top: -10px;
+    margin-top: -1rem;
 }
 
 .main__content-7-block-flex-1_content p:first-child,
 .main__content-7-block-flex-2_content p:first-child,
 .main__content-7-block-flex-3_content p:first-child,  
 .main__content-7-block-flex-4_content p:first-child  {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 140%;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .main__content-7-block-flex-2_content p:first-child span,
 .main__content-7-block-flex-3_content p:first-child span,
 .main__content-7-block-flex-4_content p:first-child span {
     font-weight: 500;
-    margin-top: 30px;
-    max-width: 432px;
-    height: 105px;
+    margin-top: 3rem;
+    max-width: 43.2rem;
+    height: 10.5rem;
 }
 
 .main__content-7-block-flex-1_content p:first-child span{
@@ -1598,22 +1596,22 @@ position: relative;
 }
 
 .main__content-7-block-flex-1_content ul {
-    margin-top: 20px;
+    margin-top: 2rem;
     list-style-type: circle;
-    padding-left: 20px;
-    max-width: 369px;
+    padding-left: 2rem;
+    max-width: 36.9rem;
 }
 
 .main__content-7-block-flex-1_content ul li {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 /* Кнопка запуска видео */
 
 .main__content-7-block-flex-1_img-videoplay{
     position: absolute;
-    left: -10px;
-    top: 135px;
+    left: -1rem;
+    top: 13.5rem;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -1625,10 +1623,10 @@ position: relative;
 .main__content-7-block-flex-2_content p:last-child, 
 .main__content-7-block-flex-3_content p:last-child,
 .main__content-7-block-flex-4_content p:last-child  {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 140%;
-    margin-top: 15px;
+    margin-top: 1.5rem;
 }
 
 .main__content-7-block-flex-2_content p:last-child span,
@@ -1640,14 +1638,14 @@ position: relative;
 
 /* Восьмой блок РЕЗУЛЬТАТЫ ДО/ПОСЛЕ */
 .main__content-8 {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
     position: relative;
 }
 
 .main__content-8 h2{
     color: #409AF8;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 130%;
     text-transform: uppercase;
@@ -1662,10 +1660,10 @@ position: relative;
 /* - СЛАЙДЕР - */
 .main__content-8_swiper-list {
     position: relative;
-    height: 650px;
+    height: 65rem;
     list-style-type: none;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 .main__content-8_swiper-item{
     position:absolute;
@@ -1681,8 +1679,8 @@ position: relative;
     position:absolute;
     top:50%;
     left:50%;
-    width: 930px;
-    height: 560px;
+    width: 93rem;
+    height: 56rem;
     transform:translate(-50%,-50%)
 }
 
@@ -1696,8 +1694,8 @@ position: relative;
     cursor:pointer;
     top:50%;
     z-index:5;
-    width:40px;
-    height:40px
+    width:4rem;
+    height:4rem
 }
 
 .main__content-8_swiper-btn.prev{
@@ -1711,11 +1709,11 @@ position: relative;
 }
 
 .left-8 {
-    left:180px;
+    left: 18rem;
 }
 
 .right-8 {
-    right:180px;    
+    right: 18rem;    
 }
 
 .main__content-8_swiper-dots{
@@ -1729,9 +1727,9 @@ position: relative;
 
 .main__content-8_swiper-dots .dot{
     cursor:pointer;
-    height:16px;
-    width:16px;
-    margin:0 10px;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin:0 1rem;
     border-radius:50%;
     border:solid #CED9E5;
     display:inline-block;
@@ -1747,27 +1745,27 @@ position: relative;
 }
 
 .main__content-8_swiper_span {
-    border-radius: 25px;
+    border-radius: 2.5rem;
     background: #6A5AF3;
     color: #FFF;
     text-align: center;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 140%;
     z-index: 10;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
 }
 
 .main__content-8_swiper_span.left {
     position: absolute;
-    left: 230px;
-    top: 65px
+    left: 23rem;
+    top: 6.5rem
 }
 
 .main__content-8_swiper_span.right {
     position: absolute;
-    right: 230px;
-    top: 65px
+    right: 23rem;
+    top: 6.5rem
 }
 
 
@@ -1775,18 +1773,18 @@ position: relative;
 /* Девятый блок */
 
 .main__content-9 {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
     background-color: #fff;
 }
 
 .main__content-9 h2{
     color: #409AF8;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 140%;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .main__content-9 h2 span{
@@ -1796,9 +1794,9 @@ position: relative;
 
 /* Первый шаг */
 .main__content-9_step-1 {
-    padding-top: 40px;
-    padding-left: 33px;
-    border-radius: 20px;
+    padding-top: 4rem;
+    padding-left: 3.3rem;
+    border-radius: 2rem;
     background: #E1EAFA;
     display: flex;
 }
@@ -1806,7 +1804,7 @@ position: relative;
 .step-1 {
     display: flex;
     align-items: center;
-    margin-bottom: 57px;
+    margin-bottom: 5.7rem;
 }
 
 .step-1_5,
@@ -1814,96 +1812,96 @@ position: relative;
 .step-3_5,
 .step-4_5,
 .step-5_5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
     line-height: 150%;
-    margin-right: 10px;
-    width: 90px;
+    margin-right: 1rem;
+    width: 9rem;
 }
 
 .step-1_procent {
-    width: 925px;
-    height: 4px;
-    border-radius: 10px;
+    width: 92.5rem;
+    height: 0.4rem;
+    border-radius: 1rem;
     background: #FFF;
 }
 
 .step-1_procent-load {
-    width: 185px;
-    height: 4px;
-    border-radius: 10px;
+    width: 18.5rem;
+    height: 0.4rem;
+    border-radius: 1rem;
     background: #409AF8;
 }
 
 .step-2_procent-load {
-    width: 370px;
-    height: 4px;
-    border-radius: 10px;
+    width: 37rem;
+    height: 0.4rem;
+    border-radius: 1rem;
     background: #409AF8;
 }
 
 .step-3_procent-load {
-    width: 555px;
-    height: 4px;
-    border-radius: 10px;
+    width: 55.5rem;
+    height: 0.4rem;
+    border-radius: 1rem;
     background: #409AF8;
 }
 
 .step-4_procent-load {
-    width: 740px;
-    height: 4px;
-    border-radius: 10px;
+    width: 74rem;
+    height: 0.4rem;
+    border-radius: 1rem;
     background: #409AF8;
 }
 
 .step-5_procent-load {
-    width: 925px;
-    height: 4px;
-    border-radius: 10px;
+    width: 92.5rem;
+    height: 0.4rem;
+    border-radius: 1rem;
     background: #409AF8;
 }
 
 .main__content-9_step-1_left h3 {
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     font-weight: 500;
 }
 
 .step-5-p1 {
-    font-size: 22px;
+    font-size: 2.2rem;
     line-height: 130%;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 .step-5-p2 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 140%;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .step-5-p3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 140%;
 }
 
 .step-5-p4 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 140%;
 }
 
 .main__content-9_step-1_left h3 span{
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 130%;
 }
 
 .main__content-9_step-1_left-flex {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .main__content-9_step-1_left-flex-1 button, 
@@ -1913,7 +1911,7 @@ position: relative;
     display: block;
     cursor: pointer;
     margin: 0 auto;
-    margin-top: -20px;
+    margin-top: -2rem;
     border: none;
     background: transparent;
 }
@@ -1937,7 +1935,7 @@ position: relative;
 .main__content-9_step-1_left-flex-3 button:hover .img-2, 
 .main__content-9_step-1_left-flex-4 button:hover .img-2{
     display: block;  
-    border-bottom: 5px solid transparent;
+    border-bottom: 0.5rem solid transparent;
 }
 
 
@@ -1953,7 +1951,7 @@ position: relative;
 .main__content-9_step-1_left-flex-3 button:focus .img-2, 
 .main__content-9_step-1_left-flex-4 button:focus .img-2{
     display: block;  
-    border-bottom: 5px solid transparent;
+    border-bottom: 0.5rem solid transparent;
 }
 
 .main__content-9_step-1_left-flex-1 p, 
@@ -1961,32 +1959,32 @@ position: relative;
 .main__content-9_step-1_left-flex-3 p, 
 .main__content-9_step-1_left-flex-4 p{
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 120%;
 }
 
 .main__content-9_step-1_left-radio {
-    margin-top: 39px;
+    margin-top: 3.9rem;
 }
 
 .main__content-9_step-2_left-radio {
-    margin-top: 280px;
+    margin-top: 28rem;
 }
 
 .main__content-9_step-3_left-radio {
-    margin-top: 185px;
+    margin-top: 18.5rem;
 }
 
 .main__content-9_step-4_left-radio {
-    margin-top: 328px;
+    margin-top: 32.8rem;
 }
 
 .main__content-9_step-1_left-radio label,
 .main__content-9_step-2_left-radio label,
 .main__content-9_step-3_left-radio label,
 .main__content-9_step-4_left-radio label{
-    margin-left: 10px;
+    margin-left: 1rem;
     cursor: pointer;
 }
 
@@ -1999,14 +1997,14 @@ input[type=radio] {
 .main__content-9_step-2_left-radio .input_2-4,
 .main__content-9_step-1_left-radio .label_1-1,
 .main__content-9_step-2_left-radio .label_2-1{
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
 }
 
 .main__content-9_step-1_left-radio p,
 .main__content-9_step-2_left-radio p,
 .main__content-9_step-3_left-radio p,
 .main__content-9_step-4_left-radio p{
-   width: 450px;
+   width: 45rem;
    display:flex;
    align-items:center;
 } 
@@ -2014,7 +2012,7 @@ input[type=radio] {
 .main__content-9_step-1_left-radio p .label_1-1,
 .main__content-9_step-1_left-radio p .label_2-1{
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 120%;
 } 
@@ -2024,50 +2022,50 @@ input[type=radio] {
 .main__content-9_step-3_left-radio p .label_3-7,
 .main__content-9_step-4_left-radio p .label_4-4{
     color: #8FA7C1;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 130%;
 }
 
 .main__content-9_step-1_right {
     text-align: center;
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 .main__content-9_step-1_right img:first-child {
-    margin-top: -25px;
+    margin-top: -2.5rem;
 }
 
 .main__content-9_step-1_right .doctor {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 130%;
 }
 
 .main__content-9_step-1_right .doctor span {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
 .main__content-9_step-1_right .desc {
-    margin-top: 15px;
-    margin-right: 20px;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 130%;
 }
 
 .main__content-9_step-1_right .end-test {
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .main__content-9_step-1_right .cost_calculation{
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 130%;
 }
@@ -2078,7 +2076,7 @@ input[type=radio] {
 
 .main__content-9_step-1_right .gift {
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 130%;
 }
@@ -2087,27 +2085,27 @@ input[type=radio] {
 }
 
 .cost_calculation-img {
-    margin-top: 20px;
-    margin-bottom: -5px;
+    margin-top: 2rem;
+    margin-bottom: -0.5rem;
 }
 
 .main__content-9_step-1_left .input_radio {
-    margin-top: 30px;
+    margin-top: 3rem;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
     flex-wrap: wrap ;
 }
 
 .main__content-9_step-1_left .input_radio-3 {
-    margin-top: 30px;
+    margin-top: 3rem;
     display: grid;
-    grid-template-columns: 310px 310px;
-    gap: 20px 30px;
+    grid-template-columns: 31rem 31rem;
+    gap: 2rem 3rem;
 }
 
 .main__content-9_step-1_left .input_radio input,
 .main__content-9_step-1_left .input_radio-3 input{
-    margin-right: 10px;
+    margin-right: 1rem;
     cursor: pointer;
 }
 
@@ -2129,24 +2127,24 @@ input[type=radio] {
 .main__content-9_step-1_left .input_radio_4-2,
 .main__content-9_step-1_left .input_radio_4-3,
 .main__content-9_step-1_left .input_radio_4-4 {
-    border-radius: 30px;
+    border-radius: 3rem;
     background: #FFF;
     display: flex;
-    width: 320px;
-    padding: 14px 20px 14px 20px;
+    width: 32rem;
+    padding: 1.4rem 2rem 1.4rem 2rem;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 
 .main__content-9_step-2_left-radio .step_back,
 .main__content-9_step-3_left-radio .step_back,
 .main__content-9_step-4_left-radio .step_back{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 120%;
-    margin-top: 18px;
+    margin-top: 1.8rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -2154,29 +2152,29 @@ input[type=radio] {
 
 .step_back:before{
     content: url(../img/шаг_назад.png);
-    margin-right: 10px;
-    margin-left: -10px;
+    margin-right: 1rem;
+    margin-left: -1rem;
     cursor: pointer;
 }
 
 .main__content-9_step-1_left .variant {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 /* Пятый шаг инпуты */
 .block_input-5 {
-    margin-top: 30px;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .block_input-5_name,
 .block_input-5_tel {
-    width: 300px;
-    height: 50px;
+    width: 30rem;
+    height: 5rem;
     flex-shrink: 0;
-    border-radius: 30px;
+    border-radius: 3rem;
     background: #FFF;
     border: none;
     text-align: center;
@@ -2187,7 +2185,7 @@ input[type=radio] {
 .block_input-5_tel::placeholder {
     color: #8FA7C1;
     text-align: center;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 100%;
 }
@@ -2198,13 +2196,13 @@ input[type=radio] {
 }
 
 .block_input-5_messenger {
-    width: 300px;
-    height: 50px;
-    border-radius: 30px;
+    width: 30rem;
+    height: 5rem;
+    border-radius: 3rem;
     background: #25D266;
     border: none;
     cursor:pointer;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 100%;
     display: flex;
@@ -2215,30 +2213,30 @@ input[type=radio] {
 
 .block_input-5_messenger:before{
     content: url(../img/белая_стрелка_вниз.png);
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .block_input-5_messenger:after{
     content: url(../img/whatsapp.svg);
-    margin-left: 130px;
-    margin-right: 7px;
+    margin-left: 13rem;
+    margin-right: 0.7rem;
 }
 
 .block_input-5_record {
     display: flex;
-    width: 300px;
-    height: 50px;
-    padding: 22px 30px;
+    width: 30rem;
+    height: 5rem;
+    padding: 2.2rem 3rem;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     flex-shrink: 0;
-    border-radius: 35px;
+    border-radius: 3.5rem;
     background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
     color: #FFF;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 100%;
     border: none;
     cursor:pointer;
@@ -2250,19 +2248,19 @@ input[type=radio] {
 }
 
 .main__content-9-block_right-img {
-    margin-left: 110px;
-    margin-bottom: -10px;
+    margin-left: 11rem;
+    margin-bottom: -1rem;
 }
 
 /* Десятый блок */
 /* 24 ВАРИАНТА ВОССТАНОВЛЕНИЯ ЗУБОВ ПОД КЛЮЧ */
 
 .main__content-10 {
-    padding-top: 120px;
+    padding-top: 12rem;
 }
 
 .main__content-10 h2{
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 500;
     line-height: 130%;
 }
@@ -2273,25 +2271,25 @@ input[type=radio] {
 }
 
 .main__content-10 .paragraph{
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 2rem;
+    font-size: 2rem;
     line-height: 120%;
 }
 
 .main__content-10_button {
-    margin-top: 40px;
+    margin-top: 4rem;
     display: flex;
-    gap: 30px;
+    gap: 3rem;
 }
 
 .main__content-10_button button{
     color: #8FA7C1;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 100%;
-    padding: 17px 45px;
-    border-radius: 30px;
-    border: 1px solid #D6DFE8;
+    padding: 1.7rem 4.5rem;
+    border-radius: 3rem;
+    border: 0.1rem solid #D6DFE8;
     background: #FFF;
     cursor: pointer;
 }
@@ -2313,10 +2311,10 @@ input[type=radio] {
 .main__content-10_flex_single-stage,
 .main__content-10_flex_two-stage {
     display: flex;
-    gap: 30px;
+    gap: 3rem;
     align-items:flex-start;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 4rem;
     flex-wrap: wrap;
 }
 
@@ -2327,10 +2325,10 @@ input[type=radio] {
 .main__content-10_flex_two-stage .flex-5,
 .main__content-10_flex_two-stage .flex-6 {
     position: relative;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 2rem;
+    border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
 }
 
 .flex-1 .title,
@@ -2339,7 +2337,7 @@ input[type=radio] {
 .flex-4 .title,
 .flex-5 .title,
 .flex-6 .title {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
 }
@@ -2350,7 +2348,7 @@ input[type=radio] {
 .flex-4 .country,
 .flex-5 .country,
 .flex-6 .country {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 140%;
 }
@@ -2361,9 +2359,9 @@ input[type=radio] {
 .flex-4 .h3,
 .flex-5 .h3,
 .flex-6 .h3 {
-    margin-top: 20px;
+    margin-top: 2rem;
     color: #272727;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 140%;
     text-transform: uppercase;
@@ -2385,24 +2383,24 @@ input[type=radio] {
 .main__content-10_flex_two-stage .flex-5 .img-top,
 .main__content-10_flex_two-stage .flex-6 .img-top {
     position: absolute;
-    right:20px;
-    top:28px;
+    right: 2rem;
+    top: 2.8rem;
 }
 
 .main__content-10_flex_single-stage .consultation_doctor,
 .main__content-10_flex_two-stage .consultation_doctor {
     background: #409AF8;
     width: 100%;
-    height: 46px;
+    height: 4.6rem;
     color: #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 120%;
-    margin-top: 20px;
-    padding: 14px 20px;
+    margin-top: 2rem;
+    padding: 1.4rem 2rem;
 }
 
 .flex-1 .osstem,
@@ -2461,7 +2459,7 @@ input[type=radio] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 1.5rem;
 }
 
 
@@ -2471,7 +2469,7 @@ input[type=radio] {
 .flex-4 .osstem .price,
 .flex-5 .osstem .price,
 .flex-6 .osstem .price{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 120%;
 }
@@ -2481,7 +2479,7 @@ input[type=radio] {
 .flex-4 .prosthesis .price,
 .flex-5 .prosthesis .price {
     color: #EC3030;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
@@ -2489,7 +2487,7 @@ input[type=radio] {
 .flex-4 .prosthesis .price {
     color: #272727;
     text-align: right;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 120%;
 }
@@ -2503,7 +2501,7 @@ input[type=radio] {
     display: block;
     color: #8FA7C1;
     text-align: right;
-    font-size: 12px;
+    font-size: 1.2rem;
     text-decoration:line-through;
 }
 
@@ -2514,15 +2512,15 @@ input[type=radio] {
 .flex-5 .warranty_implant .price,
 .flex-6 .warranty_implant .price {
     text-align: right;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 120%;
 }
 
 .flex-4 .installation .price,
 .flex-5 .installation .price,
 .flex-6 .installation .price {
-    width: 16px;
-    height: 16px;
+    width: 1.6rem;
+    height: 1.6rem;
     flex-shrink: 0;
 }
 
@@ -2571,10 +2569,10 @@ input[type=radio] {
 .flex-6 .time p:first-child,
 .flex-6 .tooth_extraction p:first-child {
     color: #8FA7C1;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 120%;
-    width: 195px;
+    width: 19.5rem;
 }
 
 .flex-1 .hr-10,
@@ -2583,9 +2581,9 @@ input[type=radio] {
 .flex-4 .hr-10,
 .flex-5 .hr-10,
 .flex-6 .hr-10 {
-    max-width: 390px;
+    max-width: 39rem;
     width: 100%;
-    border:1px solid #DCDCE0;
+    border: 0.1rem solid #DCDCE0;
 }
 
 .flex-1 .tooth_extraction,
@@ -2603,7 +2601,7 @@ input[type=radio] {
 .flex-4 .tooth_extraction .desc,
 .flex-5 .tooth_extraction .desc,
 .flex-6 .tooth_extraction .desc {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 120%;
 }
@@ -2616,7 +2614,7 @@ input[type=radio] {
 .flex-6 .tooth_extraction .price {
     color: #EC3030;
     text-align: right;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 120%;
 }
@@ -2629,7 +2627,7 @@ input[type=radio] {
 .flex-6 .tooth_extraction .price span {
     color: #8FA7C1;
     text-align: right;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 120%;
 }
@@ -2643,8 +2641,8 @@ input[type=radio] {
     display: flex;  
     align-items: center;
     justify-content: center;  
-    margin-top: 30px;
-    gap: 11px;
+    margin-top: 3rem;
+    gap: 1.1rem;
 } 
 
 .flex-1 .stock .stock-1,
@@ -2653,15 +2651,15 @@ input[type=radio] {
 .flex-4 .stock .stock-1,
 .flex-5 .stock .stock-1,
 .flex-6 .stock .stock-1 {
-    padding: 16px 15px;
+    padding: 1.6rem 1.5rem;
     flex-shrink: 0;
-    border-radius: 30px;
+    border-radius: 3rem;
     background: #409AF8;
     color: #FFF;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 100%;
-    height: 46px;
+    height: 4.6rem;
 
 } 
 
@@ -2672,17 +2670,17 @@ input[type=radio] {
 .flex-5 .stock .stock-2,
 .flex-6 .stock .stock-2 {
     display: inline-flex;
-    padding: 8px 15px;
+    padding: 0.8rem 1.5rem;
     align-items: center;
-    gap: 10px;
-    border-radius: 30px;
+    gap: 1rem;
+    border-radius: 3rem;
     background: #EC3030;
     color: #FFF;
     text-align: right;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 100%;
-    height: 46px;
+    height: 4.6rem;
 
 } 
 
@@ -2701,7 +2699,7 @@ input[type=radio] {
 .flex-5 .reinforced_prosthesis .desc,
 .flex-6 .second_stage .desc,
 .flex-6 .reinforced_prosthesis .desc {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 120%;
 }
 
@@ -2709,7 +2707,7 @@ input[type=radio] {
 .flex-5 .second_stage .desc span,
 .flex-6 .second_stage .desc span {
     color: #8FA7C1;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 120%;
     text-decoration:line-through;
 }
@@ -2724,7 +2722,7 @@ input[type=radio] {
 .flex-5 .reinforced_prosthesis .price,
 .flex-6 .reinforced_prosthesis .price {
     text-align: right;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 120%;
 }
 
@@ -2734,16 +2732,16 @@ input[type=radio] {
 
 .flex-2 .iceberg,
 .flex-5 .iceberg {
-    margin-top: 10px;
+    margin-top: 1rem;
     display: flex;
-    width: 410px;
-    padding: 9px 72px;
+    width: 41rem;
+    padding: 0.9rem 7.2rem;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     background: #6A5AF3;
     color: #FFF;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 120%;
 }
@@ -2751,8 +2749,8 @@ input[type=radio] {
 .flex-2 .iceberg:before,
 .flex-5 .iceberg:before {
     content: url(../img/Exclude.png);
-    width: 26px;
-    height: 26px;
+    width: 2.6rem;
+    height: 2.6rem;
 }
 
 
@@ -2772,8 +2770,8 @@ input[type=radio] {
     cursor:pointer;
     top: 45%;
     z-index:5;
-    width:40px;
-    height:40px
+    width: 4rem;
+    height: 4rem
 }
 
 .swiper_10_btn.prev{
@@ -2787,38 +2785,38 @@ input[type=radio] {
 }
 
 .left-10 {
-    left: -50px;
+    left: -5rem;
 }
 
 .right-10 {
-    right: -50px;    
+    right: -5rem;    
 }
 
 
 /* 11 БЛОК - НАША КОМАНДА */
 
 .main__content-11 {
-    margin-top: 120px;
-    padding-bottom: 140px;
+    margin-top: 12rem;
+    padding-bottom: 14rem;
 }
 
 .main__content-11 .h2 {
-    font-size: 36px;
+    font-size: 3.6rem;
     line-height: 130%;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     font-weight: 500;
 }
 
 .main__content-11 .desc {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 120%;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .main__content-11 .doctors {
-    padding-top: 50px;
-    padding-left: 30px;
-    border-radius: 20px;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    border-radius: 2rem;
     background: linear-gradient(90deg, rgba(64, 154, 248, 0.25) 7.89%, rgba(64, 154, 248, 0.00) 100%);
     background-image: url(../img/фон-11.png);
     background-repeat: no-repeat;
@@ -2830,15 +2828,15 @@ input[type=radio] {
 }
 
 .main__content-11 .doctors-img .doctors-img-1{
-    margin-top: -69px;
-    margin-left: 132px;
+    margin-top: -6.9rem;
+    margin-left: 13.2rem;
 }
 
 /* Кнопка запуска видео 11 блока*/
 .main__content-11 .doctors-img .doctors-img-2{
     position: absolute;
-    left: 160px;
-    bottom: 130px;
+    left: 16rem;
+    bottom: 13rem;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -2849,47 +2847,47 @@ input[type=radio] {
 
 .main__content-11 .doctors .h3{
     color: #FFF;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 600;
     line-height: 120%;
 }
 
 .main__content-11 .doctors .list-11{
     list-style-type: none;
-    margin-top: 20px;
+    margin-top: 2rem;
     color: #FFF;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 140%;
 }
 
 .main__content-11 .doctors .result{
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 140%;
-    margin-top: 41px;
-    max-width: 420px;
+    margin-top: 4rem;
+    max-width: 42rem;
     display: flex;
     align-items: flex-start;
 }
 
 .main__content-11 .doctors .result:before{
     content: url(../img/запятые-белые.png);
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .main__content-11 .doctors .record_btn {
     display: flex;
-    padding: 23px 41px;
+    padding: 2.3rem 4rem;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     flex-shrink: 0;
     color: #FFF;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 100%;
-    border-radius: 35px;
+    border-radius: 3.5rem;
     border: none;
-    margin-top: 40px;
+    margin-top: 4rem;
     background: linear-gradient(270deg, #4E39FF 0%, #6A5AF3 100%);    
     cursor: pointer;
     /* ------------------------ */
@@ -2902,13 +2900,13 @@ input[type=radio] {
 }
 
 .slider_doctors .slide_number {
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 700;
     line-height: 140%;
 }
 
 .slider_doctors .slide_number span{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -2916,24 +2914,24 @@ input[type=radio] {
 /* Стрелка вправо 11 блок */
 .slider_doctors_left {
     position: relative;
-    margin-top: 40px;
-    margin-left: 80px;
+    margin-top: 4rem;
+    margin-left: 8rem;
 }
 .arrow-right-11-btn{
     position:absolute;
     cursor:pointer;
     z-index:5;
-    width:40px;
-    height:40px;
+    width:4rem;
+    height:4rem;
     border: none;
-    border-radius: 125px;
+    border-radius: 12.5rem;
 }
 
 .arrow-right-11-btn.next{
     background-image:url(../img/arrow_right.png);
     background-position:50% 50%;
-    top: 0px;
-    left: 60px;
+    top: 0rem;
+    left: 6rem;
 }
 
 .arrow-right-11-btn.next:hover{
@@ -2946,11 +2944,13 @@ input[type=radio] {
 }
 
 .slider_doctors_right {
-    margin-top: -120px;
+    margin-top: -12rem;
     position: absolute;
-    margin-left: 200px;
+    overflow: hidden;
+    max-width: 137rem;
+    margin-left: 20rem;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
 
 
@@ -2960,18 +2960,18 @@ input[type=radio] {
 .slider_doctors_right .slide-4,
 .slider_doctors_right .slide-5{
     display: flex;
-    width: 270px;
-    height: 170px;
-    border-radius: 20px;
+    width: 27rem;
+    height: 17rem;
+    border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.16);
-    padding-top: 20px;
-    padding-left: 15px;
+    box-shadow: 0rem 0rem 3rem 0rem rgba(0, 0, 0, 0.16);
+    padding-top: 2rem;
+    padding-left: 1.5rem;
     cursor: pointer;
 }
 
 .slider_doctors_right .name {
-    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 130%;
 }
 
@@ -2979,11 +2979,11 @@ input[type=radio] {
 .slider_doctors_right .slide-2 img,
 .slider_doctors_right .slide-3 img,
 .slider_doctors_right .slide-4 img {
-    margin-left: -50px;
+    margin-left: -5rem;
 }
 
 .slider_doctors_right .slide-5 img {
-    margin-left: 32px;   
+    margin-left: 3.2rem;   
 } 
 
 .slider_doctors_right .slide-5 .no-active {
@@ -2992,7 +2992,7 @@ input[type=radio] {
 }
 
 .slide-1.slide-active {
-    border-radius: 15px;
+    border-radius: 1.5rem;
     background: #E9EDF8;
 }
 
@@ -3001,14 +3001,14 @@ input[type=radio] {
 /*----- Блок 12 -----*/
 
 .main__content-12 {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
     background-color: #fff;
 }
 
 .main__content-12 .h2 {
     color: #409AF8;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 700;
     line-height: 130%;
 }
@@ -3019,69 +3019,69 @@ input[type=radio] {
 }
 
 .main__content-12 .desc{
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 2rem;
+    font-size: 2rem;
     line-height: 120%;
 }
 
 .main__content-12 .implant {
     color: #FFF;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 140%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 20px;
-    border-radius: 20px;
-    width: 290px;
-    height: 62px;
+    padding: 1.2rem 2rem;
+    border-radius: 2rem;
+    width: 29rem;
+    height: 6.2rem;
     flex-shrink: 0;
     background-color: #409AF8;
-    margin-bottom: -20px;
-    margin-top: 40px;
+    margin-bottom: -2rem;
+    margin-top: 4rem;
     position: relative;
     z-index: 5;
 }
 
 .main__content-12 .block-1,
 .main__content-12 .block-2 {
-    border-radius: 20px;
+    border-radius: 2rem;
     background: #F1F5FC;
     display: flex;
-    gap: 40px;
+    gap: 4rem;
     justify-content: space-between;
-    padding-top: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
+    padding-top: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 5rem;
 }
 
 .block-1_5 .result {
-    width: 190px;
-    height: 190px;
+    width: 19rem;
+    height: 19rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 190px;
+    border-radius: 19rem;
     background: linear-gradient(160deg, rgba(64, 154, 248, 0.70) 19.79%, #409AF8 98.44%);
     color: #FFF;
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 700;
     line-height: 120%;
-    margin-bottom: 55px;
+    margin-bottom: 5.5rem;
 }
 
 .block-1_5 {
-    padding-top: 15px;
+    padding-top: 1.5rem;
 }
 
 .block-1_5 .result span{
     color: #FFF;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 120%;
     text-decoration:line-through;
@@ -3091,7 +3091,7 @@ input[type=radio] {
 .block-2 .img_desc {
     color: #000;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 130%;
 }
@@ -3113,30 +3113,30 @@ input[type=radio] {
 .block-2 .icons_sign {
     position: absolute;
     bottom: 50%;
-    right: -20px;
+    right: -2rem;
 }
 
 /* Тринадцатый блок */
 .main__content-13 {
-    padding-top: 120px;
+    padding-top: 12rem;
 }
 .main-13-up {
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
-    border-radius: 20px;
+    border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
 }
 
 .main-13-up .desc {
-    padding-top: 40px;
-    padding-left: 30px;
+    padding-top: 4rem;
+    padding-left: 3rem;
 }
 
 .main-13-up .desc h2{
     color: #409AF8;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 140%;   
 }
@@ -3147,100 +3147,100 @@ input[type=radio] {
 }
 
 .main-13-up .desc .desc_list{
-    margin-top: 30px;
+    margin-top: 3rem;
     list-style-type: none;
 }
 
 .main-13-up .desc .desc_item{
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .main-13-up .desc .desc_item:before{
     content: url(../img/галка-фиолетовая.png);
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .block-13-left {
     position: relative;
-    max-height: 210px;
-    padding-left: 40px;
-    padding-top: 25px;
-    padding-right: 30px;
-    padding-bottom: 37px;
-    border-radius: 15px;
+    max-height: 21rem;
+    padding-left: 4rem;
+    padding-top: 2.5rem;
+    padding-right: 3rem;
+    padding-bottom: 3.7rem;
+    border-radius: 1.5rem;
     background: #409AF8;
-    max-width: 650px;
-    margin-left: 30px;
+    max-width: 65rem;
+    margin-left: 3rem;
 }
 
 .block-13-left .jackdaw_entries {
     position: absolute;
-    left: -10px;
-    top: 10px;
+    left: -1rem;
+    top: 1rem;
 }
 
 .main-13-down {
     display: flex;
-    margin-top: -105px;
+    margin-top: -10.5rem;
 }
 
 .main-13-down .block-13-input {
     display: flex;
     align-items: center;    
-    gap: 20px;
+    gap: 2rem;
 }
 
 .block-13-left input {
-    padding: 12px 45px;
-    border-radius: 30px;
+    padding: 1.2rem 4.5rem;
+    border-radius: 3rem;
     background: #FFF;
     border:none;
-    max-width: 285px;
+    max-width: 28.5rem;
     color: #409AF8;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .block-13-left input::placeholder {
     color: #8FA7C1;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 100%;
 }
 
 .block-13-left button{
     display: flex;
-    max-width: 285px;
-    height: 48px;
-    padding: 23px 41px;
+    max-width: 28.5rem;
+    height: 4.8rem;
+    padding: 2.3rem 4rem;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     flex-shrink: 0;
-    border-radius: 35px;
+    border-radius: 3.5rem;
     border:none;
     background: linear-gradient(270deg, #4E39FF 0%, #6A5AF3 100%);
     color: #FFF;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 100%;
     cursor: pointer;
 }
 
 .block-13-checkbox {
-    margin-top: 21px;
+    margin-top: 2.1rem;
 }
 
 .block-13-input-checkbox {
-    width: 18px;
-    height: 18px;
+    width: 1.8rem;
+    height: 1.8rem;
     vertical-align: middle;
 }
 
 .block-13_span,
 .block-13_span a{
     color: #FFF;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-family: Muller;
     font-weight: 400;
     line-height: 130%;   
@@ -3250,12 +3250,12 @@ input[type=radio] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .block-13-left .contacts .call{
     color: #FFF;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 130%;
     display: flex;
     align-items: baseline;
@@ -3263,12 +3263,12 @@ input[type=radio] {
 
 .block-13-left .contacts .call:before{
     content: url(../img/Метка\ онлайн.png);
-    padding-right: 9px;
+    padding-right: 0.9rem;
 }
 
 .block-13-left .contacts .telephone a{
     color: #FFF;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
@@ -3276,39 +3276,39 @@ input[type=radio] {
 
 .block-13-right {
     position: relative;
-    margin-left: 60px;
-    max-width: 570px;
-    max-height: 210px;
-    padding-left: 40px;
-    padding-top: 25px;
-    padding-right: 30px;
-    padding-bottom: 37px;
-    border-radius: 15px;
+    margin-left: 6rem;
+    max-width: 57rem;
+    max-height: 21rem;
+    padding-left: 4rem;
+    padding-top: 2.5rem;
+    padding-right: 3rem;
+    padding-bottom: 3.7rem;
+    border-radius: 1.5rem;
     background: linear-gradient(167deg, #FFF 25.83%, rgba(255, 255, 255, 0.7) 93.58%);
-    box-shadow: 10px 10px 50px 0px rgba(47, 138, 244, 0.20);   
+    box-shadow: 1rem 1rem 5rem 0rem rgba(47, 138, 244, 0.20);   
 }
 
 .block-13-right .list-right{
     list-style-type: circle;
-    padding-left: 22px;
-    margin-top: 15px;
+    padding-left: 2.2rem;
+    margin-top: 1.5rem;
 }
 
 .block-13-right .list-right .item{
-    margin-bottom: 5px;
-    margin-right: 20px;
+    margin-bottom: 0.5rem;
+    margin-right: 2rem;
 }
 
 .block-13-right p{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
 }
 
 .block-13-right img{
     position: absolute;
-    left: -10px;
-    top: 10px;
+    left: -1rem;
+    top: 1rem;
 }
 
 .block-13-right .blocks {
@@ -3317,16 +3317,16 @@ input[type=radio] {
 
 .block-13-right .block-2 {
     position: relative;
-    margin-top: -42px;
-    margin-right: -125px;
+    margin-top: -4.2rem;
+    margin-right: -12.5rem;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .block-13-right .block-2 img {
     position: absolute;
-    left: 160px;
-    top: 180px;
+    left: 16rem;
+    top:  18rem;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -3337,10 +3337,10 @@ input[type=radio] {
 
 
 .block-2-video-wrapper {
-    width: 250px;
-    height: 250px;
-    border-radius: 125px;
-    border: 3px solid #409AF8;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 12.5rem;
+    border: 0.3rem solid #409AF8;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -3348,42 +3348,42 @@ input[type=radio] {
 
 
 .block-2-video-img{
-    width: 230px;
-    height: 230px;
-    border-radius: 125px;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 12.5rem;
     background-image: url(../img/Постер_к_Видео-2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
 
 .watch-13 {
-    margin-top: 24px;
+    margin-top: 2.4rem;
 }
 
 .watch-13 .metro,
 .watch-13 .hours{
     color: #272727;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 140%;
 }
 
 .watch-13 .metro {
-    margin-left: 80px;
-    margin-right: 30px;
+    margin-left: 8rem;
+    margin-right: 3rem;
 
 }
 
 .watch-13 .metro:before {
     content: url(../img/metro-blue.png);
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .watch-13 .hours:before{
     content: url(../img/watch-blue.png);
     vertical-align: middle;
-    margin-right: 10px;   
+    margin-right: 1rem;   
 }
 
 
@@ -3395,12 +3395,12 @@ input[type=radio] {
 /* -----Четырнадцатый блок -----*/
 
 .main__content-14 {
-    margin-top: 120px;
+    margin-top: 12rem;
 }
 
 .main__content-14 h2{
     color: #272727;
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 130%;
 }
@@ -3411,68 +3411,68 @@ input[type=radio] {
 }
 
 .list-14 {
-    margin-top: 20px;
+    margin-top: 2rem;
     list-style-type: circle;
-    padding-left: 20px;
+    padding-left: 2rem;
 }
 
 .list-14 .item-14 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
     line-height: 130%;
 }
 
 .content-14 {
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .content-14 button {
-    width: 290px;
-    max-width: 290px;
-    max-height: 47px;
+    width: 29rem;
+    max-width: 29rem;
+    max-height: 4.7rem;
     flex-shrink: 0;
     color: #8FA7C1;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 140%;
     background: linear-gradient(140.32deg, #FFFFFF 48.01%, rgba(255, 255, 255, 0) 110.28%);
-    box-shadow: 10px 10px 20px rgba(47, 138, 244, 0.2);
-    border-radius: 10px;
-    padding: 10px 20px;
+    box-shadow: 1rem 1rem 2rem rgba(47, 138, 244, 0.2);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
     border:none;
     cursor: pointer;
 }
 
 .content-14 button:first-child {
-    margin-right: 30px;
+    margin-right: 3rem;
 }
 
 .no_one_tooth-14 {
-    margin-top: 40px;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
 }
 
 .nobel-14,
 .osstem-14,
 .straumann-14,
 .no_all_tooth-14 {
-    padding: 30px;
-    border-radius: 20px;
+    padding: 3rem;
+    border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
     display: flex;
     align-items: center;
     justify-content:space-between;
 }
 
 .desc-14 {
-    margin-left: 30px;
+    margin-left: 3rem;
 }
 
 .h3-14 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 130%;
 }
@@ -3480,55 +3480,55 @@ input[type=radio] {
 .country-14 {
     display: inline-block;
     color: #96B1CE;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 130%;
-    margin-top: 13px;
+    margin-top: 1.3rem;
 }
 
 .nobel-14 .country-14:before,
 .straumann-14 .country-14:before {
     content: url(../img/Switzerland.svg);
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .osstem-14 .country-14:before {
     content: url(../img/SouthKorea.svg);
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .desc-14-list {
-    margin-top: 21px;
+    margin-top: 2.1rem;
     list-style-type: circle;
-    padding-left: 20px;
-    font-size: 16px;
+    padding-left: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 150%;
 }
 
 .garanty-14 {
-    border-radius: 10px;
+    border-radius: 1rem;
     background: #409AF8;
-    padding: 30px;
+    padding: 3rem;
 }
 
 .garanty-14 .for_life {
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
 }
 
 .garanty-14 .for_life:before {
     content: url(../img/галка-14.png);
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .garanty-14 .flex-14 {
-    margin-top: 20px;
+    margin-top: 2rem;
     display: flex;
-    gap: 45px;
+    gap: 4.5rem;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -3536,19 +3536,19 @@ input[type=radio] {
 .garanty-14 .flex-14 .action,
 .garanty-14 .flex-14 .regular_price {
     color: #FFF;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 140%;
 }
 
 .garanty-14 .flex-14 .action>span{
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 140%;
 }
 
 .garanty-14 .flex-14 .regular_price>span{
     color: #FFF;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 250%;
     text-decoration:line-through;
 
@@ -3556,9 +3556,9 @@ input[type=radio] {
 
 .garanty-14 .includes{
     color: #FFF;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 140%;
-    margin-top: 15px;
+    margin-top: 1.5rem;
 }
 
 .garanty-14 .includes span{
@@ -3572,9 +3572,9 @@ input[type=radio] {
 .no_all_tooth-14 .video-14 .video-14-icons {
     position: absolute;
     left: 0;
-    top: -20px;
-    width: 60px;
-    height: 60px;
+    top: -2rem;
+    width: 6rem;
+    height: 6rem;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -3586,93 +3586,93 @@ input[type=radio] {
 
 .no_all_tooth-14 .desc-14 {
     align-self: flex-start;
-    margin-left: -220px;
+    margin-left: -22rem;
 }
 
 
 /* Пятнадцатый блок */
 /* СОВЕТ ВРАЧА */
 .main__content-15 {
-    margin-top: 120px;
+    margin-top: 12rem;
 }
 
 .content-15_flex {
     display: flex;
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    /* padding-bottom: 50px; */
-    border-radius: 20px;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /* padding-bottom: 5rem; */
+    border-radius: 2rem;
     background: linear-gradient(180deg, #E1EAFA 0%, #F1F5FC 100%);
 }
 
 .h2-15 {
     color: #409AF8;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 140%;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .content-15_flex .content-15_desc .desc-15_700 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 130%;
-    margin-bottom: 15px;
-    margin-top: 20px;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
 }
 
 .content-15_flex .content-15_desc .desc-15_500 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 130%;
 }
 /* ------------------------- */
 
 .block-15-form {
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .block-15-form .block-15-input {
     display: flex;
     align-items: center;    
-    gap: 20px;
+    gap: 2rem;
 }
 
 .block-15-form input {
-    padding: 12px 45px;
-    border-radius: 30px;
+    padding: 1.2rem 4.5rem;
+    border-radius: 3rem;
     background: #FFF;
     border:none;
-    max-width: 285px;
+    max-width: 28.5rem;
     color: #409AF8;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .block-15-form input::placeholder {
     color: #8FA7C1;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 100%;
 }
 
 .block-15-form button{
     display: flex;
-    max-width: 285px;
-    height: 48px;
-    padding: 23px 41px;
+    max-width: 28.5rem;
+    height: 4.8rem;
+    padding: 2.3rem 4rem;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     flex-shrink: 0;
     border:none;
-    border-radius: 35px;
+    border-radius: 3.5rem;
     background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
     color: #FFF;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 100%;
     cursor: pointer;
     /* -------------- */
@@ -3681,20 +3681,20 @@ input[type=radio] {
 }
 
 .block-15-checkbox {
-    margin-top: 21px;
-    margin-left: 50px;
+    margin-top: 2.1rem;
+    margin-left: 5rem;
 }
 
 .block-15-input-checkbox {
-    width: 18px;
-    height: 18px;
+    width: 1.8rem;
+    height: 1.8rem;
     vertical-align: middle;
 }
 
 .block-15_span,
 .block-15_span a{
     color: #8FA7C1;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-family: Muller;
     font-style: normal;
     font-weight: 400;
@@ -3705,12 +3705,12 @@ input[type=radio] {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 20px;
-    margin-top: 30px;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .block-15-form .contacts .call{
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 130%;
     display: flex;
     align-items: baseline;
@@ -3718,12 +3718,12 @@ input[type=radio] {
 
 .block-15-form .contacts .call:before{
     content: url(../img/Метка-онлайн-фиолет.png);
-    padding-right: 9px;
+    padding-right: 0.9rem;
 }
 
 .block-15-form .contacts .telephone a{
     color: #272727;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
@@ -3731,29 +3731,29 @@ input[type=radio] {
 
 .content-15_img {
     position: relative;
-    margin-left: -60px;
-    margin-bottom: -7px;
+    margin-left: -6rem;
+    margin-bottom: -0.7rem;
 }
 
 .content-15_img .doctor-15{
     position: absolute;
     right: 0;
-    top:40%;
+    top: 40%;
     text-align: right;
-    max-width: 191px;
+    max-width: 19rem;
 }
 
 .content-15_img .doctor-15 .name-15{
     text-align: right;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 130%;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .content-15_img .doctor-15 .desc-15{
     text-align: right;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 130%;
 }
@@ -3763,12 +3763,12 @@ input[type=radio] {
 Цена лечения зависит от ситуации: чем проще — тем дешевле! */
 
 .main__content-16 {
-    margin-top: 120px;
-    padding-bottom: 120px;
+    margin-top: 12rem;
+    padding-bottom: 12rem;
 }
 
 .h2-16 {
-    font-size: 35px;
+    font-size: 3.5rem;
     line-height: 140%;
     text-transform: uppercase;
 }
@@ -3776,13 +3776,13 @@ input[type=radio] {
 .h2-16 span{
     color: #409AF8;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3.5rem;
     line-height: 140%;
     text-transform: uppercase;
 }
 
 .content-16-flex {
-    margin-top: 40px;
+    margin-top: 4rem;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -3791,10 +3791,10 @@ input[type=radio] {
 .content-16-flex .flex-box-1 .flex-box-block-1,
 .content-16-flex .flex-box-2 .flex-box-block-1,
 .content-16-flex .flex-box-3 .flex-box-block-1{
-    width: 200px;
-    height: 70px;
+    width: 20rem;
+    height: 7rem;
     background: transparent;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-image: url(../img/плашка-16.png);
     display: flex;
     align-items: center;
@@ -3806,43 +3806,43 @@ input[type=radio] {
 .content-16-flex .flex-box-2 .flex-box-block-1 p,
 .content-16-flex .flex-box-3 .flex-box-block-1 p{
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 .content-16-flex .flex-box-1 .flex-box-block-1 p:before,
 .content-16-flex .flex-box-2 .flex-box-block-1 p:before,
 .content-16-flex .flex-box-3 .flex-box-block-1 p:before{
     content: url(../img/галка-14.png);
-    width: 22px;
-    height: 16px;
-    margin-right: 15px;
+    width: 2.2rem;
+    height: 1.6rem;
+    margin-right: 1.5rem;
 }
 
 .content-16-flex .flex-box-1 .flex-box-block-2,
 .content-16-flex .flex-box-2 .flex-box-block-2,
 .content-16-flex .flex-box-3 .flex-box-block-2 {
-    border-radius: 20px;
-    max-width: 670px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    border-radius: 2rem;
+    max-width: 67rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background: #FFF;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0rem 0rem 3rem 0rem rgba(0, 0, 0, 0.16);
 }
 
 .content-16-flex .flex-box-block-2 .p1 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .content-16-flex .flex-box-block-2 .p2 {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 150%;
 }
@@ -3857,7 +3857,7 @@ input[type=radio] {
 .content-16-flex .flex-box-1 .flex-box-block-1, 
 .content-16-flex .flex-box-2 .flex-box-block-1,
 .content-16-flex .flex-box-3 .flex-box-block-1{
-    margin-right: -30px;
+    margin-right: -3rem;
     z-index: 5;
 }
 
@@ -3865,7 +3865,7 @@ input[type=radio] {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 28px;
+    gap: 2.8rem;
 }
 
 .content-16-flex .flex-box-right {
@@ -3876,91 +3876,91 @@ input[type=radio] {
 }
 
 .content-16-flex .flex-box-right .insurance{
-    border-radius: 10px;
+    border-radius: 1rem;
     background: #409AF8;
-    max-width: 290px;
-    max-height: 80px;
-    padding: 20px 20px 20px 20px;
+    max-width: 29rem;
+    max-height: 8rem;
+    padding: 2rem 2rem 2rem 2rem;
     z-index: 5;
-    margin-top: -20px;
+    margin-top: -2rem;
 }
 
 .content-16-flex .flex-box-right .insurance p{
     color: #FFF;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 140%;
 }
 
 .content-16-flex .flex-box-right .insurance p:before{
     content: url(../img/галка-14.png);
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .content-16-flex .flex-box-right .insurance-2 {
-    border-radius: 20px;
+    border-radius: 2rem;
     background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.52) 31.39%, rgba(255, 255, 255, 0.00) 100%);
     background-image: url(/img/фон-16-страховка.png);
-    width: 450px;
-    height: 485px;
+    width: 45rem;
+    height: 48.5rem;
     text-align: center;
-    margin-top: -60px;
+    margin-top: -6rem;
 }
 
 .content-16-flex .flex-box-right .insurance-2 .money{
     color: #272727;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .content-16-flex .flex-box-right .insurance-2 .desc{
     color: #000;
     text-align: center; 
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 150%;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 /* Семнадцатый блок
 ОТВЕЧАЕМ НА ВАШИ ВОПРОСЫ  */
 .main__content-17 {
-    padding-top: 120px;
+    padding-top: 12rem;
     background: #FFF;
-    padding-bottom: 120px;
+    padding-bottom: 12rem;
 }
 
 .h2-17 {
-    font-size: 36px;
+    font-size: 3.6rem;
     line-height: 130%;
     text-transform: uppercase;
 }
 
 .h2-17 span{
     color: #409AF8;
-    font-size: 36px;
+    font-size: 3.6rem;
     line-height: 130%;
     text-transform: uppercase;
 }
 
 .content-17-flex {
     display: flex;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .content-17-left {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px 39px;
+    gap: 1.5rem 3.9rem;
     flex-wrap: wrap;
 }
 
 .content-17-left .block {
-    border-radius: 15px;
+    border-radius: 1.5rem;
     background: #F1F5FC;
-    padding: 17px 20px;
+    padding: 1.7rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3979,12 +3979,12 @@ input[type=radio] {
 }
 
 .content-17-right {
-    width: 690px;
-    margin-left: 30px;
+    width: 69rem;
+    margin-left: 3rem;
 }
 
 .content-17-left .text-17 {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 130%; 
 }
 
@@ -3995,10 +3995,10 @@ input[type=radio] {
 
 .content-17-right .img-screen p {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 2rem;
+    left: 2rem;
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 130%;
 }
@@ -4009,31 +4009,31 @@ input[type=radio] {
 
 .icons_video-17-position {
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 3rem;
+    top: 3rem;
 }
 
 .buttons-17 {
-    margin-top: 55px;
+    margin-top: 5.5rem;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .buttons-17 .questions{
-    border-radius: 40px;
+    border-radius: 4rem;
     background: #409AF8;
     display: flex;
-    padding: 22px 20px;
+    padding: 2.2rem 2rem;
     justify-content: center;
     align-items: center;
     border: none;
-    gap: 10px;
+    gap: 1rem;
     color: #FFF;
     text-align: center;
-    font-size: 16px;    
+    font-size: 1.6rem;    
     line-height: 100%;
-    width: 290px;
+    width: 29rem;
     cursor: pointer;
 }
 
@@ -4047,14 +4047,14 @@ input[type=radio] {
 
 .buttons-17 .make_an_appointment,
 .record-18 .make_an_appointment{
-    border-radius: 35px;
+    border-radius: 3.5rem;
     background: linear-gradient(270deg, #4E39FF 0%, #6A5AF3 100%);
-    width: 290px;
-    padding: 23px 41px;
-    gap: 10px;
+    width: 29rem;
+    padding: 2.3rem 4rem;
+    gap: 1rem;
     border: none;
     color: #FFF;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 100%;
     display: flex;
     align-items:center;
@@ -4077,50 +4077,51 @@ input[type=radio] {
 /* фото Iceberg Clinic  */
 
 .main__content-18 {
-    padding-top: 120px;
+    padding-top: 12rem;
 }
 
 .h2-18 {
-    font-size: 36px;
+    font-size: 3.6rem;
     line-height: 130%;
     text-transform: uppercase;
 }
 
 .p-18 {
-    margin-top: 10px;
+    margin-top: 1rem;
     color: #272727;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 130%;
 }
 
 .button-18 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .button-18 .btn-left,
 .button-18 .btn-right {
-    border-radius: 35px;
-    border: 1px solid #D6DFE8;
+    border-radius: 3.5rem;
+    border: 0.1rem solid #D6DFE8;
     background: #FFF;
     color: #8FA7C1;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 120%;
-    padding: 16px 30px;
+    padding: 1.6rem 3rem;
     cursor: pointer;
 }
 
 .button-18 .btn-right{
-    margin-left: 15px;
+    margin-left: 1.5rem;
 }
 
 .slides-18 {
     position: relative;
     display: flex;
-    gap: 30px;
-    margin-bottom: 120px;
+    gap: 3rem;
+    margin-bottom: 12rem;
+    overflow: hidden;
 }
 
 .slides-18 .slide-1,
@@ -4128,6 +4129,7 @@ input[type=radio] {
 .slides-18 .slide-3,
 .slides-18 .slide-4 {
     cursor: pointer;
+
 }
 
 /* DOTS-18 */
@@ -4140,14 +4142,14 @@ input[type=radio] {
     display:flex;
     justify-content:center;
     z-index:5;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .slider-18-dots .dot-18{
     cursor:pointer;
-    height:16px;
-    width:16px;
-    margin:0 10px;
+    height:1.6rem;
+    width:1.6rem;
+    margin:0 1rem;
     border-radius:50%;
     border:solid #CED9E5;
     display:inline-block;
@@ -4168,9 +4170,9 @@ input[type=radio] {
 .smile-18 {
     position: relative;
     display: flex;
-    gap: 30px;
-    padding: 20px 0px 20px 20px;
-    border-radius: 20px;
+    gap: 3rem;
+    padding: 2rem 0rem 2rem 2rem;
+    border-radius: 2rem;
     background: linear-gradient(180deg, #E1EAFA 0%, #F1F5FC 100%);
 }
 
@@ -4178,8 +4180,8 @@ input[type=radio] {
 
 .video_icons-18 {
     position: absolute;
-    left: 460px;
-    top: 30px;
+    left: 46rem;
+    top: 3rem;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -4191,15 +4193,15 @@ input[type=radio] {
 /* ----------------------------- */
 
 .smile_desc {
-    padding-top: 10px;
-    max-width: 594px;
+    padding-top: 1rem;
+    max-width: 59.4rem;
 }
 
 .h3-18 {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 400;
     line-height: 130%;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .h3-18 span{
@@ -4208,10 +4210,10 @@ input[type=radio] {
 }
 
 .smile_desc .treatment {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
-    max-width: 391px;
+    max-width: 39 ;
 }
 
 .smile_desc .treatment span{
@@ -4223,19 +4225,19 @@ input[type=radio] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 
 .record-18 span{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
 }
 
 .record-18 img {
     position: absolute;
-    top: -20px;
-    left: 240px;
+    top: -2rem;
+    left: 24rem;
 }
 
 .photo-doctor-18 {
@@ -4248,21 +4250,24 @@ input[type=radio] {
 /* Девятнадцатый блок */
 /* РЕЙТИНГИ */
 .main__content-19 {
-    padding-top: 120px;
+    padding-top: 12rem;
 }
 
 .h2-19 {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 130%;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .slides-19 {
     position: absolute;
+    overflow: hidden;
+    max-width: 157.2rem;
     display: flex;
-    gap: 20px;
+    gap: 4rem;
+    background: #F5F8FD;
 }
 
 .slides-19 .slide-1,
@@ -4276,12 +4281,12 @@ input[type=radio] {
     flex-direction: column;
     align-items:center;
     justify-content: space-between;
-    width: 230px;
-    max-height: 190px;
-    padding: 25px;
-    border-radius: 15px;
+    width: 23rem;
+    max-height: 19rem;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
     background: #FFF;
-    box-shadow: 0px 3px 20px 0px rgba(37, 38, 80, 0.20);  
+    box-shadow: 0rem 0rem 2rem 0rem rgba(171, 175, 183, 0.50);
 }
 
 .slides-19 .img-19 {
@@ -4290,13 +4295,13 @@ input[type=radio] {
 }
 
 .slides-19 p {
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .slides-19 p{
     color: #272727;
     text-align: center;
-    font-size: 30px;
+    font-size: 3rem;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
@@ -4306,7 +4311,7 @@ input[type=radio] {
 .slides-19 p span{
     color: #949494;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 140%;
 }
@@ -4314,35 +4319,35 @@ input[type=radio] {
 /* Двадцатый блок */
 /* ИНТЕРНЕТ СПРАВОЧНИКИ */
 .main__content-20 {
-    margin-top: 370px;
+    margin-top: 37rem;
 }
 
 .h2-20 {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 130%;
 }
 
 .p20 {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 2rem;
+    font-size: 2rem;
     line-height: 130%;
 }
 
 .blocks-20 {
-    margin-top: 40px;
+    margin-top: 4rem;
     display: flex;
-    gap: 30px;
+    gap: 3rem;
     justify-content: space-between;
     align-items:center
 }
 
 .blocks-20 a{
     display: block;
-    margin-top: 20px;
+    margin-top: 2rem;
     text-align: center;
     color: #272727;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 100%;
     text-decoration:underline;
 }
@@ -4351,14 +4356,14 @@ input[type=radio] {
 .blocks-20 .block-1-2,
 .blocks-20 .block-1-3,
 .blocks-20 .block-1-4 {
-    width: 330px;
+    width: 33rem;
     display: flex;
     align-items:center;
     justify-content: space-between;
-    padding: 20px 20px;
-    border-radius: 15px;
+    padding: 2rem 2rem;
+    border-radius: 1.5rem;
     background: #FFF;
-    box-shadow: 0px 0px 20px 0px rgba(171, 175, 183, 0.50);
+    box-shadow: 0rem 0rem 2rem 0rem rgba(171, 175, 183, 0.50);
 }
 
 .blocks-20 .block-1-1>p,
@@ -4367,11 +4372,11 @@ input[type=radio] {
 .blocks-20 .block-1-4>p {
     color: #272727;
     text-align: center;
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 700;
     line-height: 100%; 
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 
 }
 
@@ -4380,7 +4385,7 @@ input[type=radio] {
 .blocks-20 .block-1-3>p span,
 .blocks-20 .block-1-4>p span{
     color: #8FA7C1;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 100%; 
 }
@@ -4390,15 +4395,15 @@ input[type=radio] {
 	margin: 0 auto;
 }
 .rating-result p{
-    margin-top: 9px;
+    margin-top: 0.9rem;
     color: #8FA7C1;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 100%;
 }
 .rating-result span {
 	padding: 0;
-	font-size: 12px;
+	font-size: 1.2rem;
 	line-height: 1;
     color: #FFCD1C;
 }
@@ -4407,47 +4412,47 @@ input[type=radio] {
 }
 .rating-result > span.active {
 	color: gold;
-	text-shadow: 1px 1px #c60;
+	text-shadow: 0.1rem 0.1rem #c60;
 }
 
 /* Двадцать второй блок
 Отзывы */
 
 .main__content-22 {
-    margin-top: 120px;
+    margin-top: 12rem;
 }
 
 .h2-22 {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 130%;
 }
 
 .blocks-22-flex {
-    margin-top: 32px;
+    margin-top: 3.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 3rem;
 }
 
 .block-22 {
-    padding: 20px;
-    max-height: 250px;
-    border-radius: 20px;
+    padding: 2rem;
+    max-height: 25rem;
+    border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
 }
 
 .block-22 .date{
     color: #8FA7C1;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 140%;
 }
 
 .block-22 .name-client{
     color: #272727;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
 }
@@ -4460,9 +4465,9 @@ input[type=radio] {
 
 .block-22 .hr-22{
     width: 100%;
-    height: 1px;
-    margin-top: 16px;
-    margin-bottom: 20px;
+    height: 0.1rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
     background: #8FA7C1;
 }
 
@@ -4470,27 +4475,27 @@ input[type=radio] {
     display: flex;
     align-items:center;
     justify-content: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 
 .block-22 .feedback{
     overflow-y: scroll;
-    max-width: 690px;
-    max-height: 130px;
-    font-size: 18px;
+    max-width: 69rem;
+    max-height: 13rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 140%;
 }
 
 /* стилизация скроллбара */
 .block-22 .feedback::-webkit-scrollbar {
-    width: 4px;
+    width: 0.4rem;
     background-color: #f9f9fd;
   }
   
 .block-22 .feedback::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: #8FA7C1;
 }
   
@@ -4501,7 +4506,7 @@ input[type=radio] {
 }
 .rating-result-22 span {
 	padding: 0;
-	font-size: 20px;
+	font-size: 2rem;
 	line-height: 1;
     color: #FFCD1C;
 }
@@ -4510,25 +4515,25 @@ input[type=radio] {
 }
 .rating-result-22 > span.active {
 	color: gold;
-	text-shadow: 1px 1px #c60;
+	text-shadow: 0.1rem 0.1rem #c60;
 }
 
 .client_rating p {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 140%;
 }
 
 .client_rating p span{
     color: #8FA7C1;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 140%;
 }
 
 .btn_feedback-22 {
     display: block;
-    margin-top: 40px;
+    margin-top: 4rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -4539,14 +4544,14 @@ input[type=radio] {
 /* САМОЕ ВРЕМЯ ЗАПИСАТЬСЯ НА БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ */
 
 .main__content-23 {
-    margin-top: 120px;
-    padding-top: 100px;
-    padding-bottom: 120px;
+    margin-top: 12rem;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
     background: #FFF;
 }
 
 .h2-23 {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 130%;
 }
@@ -4559,80 +4564,80 @@ input[type=radio] {
 .blocks-23-flex {
     display: flex;
     align-items:center;
-    gap: 100px;
+    gap: 10rem;
 }
 
 .block-23-desc .text-23 {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 2rem;
+    font-size: 1.8rem;
     line-height: 150%;
 }
 
 .block-23-desc-grid {
     display: grid;
-    margin-top: 30px;
+    margin-top: 3rem;
     grid-template-columns: 1fr 1fr;
-    gap: 44px;
+    gap: 4.4rem;
     
 }
 
 .block-23-desc-grid .block-grid{
     display: flex;
-    gap: 20px;
+    gap: 2rem;
     align-items:center;
     justify-content: flex-start;
 }
 
 .block-23-desc-grid .block-grid p{
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 150%;
 }
 
 /* Форма 23 блока */
 
 .block-23-form {
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .block-23-form .block-23-input {
     display: flex;
     align-items: center;    
-    gap: 20px;
+    gap: 2rem;
 }
 
 .block-23-form input {
-    padding: 12px 45px;
-    border-radius: 30px;
+    padding: 1.2rem 4.5rem;
+    border-radius: 3rem;
     background: #F1F5FC;
     border:none;
-    max-width: 330px;
+    max-width: 33rem;
     color: #409AF8;
     text-align: center;
-    font-size: 20px;
-    padding: 23px 41px;
+    font-size: 2rem;
+    padding: 2.3rem 4rem;
 }
 
 .block-23-form input::placeholder {
     color: #8FA7C1;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 100%;
 }
 
 .block-23-form button{
     display: flex;
-    max-width: 330px;
-    padding: 21px 41px;
+    max-width: 33rem;
+    padding: 2.1rem 4rem;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     flex-shrink: 0;
     border:none;
-    border-radius: 35px;
+    border-radius: 3.5rem;
     background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
     color: #FFF;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 100%;
     cursor: pointer;
     /* ------------------------ */
@@ -4645,20 +4650,20 @@ input[type=radio] {
 }
 
 .block-23-checkbox {
-    margin-top: 21px;
-    margin-left: 50px;
+    margin-top: 2.1rem;
+    margin-left: 5rem;
 }
 
 .block-23-input-checkbox {
-    width: 18px;
-    height: 18px;
+    width: 1.8rem;
+    height: 1.8rem;
     vertical-align: middle;
 }
 
 .block-23_span,
 .block-23_span a{
     color: #8FA7C1;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-family: Muller;
     font-style: normal;
     font-weight: 400;
@@ -4669,12 +4674,12 @@ input[type=radio] {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 20px;
-    margin-top: 30px;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .block-23-form .contacts .call{
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 130%;
     display: flex;
     align-items: baseline;
@@ -4682,12 +4687,12 @@ input[type=radio] {
 
 .block-23-form .contacts .call:before{
     content: url(../img/Метка-онлайн-фиолет.png);
-    padding-right: 9px;
+    padding-right: 0.9rem;
 }
 
 .block-23-form .contacts .telephone a{
     color: #272727;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
@@ -4701,8 +4706,8 @@ input[type=radio] {
 
 .icons-video-23 {
     position: absolute;
-    left: 30px;
-    top:30px;
+    left: 3rem;
+    top: 3rem;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -4715,57 +4720,59 @@ input[type=radio] {
 /* Лицензии и сертификаты */
 
 .main__content-24 {
-    margin-top: 120px;
+    margin-top: 12rem;
 }
 
 .h2-24 {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 130%;
     text-transform: uppercase;
 }
 
 .license-24 {
-    margin-top: 40px;
+    margin-top: 4rem;
     display: flex;
-    gap: 30px;
+    width: 157.2rem;
+    overflow: hidden;
+    gap: 2.2rem;
     align-items: center;
-    justify-content: space-between;
 }
 
 .license-24 .license-1{
     display: flex;
     align-items:center;
     justify-content: center;
-    max-width: 330px;
-    height: 480px;
-    padding: 19px 14px;
-    border-radius: 20px;
+    max-width: 33rem;
+    height: 48rem;
+    padding: 1.5rem 0.8rem;
+    border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .license-24 .license-1 img{
-    max-width: 302px;
-    max-height: 442px;
+    max-width: 30.2rem;
+    max-height: 44.2rem;
  
 }
 
 /* DOTS-24 */
 .main__content-24 .slider-24-dots {
     list-style-type: none;
-    height: 20px;
+    height: 2rem;
     display:flex;
     justify-content:center;
     z-index:5;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .main__content-24 .slider-24-dots .dot-24{
     cursor:pointer;
-    height:16px;
-    width:16px;
-    margin:0 10px;
+    height:1.6rem;
+    width:1.6rem;
+    margin:0 1rem;
     border-radius:50%;
     border:solid #CED9E5;
     display:inline-block;
@@ -4784,63 +4791,63 @@ input[type=radio] {
 /* Двадцать пятый блок */
 /* адреса Iceberg Clinic в москве */
 .main__content-25 {
-    margin-top: 120px;
+    margin-top: 12rem;
 }
 
 .h2-25 {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 500;
     line-height: 130%;
     text-transform: uppercase;
 }
 
 .tabs-25 {
-    margin-top: 30px;
+    margin-top: 3rem;
     display: flex;
-    gap: 60px;
+    gap: 6rem;
 }
 
 .tabs-25 .tab-1,
 .tabs-25 .tab-2 {
-    max-width: 400px;
+    max-width: 40rem;
     cursor: pointer;
 }
 
 .tabs-25 .address{
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 600;
     line-height: 130%;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 .tabs-25 .metro,
 .tabs-25 .walking_time {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 130%;
 }
 
 .tabs-25 .walking_time {
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 .tabs-25 .metro::before {
     content: url(../img/metro-blue.png);
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .tabs-25 .walking_time::before {
     content: url(../img/human.png);
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .hr-25 {
-    height: 1px;
+    height: 0.1rem;
     opacity: 0.99;
     background: #8FA7C1;
-    margin-top: 25px;
+    margin-top: 2.5rem;
 }
 
 .tabs-25 .tab-1 {
@@ -4849,10 +4856,10 @@ input[type=radio] {
 
 .tab-1 .contacts-25{
     position: absolute;
-    left: 0px;
-    margin-top: 30px;
+    left: 0rem;
+    margin-top: 3rem;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
     z-index: 5;
 }
 
@@ -4864,9 +4871,9 @@ input[type=radio] {
 .tab-2 .contacts-25{
     display: none !important;
     position: absolute;
-    margin-top: 30px;
+    margin-top: 3rem;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .contacts-25 .address-1,
@@ -4874,79 +4881,79 @@ input[type=radio] {
 .contacts-25 .time,
 .contacts-25 .parking{
     flex-shrink: 0;
-    max-width: 280px;
-    padding: 18px 50px 18px 18px;
-    border-radius: 20px;
+    max-width: 28rem;
+    padding: 1.8rem 5rem 1.8rem 1.8rem;
+    border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
 }
 
 .contacts-25 .telephone,
 .contacts-25 .time,
 .contacts-25 .parking{
-   max-height: 140px;
+   max-height: 14rem;
 }
 
 .contacts-25 .address-1 h3,
 .contacts-25 .telephone h3,
 .contacts-25 .time h3,
 .contacts-25 .parking h3 {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 700;
-    margin-bottom: 19px;
+    margin-bottom: 1.9rem;
 }
 
 .contacts-25 .address-1 h3::before {
     content: url(../img/иконка-местоположение.png);
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .contacts-25 .telephone h3::before {
     content: url(../img/icons-tel.png);
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .contacts-25 .time h3::before {
     content: url(../img/watch-blue.png);
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .contacts-25 .parking h3::before {
     content: url(../img/parking.png);
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .contacts-25 .address-1 .city,
 .contacts-25 .address-1 .street {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 140%;
 }
 
 .contacts-25 .address-1 .travel {
-    margin-top: 10px;
-    border-radius: 30px;
+    margin-top: 1rem;
+    border-radius: 3rem;
     background: #409AF8;
-    padding: 5px;
+    padding: 0.5rem;
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
     align-items: center;
     justify-content: flex-start;
-    max-width: 195px;
+    max-width: 19.5rem;
 }
 
 .contacts-25 .address-1 .travel p{
     color: #FFF;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 100%;
 }
 
 .contacts-25 .address-1 .telephone p{
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 140%;
 }
@@ -4954,46 +4961,46 @@ input[type=radio] {
 /* Двадцать шестой блок */
 /* Карта местоположения клиники */
 .map-26 {
-    margin-top: 80px;
+    margin-top: 8rem;
 }
 .map-26 iframe{
     display: block;
     text-align: center;
-    width: 1920px;
-    height: 730px;
+    width: 100%;
+    height: 73rem;
 }
 
 
 /* ФУТЕР */
 
 .footer {
-    padding-top: 50px;
+    padding-top: 5rem;
     background: #2B68A8;
     position: relative;
 }
 
 .hr-footer {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 .footer-up {
     display: flex;
-    gap: 40px;
+    gap: 4rem;
 }
 
 .footer-left .address{
     display: flex;
     align-items:center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 2rem;
     flex-shrink: 0;
 }
 
 .iceberg-footer {
-    max-width: 300px;
+    max-width: 30rem;
     color: #FFF;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 130%;
     display: flex;
@@ -5002,20 +5009,20 @@ input[type=radio] {
 
 .iceberg-footer:before {
     content: url(../img/iceberg-footer.png);
-    margin-right: 15px;
+    margin-right: 1.5rem;
     vertical-align: middle;
 }
 
 .footer-left .text {
     color: #FFF;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 130%;
 }
 
 .footer-left .text span {
     color: #FFF;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 130%;
 }
@@ -5028,39 +5035,39 @@ input[type=radio] {
 
 .footer-left .metro-1:before {
     content: url(../img/metro-footer.png);
-    margin-right: 15px;
+    margin-right: 1.5rem;
     vertical-align: middle;
 }
 
 .footer-left .metro-2:before {
     content: url(../img/metro-footer.png);
-    margin-right: 15px;
+    margin-right: 1.5rem;
     vertical-align: middle;
 }
 
 .footer-left .tinkoff {
-    border-radius: 10px;
+    border-radius: 1rem;
     background: #1B548F;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    margin-top: 40px;
-    max-width: 810px;
-    max-height: 70px;
+    margin-top: 4rem;
+    max-width: 81rem;
+    max-height: 7rem;
 }
 
 .footer-left .tinkoff p{
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 00;
     line-height: 160%;
-    max-height: 70px;
-    max-width: 803px;
+    max-height: 7rem;
+    max-width: 80.3rem;
 }
 
 .footer-left .tinkoff p:after{
     content: url(../img/тинькоф.png);
-    margin-left: 37px;
+    margin-left: 3.7rem;
     vertical-align: middle;
 }
 
@@ -5069,7 +5076,7 @@ input[type=radio] {
 }
 
 .middle-block-footer {
-    padding-top: 40px;
+    padding-top: 4rem;
     display: flex;
     justify-content: space-between;
 }
@@ -5079,10 +5086,10 @@ input[type=radio] {
 .requisites-footer .requisites-iceberg,
 .requisites-footer .license {
     color: #E9EDF8;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 140%;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .requisites-footer .legal_address span,
@@ -5098,26 +5105,26 @@ input[type=radio] {
 .list-footer a{
     text-decoration: none;
     color: #E9EDF8;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 140%;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .list-footer .item{
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .footer-right {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    max-width: 330px;
+    gap: 3rem;
+    max-width: 33rem;
 }
 
 .footer-right .telephone a{
     color: #fff;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 130%;
     text-decoration: none;
@@ -5126,22 +5133,22 @@ input[type=radio] {
 .footer-right .telephone p,
 .footer-right .questions p{
     color: #ffffff;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 130%;
-    margin-top: 5px;
+    margin-top: 0.5rem;
 }
 .footer-right .questions p,
 .footer-right .socseti p{
-    margin-bottom: 13px;
+    margin-bottom: 1.3rem;
 }
 
 .footer-right .questions img,
 .footer-right .socseti img {
-    width: 35px; 
-    height: 35px; 
-    border-radius: 125px;
-    margin-right: 10px;
+    width: 3.5rem; 
+    height: 3.5rem; 
+    border-radius: 12.5rem;
+    margin-right: 1rem;
 }
 
 .footer-right .questions a .whatsapp-hover,
@@ -5184,33 +5191,33 @@ input[type=radio] {
 }
 
 .footer-down {
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .footer-down-flex{
     display: flex;
-    gap: 30px;
+    gap: 3rem;
 }
 
 .footer-down-flex .text{
     color: #E9EDF8;
-    font-size: 11px;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 140%;
-    max-width: 1050px;
+    max-width: 105rem;
 }
 
 .footer-down .text-policy,
 .footer-down .text-policy a {
-    margin-top: 30px;
+    margin-top: 3rem;
     color: #E9EDF8;
-    font-size: 11px;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 140%;
 }
 
 .footer-down .text-contraindications {
-    margin-top: 50px;
+    margin-top: 5rem;
 
 }
 
@@ -5221,8 +5228,8 @@ input[type=radio] {
 
 .smooth-scroll {
     position: fixed;
-    right: 45px;
-    bottom: 50px;
+    right: 4.5rem;
+    bottom: 5rem;
     z-index: 10;
   }
 

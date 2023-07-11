@@ -24,7 +24,7 @@ const smoothScrollUp = () => {
 
    // при прокрутке до самого верха scroll исчезает
    const scrollInvis = () => {
-      if (window.pageYOffset < 500) {
+      if (window.scrollY < 500) {
          smooth.style.display = 'none';
       } else {
          smooth.style.display = 'block';

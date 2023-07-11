@@ -1,6 +1,6 @@
 /* Шапка сайта */
 .header{
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .header-up{
@@ -11,8 +11,8 @@
     display: flex;
 }
 .header-up__logo>p {
-    font-size: 15px;
-    margin-left: 18px;
+    font-size: 1.5rem;
+    margin-left: 1.8rem;
     line-height: 130%;
     display: flex;
     align-items: center;
@@ -20,101 +20,101 @@
 
 .header-up__metro {
     display: flex;
-    margin-left: 35px;
+    margin-left: 3.5rem;
 }
 .header-up__metro img {
-    width: 30px;
-    height: 30px;
-    margin-top: 8px;
-    margin-right: 9px;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.8rem;
+    margin-right: 0.9rem;
 }
 
 .header-up__metro-adress{
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 140%;
 }
 
 .header-up__opening-hours{
     display: flex;
-    margin-left: 30px;
+    margin-left: 3rem;
 }
 
 .header-up__opening-hours img {
-    width: 30px;
-    height: 30px;
-    margin-top: 8px;
-    margin-right: 9px;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.8rem;
+    margin-right: 0.9rem;
 }
 
 .header-up__opening-hours p {
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 140%;
 }
 
 .header-up__messenger{
-    margin-left: 30px;
+    margin-left: 3rem;
 }
 
 .header-up__messenger img {
-    width: 30px;
-    height: 30px;
-    margin-top: 8px;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.8rem;
     cursor: pointer;
 
 }
 
 .header-up__messenger img:first-child {
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 .header-up__version-visually-impaired{
-    margin-left: 59px;
+    margin-left: 5.9rem;
     cursor: pointer;
 }
 
 .header-up__telephone{
-    margin-left: 30px;
+    margin-left: 3rem;
 }
 
 .header-up__telephone>a {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 2.4rem;
     text-decoration: none;
     text-align: center;
     color: #272727;
 }
 
 .header-up__telephone>p{
-    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 140%;
     font-weight: 400;
-    margin-top: 6px;
+    margin-top: 0.6rem;
 }
 
 
 .hr_header {
-    margin-top: 13px;
-    width: 1170px;
+    margin-top: 1.3rem;
+    width: 117rem;
 }
 /* Нижняя часть шапки */
 .header-menu{
     display: flex;
-    margin-top: 1.375em;  
+    margin-top: 2.2rem;  
     list-style-type: none;
     margin-right: 0;
 }
 
 .header-menu>li{
-    margin-right: 37px;
-    font-size: 15px;
+    margin-right: 3.7rem;
+    font-size: 1.5rem;
     line-height: 100%;
     text-decoration: none;
     transition: 0.5s;
 }
 
 .header-menu>li>a{
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 100%;
     text-decoration: none;
     color: #272727;
@@ -138,56 +138,56 @@
 
 
 .header-menu__technology::before{
-    margin-right: 8px;
+    margin-right: 0.8rem;
     content:url(../img/technology.svg);
     display: inline-block;
     vertical-align: middle;
 }
 
 .header-menu__cost::before{
-    margin-right: 8px;
+    margin-right: 0.8rem;
     content:url(../img/cost.svg);
     display: inline-block;
     vertical-align: middle;
 }
 
 .header-menu__doctors::before{
-    margin-right: 8px;
+    margin-right: 0.8rem;
     content:url(../img/doctors.svg);
     display: inline-block;
     vertical-align: middle;
 }
 
 .header-menu__reviews::before{
-    margin-right: 8px;
+    margin-right: 0.8rem;
     content:url(../img/reviews.svg);
     display: inline-block;
     vertical-align: middle;
 }
 
 .header-menu__credit::before{
-    margin-right: 8px;
+    margin-right: 0.8rem;
     content:url(../img/credit.svg);
     display: inline-block;
     vertical-align: middle;
 }
 
 .header-menu__about::before{
-    margin-right: 8px;
+    margin-right: 0.8rem;
     content:url(../img/about.svg);
     display: inline-block;
     vertical-align: middle;
 }
 
 .header-menu__FAQ::before{
-    margin-right: 8px;
+    margin-right: 0.8rem;
     content:url(../img/FAQ.svg);
     display: inline-block;
     vertical-align: middle;
 }
 
 .header-menu__contacts::before{
-    margin-right: 8px;
+    margin-right: 0.8rem;
     content:url(../img/contacts.svg);
     display: inline-block;
     vertical-align: middle;
@@ -195,11 +195,11 @@
 
 .header-menu__button{
     margin-top: -1.375em;
-    width: 190px;
-    height: 42px;
+    width: 19rem;
+    height: 4.2rem;
     background: #409AF8;
-    border-radius: 25.5px;
-    font-size: 14px;
+    border-radius: 2.55rem;
+    font-size: 1.4rem;
     line-height: 120%;
     color: #FFFFFF;
     border: none;
@@ -212,5 +212,5 @@
     content:url(../img/FAQ-white.svg);  
     display: inline-block;
     vertical-align: middle;
-    margin-right: 9px;
+    margin-right: 0.9rem;
 }
