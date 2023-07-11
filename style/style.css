@@ -4968,8 +4968,8 @@ input[type=radio] {
 
 .footer {
     padding-top: 50px;
-    padding-bottom: 50px;
     background: #2B68A8;
+    position: relative;
 }
 
 .hr-footer {
@@ -4977,18 +4977,27 @@ input[type=radio] {
     margin-top: 40px;
 }
 
+.footer-up {
+    display: flex;
+    gap: 40px;
+}
+
 .footer-left .address{
     display: flex;
     align-items:center;
     justify-content: space-between;
     gap: 20px;
+    flex-shrink: 0;
 }
 
 .iceberg-footer {
+    max-width: 300px;
     color: #FFF;
     font-size: 15px;
     font-weight: 700;
     line-height: 130%;
+    display: flex;
+    align-items: center;
 }
 
 .iceberg-footer:before {
@@ -5099,8 +5108,123 @@ input[type=radio] {
     margin-bottom: 15px;
 }
 
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 330px;
+}
+
+.footer-right .telephone a{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 130%;
+    text-decoration: none;
+}
+
+.footer-right .telephone p,
+.footer-right .questions p{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-top: 5px;
+}
+.footer-right .questions p,
+.footer-right .socseti p{
+    margin-bottom: 13px;
+}
+
+.footer-right .questions img,
+.footer-right .socseti img {
+    width: 35px; 
+    height: 35px; 
+    border-radius: 125px;
+    margin-right: 10px;
+}
+
+.footer-right .questions a .whatsapp-hover,
+.footer-right .questions a .telegram-hover,
+.footer-right .questions a .viber-hover,
+.footer-right .questions a .mail-hover,
+.footer-right .socseti a .ok-hover, 
+.footer-right .socseti a .vk-hover, 
+.footer-right .socseti a .youtube-hover{
+    display: none;
+}
+
+.footer-right .questions a:hover .whatsapp-hover,
+.footer-right .questions a:hover .telegram-hover,
+.footer-right .questions a:hover .viber-hover,
+.footer-right .questions a:hover .mail-hover,
+.footer-right .socseti a:hover .ok-hover, 
+.footer-right .socseti a:hover .vk-hover, 
+.footer-right .socseti a:hover .youtube-hover {
+    display: inline-block;
+}
+
+.footer-right .questions a:hover .whatsapp,
+.footer-right .questions a:hover .telegram,
+.footer-right .questions a:hover .viber,
+.footer-right .questions a:hover .mail,
+.footer-right .socseti a:hover .ok, 
+.footer-right .socseti a:hover .vk, 
+.footer-right .socseti a:hover .youtube {
+    display: none;
+}
 
 
+
+.footer-right .socseti p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.footer-down {
+    margin-top: 30px;
+}
+
+.footer-down-flex{
+    display: flex;
+    gap: 30px;
+}
+
+.footer-down-flex .text{
+    color: #E9EDF8;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 1050px;
+}
+
+.footer-down .text-policy,
+.footer-down .text-policy a {
+    margin-top: 30px;
+    color: #E9EDF8;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.footer-down .text-contraindications {
+    margin-top: 50px;
+
+}
+
+
+.smooth{
+    display: block;
+}
+
+.smooth-scroll {
+    position: fixed;
+    right: 45px;
+    bottom: 50px;
+    z-index: 10;
+  }
 
 
 
