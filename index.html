@@ -14,12 +14,19 @@
     <script type="text/javascript" src="./JS/tab.js" defer></script>
     <script type="text/javascript" src="./JS/smoothMove.js" defer></script>
     <script type="text/javascript" src="./JS/smoothUp.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="/JS/menu.js" defer></script>
     <title>Центр дентальной травматологии ICEBERG</title>
 </head>
 <body>
 
     <header class="header" id="header">
         <div class="container wrap">
+
+            <div class="header-body__burger-menu">
+                <span></span>
+            </div>
+
           <div class="header-up">
             <div class="header-up__logo">
                 <a href="#"><img src="./img/logo.svg" alt="Логотип айсберг"></a>
@@ -56,17 +63,20 @@
             </div>
          </div>
             <hr class="hr_header">
-         <ul class="header-menu">
-            <li><a href="#technology" class="header-menu__technology">Технология All on 4 </a></li>
-            <li><a href="#cost" class="header-menu__cost">Стоимость</a></li>
-            <li><a href="#doctors" class="header-menu__doctors">Врачи</a></li>
-            <li><a href="#reviews" class="header-menu__reviews">Отзывы</a></li>
-            <li><a href="#credit" class="header-menu__credit">Лечение в рассроку</a></li>
-            <li><a href="#about" class="header-menu__about">О клинике</a></li>
-            <li><a href="#FAQ" class="header-menu__FAQ">FAQ</a></li>
-            <li><a href="#contacts" class="header-menu__contacts">Контакты</a></li>
-            <button class="header-menu__button">Задать вопрос</button>
-         </ul>
+         <nav class="header-menu">
+                <ul class="header-menu-list">
+                    <li><a href="#technology" class="header-menu__technology">Технология All on 4 </a></li>
+                    <li><a href="#cost" class="header-menu__cost">Стоимость</a></li>
+                    <li><a href="#doctors" class="header-menu__doctors">Врачи</a></li>
+                    <li><a href="#reviews" class="header-menu__reviews">Отзывы</a></li>
+                    <li><a href="#credit" class="header-menu__credit">Лечение в рассроку</a></li>
+                    <li><a href="#about" class="header-menu__about">О клинике</a></li>
+                    <li><a href="#FAQ" class="header-menu__FAQ">FAQ</a></li>
+                    <li><a href="#contacts" class="header-menu__contacts">Контакты</a></li>
+                    <button class="header-menu__button">Задать вопрос</button>
+                 </ul>
+        </nav>
+
         </div>
     </header>
 <!-- ------------------------------------------------------------------------------------------ -->
@@ -125,8 +135,13 @@
                     </form>
                     <!-- ------------------------------------------------>
                 </div>
-                <div class="main__content_video-block">
-                    <img class="main__content_icons-video" src="./img/Значок Видео.png" alt="значок плей видео">
+                <div class="main__content_video-block">            
+                        <svg class="main__content_icons-video" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40.0005" cy="40" r="40" fill="#409AF8" fill-opacity="0.35"/>
+                            <circle cx="40.0005" cy="40" r="31" fill="#409AF8"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M36.0005 33V47L48.0005 40L36.0005 33Z" fill="white"/>
+                            </svg>
+
                     <div class="main__content_video-wrapper">
 
                         <div class="main__content_video-img">
@@ -140,6 +155,16 @@
                      </div>
                 </div>
                 <div class="main__content-photo">
+                    <picture>
+                        <source srcset="../img/Фото-доктора-60.png" type="image/png" media="(max-width: 360px)">
+                        <source srcset="../img/Фото-доктора-40.png" type="image/png" media="(max-width: 576px)">
+                        <source srcset="../img/Фото-доктора-50.png" type="image/png" media="(max-width: 768px)">
+                        <source srcset="../img/Фото-доктора-60.png" type="image/png" media="(max-width: 992px)">
+                        <source srcset="../img/Фото-доктора-70.png" type="image/png" media="(max-width: 1200px)">
+                        <source srcset="../img/Фото-доктора-80.png" type="image/png" media="(max-width: 1400px)">
+                        <img class="photo-doctor-1" src="../img/Фото-доктора.png" alt="фото доктора">
+                    </picture>
+                   
                     <p class="main__content-photo_name">Тишкина <br> Ольга Сергеевна</p>
                     <ul class="main__content-photo_ul">
                         <li class="main__content-photo_list">Кандидат медицинских наук,<br> действительный член Международной<br> ассоциации дентальной травматологии</li>
@@ -593,65 +618,65 @@
 
                 </div>
             </section>
-            <!------------ Седбмой блок ------------>
-            <section class="main__content-7" id="doctors">
-                <div class="container wrap">
-                    <div class="main__content-7-block">
-                        <h2 class="main__content-7-block-h2">ПРОВОДИМ ЛЕЧЕНИЕ ПО <br>
-                            <span>МЕЖДУНАРОДНЫМ СТАНДАРТАМ КАЧЕСТВА</span></h2>
-                        <div class="main__content-7-block-flex">
+<!------------ Седбмой блок ------------>
+<section class="main__content-7" id="doctors">
+    <div class="container wrap">
+        <div class="main__content-7-block">
+            <h2 class="main__content-7-block-h2">ПРОВОДИМ ЛЕЧЕНИЕ ПО <br>
+                <span>МЕЖДУНАРОДНЫМ СТАНДАРТАМ КАЧЕСТВА</span></h2>
+<div class="main__content-7-block-flex">
 
                  <!-- Первый флекс элемент -->
-<div class="main__content-7-block-flex-1">
-    <div class="main__content-7-block-flex-1_img">
-        <img src="./img/star_smile.png" alt="star smile">
-    </div>
-    <div class="main__content-7-block-flex-1_content">
-        <p>Iceberg Clinic - топ 2<span>
-            В рейтинге лучших стоматологиЙ Москвы</span></p>
-            <ul>
-                <li>Более 30 000 довольных клиентов</li>
-                <li>Команда из 70 преданных делу специалистов</li>
-                <li>8 лет успешной работы</li>
-            </ul>
-    </div>
-</div>
-                <!-- Второй флекс элемент -->
-<div class="main__content-7-block-flex-1">
-    <div class="main__content-7-block-flex-1_img">
-        <img src="./img/Тишкина_Ольга.png" alt="Тишкина Ольга">
-        <img class="main__content-7-block-flex-1_img-videoplay" src="./img/Значок Видео.png" width="60" height="60" alt="значок плей видео">
-    </div>
-    <div class="main__content-7-block-flex-2_content">
-        <p><span>докторы высшей квалификации и лечение разного уровня сложности
-            </span></p>
-            <p>Наша команда повод для гордости - <span>врачи-эксперты, к.м.н.,</span> многие из которых являются <span>лекторами международного уровня</span>, наши доктора выступают на Российских и международных мероприятиях</p>
-    </div>
-</div>
-                <!-- Третий флекс элемент -->
     <div class="main__content-7-block-flex-1">
         <div class="main__content-7-block-flex-1_img">
-            <img src="./img/цифровая_стоматология.png" width="190" height="190" alt="цифровая стоматология">
+            <img src="./img/star_smile.png" alt="star smile">
         </div>
-        <div class="main__content-7-block-flex-3_content">
-            <p>цифрова<span> <br>
-                стоматология</span></p>
-                <p>Немецикй конусно-лучевой томограф Gendex CB-500™, на котором мы проводим 3D томограмму на высочайшем уровне четкости с режимом “Эндо”. <span>Такое оборудование присутствует только в единичных клиниках Москвы!</span></p>
+        <div class="main__content-7-block-flex-1_content">
+            <p>Iceberg Clinic - топ 2<span>
+                В рейтинге лучших стоматологиЙ Москвы</span></p>
+                <ul>
+                    <li>Более 30 000 довольных клиентов</li>
+                    <li>Команда из 70 преданных делу специалистов</li>
+                    <li>8 лет успешной работы</li>
+                </ul>
         </div>
     </div>
+                <!-- Второй флекс элемент -->
+    <div class="main__content-7-block-flex-1">
+        <div class="main__content-7-block-flex-1_img">
+            <img src="./img/Тишкина_Ольга.png" alt="Тишкина Ольга">
+            <img class="main__content-7-block-flex-1_img-videoplay" src="./img/Значок Видео.png" width="60" height="60" alt="значок плей видео">
+        </div>
+        <div class="main__content-7-block-flex-2_content">
+            <p><span>докторы высшей квалификации и лечение разного уровня сложности
+                </span></p>
+                <p>Наша команда повод для гордости - <span>врачи-эксперты, к.м.н.,</span> многие из которых являются <span>лекторами международного уровня</span>, наши доктора выступают на Российских и международных мероприятиях</p>
+        </div>
+    </div>
+                <!-- Третий флекс элемент -->
+        <div class="main__content-7-block-flex-1">
+            <div class="main__content-7-block-flex-1_img">
+                <img src="./img/цифровая_стоматология.png" width="190" height="190" alt="цифровая стоматология">
+            </div>
+            <div class="main__content-7-block-flex-3_content">
+                <p>цифрова<span> <br>
+                    стоматология</span></p>
+                    <p>Немецикй конусно-лучевой томограф Gendex CB-500™, на котором мы проводим 3D томограмму на высочайшем уровне четкости с режимом “Эндо”. <span>Такое оборудование присутствует только в единичных клиниках Москвы!</span></p>
+            </div>
+        </div>
           <!-- Четвёртый флекс элемент -->
-<div class="main__content-7-block-flex-1">
-    <div class="main__content-7-block-flex-1_img">
-        <img src="./img/безопасное_лечение.png" alt="безопасное_лечение">
+    <div class="main__content-7-block-flex-1">
+        <div class="main__content-7-block-flex-1_img">
+            <img src="./img/безопасное_лечение.png" alt="безопасное_лечение">
+        </div>
+        <div class="main__content-7-block-flex-4_content">
+            <p>Iceberg Clinic - топ 2<span>
+                В рейтинге лучших стоматологиЙ Москвы</span></p>
+                <p>Наркоз (общее обезболивание) — это контролируемое
+                    состояние сна, которое позволяет провести <span>лечение
+                        без боли и дискомфортных ощущений.</span></p>
+        </div>
     </div>
-    <div class="main__content-7-block-flex-4_content">
-        <p>Iceberg Clinic - топ 2<span>
-            В рейтинге лучших стоматологиЙ Москвы</span></p>
-            <p>Наркоз (общее обезболивание) — это контролируемое
-                состояние сна, которое позволяет провести <span>лечение
-                    без боли и дискомфортных ощущений.</span></p>
-    </div>
-</div>
             <div class="main__content-7-block-flex-2"></div>
             <div class="main__content-7-block-flex-3"></div>
             <div class="main__content-7-block-flex-4"></div>

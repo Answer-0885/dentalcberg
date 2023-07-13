@@ -12,7 +12,43 @@
 
 html {
     font-size: 62.5%;
-}  
+} 
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 58%;
+    }   
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }   
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 43%;
+    }   
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 35%;
+    }   
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 30%;
+    }   
+}
+
+@media (max-width: 390px) {
+    html {
+        font-size: 25%;
+    }   
+}
 
 
 body{
@@ -23,9 +59,10 @@ body{
     background-color: #F5F8FD;
     background-image: url(../img/Фон-1.png);
     background-position: top center;
-    background-size: 100% 90rem;
+    background-size: 100% 93rem;
     background-repeat: no-repeat;
     color: #272727;
+    border: 1px solid red;
 }
 
 
@@ -44,13 +81,14 @@ body{
 }
 
 .main > .container > p {
+    display: inline-block;
     font-size: 3rem;
     line-height: 130%;
     color: #272727;
 }
 
 .main__content {
-    margin-top: 3rem;
+    margin-top: 5rem;
     display: flex;
     position: relative;
 }
@@ -62,6 +100,8 @@ body{
 .main__content_list {
     font-size: 2rem;
     line-height: 150%;
+    display: flex;
+    align-items:baseline;
 }
 
 .main__content_list:before {
@@ -186,7 +226,7 @@ input::placeholder{
     bottom: 0;
     right: 0;
     min-height: 1000vh;
-    z-index: 10;
+    z-index: 990;
     background: rgba(0,0,0,0.6);
   }
 
@@ -231,6 +271,15 @@ input::placeholder{
     transition: 0.5s;
 }
 
+@media (max-width: 768px) {
+    .main__content_icons-video {
+        width: 50px;
+        height: 50px;
+    }    
+}
+
+
+
 .main__content_icons-video:hover {
     transform: scale(1.2) rotate(360deg);
 }
@@ -249,34 +298,79 @@ input::placeholder{
 }
 
 .main__content-photo {
-    width: 68.6rem;
-    height: 75rem;
-    background-image: url("../img/Фото-доктора.png");
-    background-repeat: no-repeat;
-    background-position: 0 7.5rem;
-    margin-top: -28rem;
-    margin-right: -5rem;
+    border: 1px solid red;   
+    margin-bottom: -1rem;
 }
 
+.photo-doctor-1 {
+    position: relative;
+    margin-top: -24rem;
+    border: 1px solid red;   
+}
+
+@media (max-width: 1400px) {
+
+    .main__content-photo {
+        width: 55rem;
+        margin-top: 4rem;
+        border: 1px solid red;
+    }    
+}
+
+
 .main__content-photo_name{
+    position: absolute;
     font-size: 2rem;
     line-height: 130%;
     text-align: right;
     text-transform: uppercase;
     color: #272727;
-    margin-top: 51rem;
-    margin-right: 5rem;
+    right: 0;
+    bottom: 39%;
+    z-index: 10;
+    border: 1px solid red;
 }
 
 .main__content-photo_ul{
+    position: absolute;
+    right: 0;
+    bottom: 18%;
+    z-index: 10;
     list-style-type: none;
     font-weight: 500;
     font-size: 1.35rem;
     line-height: 130%;
     text-align: right;
     color: #272727;
-    margin-top: 1.5rem;
-    margin-right: 5rem;
+    border: 1px solid red;
+}
+
+@media (max-width: 768px) {
+
+    .main__content-photo_name{
+        right: 0;
+        bottom: 32%;
+    }
+    
+    .main__content-photo_ul{
+        right: 0;
+        bottom: 10%;
+    }  
+}
+
+@media (max-width: 576px) {
+
+    .main__content-photo_name{
+        display: none;
+    }
+    
+    .main__content-photo_ul{
+        display: none;
+    } 
+    
+    .main__content_video-wrapper {
+        display: none;
+    }
 }
 
 .main__content-photo_list:last-child{
@@ -290,7 +384,6 @@ input::placeholder{
     position: relative;
     max-width: 141rem;
     max-height: 15rem;
-    margin-top: -2rem;
     background: #409AF8;
     border-radius: 2rem;
     display: flex;
@@ -1526,7 +1619,7 @@ Select c dropdown на JS
 .main__content-7 {
     background-color: #FFF;
     padding-top: 12rem;
-
+    padding-bottom: 7rem;
 }
 
 .main__content-7-block-h2 {
@@ -1542,9 +1635,11 @@ Select c dropdown на JS
 
 .main__content-7-block-flex {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 5rem 3rem;
     flex-wrap: wrap;
-    max-height: 76rem;
+    /* max-height: 76rem; */
 }
 
 .main__content-7-block-flex-1, 
@@ -1554,18 +1649,19 @@ Select c dropdown на JS
     border-radius: 2rem;
     background: #F1F5FC;
     max-width: 69rem;
-    height: 30rem;
+    max-height: 30rem;
 }
 
 .main__content-7-block-flex-1 {
     display: flex;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 2rem;
     gap: 2rem;
 }
 
 .main__content-7-block-flex-1_img {
-position: relative;
+    position: relative;
 }
 .main__content-7-block-flex-1_img img:first-child{
     margin-top: -1rem;
@@ -1603,7 +1699,7 @@ position: relative;
 }
 
 .main__content-7-block-flex-1_content ul li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Кнопка запуска видео */
@@ -2941,6 +3037,7 @@ input[type=radio] {
 /* слайдер 11 блока */
 .slider_doctors {
     position: relative;
+    max-width: 145rem;
 }
 
 .slider_doctors_right {
@@ -2951,6 +3048,57 @@ input[type=radio] {
     margin-left: 20rem;
     display: flex;
     gap: 2rem;
+}
+
+@media (max-width:1730px) {
+
+    .slider_doctors_right {
+        max-width: 130rem;
+    }   
+}
+
+@media (max-width:1400px) {
+
+    .slider_doctors_right {
+        max-width: 120rem;
+    }   
+}
+
+@media (max-width:1300px) {
+
+    .slider_doctors_right {
+        max-width: 110rem;
+    }   
+}
+
+@media (max-width:1200px) {
+
+    .slider_doctors_right {
+        max-width: 100rem;
+    }   
+}
+
+@media (max-width:1100px) {
+
+    .slider_doctors_right {
+        max-width: 90rem;
+        gap: 1.5rem;
+    }   
+}
+
+@media (max-width:992px) {
+
+    .slider_doctors_right {
+        max-width: 77rem;
+        gap: 1.2rem;
+    }   
+}
+
+@media (max-width:992px) {
+
+    .slider_doctors_right {
+        max-width: 70rem;
+    }   
 }
 
 
@@ -2974,6 +3122,25 @@ input[type=radio] {
     font-size: 1.3rem;
     line-height: 130%;
 }
+
+
+@media (max-width:1730px) {
+
+    .slider_doctors_right .name {
+        font-size: 1.2rem;
+        line-height: 120%;
+    }
+}
+
+
+@media (max-width:1400px) {
+
+    .slider_doctors_right .name {
+        font-size: 1.1rem;
+        line-height: 110%;
+    } 
+}
+
 
 .slider_doctors_right .slide-1 img,
 .slider_doctors_right .slide-2 img,
@@ -4270,6 +4437,16 @@ input[type=radio] {
     background: #F5F8FD;
 }
 
+
+@media (max-width:1400px) {
+
+    .slides-19 {
+        max-width: 138rem;
+        gap: 3rem;
+    }
+        
+}
+
 .slides-19 .slide-1,
 .slides-19 .slide-2,
 .slides-19 .slide-3,
@@ -4737,6 +4914,16 @@ input[type=radio] {
     overflow: hidden;
     gap: 2.2rem;
     align-items: center;
+}
+
+@media (max-width: 1400px) {
+
+    .license-24 {
+        margin-top: 4rem;
+        width: 139rem;
+        gap: 2rem;
+
+    }
 }
 
 .license-24 .license-1{

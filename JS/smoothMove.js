@@ -1,4 +1,4 @@
-const menuHeader = document.querySelector('.header-menu');
+const menuHeader = document.querySelector('.header-menu-list');
 
 const menu = () => {
     menuHeader.addEventListener('click', (e) => {

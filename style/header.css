@@ -5,22 +5,41 @@
 
 .header-up{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-up__logo {
     display: flex;
+    gap:1.8rem;
 }
 .header-up__logo>p {
     font-size: 1.5rem;
-    margin-left: 1.8rem;
     line-height: 130%;
     display: flex;
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .header{
+        margin-top: 0;
+    }
+    
+    .header-up__logo img{
+        width: 14rem;
+        height: 14rem;
+    }
+    .header-up__logo>p {
+        font-size: 1.5rem;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+    }
+}
+
 .header-up__metro {
     display: flex;
-    margin-left: 3.5rem;
+
 }
 .header-up__metro img {
     width: 3rem;
@@ -36,7 +55,7 @@
 
 .header-up__opening-hours{
     display: flex;
-    margin-left: 3rem;
+
 }
 
 .header-up__opening-hours img {
@@ -51,14 +70,10 @@
     line-height: 140%;
 }
 
-.header-up__messenger{
-    margin-left: 3rem;
-}
 
 .header-up__messenger img {
     width: 3rem;
     height: 3rem;
-    margin-top: 0.8rem;
     cursor: pointer;
 
 }
@@ -68,13 +83,20 @@
 }
 
 .header-up__version-visually-impaired{
-    margin-left: 5.9rem;
     cursor: pointer;
 }
 
-.header-up__telephone{
-    margin-left: 3rem;
+@media (max-width: 1200px) {
+    .header-up__version-visually-impaired img{
+        width: 4rem;
+        height: 4rem;
+    }
 }
+
+
+
+
+
 
 .header-up__telephone>a {
     font-weight: 700;
@@ -94,26 +116,31 @@
 
 
 .hr_header {
-    margin-top: 1.3rem;
-    width: 117rem;
+    width: 118rem;
 }
+
+
 /* Нижняя часть шапки */
-.header-menu{
+.header-menu-list{
     display: flex;
+    justify-content: space-between;
     margin-top: 2.2rem;  
     list-style-type: none;
     margin-right: 0;
 }
 
-.header-menu>li{
-    margin-right: 3.7rem;
+
+
+.header-menu-list>li{
     font-size: 1.5rem;
     line-height: 100%;
     text-decoration: none;
     transition: 0.5s;
 }
 
-.header-menu>li>a{
+
+
+.header-menu-list>li>a{
     font-size: 1.5rem;
     line-height: 100%;
     text-decoration: none;
@@ -122,19 +149,20 @@
     transition: 0.5s;
 }
 
-.header-menu>li:hover {
+.header-menu-list>li:hover {
     display: block;
     transition: 0.5s;
     transform: scale(1.2);
     color: #409AF8;
 }
 
-.header-menu>li>a:hover {
+.header-menu-list>li>a:hover {
 
     transition: 0.5s;
 
     color: #409AF8;
 }
+
 
 
 .header-menu__technology::before{
@@ -205,7 +233,6 @@
     border: none;
     cursor: pointer;
     padding: 0;
-
 }
 
 .header-menu__button::before{
@@ -213,4 +240,120 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 0.9rem;
+}
+
+/* Бургер меню */
+
+@media (max-width:768px) {
+
+.hr_header {
+    width: 100%;
+}
+
+.header-up {
+    display: grid;
+    grid-template-columns: 1fr 210px 1fr 1fr;
+    margin-top: -50px;
+    gap: 5px;
+}
+
+.header-up__messenger {
+    display: none;
+}
+
+.header-up__version-visually-impaired {
+    display: none;
+}
+
+   .header-body__burger-menu {
+        position: relative;
+        left:700px; 
+        width: 30px;
+        height: 45px;
+        display: block;
+        top: 2rem;
+    } 
+
+    .header-body__burger-menu span, 
+    .header-body__burger-menu:after, 
+    .header-body__burger-menu:before{
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #409AF8;
+        margin: 0 auto;
+    }
+    .header-body__burger-menu span{
+        top: 21px;
+    }
+    .header-body__burger-menu:after, 
+    .header-body__burger-menu:before{
+        content: '';
+    }
+    .header-body__burger-menu:after{
+        bottom: 10px;
+    }
+    .header-body__burger-menu:before{
+        top: 10px;
+    }
+
+    .header-body__burger-menu.open-menu span {
+        opacity:0; 
+        transition: 0.5s; 
+    }
+    .header-body__burger-menu.open-menu:before {
+        transform: rotate(38deg);
+        top: 21px;
+        transition: 0.4s;
+    }
+    .header-body__burger-menu.open-menu:after {
+        transform: rotate(-38deg);
+        bottom: 21px;
+        transition: 0.4s;
+    }
+    .header-menu{
+        display: block;
+        position: absolute;
+        background: #a5c8ee;;
+        background-image: url(../img/Фон-1.png);
+        background-size: cover;
+        box-shadow: #ccc;
+        width: 100%;
+        height: 100% ;
+        box-shadow: 0 5px 6px rgba(36, 36, 36, 0.37);
+        top: 78px;
+        left: 150%;
+        transition: all 0.4s ease;
+        z-index: 100;
+        border: 3px solid #3C3D75;;
+    }
+    .header-menu-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+.header-menu__button {
+    margin-top: 2rem;
+}
+
+.header-menu__button::before{
+    content:url(../img/FAQ-white-50.png);  
+}
+
+    .header-menu li {
+        font-size: 14px;
+        margin-top: 2rem;
+    }
+    .header-menu li a{
+        font-size: 2rem;
+    }
+    .header-menu.open-menu {
+        left: 0px;
+    }
+    .fixed-page{
+        overflow: hidden; /*запрещаем прокручивание страницы при открытом меню*/
+    }
 }
