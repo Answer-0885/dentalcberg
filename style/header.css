@@ -246,24 +246,24 @@
 
 @media (max-width:768px) {
 
-.hr_header {
-    width: 100%;
-}
+    .hr_header {
+        width: 100%;
+    }
 
-.header-up {
-    display: grid;
-    grid-template-columns: 1fr 210px 1fr 1fr;
-    margin-top: -50px;
-    gap: 5px;
-}
+    .header-up {
+        display: grid;
+        grid-template-columns: 1fr 210px 1fr 1fr;
+        margin-top: -50px;
+        gap: 5px;
+    }
 
-.header-up__messenger {
-    display: none;
-}
+    .header-up__messenger {
+        display: none;
+    }
 
-.header-up__version-visually-impaired {
-    display: none;
-}
+    .header-up__version-visually-impaired {
+        display: none;
+    }
 
    .header-body__burger-menu {
         position: relative;
@@ -317,15 +317,14 @@
         background: #a5c8ee;;
         background-image: url(../img/Фон-1.png);
         background-size: cover;
-        box-shadow: #ccc;
         width: 100%;
         height: 100% ;
         box-shadow: 0 5px 6px rgba(36, 36, 36, 0.37);
         top: 78px;
         left: 150%;
-        transition: all 0.4s ease;
+        transition: all 0.5s ease;
         z-index: 100;
-        border: 3px solid #3C3D75;;
+
     }
     .header-menu-list {
         flex-direction: column;
@@ -333,27 +332,121 @@
         justify-content: space-between;
         text-align: center;
         margin-top: 3rem;
+        border: 3px solid #3C3D75;
     }
 
-.header-menu__button {
-    margin-top: 2rem;
-}
+    .header-menu__button {
+        margin-top: 5rem;
+        width: 42rem;
+        height: 8rem;
+        background: #409AF8;
+        border-radius: 5rem;
+        font-size: 4rem;
+        line-height: 120%;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
 
-.header-menu__button::before{
-    content:url(../img/FAQ-white-50.png);  
-}
+    .header-menu__button::before{
+        content:url(../img/FAQ-white.svg);  
+    }
 
     .header-menu li {
         font-size: 14px;
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
     .header-menu li a{
-        font-size: 2rem;
+        font-size: 4rem;
     }
     .header-menu.open-menu {
         left: 0px;
     }
     .fixed-page{
         overflow: hidden; /*запрещаем прокручивание страницы при открытом меню*/
+}
+}
+
+@media (max-width:576px) {
+    .header-up {
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr 1fr;
+        margin-top: -50px;
+        gap: 5px;
     }
+    
+   .header-body__burger-menu {
+        left:515px; 
+        width: 30px;
+        height: 45px;
+        top: 2rem;
+    }
+
+    .header-up__metro {
+        align-items: center;   
+    }
+
+    .header-menu{
+        top: 65px;
+        height: 200vh;
+    }
+    .header-menu-list {
+        margin-top: 1rem;
+    }
+
+    .header-menu__button {
+        margin-top: 2rem;
+        width: 35rem;
+        height: 8rem;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .header-menu li {
+        font-size: 14px;
+        margin-top: 3rem;
+    }
+    .header-menu li a{
+        font-size: 3rem;
+    }
+}
+@media (max-width:390px) {
+    .header-up { 
+        grid-template-columns: 200rem 1fr;
+    }
+    .header-body__burger-menu {
+        left:330px; 
+        top: 0.5rem;
+    }
+    .header-up__metro {
+        display: none;
+    }
+    .header-up__opening-hours {
+        display: none;
+    }
+    .header-up__messenger {
+        display: none;
+    }
+    .header-up__version-visually-impaired {
+        display: none;
+    }
+    .header-up__telephone {
+        display: none;
+    }
+    .header-up__logo a img {
+        width: 100px;
+    }
+    .header-up__logo p br{
+        display: none;
+    }
+    
+    .header-up__logo>p {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #3C3D75;
+    }
+    
 }
