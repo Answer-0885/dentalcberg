@@ -8,8 +8,8 @@
     margin-right: auto;
     top: 150px;
     text-align: center;
-    max-width: 600px;
-    max-height: 500px;
+    max-width: 80rem;
+    max-height: 80rem;
     background-color:#d8dadb;
     border-radius: 30px;
     display: none;
@@ -23,50 +23,48 @@
 }
 
 .form-2__header {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     font-weight: 500;
     text-align: center;
-    font-size: 28px;
+    font-size: 4rem;
     text-transform: uppercase;
     color: #6A5AF3;
 }
 
 .form-2__name,
 .form-2__telephone{
-    width: 420px;
-    font-size: 15px;
+    width: 42rem;
+    font-size: 1.5rem;
     text-align: center;
-    height: 50px;
+    height: 5rem;
     border-radius: 30px;
     padding: 0 1rem;
     border: none;
-    line-height: 50px;
     margin-bottom: 1rem;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #409AF8;
 }
 
-.form-2__header_blocl-time{
+.form-2__header_block-time{
     display: flex;
-    width: 420px;
+    width: 42rem;
     justify-content: space-between;
 }
 
 .form-2__date,
 .form-2__time{
-    width: 200px;
-    font-size: 18px;
+    width: 20rem;
+    font-size: 1.8rem;
     text-align: center;
-    height: 50px;
+    height: 5rem;
     border-radius: 30px;
     padding: 0 1rem;
     border: none;
-    line-height: 50px;
 }
 
 .form-2__policy {
-    width: 420px;
+    width: 42rem;
     text-align: center;
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 1.5rem;
 }

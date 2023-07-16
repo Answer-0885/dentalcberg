@@ -86,15 +86,13 @@
     cursor: pointer;
 }
 
+
 @media (max-width: 1200px) {
     .header-up__version-visually-impaired img{
         width: 4rem;
         height: 4rem;
     }
 }
-
-
-
 
 
 
@@ -315,7 +313,6 @@
         display: block;
         position: absolute;
         background: #a5c8ee;;
-
         width: 100%;
         height: 100% ;
         box-shadow: 0 5px 6px rgba(36, 36, 36, 0.37);
@@ -391,9 +388,6 @@
     .header-menu{
         top: 65px;
         height: 200vh;
-    }
-    .header-menu-list {
-        margin-top: 1rem;
     }
 
     .header-menu__button {

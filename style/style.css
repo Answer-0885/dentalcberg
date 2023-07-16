@@ -138,10 +138,10 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     text-align: center;
     color: #FFFFFF;
-    margin-top: 2.1rem;
+    margin-top: 3rem;
     padding: 2.2rem 1rem;
     gap: 1rem;
     width: 42rem;
@@ -1052,7 +1052,10 @@ Select c dropdown на JS
     }
 }
 
-/* Блок 4 */
+
+
+
+/*----- Блок 4 -----*/
 
 .main__content-4_header{
     margin-top: 12rem;
@@ -1062,7 +1065,6 @@ Select c dropdown на JS
     gap: 7rem;
     margin-bottom: 8rem;
 }
-
 
 .main__content-4_header_left p{
 /* Улыбка, как в молодости ВСЕГО ЗА 1 ДЕНЬ */
@@ -1179,13 +1181,14 @@ Select c dropdown на JS
 
 /* Видеоотзыв */
 .main__content-4_main {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 7rem;
 }
 
 .main__content-4_main-block-video {
     position: relative;
+    border: 1px solid red;
 }
 
 .main__content-4_main-block-video-icons {
@@ -1212,8 +1215,9 @@ Select c dropdown на JS
     background: #FFF;
     box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
     padding: 3rem 2.1rem;
+    border: 1px solid red;
+    margin: 0 auto;
 }
-
 
 .main__content-4_main-block-desc-1 img{
     margin-bottom: 2rem;
@@ -1233,13 +1237,52 @@ Select c dropdown на JS
     width: 38.6rem;
 }
 
+@media (max-width: 1400px){
+    .main__content-4_main {
+        gap: 2rem;
+        row-gap: 6rem;
+    }   
+}
+@media (max-width: 768px){
+    .main__content-4_main {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+        row-gap: 6rem;
+    } 
+    .main__content-4_main-block-desc {
+        position: relative;
+        margin: -6rem auto 0;
+        z-index: 10;
+        width: 90rem;
+    }
+    .main__content-4_main-block-desc-1 div{
+        width: 50rem;
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 130%;
+        margin-bottom: 2rem;
+        max-width:70rem;
+    }
+    
+    .main__content-4_main-block-desc-1 p{
+        width: 50rem;
+        font-size: 2rem;
+        line-height: 130%;
+        max-width:70rem;
+    }
+  
+}
+
 .main__content-4_main-block-desc-img {
     z-index: 10;
     margin-left: 4rem;
 }
 
+
 .main__content-4_main-button,
 .btn_feedback-22 {
+    display: block;
     color: #FFF;
     text-align: center;
     font-size: 1.6rem;
@@ -1251,7 +1294,7 @@ Select c dropdown на JS
     border: none;
     border-radius: 3.5rem;
     background: #409AF8;
-    margin: 0 auto;
+    margin: 5rem auto 0;
     cursor: pointer;
 }
 
