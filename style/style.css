@@ -138,7 +138,7 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     text-align: center;
     color: #FFFFFF;
     margin-top: 3rem;
@@ -1100,10 +1100,11 @@ Select c dropdown на JS
 
 .main__content-4_header_left-list::before {
     content: '';
-    background-image: url('../img/галка.png');
+    background-image: url('../img/галка.svg');
+    background-position: 50% 50%;
+    border-radius: 50px;
     width: 2.8rem;
     height: 2.8rem;
-
     margin-right: 1.5rem;
 }
 /* Правый блок */
@@ -1183,12 +1184,11 @@ Select c dropdown на JS
 .main__content-4_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 7rem;
+    gap: 3rem;
 }
 
 .main__content-4_main-block-video {
     position: relative;
-    border: 1px solid red;
 }
 
 .main__content-4_main-block-video-icons {
@@ -1215,8 +1215,6 @@ Select c dropdown на JS
     background: #FFF;
     box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
     padding: 3rem 2.1rem;
-    border: 1px solid red;
-    margin: 0 auto;
 }
 
 .main__content-4_main-block-desc-1 img{
@@ -1239,10 +1237,21 @@ Select c dropdown на JS
 
 @media (max-width: 1400px){
     .main__content-4_main {
-        gap: 2rem;
         row-gap: 6rem;
     }   
 }
+
+@media (max-width: 1200px){
+    .main__content-4_header_right-video-icons:before {
+        width: 20px;
+        height: 20px;
+    }   
+    .main__content-4_main-block-video-img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 768px){
     .main__content-4_main {
         grid-template-columns: 1fr;
@@ -1255,6 +1264,7 @@ Select c dropdown на JS
         margin: -6rem auto 0;
         z-index: 10;
         width: 90rem;
+        margin: -6rem auto 5rem;
     }
     .main__content-4_main-block-desc-1 div{
         width: 50rem;
@@ -1271,7 +1281,43 @@ Select c dropdown на JS
         line-height: 130%;
         max-width:70rem;
     }
+    .main__content-4_header_left-ul {
+        /* Список UL */
+        margin-top: 3rem;
+        font-size: 2.2rem;
+        line-height: 140%;
+        list-style-type: none;
+    }
+    .main__content-4_header_right-ul{
+        list-style: circle;
+        max-width: 40rem;
+        font-size: 2.2rem;
+    }
   
+}
+@media (max-width: 576px){
+    .main__content-4_header{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main__content-4_header{
+        margin-top: 12rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 7rem;
+        margin-bottom: 8rem;
+    }
+    .main__content-4_header_left p{
+        /* Улыбка, как в молодости ВСЕГО ЗА 1 ДЕНЬ */
+            width: 90rem;
+            height: 15rem;
+            font-weight: 700;
+            font-size: 5rem;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #409AF8;
+        }
 }
 
 .main__content-4_main-block-desc-img {
@@ -1395,6 +1441,54 @@ Select c dropdown на JS
     width: 38rem;
     display:flex;
     align-items:center;
+}
+
+@media (max-width: 1200px) {
+    .main__content-5_advantages_ul {
+        height: 15rem;
+        margin-top: 1.5rem; 
+    }  
+}
+@media (max-width: 768px) {
+    .main__content-5_up {
+        flex-wrap: wrap;
+    }  
+     .main__content-5_all-on-4_layout {
+        width: 100%;
+        height: 30rem;
+        padding: 3rem;
+    }
+    .main__content-5_all-on-4_h3 {
+        text-align: center;
+    }
+    .main__content-5_advantages_h3 {
+        text-align: center;
+    }
+    .main__content-5_all-on-4_p{
+        font-size: 2.2rem;
+        width: 100%;
+    }
+    .main__content-5_advantages_layout {
+        width: 100%;
+        height: 30rem;
+        padding: 3rem;
+        margin-left: 0;
+        margin-top: -2.5rem;
+    } 
+    .main__content-5_advantages_ul {
+        flex-direction:row;
+        justify-content: center;
+    }
+    .main__content-5_advantages_list {
+        width: 40rem;
+        font-size: 2rem;
+        align-items:center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main__content-5_advantages_list br{
+        display: none;
+    }
 }
 
 .main__content-5_advantages_list:before {
@@ -1564,14 +1658,16 @@ Select c dropdown на JS
 .main__content-6_main_tab-2,
 .main__content-6_main_tab-3 {
     width: 120rem;
-    height: 66rem;
     border-radius: 2rem;
     background: #FFF;
     box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
     padding-left: 9rem;
+    padding-right: 3rem;
     padding-top: 4rem;
+    padding-bottom: 3rem;
     margin-left: -6rem;
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -1649,6 +1745,13 @@ Select c dropdown на JS
     margin-top: 2.2rem;
 }
 
+.main__content-6_main_advantage-1_tab-3,
+.main__content-6_main_advantage-2_tab-3,
+.main__content-6_main_advantage-3_tab-3 {
+    display: flex;
+    align-items: center;
+}
+
 .main__content-6_main_advantage-1, 
 .main__content-6_main_advantage-2, 
 .main__content-6_main_advantage-3,
@@ -1659,14 +1762,11 @@ Select c dropdown на JS
 .main__content-6_main_advantage-2_tab-3, 
 .main__content-6_main_advantage-3_tab-3 {
     margin-bottom: 1.1rem;
-    
-
 }
 .main__content-6_main_advantage-1_tab-2, 
 .main__content-6_main_advantage-2_tab-2, 
 .main__content-6_main_advantage-3_tab-2 {
-    width: 45rem;
-    white-space: pre;
+    max-width: 55rem;
 }
 
 .main__content-6_main_advantage-1 span, 
@@ -1674,7 +1774,10 @@ Select c dropdown на JS
 .main__content-6_main_advantage-3 span,
 .main__content-6_main_advantage-1_tab-2 span, 
 .main__content-6_main_advantage-2_tab-2 span, 
-.main__content-6_main_advantage-3_tab-2 span{
+.main__content-6_main_advantage-3_tab-2 span,
+.main__content-6_main_advantage-1_tab-3 span, 
+.main__content-6_main_advantage-2_tab-3 span, 
+.main__content-6_main_advantage-3_tab-3 span{
     font-weight: 700;
 }
 
@@ -1690,7 +1793,6 @@ Select c dropdown на JS
     content: url(../img/галка.png);
     vertical-align: middle; 
     margin-right: 1rem;
-
 }
 
 .main__content-6_main_cost {
@@ -1780,30 +1882,18 @@ Select c dropdown на JS
     margin-right: 3rem;
 }
 
-
 .main__content-6_main_right {
     position: relative;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.main__content-6_button_sign_up {
-    margin-top: 19rem;
-}
-
-.main__content-6_button_sign_up_tab-2 {
-    margin-top: 19rem;
-    margin-right: 3rem;
-}
-
-.main__content-6_button_sign_up_tab-3 {
-    margin-top: 19rem;
-    margin-right: 2rem;
-}
 
 .main__content-6_main_right_img-video {
     margin-left: 3rem;
 }
-
 
 .main__content-6_main_right_icons-video {
     position: absolute;
@@ -1825,6 +1915,7 @@ Select c dropdown на JS
     font-size: 1.6rem;
     line-height: 130%;
     width: 40rem;
+    margin-bottom: 5rem;
     height: 7rem;
     padding: 2.2rem 3rem;
     border-radius: 3.5rem;
@@ -1834,7 +1925,6 @@ Select c dropdown на JS
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-left: 2rem;
     background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
     /* ------------------------ */
     position: relative;
@@ -1860,6 +1950,10 @@ Select c dropdown на JS
     margin-right: 1rem;
 }
 
+.main__content-6_main_span_tab-2 {
+    max-width: 55rem;
+}
+
 .main__content-6_main_advantage-3_tab-2 {
     margin-bottom: 4.6rem;
 }
@@ -1874,11 +1968,26 @@ Select c dropdown на JS
 
 .main__content-6_main_advantage-block-3 {
     margin-bottom: 5rem;
+    max-width:55rem;
 }
+
+@media (max-width: 1400px) {
+    .main__content-6_main_right_img-video,
+    .main__content-6_main_right_img-video_tab-2 {
+        width: 37.8rem;
+        height: 25.2rem; 
+    }  
+    .main__content-6_main_right_icons-video {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 
 /* Седбмой блок */
 /* ПРОВОДИМ ЛЕЧЕНИЕ ПО
 МЕЖДУНАРОДНЫМ СТАНДАРТАМ КАЧЕСТВА */
+
 .main__content-7 {
     background-color: #FFF;
     padding-top: 12rem;
@@ -1905,6 +2014,7 @@ Select c dropdown на JS
     /* max-height: 76rem; */
 }
 
+
 .main__content-7-block-flex-1, 
 .main__content-7-block-flex-2, 
 .main__content-7-block-flex-3, 
@@ -1913,6 +2023,24 @@ Select c dropdown на JS
     background: #F1F5FC;
     max-width: 69rem;
     max-height: 30rem;
+}
+
+@media (max-width: 1400px) {
+    .main__content-7-block-flex {
+        justify-content: center;
+        gap: 5rem 3rem;
+    }
+    .main__content-7-block-flex-1, 
+    .main__content-7-block-flex-2, 
+    .main__content-7-block-flex-3, 
+    .main__content-7-block-flex-4 {
+        max-width: 100rem;
+        max-height: 35rem;
+    }
+    .main__content-7-block-h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
 }
 
 .main__content-7-block-flex-1 {
@@ -2260,9 +2388,9 @@ Select c dropdown на JS
 
 .main__content-9_step-1_left-flex {
     display: flex;
-    flex-wrap: wrap;
     gap: 2rem;
 }
+
 
 .main__content-9_step-1_left-flex-1 button, 
 .main__content-9_step-1_left-flex-2 button, 
@@ -2389,7 +2517,29 @@ input[type=radio] {
 
 .main__content-9_step-1_right {
     text-align: center;
-    margin-left: 2rem;
+}
+
+@media (max-width: 1400px) {
+    .img-9_step-1 {
+        width: 192px;
+        height: 240px;
+    } 
+    .step-1_procent {
+        width: 78.5rem;
+    }
+    
+    .step-1_procent-load {
+        width: 18rem;
+    }
+    .step-2_procent-load {
+        width: 31rem;
+    }
+    .step-3_procent-load {
+        width: 48rem;
+    }
+    .step-4_procent-load {
+        width: 63rem;
+    }
 }
 
 .main__content-9_step-1_right img:first-child {
@@ -4432,6 +4582,13 @@ input[type=radio] {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 130%;
+}
+
+@media (max-width: 1400px) {
+    .screen-17 {
+        width: 570px;
+        height: 345px;
+    }    
 }
 
 .content-17-right p span{
