@@ -66,10 +66,7 @@ body{
 }
 
 
-
-
 /* Основной контент */
-
 
 .h1{
     margin-top: 10.8rem;
@@ -216,6 +213,7 @@ input::placeholder{
     background: rgba(255,255,255,.6);
 }
 
+
 .overlay {
     display: none;
     position: absolute;
@@ -223,8 +221,8 @@ input::placeholder{
     left: 0;
     bottom: 0;
     right: 0;
-    min-height: 1000vh;
-    z-index: 990;
+    min-height: 3050vh;
+    z-index: 99;
     background: rgba(0,0,0,0.6);
   }
 
@@ -301,7 +299,7 @@ input::placeholder{
 
 .photo-doctor-1 {
     position: relative;
-    margin-top: -24rem; 
+    margin-top: -22rem; 
 }
 
 @media (max-width: 1400px) {
@@ -452,6 +450,7 @@ input::placeholder{
     align-items:flex-start;
     justify-content:space-between;
     padding: 2rem 5rem;
+
 }
 
 
@@ -615,6 +614,22 @@ input::placeholder{
     }
     .main__content-2_block-1_ul {
         font-size: 1.5rem;
+    }
+}
+@media (max-width: 1200px) {
+    .main__content-2_block-2_specialist{
+        font-weight: 400;
+        font-size: 3.5rem;
+    }
+    
+    .main__content-2_block-2_specialist span{
+        font-size: 3.5rem;
+
+    }
+    .main__content-2_block-2_descripton {
+        font-weight: 400;
+        font-size: 2.2rem;
+   
     }
 }
 
@@ -980,8 +995,8 @@ Select c dropdown на JS
 .main__content-3_block_checkbox input + label:before{
     content: '';
     display: inline-block;
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.8rem;
+    height: 1.8rem;
     flex-shrink: 0;
     flex-grow: 0;
     border: 0.1rem solid #adb5bd;
@@ -989,7 +1004,7 @@ Select c dropdown на JS
     margin-right: 0.8rem;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 50% 50%;
+    background-size: 55% 55%;
     background-color: #FFFFFF;
     cursor: pointer;
 }
@@ -1025,6 +1040,13 @@ Select c dropdown на JS
 /* ----------------------------------------------- */
     position: relative;
     overflow: hidden; 
+}
+
+@media (max-width: 1200px) {
+    .main__content-3_button {
+        margin-top: 4rem;
+        font-size: 2.2rem;
+    }   
 }
 
 .main__content-3_button_flare,
@@ -3277,11 +3299,6 @@ input[type=radio] {
 }
 
 
-
-
-
-
-
 /* cтрелки 10 блока влево и вправо */
 
 .main__content-10_flex_single-stage {
@@ -3313,6 +3330,26 @@ input[type=radio] {
 
 .right-10 {
     right: -5rem;    
+}
+
+@media (max-width:1400px) {
+    
+    .main__content-10_flex_single-stage,
+    .main__content-10_flex_two-stage {
+        display: flex;
+        gap: 2rem;
+        align-items:flex-start;
+        justify-content: center;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+    }
+    .left-10 {
+        left: -1.4rem;
+    }
+    
+    .right-10 {
+        right: -1.4rem;    
+    }
 }
 
 
@@ -5990,7 +6027,7 @@ input[type=radio] {
     position: fixed;
     right: 4.5rem;
     bottom: 5rem;
-    z-index: 10;
+    z-index: 100;
   }
 
 

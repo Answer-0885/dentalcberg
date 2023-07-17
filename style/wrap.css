@@ -6,14 +6,16 @@
 
 .container{
     max-width: 100%;
-    min-width: 39rem;
+    min-width: 360px;
 }
+
 .wrap{
-    max-width:144rem;
+    max-width:1440px;
     margin: 0 auto;  
     padding-left: 15px; 
     padding-right: 15px; 
 } 
+
 main{
     flex: 1 1 auto;
 }
