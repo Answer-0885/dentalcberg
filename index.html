@@ -84,7 +84,7 @@
     <!-- Видео о технологии восстановления зубов на 4-6 имплантах -->
     <div class="overlay">
         <div class="close__video"></div>
-        <video class="main__content_video-video" controls="controls" loop="loop">
+        <video class="main__content_video-video" controls="controls" loop="loop" width="800">
 
             <source src="video/video.mp4" type="video/mp4"/> 
             <!-- <source src="video/Одуванчики.ogv" type="video/ogv"/>
@@ -479,10 +479,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
         <button class="main__content-4_main-button">
             Показать ещё отзывы
@@ -1521,7 +1517,7 @@
                     <p class="img_desc">Работа имплантолога</p>
                 </div>
                 <div class="block-1_5">
-                    <div class="result img"><span>73 500 ₽</span>59 000 ₽</div>
+                    <div class="result"><span>73 500 ₽</span>59 000 ₽</div>
                     <p class="img_desc">Общая стоимость 1-ого этапа</p>
                 </div>
             </div>
@@ -1551,7 +1547,7 @@
                     <p class="img_desc">Установка и фиксация протеза</p>
                 </div>
                 <div class="block-1_5">
-                    <div class="result img"><span>150 000 ₽</span>109 000 ₽</div>
+                    <div class="result"><span>150 000 ₽</span>109 000 ₽</div>
                     <p class="img_desc">Общая стоимость 2-ого этапа</p>
                 </div>
             </div>
@@ -2106,7 +2102,12 @@
                     <div class="main__content-4_main">
                         <div class="main__content-4_main-block">
                             <div class="main__content-4_main-block-video">
-                                <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                <picture>    
+                                    <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
+                                    <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
+                                    <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                </picture>
+                                
                                 <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
                             </div>
                             <div class="main__content-4_main-block-desc">
@@ -2115,18 +2116,32 @@
                                     <div>После операции моя жизнь изменилась, это невероятно!</div>
                                     <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                                 </div>
-                                   
+                                    
                                 <div class="main__content-4_main-block-desc-img">
-                                    <img src="./img/фото ДО.png" alt="фото до">
-                                    <img src="./img/фото ПОСЛЕ.png" alt="фото после">
+            
+                                    <picture>    
+                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/фото-ДО.png" alt="фото до">
+                                    </picture>
+                                    <picture>    
+                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                                    </picture>
+            
                                 </div>
                             </div>
                         </div>
-
-
+            
                         <div class="main__content-4_main-block">
                             <div class="main__content-4_main-block-video">
-                                <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                <picture>    
+                                    <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
+                                    <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
+                                    <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                </picture>
+                                
                                 <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
                             </div>
                             <div class="main__content-4_main-block-desc">
@@ -2135,16 +2150,32 @@
                                     <div>После операции моя жизнь изменилась, это невероятно!</div>
                                     <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                                 </div>
-                                   
+                                    
                                 <div class="main__content-4_main-block-desc-img">
-                                    <img src="./img/фото ДО.png" alt="фото до">
-                                    <img src="./img/фото ПОСЛЕ.png" alt="фото после">
+            
+                                    <picture>    
+                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/фото-ДО.png" alt="фото до">
+                                    </picture>
+                                    <picture>    
+                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                                    </picture>
+            
                                 </div>
                             </div>
                         </div>
+            
                         <div class="main__content-4_main-block">
                             <div class="main__content-4_main-block-video">
-                                <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                <picture>    
+                                    <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
+                                    <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
+                                    <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                </picture>
+                                
                                 <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
                             </div>
                             <div class="main__content-4_main-block-desc">
@@ -2153,16 +2184,32 @@
                                     <div>После операции моя жизнь изменилась, это невероятно!</div>
                                     <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                                 </div>
-                                   
+                                    
                                 <div class="main__content-4_main-block-desc-img">
-                                    <img src="./img/фото ДО.png" alt="фото до">
-                                    <img src="./img/фото ПОСЛЕ.png" alt="фото после">
+            
+                                    <picture>    
+                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/фото-ДО.png" alt="фото до">
+                                    </picture>
+                                    <picture>    
+                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                                    </picture>
+            
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="main__content-4_main-block">
                             <div class="main__content-4_main-block-video">
-                                <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                <picture>    
+                                    <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
+                                    <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
+                                    <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                </picture>
+                                
                                 <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
                             </div>
                             <div class="main__content-4_main-block-desc">
@@ -2171,10 +2218,20 @@
                                     <div>После операции моя жизнь изменилась, это невероятно!</div>
                                     <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                                 </div>
-                                   
+                                    
                                 <div class="main__content-4_main-block-desc-img">
-                                    <img src="./img/фото ДО.png" alt="фото до">
-                                    <img src="./img/фото ПОСЛЕ.png" alt="фото после">
+            
+                                    <picture>    
+                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/фото-ДО.png" alt="фото до">
+                                    </picture>
+                                    <picture>    
+                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                                    </picture>
+            
                                 </div>
                             </div>
                         </div>

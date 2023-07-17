@@ -368,6 +368,7 @@ input::placeholder{
         margin-left: 3rem;
     }
 }
+
 @media (max-width: 390px) {
     body {
         background-size: 100% 140rem;
@@ -2139,6 +2140,12 @@ Select c dropdown на JS
     text-align: center;
 }
 
+@media (max-width:1400px) {
+    .main__content-8 h2{
+        font-size: 4rem;
+    }    
+}
+
 .main__content-8 h2 span{
     color: #272727;
     font-weight: 500;
@@ -2775,6 +2782,12 @@ input[type=radio] {
     line-height: 130%;
 }
 
+@media (max-width:1400px) {
+    .main__content-10 h2{
+        font-size: 4rem;
+    }  
+}
+
 .main__content-10 h2 span{
     font-weight: 700;
     color: #409AF8;
@@ -3317,6 +3330,12 @@ input[type=radio] {
     font-weight: 500;
 }
 
+@media (max-width:1400px) {
+    .main__content-11 .h2 {
+        font-size: 4rem;
+    }
+}
+
 .main__content-11 .desc {
     font-size: 2rem;
     line-height: 120%;
@@ -3457,8 +3476,6 @@ input[type=radio] {
 .slider_doctors_right {
     margin-top: -12rem;
     position: absolute;
-    overflow: hidden;
-    max-width: 137rem;
     margin-left: 20rem;
     display: flex;
     gap: 2rem;
@@ -3505,14 +3522,7 @@ input[type=radio] {
     .slider_doctors_right {
         max-width: 77rem;
         gap: 1.2rem;
-    }   
-}
-
-@media (max-width:992px) {
-
-    .slider_doctors_right {
-        max-width: 70rem;
-    }   
+    }    
 }
 
 
@@ -3538,21 +3548,18 @@ input[type=radio] {
 }
 
 
-@media (max-width:1730px) {
-
-    .slider_doctors_right .name {
-        font-size: 1.2rem;
-        line-height: 120%;
-    }
-}
-
-
 @media (max-width:1400px) {
-
     .slider_doctors_right .name {
         font-size: 1.1rem;
         line-height: 110%;
     } 
+    .slider_doctors_right .slide-1,
+    .slider_doctors_right .slide-2,
+    .slider_doctors_right .slide-3,
+    .slider_doctors_right .slide-4,
+    .slider_doctors_right .slide-5{
+        gap: 1rem;
+    }
 }
 
 
@@ -3593,6 +3600,12 @@ input[type=radio] {
     font-weight: 700;
     line-height: 130%;
 }
+
+@media (max-width:1400px) {
+    .main__content-12 .h2 {
+        font-size: 4rem;
+    }
+}    
 
 .main__content-12 .h2 span{
     color: #272727;
@@ -3640,6 +3653,8 @@ input[type=radio] {
     padding-bottom: 5rem;
 }
 
+
+
 .block-1_5 .result {
     width: 19rem;
     height: 19rem;
@@ -3653,12 +3668,24 @@ input[type=radio] {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 120%;
-    margin-bottom: 5.5rem;
+    margin: 0 auto;
+    border:1px solid red;
+}
+
+.block-1_1 .img,
+.block-1_2 .img,
+.block-1_3 .img,
+.block-1_4 .img {
+    width: 200px;
+    height: 200px;
+    border:1px solid red;
 }
 
 .block-1_5 {
     padding-top: 1.5rem;
 }
+
+
 
 .block-1_5 .result span{
     color: #FFF;
@@ -3677,6 +3704,26 @@ input[type=radio] {
     line-height: 130%;
 }
 
+@media (max-width: 1400px) {
+
+    .main__content-12 .block-1,
+    .main__content-12 .block-2 {
+        gap: 2.7rem;
+        padding-top: 5rem;
+        padding-left: 0.5rem;
+        padding-right: 0rem;
+    }   
+}
+@media (max-width: 1200px) {
+
+    .block-1_5 .result {
+        margin: 0 auto;
+    }
+    .block-1_5 .img_desc {
+        margin-top: 4.5rem;
+    }
+}
+
 .block-1 .block-1_1,
 .block-1 .block-1_2,
 .block-1 .block-1_3,
@@ -3688,6 +3735,7 @@ input[type=radio] {
 .block-2 .block-1_4,
 .block-2 .block-1_5 {
     position: relative;
+    border:1px solid red;
 }
 
 .block-1 .icons_sign,
@@ -4196,6 +4244,13 @@ input[type=radio] {
     margin-bottom: 2rem;
 }
 
+@media (max-width:1400px) {
+    .h2-15 {
+        font-size: 4rem;
+    }
+}
+
+
 .content-15_flex .content-15_desc .desc-15_700 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -4339,6 +4394,17 @@ input[type=radio] {
     line-height: 130%;
 }
 
+@media (max-width:1400px) {
+    .content-15_img .doctor-15 .name-15{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .content-15_img .doctor-15 .desc-15{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
 
 /* Шестнадцатый блок
 Цена лечения зависит от ситуации: чем проще — тем дешевле! */
@@ -4354,12 +4420,22 @@ input[type=radio] {
     text-transform: uppercase;
 }
 
+
 .h2-16 span{
     color: #409AF8;
     font-weight: 700;
     font-size: 3.5rem;
     line-height: 140%;
     text-transform: uppercase;
+}
+
+@media (max-width:1400px) {
+    .h2-16 {
+        font-size: 4rem;
+    }
+    .h2-16 span{
+        font-size: 4rem;
+    }
 }
 
 .content-16-flex {
@@ -4488,6 +4564,12 @@ input[type=radio] {
     margin-top: -6rem;
 }
 
+@media (max-width: 1400px) {
+    .content-16-flex .flex-box-right .insurance-2 {
+        background-position: 50% 65%;
+    }   
+}
+
 .content-16-flex .flex-box-right .insurance-2 .money{
     color: #272727;
     font-size: 1.8rem;
@@ -4519,11 +4601,21 @@ input[type=radio] {
     text-transform: uppercase;
 }
 
+
 .h2-17 span{
     color: #409AF8;
     font-size: 3.6rem;
     line-height: 130%;
     text-transform: uppercase;
+}
+
+@media (max-width:1400px) {
+    .h2-17 {
+        font-size: 4rem;
+    }
+    .h2-17 span{
+        font-size: 4rem;
+    }
 }
 
 .content-17-flex {
@@ -4674,6 +4766,12 @@ input[type=radio] {
     text-transform: uppercase;
 }
 
+@media (max-width:1400px) {
+    .h2-18 {
+        font-size: 4rem;
+    }
+}
+
 .p-18 {
     margin-top: 1rem;
     color: #272727;
@@ -4709,6 +4807,7 @@ input[type=radio] {
     display: flex;
     gap: 3rem;
     margin-bottom: 12rem;
+    width: 1352px;
     overflow: hidden;
 }
 
@@ -4792,6 +4891,7 @@ input[type=radio] {
     margin-bottom: 2rem;
 }
 
+
 .h3-18 span{
     color: #409AF8;
     font-weight: 700;
@@ -4801,7 +4901,7 @@ input[type=radio] {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 140%;
-    max-width: 39 ;
+    max-width: 50rem;
 }
 
 .smile_desc .treatment span{
@@ -4814,6 +4914,15 @@ input[type=radio] {
     align-items: center;
     justify-content: space-between;
     margin-top: 5rem;
+}
+
+@media (max-width:1400px) {
+    .h3-18 {
+        font-size: 2.5rem;
+    }
+    .record-18 {
+        margin-top: 11rem;
+    }
 }
 
 .record-18 span{
@@ -4860,10 +4969,19 @@ input[type=radio] {
 
 
 @media (max-width:1400px) {
-
+    .h2-19 {
+        font-size: 4rem;
+    }
     .slides-19 {
-        max-width: 138rem;
+        max-width: 145.5rem;
         gap: 3rem;
+    }
+        
+}
+@media (max-width:1200px) {
+    .slides-19 {
+        max-width: 145rem;
+        gap: 2.5rem;
     }
         
 }
@@ -4879,8 +4997,6 @@ input[type=radio] {
     flex-direction: column;
     align-items:center;
     justify-content: space-between;
-    width: 23rem;
-    max-height: 19rem;
     padding: 2.5rem;
     border-radius: 1.5rem;
     background: #FFF;
@@ -4926,6 +5042,12 @@ input[type=radio] {
     line-height: 130%;
 }
 
+@media (max-width:1400px) {
+    .h2-20 {
+        font-size: 4rem;
+    }
+}
+
 .p20 {
     margin-top: 2rem;
     font-size: 2rem;
@@ -4954,7 +5076,6 @@ input[type=radio] {
 .blocks-20 .block-1-2,
 .blocks-20 .block-1-3,
 .blocks-20 .block-1-4 {
-    width: 33rem;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -5024,6 +5145,12 @@ input[type=radio] {
     font-size: 3.5rem;
     font-weight: 500;
     line-height: 130%;
+}
+
+@media (max-width:1400px) {
+    .h2-22 {
+        font-size: 4rem;
+    }
 }
 
 .blocks-22-flex {
@@ -5152,6 +5279,12 @@ input[type=radio] {
     font-size: 3.5rem;
     font-weight: 500;
     line-height: 130%;
+}
+
+@media (max-width:1400px) {
+    .h2-23 {
+        font-size: 3.8rem;
+    }
 }
 
 .h2-23 span{
@@ -5328,6 +5461,7 @@ input[type=radio] {
     text-transform: uppercase;
 }
 
+
 .license-24 {
     margin-top: 4rem;
     display: flex;
@@ -5338,12 +5472,18 @@ input[type=radio] {
 }
 
 @media (max-width: 1400px) {
-
+    .h2-24 {
+        font-size: 4rem;
+    }
     .license-24 {
         margin-top: 4rem;
-        width: 139rem;
+        width: 160rem;
         gap: 2rem;
-
+    }
+}
+@media (max-width: 1400px) {
+    .license-24 {
+        width: 145rem;
     }
 }
 
@@ -5407,6 +5547,12 @@ input[type=radio] {
     font-weight: 500;
     line-height: 130%;
     text-transform: uppercase;
+}
+
+@media (max-width:1400px) {
+    .h2-25 {
+        font-size: 4rem;
+    }
 }
 
 .tabs-25 {
@@ -5826,7 +5972,13 @@ input[type=radio] {
 
 .footer-down .text-contraindications {
     margin-top: 5rem;
+}
 
+@media (max-width: 1400px) {
+    .footer-down .text-contraindications svg{
+        width: 100%;
+        height: auto;
+    }  
 }
 
 
