@@ -300,6 +300,7 @@ input::placeholder{
 .photo-doctor-1 {
     position: relative;
     margin-top: -22rem; 
+    border: 1px solid red;
 }
 
 @media (max-width: 1400px) {
@@ -307,6 +308,12 @@ input::placeholder{
     .main__content-photo {
         width: 55rem;
         margin-top: 8rem;
+    }    
+}
+@media (max-width: 992px) {
+
+    .main__content-photo {
+        margin-left: -2rem;
     }    
 }
 
@@ -579,6 +586,8 @@ input::placeholder{
 .main__content-2_block-1_img {
     margin-left: -15.3rem;
     margin-top: -2rem;
+    width: 48.8rem;
+    height: 40rem;
 }
 
 
@@ -629,12 +638,22 @@ input::placeholder{
     .main__content-2_block-2_descripton {
         font-weight: 400;
         font-size: 2.2rem;
-   
     }
 }
 
 @media (max-width: 992px) {
     .main__content-2_block-1_ul {
+        font-size: 1.6rem;
+    }
+    .main__content-2_block-2_specialist{
+        font-size: 3.5rem;
+        margin-top: 1rem;
+    }
+    .main__content-2_block-2_specialist span{
+        font-size: 3.5rem;
+
+    }
+    .main__content-2_block-2_descripton {
         font-size: 2rem;
     }
 }
@@ -2227,12 +2246,30 @@ Select c dropdown на JS
     background-position:50% 50%
 }
 
+
+
 .left-8 {
     left: 18rem;
 }
 
 .right-8 {
     right: 18rem;    
+}
+
+@media (max-width: 992px) {
+    .main__content-8_swiper-btn{
+        top:50%;
+        width:5rem;
+        height:5rem
+    } 
+    .left-8 {
+        left: 12rem;
+    }
+    
+    .right-8 {
+        right: 12rem;    
+    }
+
 }
 
 .main__content-8_swiper-dots{
@@ -2573,6 +2610,28 @@ input[type=radio] {
         width: 63rem;
     }
 }
+@media (max-width: 992px) {
+    .img-9_step-1 {
+        width: 135px;
+        height: 160px;
+    } 
+    .step-1_procent {
+        width: 78.5rem;
+    }
+    
+    .step-1_procent-load {
+        width: 18rem;
+    }
+    .step-2_procent-load {
+        width: 31rem;
+    }
+    .step-3_procent-load {
+        width: 48rem;
+    }
+    .step-4_procent-load {
+        width: 63rem;
+    }
+}
 
 .main__content-9_step-1_right img:first-child {
     margin-top: -2.5rem;
@@ -2792,6 +2851,13 @@ input[type=radio] {
 .main__content-9-block_right-img {
     margin-left: 11rem;
     margin-bottom: -1rem;
+}
+
+@media (max-width: 992px) {
+    .main__content-9-block_right-img img{
+        width: 667px;
+        height: 515px;
+    }   
 }
 
 /* Десятый блок */
@@ -3294,13 +3360,6 @@ input[type=radio] {
     line-height: 120%;
 }
 
-.flex-2 .iceberg:before,
-.flex-5 .iceberg:before {
-    content: url(../img/Exclude.png);
-    width: 2.6rem;
-    height: 2.6rem;
-}
-
 
 /* cтрелки 10 блока влево и вправо */
 
@@ -3355,6 +3414,22 @@ input[type=radio] {
     }
 }
 
+@media (max-width:992px) {
+    .swiper_10_btn{
+        top: 45%;
+        width: 6rem;
+        height: 6rem;
+        opacity: 0.7;
+    }
+    .left-10 {
+        left: -2rem;
+    }
+    
+    .right-10 {
+        right: -2rem;    
+    }   
+}
+
 
 /* 11 БЛОК - НАША КОМАНДА */
 
@@ -3399,6 +3474,8 @@ input[type=radio] {
 .main__content-11 .doctors-img .doctors-img-1{
     margin-top: -6.9rem;
     margin-left: 13.2rem;
+    width: 67.3rem;
+    height: 55rem;   
 }
 
 /* Кнопка запуска видео 11 блока*/
@@ -3641,11 +3718,7 @@ input[type=radio] {
     line-height: 130%;
 }
 
-@media (max-width:1400px) {
-    .main__content-12 .h2 {
-        font-size: 4rem;
-    }
-}    
+   
 
 .main__content-12 .h2 span{
     color: #272727;
@@ -3709,23 +3782,23 @@ input[type=radio] {
     font-weight: 700;
     line-height: 120%;
     margin: 0 auto;
-    border:1px solid red;
+
 }
 
 .block-1_1 .img,
 .block-1_2 .img,
 .block-1_3 .img,
 .block-1_4 .img {
-    width: 200px;
-    height: 200px;
-    border:1px solid red;
+    width: 20rem;
+    height: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .block-1_5 {
     padding-top: 1.5rem;
 }
-
-
 
 .block-1_5 .result span{
     color: #FFF;
@@ -3742,27 +3815,9 @@ input[type=radio] {
     font-size: 2rem;
     font-weight: 400;
     line-height: 130%;
+    margin-top: 2rem;
 }
 
-@media (max-width: 1400px) {
-
-    .main__content-12 .block-1,
-    .main__content-12 .block-2 {
-        gap: 2.7rem;
-        padding-top: 5rem;
-        padding-left: 0.5rem;
-        padding-right: 0rem;
-    }   
-}
-@media (max-width: 1200px) {
-
-    .block-1_5 .result {
-        margin: 0 auto;
-    }
-    .block-1_5 .img_desc {
-        margin-top: 4.5rem;
-    }
-}
 
 .block-1 .block-1_1,
 .block-1 .block-1_2,
@@ -3775,7 +3830,9 @@ input[type=radio] {
 .block-2 .block-1_4,
 .block-2 .block-1_5 {
     position: relative;
-    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .block-1 .icons_sign,
@@ -3783,6 +3840,28 @@ input[type=radio] {
     position: absolute;
     bottom: 50%;
     right: -2rem;
+}
+
+@media (max-width: 1400px) {
+    .main__content-12 .h2 {
+        font-size: 4rem;
+    }
+    .main__content-12 .block-1,
+    .main__content-12 .block-2 {
+        gap: 2.7rem;
+        padding-top: 5rem;
+        padding-left: 0.5rem;
+        padding-right: 0rem;
+    }   
+}
+
+@media (max-width: 992px) {
+
+    .main__content-12 .block-1,
+    .main__content-12 .block-2 {
+        gap: 3rem;
+    }
+
 }
 
 /* Тринадцатый блок */
@@ -3796,6 +3875,11 @@ input[type=radio] {
     border-radius: 2rem;
     background: #FFF;
     box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
+}
+
+.main-13-up-image {
+    width: 57rem;
+    height: 46rem;
 }
 
 .main-13-up .desc {
@@ -3957,6 +4041,11 @@ input[type=radio] {
     border-radius: 1.5rem;
     background: linear-gradient(167deg, #FFF 25.83%, rgba(255, 255, 255, 0.7) 93.58%);
     box-shadow: 1rem 1rem 5rem 0rem rgba(47, 138, 244, 0.20);   
+}
+
+.block-2-icons-video {
+    width: 8rem;
+    height: 8rem;
 }
 
 .block-13-right .list-right{
@@ -4443,12 +4532,23 @@ input[type=radio] {
 
 @media (max-width:1400px) {
     .content-15_img .doctor-15 .name-15{
-        text-align: center;
+        text-align: right;
         font-size: 2rem;
     }
     .content-15_img .doctor-15 .desc-15{
         font-size: 1.5rem;
-        text-align: center;
+        text-align: right;
+    }
+}
+@media (max-width:992px) {
+    .content-15_img .doctor-15 {
+        right: 10rem;
+    }
+    .content-15_img .doctor-15 .name-15{
+        font-size: 2rem;
+    }
+    .content-15_img .doctor-15 .desc-15{
+        font-size: 1.5rem;
     }
 }
 
@@ -4731,6 +4831,12 @@ input[type=radio] {
         height: 320px;
     }    
 }
+@media (max-width: 1200px) {
+    .screen-17 {
+        width: 450px;
+        height: 300px;
+    }    
+}
 
 .content-17-right p span{
     font-weight: 500;
@@ -4857,8 +4963,6 @@ input[type=radio] {
     display: flex;
     gap: 3rem;
     margin-bottom: 12rem;
-    width: 1410px;
-    overflow: hidden;
 }
 
 
@@ -4868,7 +4972,13 @@ input[type=radio] {
 .slides-18 .slide-3,
 .slides-18 .slide-4 {
     cursor: pointer;
-
+}
+.slides-18 .slide-1 img,
+.slides-18 .slide-2 img,
+.slides-18 .slide-3 img,
+.slides-18 .slide-4 img{
+    width: 45rem;
+    height: 33rem;
 }
 
 /* DOTS-18 */
@@ -4886,16 +4996,24 @@ input[type=radio] {
 
 @media (max-width: 1400px) {
     .slides-18 {
-        width: 1383px;
-    }   
+        gap: 3rem;
+        justify-content: center;
+    }
+   .slides-18 .slide-4 {
+        display: none;
+  }
+   .slider-18-dots {
+    top: 400px;
+} 
 }
-@media (max-width: 1400px) {
-    .slides-18 {
-        width: 1183px;
-    } 
+@media (max-width: 1200px) {
     .slider-18-dots {
-        top: 400px;
-    }  
+        top: 350px;
+  }  
+@media (max-width: 992px) {
+    .slider-18-dots {
+        top: 300px;
+  }  
 }
 
 .slider-18-dots .dot-18{
@@ -4927,6 +5045,11 @@ input[type=radio] {
     padding: 2rem 0rem 2rem 2rem;
     border-radius: 2rem;
     background: linear-gradient(180deg, #E1EAFA 0%, #F1F5FC 100%);
+}
+
+.video-18 {
+    width: 53rem;
+    height: 34rem;
 }
 
 /* Кнопка запуска видео */
@@ -4991,6 +5114,7 @@ input[type=radio] {
     }
 }
 
+
 .record-18 span{
     font-size: 1.8rem;
     font-weight: 700;
@@ -5007,6 +5131,8 @@ input[type=radio] {
     position: absolute;
     right: 0;
     bottom:0;  
+    width: 31rem;
+    height: 39.9rem;
 }
 
 
@@ -5045,6 +5171,16 @@ input[type=radio] {
 @media (max-width:1200px) {
     .slides-19 {
         max-width: 145rem;
+    }       
+}
+@media (max-width:1200px) {
+    .slides-19 {
+        max-width: 145rem;
+    }       
+}
+@media (max-width:992px) {
+    .slides-19 {
+        max-width: 141rem;
     }       
 }
 
@@ -5554,21 +5690,15 @@ input[type=radio] {
     align-items: center;
 }
 
-@media (max-width: 1400px) {
-    .h2-24 {
-        font-size: 4rem;
-    }
-    .license-24 {
-        margin-top: 4rem;
-        width: 160rem;
-        gap: 2rem;
-    }
+.icons-video-23 {
+    width: 8rem;
+    height: 8rem;
 }
-@media (max-width: 1400px) {
-    .license-24 {
-        width: 145rem;
-    }
-}
+
+.block-23-video .video-23 {
+    width: 57rem;
+    height: 57rem;
+ }
 
 .license-24 .license-1{
     display: flex;
@@ -5586,7 +5716,29 @@ input[type=radio] {
 .license-24 .license-1 img{
     max-width: 30.2rem;
     max-height: 44.2rem;
- 
+}
+
+@media (max-width: 1400px) {
+    .h2-24 {
+        font-size: 4rem;
+    }
+    .license-24 {
+        width: 149rem;
+        gap: 2rem;
+    }
+}
+@media (max-width: 1200px) {
+    .license-24 {
+        width: 147.5rem;
+        gap: 1.5rem;
+    }
+
+}
+@media (max-width: 992px) {
+    .license-24 {
+        width: 140rem;
+    }
+
 }
 
 /* DOTS-24 */
@@ -6075,7 +6227,5 @@ input[type=radio] {
     right: 4.5rem;
     bottom: 5rem;
     z-index: 100;
-  }
-
-
-
+}
+}
