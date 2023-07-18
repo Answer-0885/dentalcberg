@@ -1768,6 +1768,9 @@ Select c dropdown на JS
     margin-top: 2.2rem;
 }
 
+.main__content-6_main_advantage-1_tab-2,
+.main__content-6_main_advantage-2_tab-2,
+.main__content-6_main_advantage-3_tab-2,
 .main__content-6_main_advantage-1_tab-3,
 .main__content-6_main_advantage-2_tab-3,
 .main__content-6_main_advantage-3_tab-3 {
@@ -3839,10 +3842,12 @@ input[type=radio] {
     margin-left: 3rem;
 }
 
-.block-13-left .jackdaw_entries {
+.block-13-left svg {
     position: absolute;
     left: -1rem;
     top: 1rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .main-13-down {
@@ -3971,14 +3976,19 @@ input[type=radio] {
     line-height: 140%;
 }
 
-.block-13-right img{
+.block-13-right svg{
     position: absolute;
     left: -1rem;
     top: 1rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .block-13-right .blocks {
     display: flex;
+}
+.block-13-right .block-1 {
+    padding-left: 1rem;
 }
 
 .block-13-right .block-2 {
@@ -4582,7 +4592,7 @@ input[type=radio] {
 .content-16-flex .flex-box-right .insurance p{
     color: #FFF;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 140%;
 }
 
@@ -4595,17 +4605,13 @@ input[type=radio] {
     border-radius: 2rem;
     background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.52) 31.39%, rgba(255, 255, 255, 0.00) 100%);
     background-image: url(/img/фон-16-страховка.png);
+    background-size: cover;
     width: 45rem;
     height: 48.5rem;
     text-align: center;
     margin-top: -6rem;
 }
 
-@media (max-width: 1400px) {
-    .content-16-flex .flex-box-right .insurance-2 {
-        background-position: 50% 65%;
-    }   
-}
 
 .content-16-flex .flex-box-right .insurance-2 .money{
     color: #272727;
@@ -4719,6 +4725,12 @@ input[type=radio] {
         height: 345px;
     }    
 }
+@media (max-width: 1200px) {
+    .screen-17 {
+        width: 500px;
+        height: 320px;
+    }    
+}
 
 .content-17-right p span{
     font-weight: 500;
@@ -4819,6 +4831,7 @@ input[type=radio] {
 .button-18 {
     margin-top: 3rem;
     margin-bottom: 3rem;
+    position: relative;
 }
 
 .button-18 .btn-left,
@@ -4844,9 +4857,11 @@ input[type=radio] {
     display: flex;
     gap: 3rem;
     margin-bottom: 12rem;
-    width: 1352px;
+    width: 1410px;
     overflow: hidden;
 }
+
+
 
 .slides-18 .slide-1,
 .slides-18 .slide-2,
@@ -4861,12 +4876,26 @@ input[type=radio] {
 .slider-18-dots {
     list-style-type: none;
     position:absolute;
-    top: 100%;
+    top: 420px;
     width:100%;
     display:flex;
     justify-content:center;
-    z-index:5;
+    z-index:555;
     margin-top: 3rem;
+}
+
+@media (max-width: 1400px) {
+    .slides-18 {
+        width: 1383px;
+    }   
+}
+@media (max-width: 1400px) {
+    .slides-18 {
+        width: 1183px;
+    } 
+    .slider-18-dots {
+        top: 400px;
+    }  
 }
 
 .slider-18-dots .dot-18{
@@ -4997,10 +5026,8 @@ input[type=radio] {
 
 .slides-19 {
     position: absolute;
-    overflow: hidden;
-    max-width: 157.2rem;
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     background: #F5F8FD;
 }
 
@@ -5010,17 +5037,15 @@ input[type=radio] {
         font-size: 4rem;
     }
     .slides-19 {
-        max-width: 145.5rem;
-        gap: 3rem;
-    }
-        
+        overflow: hidden;
+        max-width: 149rem;
+    }      
 }
+
 @media (max-width:1200px) {
     .slides-19 {
         max-width: 145rem;
-        gap: 2.5rem;
-    }
-        
+    }       
 }
 
 .slides-19 .slide-1,
@@ -5038,6 +5063,10 @@ input[type=radio] {
     border-radius: 1.5rem;
     background: #FFF;
     box-shadow: 0rem 0rem 2rem 0rem rgba(171, 175, 183, 0.50);
+}
+.slides-19 .slide-7 {
+    opacity: 0.3;
+    background: linear-gradient(270deg, #f1eaea 0%, #f8f8f8 100%);
 }
 
 .slides-19 .img-19 {
@@ -5323,6 +5352,11 @@ input[type=radio] {
         font-size: 3.8rem;
     }
 }
+@media (max-width:1200px) {
+    .h2-23 {
+        font-size: 3.5rem;
+    }
+}
 
 .h2-23 span{
     color: #409AF8;
@@ -5333,6 +5367,18 @@ input[type=radio] {
     display: flex;
     align-items:center;
     gap: 10rem;
+}
+
+@media (max-width:1400px) {
+    .h2-23 {
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .blocks-23-flex {
+        gap: 5rem;
+    }
 }
 
 .block-23-desc .text-23 {
@@ -5850,17 +5896,18 @@ input[type=radio] {
 .footer-left .tinkoff p{
     color: #FFF;
     font-size: 1.8rem;
-    font-weight: 00;
+    font-weight: 400;
     line-height: 160%;
     max-height: 7rem;
     max-width: 80.3rem;
 }
 
-.footer-left .tinkoff p:after{
-    content: url(../img/тинькоф.png);
-    margin-left: 3.7rem;
+.footer-left .tinkoff svg{
+    width: 15.6rem;
+    height: 5rem;
+    margin-left: 3rem;
     vertical-align: middle;
-}
+} 
 
 .footer-left .tinkoff p span{
     font-weight: 700;
