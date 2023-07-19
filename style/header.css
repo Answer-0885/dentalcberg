@@ -96,6 +96,7 @@
 
 
 
+
 .header-up__telephone>a {
     font-weight: 700;
     font-size: 2rem;
@@ -247,7 +248,7 @@
     .hr_header {
         width: 100%;
     }
-
+    
     .header-up {
         display: grid;
         grid-template-columns: 1fr 210px 1fr 1fr;
@@ -324,7 +325,7 @@
     }
     .header-menu-list {
         flex-direction: column;
-        background-image: url(../img/Фон-1.png);
+        background-image: url(../img/phone-1.png);
         background-size: cover;
         align-items: center;
         justify-content: space-between;
@@ -408,6 +409,7 @@
         font-size: 3rem;
     }
 }
+
 @media (max-width:390px) {
     .header-up { 
         grid-template-columns: 200rem 1fr;

@@ -57,12 +57,11 @@ body{
     font-size: 1.6rem;
     line-height: 140%;
     background-color: #F5F8FD;
-    background-image: url(../img/Фон-1.png);
+    background-image: url(../img/phone-1.png);
     background-position: top center;
     background-size: 100% 93rem;
     background-repeat: no-repeat;
     color: #272727;
-    border: 1px solid red;
 }
 
 
@@ -133,13 +132,12 @@ input::placeholder{
 .main__content-block_button,
 .main__content-5_desc-button{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     font-size: 1.6rem;
     text-align: center;
     color: #FFFFFF;
     margin-top: 3rem;
-    padding: 2.2rem 1rem;
     gap: 1rem;
     width: 42rem;
     height: 7rem;
@@ -155,7 +153,9 @@ input::placeholder{
 .main__content-block_button:before,
 .main__content-5_desc-button::before {
     content: url(../img/consultation.svg);
+   
 }
+
 
 .main__content-block_personal-data{
     margin-top: 2rem;
@@ -194,13 +194,13 @@ input::placeholder{
     width: 23rem;
     height: 23rem;
     border-radius: 12.5rem;
-    background-image: url(../img/Постер\ к\ видео.png);
+    background-image: url(../img/poster-video.png);
     background-repeat: no-repeat;
     background-size:cover;
 }
 
-.main__content_video-video {
-    position: absolute;
+.video_1 {
+    position: fixed;
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
@@ -221,16 +221,16 @@ input::placeholder{
     left: 0;
     bottom: 0;
     right: 0;
-    min-height: 3050vh;
+    min-height: 3550vh;
     z-index: 99;
     background: rgba(0,0,0,0.6);
   }
 
   /* Кнопка закрытия видео */
   .close__video{
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
     width: 5.5rem;
     height: 5.5rem;
     cursor: pointer;
@@ -300,7 +300,6 @@ input::placeholder{
 .photo-doctor-1 {
     position: relative;
     margin-top: -22rem; 
-    border: 1px solid red;
 }
 
 @media (max-width: 1400px) {
@@ -421,14 +420,17 @@ input::placeholder{
     .main__content-block_input::placeholder{
         font-size: 2.5rem;
     }
+
     .main__content-block_button {
-        font-size: 2rem;
-        width:52rem;
-        height: 9rem;
+        font-size: 1.6rem;
+        width: 42rem;
+        height: 7rem;
     }
+
     .main__content-block_button:before {
         content: url(../img/consultation-390.svg);
     }
+    
     .main__content-block_input-checkbox {
         width: 2.5rem;
         height: 2.5rem;
@@ -660,7 +662,8 @@ input::placeholder{
 
 @media (max-width: 768px) {
     .main__content-2_block-1_ul {
-        font-size: 2.5rem;
+        width: 100%;
+        font-size: 2.2rem;
     }
     .main__content-2 {
         gap: 2rem;
@@ -716,7 +719,7 @@ input::placeholder{
     margin-top: 12rem;
     width: 100%;
     height: 100%;
-    background-image: url(../img/фон_блок_3.png);
+    background-image: url(../img/phone-3block.png);
     background-repeat:no-repeat;
     background-size: cover;
 }
@@ -835,7 +838,7 @@ Select c dropdown на JS
     box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.16);
     border-radius: 3.5rem;
     appearance: none;
-    background: url("../img/Стрелка.svg") 96% / 15% no-repeat #eee;
+    background: url("../img/strelka.svg") 96% / 15% no-repeat #eee;
     background-size: 10% 10%;
     cursor: pointer;
 }
@@ -1023,7 +1026,7 @@ Select c dropdown на JS
     margin-right: 0.8rem;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 55% 55%;
+    background-size: 50% 50%;
     background-color: #FFFFFF;
     cursor: pointer;
 }
@@ -1031,7 +1034,7 @@ Select c dropdown на JS
 
 .main__content-3_block_checkbox input:checked+label::before {
     border-color: #0b76ef;
-    background-image: url(../img/галка.png);
+    background-image: url(../img/galka.svg);
 }
 
 /* Кнопка Закрепить стоимость по акции */
@@ -1142,7 +1145,7 @@ Select c dropdown на JS
 
 .main__content-4_header_left-list::before {
     content: '';
-    background-image: url('../img/галка.svg');
+    background-image: url('../img/galka.svg');
     background-position: 50% 50%;
     border-radius: 50px;
     width: 2.8rem;
@@ -1183,6 +1186,10 @@ Select c dropdown на JS
     line-height: 140%;
 }
 
+.main__content-4_header_right-list {
+    margin-bottom: 0.7rem;
+}
+
 /* Видео 2 */
 
 .main__content-4_header_right-video {
@@ -1217,7 +1224,7 @@ Select c dropdown на JS
     width: 23rem;
     height: 23rem;
     border-radius: 12.5rem;
-    background-image: url(../img/Постер_к_Видео-2.jpg);
+    background-image: url(../img/poster-video-2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -1226,7 +1233,8 @@ Select c dropdown на JS
 .main__content-4_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    row-gap: 7rem;
+    column-gap: 5rem;
 }
 
 .main__content-4_main-block-video {
@@ -1332,8 +1340,8 @@ Select c dropdown на JS
     }
     .main__content-4_header_right-ul{
         list-style: circle;
-        max-width: 40rem;
-        font-size: 2.2rem;
+        width: 80%;
+        font-size: 2rem;
     }
   
 }
@@ -1370,13 +1378,13 @@ Select c dropdown на JS
 
 .main__content-4_main-button,
 .btn_feedback-22 {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #FFF;
     text-align: center;
     font-size: 1.6rem;
     line-height: 130%;
-    width: 34.5rem;
-    height: 7rem;
     padding: 2.2rem 3rem;
     gap: 1rem;
     border: none;
@@ -1388,7 +1396,8 @@ Select c dropdown на JS
 
 .main__content-4_main-button::before, 
 .btn_feedback-22::before {
-    content:url(../img/обновить.png);
+    content:url(../img/obnovit.svg);
+    width: 1.6rem;
     margin-right: 1rem;
     display: inline-block;
     vertical-align: middle;
@@ -1396,7 +1405,8 @@ Select c dropdown на JS
 
 .main__content-4_main-button::after,
 .btn_feedback-22::after {
-    content:url(../img/Стрелка\ вниз.png);
+    content:url(../img/strelka-vniz.svg);
+    width: 1.2rem;
     margin-left: 1rem;
     display: inline-block;
     vertical-align: middle;
@@ -1491,6 +1501,7 @@ Select c dropdown на JS
         margin-top: 1.5rem; 
     }  
 }
+
 @media (max-width: 768px) {
     .main__content-5_up {
         flex-wrap: wrap;
@@ -1534,8 +1545,9 @@ Select c dropdown на JS
 }
 
 .main__content-5_advantages_list:before {
-    content: url(../img/галка.png);
-    display: inline-block;
+    content: url(../img/galka.svg);
+    width: 2.5rem;
+    height: 2.5rem;
     vertical-align:top;
     margin-right: 1rem;
 }
@@ -1547,6 +1559,14 @@ Select c dropdown на JS
     padding: 3rem;
     margin-top: -10rem;
     margin-left: 3rem;
+}
+
+@media (max-width: 768px) {
+    .main__content-5_down_layout {
+        width: 100%;
+        margin-top: -5rem;
+        margin-left: 0;
+    }
 }
 
 .main__content-5_down_style {
@@ -1591,6 +1611,8 @@ Select c dropdown на JS
     bottom: 0;
     cursor: pointer;
     transition: 0.5s;
+    width: 8rem;
+    height: 8rem;
 }
 
 .main__content-5_video_main-wrap-2 {
@@ -1608,7 +1630,7 @@ Select c dropdown на JS
     width: 23rem;
     height: 23rem;
     border-radius: 12.5rem;
-    background-image: url(../img/Постер\ к\ видео.png);
+    background-image: url(../img/poster-video.png);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -1626,6 +1648,8 @@ Select c dropdown на JS
 
 }
 
+
+
 .main__content-5_desc h3 span{
     font-weight: 500;
 }
@@ -1636,6 +1660,18 @@ Select c dropdown на JS
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 140%;
+}
+
+@media (max-width: 768px) {
+    .main__content-5_desc h3{
+        margin-top: 5rem;  
+    }
+    .main__content-5_desc p{
+        margin-top: 6rem;
+
+        font-size: 1.8rem;
+
+    }
 }
 
 .main__content-5_desc-button{
@@ -1712,6 +1748,14 @@ Select c dropdown на JS
     justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+    .main__content-6_main_tab-1,
+    .main__content-6_main_tab-2,
+    .main__content-6_main_tab-3 {
+        width: 110rem;
+    }    
+} 
+
 
 .d-none {
     display: none;
@@ -1752,7 +1796,7 @@ Select c dropdown на JS
 }
 
 .main__content-6_main_li:before {
-    content: url(../img/галка.png);
+    content: url(../img/galka.svg);
     margin-right: 1rem;
 }
 
@@ -1835,7 +1879,9 @@ Select c dropdown на JS
 .main__content-6_main_advantage-1_tab-3:before, 
 .main__content-6_main_advantage-2_tab-3:before, 
 .main__content-6_main_advantage-3_tab-3:before {
-    content: url(../img/галка.png);
+    content: url(../img/galka-fiolet.svg);
+    width: 2.5rem;
+    height: 2.5rem;
     vertical-align: middle; 
     margin-right: 1rem;
 }
@@ -1921,6 +1967,7 @@ Select c dropdown на JS
 
 .main__content-6_main_cost-right-3::before {
     content: url(../img/procent-2.png);
+    margin-right: 0.8rem;
 }
 
 .main__content-6_main_cost-right_regular-price {
@@ -1962,7 +2009,6 @@ Select c dropdown на JS
     width: 40rem;
     margin-bottom: 5rem;
     height: 7rem;
-    padding: 2.2rem 3rem;
     border-radius: 3.5rem;
     border: none;
     cursor: pointer;
@@ -1976,11 +2022,25 @@ Select c dropdown на JS
     overflow: hidden; 
 }
 
+
 .main__content-6_button_sign_up:before,
 .main__content-6_button_sign_up_tab-2:before,
 .main__content-6_button_sign_up_tab-3:before {
-    content: url(../img/запись.png)
+    content: url(../img/record.svg);
+    width: 1.9rem;
+    height: 2.4rem;
+    
 }
+
+@media (max-width: 768px) {
+    .main__content-6_button_sign_up,
+    .main__content-6_button_sign_up_tab-2,
+    .main__content-6_button_sign_up_tab-3 {
+        justify-content: flex-end;
+        font-size: 1.4rem;
+        width: 35rem;
+    }  
+} 
 
 .main__content-6_main_li_tab-2 {
     font-size: 1.8rem;
@@ -1991,7 +2051,9 @@ Select c dropdown на JS
 }
 
 .main__content-6_main_li_tab-2:before {
-    content: url(../img/галка.png);
+    content: url(../img/galka.svg);
+    width: 2.5rem;
+    height: 2.5rem;
     margin-right: 1rem;
 }
 
@@ -2026,6 +2088,13 @@ Select c dropdown на JS
         width: 50px;
         height: 50px;
     }
+}
+@media (max-width: 768px) {
+    .main__content-6_main_right_img-video {
+        width: 33rem;
+        height: 23rem; 
+    }  
+
 }
 
 
@@ -2134,6 +2203,12 @@ Select c dropdown на JS
     max-width: 36.9rem;
 }
 
+@media (max-width: 768px) {
+    .main__content-7-block-flex-1_content ul {
+        font-size: 2rem;
+    }  
+}
+
 .main__content-7-block-flex-1_content ul li {
     margin-bottom: 0.5rem;
 }
@@ -2159,6 +2234,14 @@ Select c dropdown на JS
     font-weight: 400;
     line-height: 140%;
     margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .main__content-7-block-flex-2_content p:last-child, 
+    .main__content-7-block-flex-3_content p:last-child,
+    .main__content-7-block-flex-4_content p:last-child  {
+        font-size: 2rem;
+    } 
 }
 
 .main__content-7-block-flex-2_content p:last-child span,
@@ -2473,6 +2556,13 @@ Select c dropdown на JS
     background: transparent;
 }
 
+/* .main__content-9_step-1_left-flex-1 button .img-1, 
+.main__content-9_step-1_left-flex-2 button .img-1, 
+.main__content-9_step-1_left-flex-3 button .img-1, 
+.main__content-9_step-1_left-flex-4 button .img-1 {
+    width: 3rem;
+    height: 3rem;
+} */
 .main__content-9_step-1_left-flex-1 button .img-2, 
 .main__content-9_step-1_left-flex-2 button .img-2, 
 .main__content-9_step-1_left-flex-3 button .img-2, 
@@ -2485,6 +2575,7 @@ Select c dropdown на JS
 .main__content-9_step-1_left-flex-3 button:hover .img-1, 
 .main__content-9_step-1_left-flex-4 button:hover .img-1{
     display: none;
+
 }
 
 .main__content-9_step-1_left-flex-1 button:hover .img-2, 
@@ -2492,7 +2583,8 @@ Select c dropdown на JS
 .main__content-9_step-1_left-flex-3 button:hover .img-2, 
 .main__content-9_step-1_left-flex-4 button:hover .img-2{
     display: block;  
-    border-bottom: 0.5rem solid transparent;
+    border-bottom: 3px solid transparent;
+
 }
 
 
@@ -2501,6 +2593,8 @@ Select c dropdown на JS
 .main__content-9_step-1_left-flex-3 button:focus .img-1, 
 .main__content-9_step-1_left-flex-4 button:focus .img-1{
     display: none;
+
+
 }
 
 .main__content-9_step-1_left-flex-1 button:focus .img-2, 
@@ -2508,7 +2602,8 @@ Select c dropdown на JS
 .main__content-9_step-1_left-flex-3 button:focus .img-2, 
 .main__content-9_step-1_left-flex-4 button:focus .img-2{
     display: block;  
-    border-bottom: 0.5rem solid transparent;
+    border-bottom: 3px solid transparent;
+
 }
 
 .main__content-9_step-1_left-flex-1 p, 
@@ -2551,10 +2646,13 @@ input[type=radio] {
 }
 
 .main__content-9_step-1_left-radio .input_1-1,
+.main__content-9_step-1_left-radio .input_1-2,
 .main__content-9_step-2_left-radio .input_2-4,
 .main__content-9_step-1_left-radio .label_1-1,
 .main__content-9_step-2_left-radio .label_2-1{
     margin-bottom: 2.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 .main__content-9_step-1_left-radio p,
@@ -2588,11 +2686,16 @@ input[type=radio] {
     text-align: center;
 }
 
+.img-9_step-1 {
+    width: 24rem;
+    height: 30rem;
+}
+
 @media (max-width: 1400px) {
-    .img-9_step-1 {
+    /* .img-9_step-1 {
         width: 192px;
         height: 240px;
-    } 
+    }  */
     .step-1_procent {
         width: 78.5rem;
     }
@@ -2611,10 +2714,33 @@ input[type=radio] {
     }
 }
 @media (max-width: 992px) {
-    .img-9_step-1 {
+    /* .img-9_step-1 {
         width: 135px;
         height: 160px;
-    } 
+    }  */
+    .step-1_procent {
+        width: 78.5rem;
+    }
+    
+    .step-1_procent-load {
+        width: 18rem;
+    }
+    .step-2_procent-load {
+        width: 31rem;
+    }
+    .step-3_procent-load {
+        width: 48rem;
+    }
+    .step-4_procent-load {
+        width: 63rem;
+    }
+}
+@media (max-width: 768px) {
+    .img-9_step-1 {
+        width: 21rem;
+        height: 27.5rem;
+    }
+
     .step-1_procent {
         width: 78.5rem;
     }
@@ -2635,6 +2761,13 @@ input[type=radio] {
 
 .main__content-9_step-1_right img:first-child {
     margin-top: -2.5rem;
+    width: 18rem;
+    height: 19.8rem;
+}
+
+.img-block-9 {
+    width: 33rem;
+    height: 26.4rem;
 }
 
 .main__content-9_step-1_right .doctor {
@@ -2737,6 +2870,25 @@ input[type=radio] {
     align-items: center;
     gap: 1rem;
 }
+.main__content-9_step-1_left .input_radio_2-1 input,
+.main__content-9_step-1_left .input_radio_2-2 input,
+.main__content-9_step-1_left .input_radio_2-3 input,
+.main__content-9_step-1_left .input_radio_3-1 input,
+.main__content-9_step-1_left .input_radio_3-2 input,
+.main__content-9_step-1_left .input_radio_3-3 input,
+.main__content-9_step-1_left .input_radio_3-4 input,
+.main__content-9_step-1_left .input_radio_3-5 input,
+.main__content-9_step-1_left .input_radio_3-6 input,
+.main__content-9_step-1_left .input_radio_4-1 input,
+.main__content-9_step-1_left .input_radio_4-2 input,
+.main__content-9_step-1_left .input_radio_4-3 input,
+.main__content-9_step-1_left .input_radio_4-4 input,
+.main__content-9_step-1_left .input_2-5,
+.main__content-9_step-3_left-radio input,
+.main__content-9_step-4_left-radio input {
+    width: 1.2rem;
+    height: 1.2rem;
+}
 
 
 .main__content-9_step-2_left-radio .step_back,
@@ -2752,10 +2904,12 @@ input[type=radio] {
 }
 
 .step_back:before{
-    content: url(../img/шаг_назад.png);
+    content: url(../img/step-back.svg);
     margin-right: 1rem;
     margin-left: -1rem;
     cursor: pointer;
+    width: 2.4rem;
+    height: 2.2rem;
 }
 
 .main__content-9_step-1_left .variant {
@@ -2813,7 +2967,7 @@ input[type=radio] {
 }
 
 .block_input-5_messenger:before{
-    content: url(../img/белая_стрелка_вниз.png);
+    content: url(../img/belaya-strelka-vniz.png);
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -2851,13 +3005,12 @@ input[type=radio] {
 .main__content-9-block_right-img {
     margin-left: 11rem;
     margin-bottom: -1rem;
+    width: 78.5rem;
+    height: 60.6rem;
 }
-
-@media (max-width: 992px) {
-    .main__content-9-block_right-img img{
-        width: 667px;
-        height: 515px;
-    }   
+.main__content-9-block_right-img img{
+    width: 78.5rem;
+    height: 60.6rem;
 }
 
 /* Десятый блок */
@@ -3304,7 +3457,9 @@ input[type=radio] {
 .flex-4 .stock .stock-2:after,
 .flex-5 .stock .stock-2:after,
 .flex-6 .stock .stock-2:after {
-    content: url(../img/procent-10.png);
+    content: url(../img/procent-10.svg);
+    width: 2.9rem;
+    height: 3rem;
 } 
 
 .flex-4 .second_stage .desc,
@@ -3462,7 +3617,7 @@ input[type=radio] {
     padding-left: 3rem;
     border-radius: 2rem;
     background: linear-gradient(90deg, rgba(64, 154, 248, 0.25) 7.89%, rgba(64, 154, 248, 0.00) 100%);
-    background-image: url(../img/фон-11.png);
+    background-image: url(../img/phone-11.png);
     background-repeat: no-repeat;
     display: flex; 
 }
@@ -3475,7 +3630,8 @@ input[type=radio] {
     margin-top: -6.9rem;
     margin-left: 13.2rem;
     width: 67.3rem;
-    height: 55rem;   
+    height: 55rem;
+   
 }
 
 /* Кнопка запуска видео 11 блока*/
@@ -3517,7 +3673,7 @@ input[type=radio] {
 }
 
 .main__content-11 .doctors .result:before{
-    content: url(../img/запятые-белые.png);
+    content: url(../img/zapatiye.png);
     margin-right: 2rem;
 }
 
@@ -3525,6 +3681,7 @@ input[type=radio] {
     display: flex;
     padding: 2.3rem 4rem;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     flex-shrink: 0;
     color: #FFF;
@@ -3542,7 +3699,9 @@ input[type=radio] {
 }
 
 .main__content-11 .doctors .record_btn:before {
-    content: url(../img/запись.png);
+    content: url(../img/record.svg);
+    width: 1.8rem;
+    height: 2.3rem;
 }
 
 .slider_doctors .slide_number {
@@ -3596,13 +3755,7 @@ input[type=radio] {
     margin-left: 20rem;
     display: flex;
     gap: 2rem;
-}
-
-@media (max-width:1730px) {
-
-    .slider_doctors_right {
-        max-width: 130rem;
-    }   
+    max-width: 130rem;
 }
 
 @media (max-width:1400px) {
@@ -3612,25 +3765,11 @@ input[type=radio] {
     }   
 }
 
-@media (max-width:1300px) {
-
-    .slider_doctors_right {
-        max-width: 110rem;
-    }   
-}
 
 @media (max-width:1200px) {
 
     .slider_doctors_right {
         max-width: 100rem;
-    }   
-}
-
-@media (max-width:1100px) {
-
-    .slider_doctors_right {
-        max-width: 90rem;
-        gap: 1.5rem;
     }   
 }
 
@@ -3641,6 +3780,7 @@ input[type=radio] {
         gap: 1.2rem;
     }    
 }
+
 
 
 .slider_doctors_right .slide-1,
@@ -3657,6 +3797,12 @@ input[type=radio] {
     padding-top: 2rem;
     padding-left: 1.5rem;
     cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .slider_doctors_right .slide-5{
+        display: none;
+    }    
 }
 
 .slider_doctors_right .name {
@@ -3909,7 +4055,7 @@ input[type=radio] {
 }
 
 .main-13-up .desc .desc_item:before{
-    content: url(../img/галка-фиолетовая.png);
+    content: url(../img/galka-fioletovaya.png);
     margin-right: 1rem;
 }
 
@@ -4017,7 +4163,7 @@ input[type=radio] {
 }
 
 .block-13-left .contacts .call:before{
-    content: url(../img/Метка\ онлайн.png);
+    content: url(../img/metka-onlain.png);
     padding-right: 0.9rem;
 }
 
@@ -4116,7 +4262,7 @@ input[type=radio] {
     width: 23rem;
     height: 23rem;
     border-radius: 12.5rem;
-    background-image: url(../img/Постер_к_Видео-2.jpg);
+    background-image: url(../img/poster-video-2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -4286,7 +4432,7 @@ input[type=radio] {
 }
 
 .garanty-14 .for_life:before {
-    content: url(../img/галка-14.png);
+    content: url(../img/galka-14.png);
     margin-right: 1rem;
 }
 
@@ -4305,6 +4451,8 @@ input[type=radio] {
     line-height: 140%;
 }
 
+
+
 .garanty-14 .flex-14 .action>span{
     font-size: 3rem;
     font-weight: 700;
@@ -4318,6 +4466,12 @@ input[type=radio] {
     text-decoration:line-through;
 
 }
+
+@media (max-width: 992px) {
+    .garanty-14 .flex-14 .action>span{
+        font-size: 2rem;
+    } 
+} 
 
 .garanty-14 .includes{
     color: #FFF;
@@ -4489,7 +4643,7 @@ input[type=radio] {
 }
 
 .block-15-form .contacts .call:before{
-    content: url(../img/Метка-онлайн-фиолет.png);
+    content: url(../img/metka-onlain-fioletovaya.png);
     padding-right: 0.9rem;
 }
 
@@ -4505,6 +4659,11 @@ input[type=radio] {
     position: relative;
     margin-left: -6rem;
     margin-bottom: -0.7rem;
+}
+
+.photo-15 {
+    width: 67.3rem;
+    height: 55.5rem;
 }
 
 .content-15_img .doctor-15{
@@ -4530,27 +4689,6 @@ input[type=radio] {
     line-height: 130%;
 }
 
-@media (max-width:1400px) {
-    .content-15_img .doctor-15 .name-15{
-        text-align: right;
-        font-size: 2rem;
-    }
-    .content-15_img .doctor-15 .desc-15{
-        font-size: 1.5rem;
-        text-align: right;
-    }
-}
-@media (max-width:992px) {
-    .content-15_img .doctor-15 {
-        right: 10rem;
-    }
-    .content-15_img .doctor-15 .name-15{
-        font-size: 2rem;
-    }
-    .content-15_img .doctor-15 .desc-15{
-        font-size: 1.5rem;
-    }
-}
 
 
 /* Шестнадцатый блок
@@ -4599,7 +4737,7 @@ input[type=radio] {
     height: 7rem;
     background: transparent;
     border-radius: 1rem;
-    background-image: url(../img/плашка-16.png);
+    background-image: url(../img/plashka-16.png);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -4619,7 +4757,7 @@ input[type=radio] {
 .content-16-flex .flex-box-1 .flex-box-block-1 p:before,
 .content-16-flex .flex-box-2 .flex-box-block-1 p:before,
 .content-16-flex .flex-box-3 .flex-box-block-1 p:before{
-    content: url(../img/галка-14.png);
+    content: url(../img/galka-14.png);
     width: 2.2rem;
     height: 1.6rem;
     margin-right: 1.5rem;
@@ -4673,10 +4811,18 @@ input[type=radio] {
 }
 
 .content-16-flex .flex-box-right {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.krug {
+    position: absolute;
+    left: -100px;
+    top: -135px;
+    z-index: -1;
 }
 
 .content-16-flex .flex-box-right .insurance{
@@ -4697,14 +4843,14 @@ input[type=radio] {
 }
 
 .content-16-flex .flex-box-right .insurance p:before{
-    content: url(../img/галка-14.png);
+    content: url(../img/galka-14.png);
     margin-right: 1rem;
 }
 
 .content-16-flex .flex-box-right .insurance-2 {
     border-radius: 2rem;
     background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.52) 31.39%, rgba(255, 255, 255, 0.00) 100%);
-    background-image: url(/img/фон-16-страховка.png);
+    background-image: url(../img/strahovka-16.png);
     background-size: cover;
     width: 45rem;
     height: 48.5rem;
@@ -4827,12 +4973,6 @@ input[type=radio] {
 }
 @media (max-width: 1200px) {
     .screen-17 {
-        width: 500px;
-        height: 320px;
-    }    
-}
-@media (max-width: 1200px) {
-    .screen-17 {
         width: 450px;
         height: 300px;
     }    
@@ -4904,7 +5044,9 @@ input[type=radio] {
 
 .buttons-17 .make_an_appointment:before,
 .record-18 .make_an_appointment:before {
-    content: url(../img/запись.png);
+    content: url(../img/record.svg);
+    width: 1.8rem;
+    height: 2.3rem;
 }
 
 
@@ -4963,6 +5105,8 @@ input[type=radio] {
     display: flex;
     gap: 3rem;
     margin-bottom: 12rem;
+    justify-content: flex-start;
+
 }
 
 
@@ -4975,9 +5119,14 @@ input[type=radio] {
 }
 .slides-18 .slide-1 img,
 .slides-18 .slide-2 img,
-.slides-18 .slide-3 img,
-.slides-18 .slide-4 img{
+.slides-18 .slide-3 img {
     width: 45rem;
+    height: 33rem;
+    max-width: 1410px;
+}
+
+.slides-18 .slide-4 img{
+    width: 13rem;
     height: 33rem;
 }
 
@@ -4990,7 +5139,7 @@ input[type=radio] {
     width:100%;
     display:flex;
     justify-content:center;
-    z-index:555;
+    z-index:5;
     margin-top: 3rem;
 }
 
@@ -5001,18 +5150,19 @@ input[type=radio] {
     }
    .slides-18 .slide-4 {
         display: none;
-  }
-   .slider-18-dots {
-    top: 400px;
-} 
+    }
+    .slider-18-dots {
+        top: 400px;
+    } 
 }
 @media (max-width: 1200px) {
     .slider-18-dots {
         top: 350px;
-  }  
+  } 
+} 
 @media (max-width: 992px) {
     .slider-18-dots {
-        top: 300px;
+        top: 270px;
   }  
 }
 
@@ -5105,6 +5255,11 @@ input[type=radio] {
     margin-top: 5rem;
 }
 
+.arrow_mad-18 {
+    width: 5.82rem;
+    height: 3rem;
+}
+
 @media (max-width:1400px) {
     .h3-18 {
         font-size: 2.5rem;
@@ -5173,11 +5328,7 @@ input[type=radio] {
         max-width: 145rem;
     }       
 }
-@media (max-width:1200px) {
-    .slides-19 {
-        max-width: 145rem;
-    }       
-}
+
 @media (max-width:992px) {
     .slides-19 {
         max-width: 141rem;
@@ -5201,6 +5352,7 @@ input[type=radio] {
     box-shadow: 0rem 0rem 2rem 0rem rgba(171, 175, 183, 0.50);
 }
 .slides-19 .slide-7 {
+    display: none;
     opacity: 0.3;
     background: linear-gradient(270deg, #f1eaea 0%, #f8f8f8 100%);
 }
@@ -5577,8 +5729,8 @@ input[type=radio] {
 
 .block-23-form button{
     display: flex;
-    max-width: 33rem;
-    padding: 2.1rem 4rem;
+    width: 33rem;
+    height: 7rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -5596,7 +5748,10 @@ input[type=radio] {
 }
 
 .block-23-form button::before{
-    content: url(../img/запись.png);
+    content: url(../img/record.svg);
+    vertical-align: middle;
+    width: 1.8rem;
+    height: 2.3rem;
 }
 
 .block-23-checkbox {
@@ -5636,7 +5791,7 @@ input[type=radio] {
 }
 
 .block-23-form .contacts .call:before{
-    content: url(../img/Метка-онлайн-фиолет.png);
+    content: url(../img/metka-onlain-fioletovaya.png);
     padding-right: 0.9rem;
 }
 
@@ -5893,7 +6048,7 @@ input[type=radio] {
 }
 
 .contacts-25 .address-1 h3::before {
-    content: url(../img/иконка-местоположение.png);
+    content: url(../img/ikonka-mestopologenie.png);
     vertical-align: middle;
     margin-right: 1rem;
 }
@@ -6218,14 +6373,13 @@ input[type=radio] {
 }
 
 
-.smooth{
-    display: block;
-}
+    .smooth{
+        display: block;
+    }
 
-.smooth-scroll {
-    position: fixed;
-    right: 4.5rem;
-    bottom: 5rem;
-    z-index: 100;
-}
-}
+    .smooth-scroll {
+        position: fixed;
+        right: 4.5rem;
+        bottom: 5rem;
+        z-index: 100;
+        }

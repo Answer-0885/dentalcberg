@@ -1,13 +1,11 @@
 'use strict'
 
-const form2 = document.querySelector('.form-2');
-const buttonVideo = document.querySelector('.main__content_icons-video');
-const buttonVideo2 = document.querySelector('.main__content-4_header_right-video-icons');
-const video = document.querySelector('.main__content_video-video');
-const video2 = document.querySelector('.main__content_video-video-2');
+const openVideo = document.querySelectorAll('.video_1_play');
+const video = document.querySelector('.video_1');
 const overlay = document.querySelector('.overlay');
 const body = document.querySelector('body');
 const buttonQuestions = document.querySelector('.header-menu__button');
+
 
 
 // Маска для набора номера телефона из библиотеки IMask
@@ -18,13 +16,25 @@ document.querySelectorAll('.phone-mask').forEach((e) => {
 
 const videoHeader = () => {
         // Запуск видео при нажатии на кнопку
-    buttonVideo.addEventListener('click',() => {
-        video.style.display = 'block';
-        overlay.style.display = 'block';
-        // body.style.overflow = 'hidden';
-        video.play();
 
-    });
+		openVideo.forEach(btn => {
+			btn.addEventListener('click', () => {
+
+				video.style.display = 'block';
+				overlay.style.display = 'block';
+				body.style.overflow = 'hidden';
+				video.play();
+		animate({
+			duration: 600,
+			timing(timeFraction) {
+			   return timeFraction;
+			},
+			draw(progress) {
+			   video.style.opacity = progress;
+			   overlay.style.opacity = progress;
+			}
+		 });
+    })});
 
 
     // Закрываем и форму и видео при нажатии на крестик или оверлай 
@@ -32,20 +42,13 @@ const videoHeader = () => {
         if (e.target.closest('.overlay') || e.target.classList.contains('close__video')) {
             video.style.display = 'none';
             overlay.style.display = 'none';
-            form2.style.display = 'none';
-             // body.style.overflow = 'auto';
-            video.pause();
+            body.style.overflow = 'auto';
+			video.pause();
         };
     });
 }
 
-const popUp = () => {
-    // Открываем форму при нажатии
-    buttonQuestions.addEventListener('click', (e) => {
-        form2.style.display = 'block';
-        overlay.style.display = 'block';
-    })
-}
+
 
 
 
@@ -92,5 +95,5 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 
 
 videoHeader();
-popUp();
+
 

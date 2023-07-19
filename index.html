@@ -14,8 +14,10 @@
     <script type="text/javascript" src="./JS/tab.js" defer></script>
     <script type="text/javascript" src="./JS/smoothMove.js" defer></script>
     <script type="text/javascript" src="./JS/smoothUp.js" defer></script>
+    <script type="text/javascript" src="./JS/helper.js" defer></script>
+    <script type="text/javascript" src="./JS/forms.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="/JS/menu.js" defer></script>
+    <script src="./JS/menu.js" defer></script>
     <title>Центр дентальной травматологии ICEBERG</title>
 </head>
 
@@ -84,7 +86,7 @@
     <!-- Видео о технологии восстановления зубов на 4-6 имплантах -->
     <div class="overlay">
         <div class="close__video"></div>
-        <video class="main__content_video-video" controls="controls" loop="loop" width="800">
+        <video class="video_1" controls="controls" loop="loop" width="800">
 
             <source src="video/video.mp4" type="video/mp4"/> 
             <!-- <source src="video/Одуванчики.ogv" type="video/ogv"/>
@@ -118,7 +120,7 @@
                         <li class="main__content_list">Без стресса</li>
                     </ul>
                     <!------------------- Форма 1 ---------------------->
-                    <form action="" id="form-1" method="post">
+                    <form id="form-1" method="post" action="spasibo.html">
                         <input class="main__content-block_input phone-mask" id="fb_phone" name="phone"
                          type="tel" placeholder="Ваш номер телефона" required>
                          
@@ -137,7 +139,7 @@
                     <!-- ------------------------------------------------>
                 </div>
                 <div class="main__content_video-block">            
-                        <svg class="main__content_icons-video" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <svg class="main__content_icons-video video_1_play" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
                             <circle cx="40.0005" cy="40" r="40" fill="#409AF8" fill-opacity="0.35"/>
                             <circle cx="40.0005" cy="40" r="31" fill="#409AF8"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M36.0005 33V47L48.0005 40L36.0005 33Z" fill="white"/>
@@ -157,14 +159,15 @@
                 </div>
                 <div class="main__content-photo">
                     <picture>
-                        <source srcset="../img/photo-doctor-40.png" type="image/png" media="(max-width: 390px)">
-                        <source srcset="../img/photo-doctor-40.png" type="image/png" media="(max-width: 576px)">
-                        <source srcset="../img/photo-doctor-50.png" type="image/png" media="(max-width: 768px)">
-                        <source srcset="../img/photo-doctor-60.png" type="image/png" media="(max-width: 992px)">
-                        <source srcset="../img/photo-doctor-70.png" type="image/png" media="(max-width: 1200px)">
-                        <source srcset="../img/photo-doctor-80.png" type="image/png" media="(max-width: 1400px)">
-                        <img class="photo-doctor-1" src="../img/photo-doctor.png" alt="фото доктора">
+                        <source srcset="./img/photo-doctor-40.png" type="image/png" media="(max-width: 390px)">
+                        <source srcset="./img/photo-doctor-40.png" type="image/png" media="(max-width: 576px)">
+                        <source srcset="./img/photo-doctor-50.png" type="image/png" media="(max-width: 768px)">
+                        <source srcset="./img/photo-doctor-60.png" type="image/png" media="(max-width: 992px)">
+                        <source srcset="./img/photo-doctor-70.png" type="image/png" media="(max-width: 1200px)">
+                        <source srcset="./img/photo-doctor-80.png" type="image/png" media="(max-width: 1400px)">
+                        <img class="photo-doctor-1" src="./img/photo-doctor.png" alt="фото доктора">
                     </picture>
+                    
                    
                     <p class="main__content-photo_name">Тишкина <br> Ольга Сергеевна</p>
                     <ul class="main__content-photo_ul">
@@ -211,9 +214,9 @@
                         <source srcset="./img/Болячин-576.png" type="image/png" media="(max-width: 576px)">
                         <source srcset="" type="image/png" media="(max-width: 768px)">
                         <source srcset="" type="image/png" media="(max-width: 992px)">
-                        <img src="./img/Фото-Болячин.png" class="main__content-2_block-1_img" alt="фото доктора">
+                        <img src="./img/photo-bolyachin.png" class="main__content-2_block-1_img" alt="фото доктора">
                     </picture> -->
-                    <img src="./img/Фото-Болячин.png" class="main__content-2_block-1_img" alt="фото доктора">
+                    <img src="./img/photo-bolyachin.png" class="main__content-2_block-1_img" alt="фото доктора">
                    
                 </div>
                 
@@ -328,9 +331,9 @@
                 <div class="main__content-4_header_right-video">
 
                     <picture>    
-                        <source srcset="./img/Значок-Видео.svg" type="image/png" width="45" height="45" media="(max-width: 768px)">
-                        <source srcset="./img/Значок-Видео.svg" type="image/png" width="60" height="60" media="(max-width: 1400px)">
-                        <img class="main__content-4_header_right-video-icons" src="./img/Значок-Видео.svg" width="80" height="80" alt="значок плей видео">
+                        <source srcset="./img/znachok-video.svg" type="image/png" width="45" height="45" media="(max-width: 768px)">
+                        <source srcset="./img/znachok-video.svg" type="image/png" width="60" height="60" media="(max-width: 1400px)">
+                        <img class="main__content-4_header_right-video-icons video_1_play" src="./img/znachok-video.svg" width="80" height="80" alt="значок плей видео">
                     </picture>
                     
                     <div class="main__content-4_header_right-video-wrapper">
@@ -348,16 +351,16 @@
             <div class="main__content-4_main-block">
                 <div class="main__content-4_main-block-video">
                     <picture>    
-                        <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
-                        <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
-                        <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                    
+                        <source srcset="./img/photo-videootziv-70.png" type="image/png" media="(max-width: 1200px)">
+                        <img class="main__content-4_main-block-video-img" src="./img/photo-videootziv.png" alt="фото на видеоотзыв">
                     </picture>
                     
-                    <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
+                    <img class="main__content-4_main-block-video-icons video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>
                 <div class="main__content-4_main-block-desc">
                     <div class="main__content-4_main-block-desc-1">
-                        <img src="./img/запятые.png" alt="запятые">
+                        <img src="./img/zapatiye-sinie.png" alt="запятые">
                         <div>После операции моя жизнь изменилась, это невероятно!</div>
                         <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                     </div>
@@ -365,14 +368,14 @@
                     <div class="main__content-4_main-block-desc-img">
 
                         <picture>    
-                            <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
-                            <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
-                            <img src="./img/фото-ДО.png" alt="фото до">
+                            <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 768px)">       
+                            <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 1200px)">       
+                            <img src="./img/photo-do.png" alt="фото до">
                         </picture>
                         <picture>    
-                            <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
-                            <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
-                            <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                            <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 768px)">       
+                            <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 1200px)">       
+                            <img src="./img/photo-posle.png" alt="фото после">
                         </picture>
 
                     </div>
@@ -382,16 +385,16 @@
             <div class="main__content-4_main-block">
                 <div class="main__content-4_main-block-video">
                     <picture>    
-                        <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
-                        <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
-                        <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                    
+                        <source srcset="./img/photo-videootziv-70.png" type="image/png" media="(max-width: 1200px)">
+                        <img class="main__content-4_main-block-video-img" src="./img/photo-videootziv.png" alt="фото на видеоотзыв">
                     </picture>
                     
-                    <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
+                    <img class="main__content-4_main-block-video-icons video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>
                 <div class="main__content-4_main-block-desc">
                     <div class="main__content-4_main-block-desc-1">
-                        <img src="./img/запятые.png" alt="запятые">
+                        <img src="./img/zapatiye-sinie.png" alt="запятые">
                         <div>После операции моя жизнь изменилась, это невероятно!</div>
                         <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                     </div>
@@ -399,14 +402,14 @@
                     <div class="main__content-4_main-block-desc-img">
 
                         <picture>    
-                            <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
-                            <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
-                            <img src="./img/фото-ДО.png" alt="фото до">
+                            <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 768px)">       
+                            <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 1200px)">       
+                            <img src="./img/photo-do.png" alt="фото до">
                         </picture>
                         <picture>    
-                            <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
-                            <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
-                            <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                            <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 768px)">       
+                            <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 1200px)">       
+                            <img src="./img/photo-posle.png" alt="фото после">
                         </picture>
 
                     </div>
@@ -416,16 +419,16 @@
             <div class="main__content-4_main-block">
                 <div class="main__content-4_main-block-video">
                     <picture>    
-                        <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
-                        <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
-                        <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                    
+                        <source srcset="./img/photo-videootziv-70.png" type="image/png" media="(max-width: 1200px)">
+                        <img class="main__content-4_main-block-video-img" src="./img/photo-videootziv.png" alt="фото на видеоотзыв">
                     </picture>
                     
-                    <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
+                    <img class="main__content-4_main-block-video-icons video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>
                 <div class="main__content-4_main-block-desc">
                     <div class="main__content-4_main-block-desc-1">
-                        <img src="./img/запятые.png" alt="запятые">
+                        <img src="./img/zapatiye-sinie.png" alt="запятые">
                         <div>После операции моя жизнь изменилась, это невероятно!</div>
                         <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                     </div>
@@ -433,14 +436,14 @@
                     <div class="main__content-4_main-block-desc-img">
 
                         <picture>    
-                            <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
-                            <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
-                            <img src="./img/фото-ДО.png" alt="фото до">
+                            <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 768px)">       
+                            <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 1200px)">       
+                            <img src="./img/photo-do.png" alt="фото до">
                         </picture>
                         <picture>    
-                            <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
-                            <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
-                            <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                            <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 768px)">       
+                            <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 1200px)">       
+                            <img src="./img/photo-posle.png" alt="фото после">
                         </picture>
 
                     </div>
@@ -450,16 +453,16 @@
             <div class="main__content-4_main-block">
                 <div class="main__content-4_main-block-video">
                     <picture>    
-                        <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
-                        <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
-                        <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                    
+                        <source srcset="./img/photo-videootziv-70.png" type="image/png" media="(max-width: 1200px)">
+                        <img class="main__content-4_main-block-video-img" src="./img/photo-videootziv.png" alt="фото на видеоотзыв">
                     </picture>
                     
-                    <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
+                    <img class="main__content-4_main-block-video-icons video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>
                 <div class="main__content-4_main-block-desc">
                     <div class="main__content-4_main-block-desc-1">
-                        <img src="./img/запятые.png" alt="запятые">
+                        <img src="./img/zapatiye-sinie.png" alt="запятые">
                         <div>После операции моя жизнь изменилась, это невероятно!</div>
                         <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                     </div>
@@ -467,14 +470,14 @@
                     <div class="main__content-4_main-block-desc-img">
 
                         <picture>    
-                            <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
-                            <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
-                            <img src="./img/фото-ДО.png" alt="фото до">
+                            <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 768px)">       
+                            <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 1200px)">       
+                            <img src="./img/photo-do.png" alt="фото до">
                         </picture>
                         <picture>    
-                            <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
-                            <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
-                            <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                            <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 768px)">       
+                            <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 1200px)">       
+                            <img src="./img/photo-posle.png" alt="фото после">
                         </picture>
 
                     </div>
@@ -515,7 +518,7 @@
                     <div class="main__content-5_video_main-wrap-1">
                         
                         <div class="main__content-5_video_main-wrap-2">
-                            <img class="main__content-5_video_main-icons" src="./img/Значок_Видео-2.png" alt="значок плей видео">
+                            <img class="main__content-5_video_main-icons video_1_play" src="./img/znachok-video2.png" alt="значок плей видео">
                             <div class="main__content-5_video_main-img">
                                 <!-- Заставка для видео -->
                             </div>        
@@ -602,9 +605,9 @@
                 </div> 
                 </div>
                 <div class="main__content-6_main_right">
-                    <img class="main__content-6_main_right_img-video" src="./img/картинка_для_видео-1.png" width="420" height="280" alt="видео-1">
-                    <img class="main__content-6_main_right_icons-video" src="./img/Значок Видео.png" alt="значок плей видео">
-                    <button class="main__content-6_button_sign_up ">Записаться на обследование<span class="flare"></span></button>
+                    <img class="main__content-6_main_right_img-video" src="./img/kartinka-video-1.png" width="420" height="280" alt="видео-1">
+                    <img class="main__content-6_main_right_icons-video video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
+                    <button class="main__content-6_button_sign_up open-form">Записаться на обследование<span class="flare"></span></button>
                 </div>
             </div>
 
@@ -647,9 +650,9 @@
                 </div> 
                 </div>
                 <div class="main__content-6_main_right">
-                    <img class="main__content-6_main_right_img-video_tab-2" src="./img/картинка_для_видео-2.png" width="420" height="280" alt="видео-2">
-                    <img class="main__content-6_main_right_icons-video" src="./img/Значок Видео.png" alt="значок плей видео">
-                    <button class="main__content-6_button_sign_up_tab-2 ">Записаться на обследование<span class="flare"></span></button>
+                    <img class="main__content-6_main_right_img-video_tab-2" src="./img/kartinka-video-2.png" width="420" height="280" alt="видео-2">
+                    <img class="main__content-6_main_right_icons-video video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
+                    <button class="main__content-6_button_sign_up_tab-2 open-form">Записаться на обследование<span class="flare"></span></button>
                 </div>
             </div>
 <!------------------------- TAB-3 --------------------------->
@@ -691,9 +694,9 @@
     </div> 
     </div>
     <div class="main__content-6_main_right">
-        <img class="main__content-6_main_right_img-video_tab-2" src="./img/картинка_для_видео-3.png" width="420" height="280" alt="видео-3">
-        <img class="main__content-6_main_right_icons-video" src="./img/Значок Видео.png" alt="значок плей видео">
-        <button class="main__content-6_button_sign_up_tab-3">Записаться на обследование<span class="flare"></span></button>
+        <img class="main__content-6_main_right_img-video_tab-2" src="./img/kartinka-video-3.png" width="420" height="280" alt="видео-3">
+        <img class="main__content-6_main_right_icons-video video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
+        <button class="main__content-6_button_sign_up_tab-3 open-form">Записаться на обследование<span class="flare"></span></button>
     </div>
 </div>
                     </div>
@@ -726,8 +729,8 @@
                 <!-- Второй флекс элемент -->
     <div class="main__content-7-block-flex-1">
         <div class="main__content-7-block-flex-1_img">
-            <img src="./img/Тишкина_Ольга.png" alt="Тишкина Ольга">
-            <img class="main__content-7-block-flex-1_img-videoplay" src="./img/Значок Видео.png" width="60" height="60" alt="значок плей видео">
+            <img src="./img/tishkina-olga.png" alt="Тишкина Ольга">
+            <img class="main__content-7-block-flex-1_img-videoplay video_1_play" src="./img/znachok-video.png" width="60" height="60" alt="значок плей видео">
         </div>
         <div class="main__content-7-block-flex-2_content">
             <p><span>докторы высшей квалификации и лечение разного уровня сложности
@@ -738,7 +741,7 @@
                 <!-- Третий флекс элемент -->
         <div class="main__content-7-block-flex-1">
             <div class="main__content-7-block-flex-1_img">
-                <img src="./img/цифровая_стоматология.png" width="190" height="190" alt="цифровая стоматология">
+                <img src="./img/cifrovaya.png" width="190" height="190" alt="цифровая стоматология">
             </div>
             <div class="main__content-7-block-flex-3_content">
                 <p>цифровая<span> <br>
@@ -771,10 +774,10 @@
     <div class="container wrap">
         <h2>РЕЗУЛЬТАТЫ <span>ДО/ПОСЛЕ</span></h2>
         <ul class="main__content-8_swiper-list">
-            <li class="main__content-8_swiper-item"><img src="./img/до_и_после.png" alt="фото до и после"></li>
-            <li class="main__content-8_swiper-item"><img src="./img/до_и_после.png" alt="фото до и после"></li>
-            <li class="main__content-8_swiper-item"><img src="./img/до_и_после.png" alt="фото до и после"></li>
-            <li class="main__content-8_swiper-item"><img src="./img/до_и_после.png" alt="фото до и после"></li>
+            <li class="main__content-8_swiper-item"><img src="./img/do-posle.png" alt="фото до и после"></li>
+            <li class="main__content-8_swiper-item"><img src="./img/do-posle.png" alt="фото до и после"></li>
+            <li class="main__content-8_swiper-item"><img src="./img/do-posle.png" alt="фото до и после"></li>
+            <li class="main__content-8_swiper-item"><img src="./img/do-posle.png" alt="фото до и после"></li>
             <a href="#" class="main__content-8_swiper-btn prev left-8" id="arrow-left-8"></a>
             <a href="#" class="main__content-8_swiper-btn next right-8" id="arrow-right-8"></a>
             <ul class="main__content-8_swiper-dots">
@@ -805,34 +808,34 @@
                 <h3><span>01.</span> Какую челюсть нужно восстановить?</h3>
                 <div class="main__content-9_step-1_left-flex">
                     <div class="main__content-9_step-1_left-flex-1">
-                        <img class="img-9_step-1" src="./img/верхняя_челюсть.png" alt="верхняя_челюсть">
+                        <img class="img-9_step-1" src="./img/verhnaya.png" alt="верхняя_челюсть">
                         <button>
-                            <img src="./img/галка-выбора.png" class="img-1" alt="галка">
-                            <img src="./img/галка-синяя.png" class="img-2" alt="галка-синяя">
+                            <img src="./img/galka-vibora.png" class="img-1" alt="галка">
+                            <img src="./img/galka-sinaya.png" class="img-2" alt="галка-синяя">
                         </button>
                         <p>Верхнюю</p>
                     </div>
                     <div class="main__content-9_step-1_left-flex-2">
-                        <img class="img-9_step-1" src="./img/нижняя_челюсть.png" alt="нижняя_челюсть">
+                        <img class="img-9_step-1" src="./img/nignaya.png" alt="нижняя_челюсть">
                         <button>
-                            <img src="./img/галка-выбора.png" class="img-1" alt="галка">
-                            <img src="./img/галка-синяя.png" class="img-2" alt="галка-синяя">
+                            <img src="./img/galka-vibora.png" class="img-1" alt="галка">
+                            <img src="./img/galka-sinaya.png" class="img-2" alt="галка-синяя">
                         </button>
                         <p>Нижнюю</p>
                     </div>
                     <div class="main__content-9_step-1_left-flex-3">     
-                        <img class="img-9_step-1" src="./img/обе_челюсти.png" alt="обе_челюсти">
+                        <img class="img-9_step-1" src="./img/obe-chelusti.png" alt="обе_челюсти">
                         <button>
-                            <img src="./img/галка-выбора.png" class="img-1" alt="галка">
-                            <img src="./img/галка-синяя.png" class="img-2" alt="галка-синяя">
+                            <img src="./img/galka-vibora.png" class="img-1" alt="галка">
+                            <img src="./img/galka-sinaya.png" class="img-2" alt="галка-синяя">
                         </button>
                         <p>Обе</p>
                     </div>
                     <div class="main__content-9_step-1_left-flex-4">        
-                        <img class="img-9_step-1" src="./img/1_зуб.png" alt="1_зуб">
+                        <img class="img-9_step-1" src="./img/one_zub.png" alt="1_зуб">
                         <button>
-                            <img src="./img/галка-выбора.png" class="img-1" alt="галка">
-                            <img src="./img/галка-синяя.png" class="img-2" alt="галка-синяя">
+                            <img src="./img/galka-vibora.png" class="img-1" alt="галка">
+                            <img src="./img/galka-sinaya.png" class="img-2" alt="галка-синяя">
                         </button>
                         <p>1 зуб</p>
                     </div>
@@ -852,7 +855,7 @@
             </div>
 
             <div class="main__content-9_step-1_right">
-                <img src="./img/Илья_Витальевич_Мазалов.png" alt="Илья_Витальевич_Мазалов">
+                <img src="./img/ilya-vitalevich.png" alt="Илья_Витальевич_Мазалов">
                 <p class="doctor">Илья Витальевич Мазалов<br>
                     <span>Врач-стоматолог, челюстно-лицевой хирург</span></p>
                 <p class="desc">После получения Ваших ответов
@@ -861,7 +864,7 @@
                 <p class="end-test doctor">В конце теста получите:</p>    
                 <p class="cost_calculation">Расчет стоимости <span>в 3х вариантах уже на следующий день</span></p>
                 <p class="gift">Подарок <span>от нашей компании</span></p>
-                <img src="./img/cost_calculation-img.png" alt="Картинка" class="cost_calculation-img">
+                <img class="img-block-9" src="./img/cost_calculation-img.png" alt="Картинка" class="cost_calculation-img">
             </div>
         </div>
 
@@ -911,7 +914,7 @@
             </div>
 
             <div class="main__content-9_step-1_right main__content-9_step-2_right">
-                <img src="./img/Илья_Витальевич_Мазалов.png" alt="Илья_Витальевич_Мазалов">
+                <img src="./img/ilya-vitalevich.png" alt="Илья_Витальевич_Мазалов">
                 <p class="doctor">Илья Витальевич Мазалов<br>
                     <span>Врач-стоматолог, челюстно-лицевой хирург</span></p>
                 <p class="desc">После получения Ваших ответов
@@ -920,7 +923,7 @@
                 <p class="end-test doctor">В конце теста получите:</p>    
                 <p class="cost_calculation">Расчет стоимости <span>в 3х вариантах уже на следующий день</span></p>
                 <p class="gift">Подарок <span>от нашей компании</span></p>
-                <img src="./img/cost_calculation-img.png" alt="Картинка" class="cost_calculation-img">
+                <img class="img-block-9" src="./img/cost_calculation-img.png" alt="Картинка" class="cost_calculation-img">
             </div>
         </div>
 
@@ -968,7 +971,7 @@
 
                 <div class="main__content-9_step-3_left-radio">
                     <p>
-                        <input type="radio" name="input_radio_3-7" checked id="input_radio_3-7"">
+                        <input class="input_radio_3-7" type="radio" name="input_radio_3-7" checked id="input_radio_3-7">
                         <label for="input_radio_3-7" class="label_3-7">Выберите вариант ответа и калькулятор
                             автоматически перейдет к следующему шагу</label>
                     </p>
@@ -980,7 +983,7 @@
             </div>
 
             <div class="main__content-9_step-1_right">
-                <img src="./img/Илья_Витальевич_Мазалов.png" alt="Илья_Витальевич_Мазалов">
+                <img src="./img/ilya-vitalevich.png" alt="Илья_Витальевич_Мазалов">
                 <p class="doctor">Илья Витальевич Мазалов<br>
                     <span>Врач-стоматолог, челюстно-лицевой хирург</span></p>
                 <p class="desc">После получения Ваших ответов
@@ -989,7 +992,7 @@
                 <p class="end-test doctor">В конце теста получите:</p>    
                 <p class="cost_calculation">Расчет стоимости <span>в 3х вариантах уже на следующий день</span></p>
                 <p class="gift">Подарок <span>от нашей компании</span></p>
-                <img src="./img/cost_calculation-img.png" alt="Картинка" class="cost_calculation-img">
+                <img class="img-block-9" src="./img/cost_calculation-img.png" alt="Картинка" class="cost_calculation-img">
             </div>
         </div>
         <!---------- Четвёртый шаг ------------>
@@ -1034,7 +1037,7 @@
             </div>
 
             <div class="main__content-9_step-1_right">
-                <img src="./img/Илья_Витальевич_Мазалов.png" alt="Илья_Витальевич_Мазалов">
+                <img src="./img/ilya-vitalevich.png" alt="Илья_Витальевич_Мазалов">
                 <p class="doctor">Илья Витальевич Мазалов<br>
                     <span>Врач-стоматолог, челюстно-лицевой хирург</span></p>
                 <p class="desc">После получения Ваших ответов
@@ -1043,7 +1046,7 @@
                 <p class="end-test doctor">В конце теста получите:</p>    
                 <p class="cost_calculation">Расчет стоимости <span>в 3х вариантах уже на следующий день</span></p>
                 <p class="gift">Подарок <span>от нашей компании</span></p>
-                <img src="./img/cost_calculation-img.png" alt="Картинка" class="cost_calculation-img">
+                <img class="img-block-9" src="./img/cost_calculation-img.png" alt="Картинка" class="cost_calculation-img">
             </div>
         </div>
 
@@ -1065,14 +1068,14 @@
                 <p class="step-5-p4">Свяжемся с вами, уточним детали и вышлем результат</p>
               <form class="block_input-5" id="form-3" method='POST' action="spasibo.html">
                 <p>
-                    <input type="text" placeholder="Ваше имя" class="block_input-5_name" name="block_input-5_name">
+                    <input type="text" placeholder="Ваше имя" class="block_input-5_name" name="block_input-5_name" required>
                 </p>
                 <p>
                     <a class="block_input-5_link" href="https://api.whatsapp.com/send?phone=79000000000" target="_blank"
                     title="Написать в Whatsapp" rel="noopener noreferrer"><p class="block_input-5_messenger">WhatsApp</p></a>
                 </p>
                 <p>
-                    <input type="tel" placeholder="+7 (900) 000-00-00" class="block_input-5_tel phone-mask">
+                    <input type="tel" placeholder="+7 (900) 000-00-00" class="block_input-5_tel phone-mask" name="block_input-5_tel" required>
                 </p>
                 <p>
                     <button class="block_input-5_record">Записаться на приём</button>
@@ -1085,7 +1088,7 @@
             </form>
             </div>
             <div class="main__content-9-block_right-img">
-                <img src="./img/step_5.png" alt="фон" width="785" height="606">
+                <img src="./img/step_5.png" alt="фон">
             </div>
         </div>           
     </div>
@@ -1271,12 +1274,12 @@
                     <hr class="hr-10">
                 <div class="installation">
                     <p class="desc">Время установки за 1 день</p> 
-                    <img src="./img/галка-фиолетовая.png" class="price" alt="галка_фиолетовая">   
+                    <img src="./img/galka-fioletovaya.png" class="price" alt="галка_фиолетовая">   
                 </div>
                     <hr class="hr-10">
                 <div class="ability_to_eat">
                     <p class="desc">Возможность сразу принимать пищу</p> 
-                    <img src="./img/галка-фиолетовая.png" class="price" alt="галка_фиолетовая">   
+                    <img src="./img/galka-fioletovaya.png" class="price" alt="галка_фиолетовая">   
                 </div>
                  <hr class="hr-10">
                 <div class="time">
@@ -1341,12 +1344,12 @@
                     <hr class="hr-10">
                 <div class="installation">
                     <p class="desc">Время установки за 1 день</p> 
-                    <img src="./img/галка-фиолетовая.png" class="price" alt="галка_фиолетовая">   
+                    <img src="./img/galka-fioletovaya.png" class="price" alt="галка_фиолетовая">   
                 </div>
                     <hr class="hr-10">
                 <div class="ability_to_eat">
                     <p class="desc">Возможность сразу принимать пищу</p> 
-                    <img src="./img/галка-фиолетовая.png" class="price" alt="галка_фиолетовая">   
+                    <img src="./img/galka-fioletovaya.png" class="price" alt="галка_фиолетовая">   
                 </div>
                  <hr class="hr-10">
                 <div class="time">
@@ -1405,12 +1408,12 @@
                     <hr class="hr-10">
                 <div class="installation">
                     <p class="desc">Время установки за 1 день</p> 
-                    <img src="./img/галка-фиолетовая.png" class="price" alt="галка_фиолетовая">   
+                    <img src="./img/galka-fioletovaya.png" class="price" alt="галка_фиолетовая">   
                 </div>
                     <hr class="hr-10">
                 <div class="ability_to_eat">
                     <p class="desc">Возможность сразу принимать пищу</p> 
-                    <img src="./img/галка-фиолетовая.png" class="price" alt="галка_фиолетовая">   
+                    <img src="./img/galka-fioletovaya.png" class="price" alt="галка_фиолетовая">   
                 </div>
                  <hr class="hr-10">
                 <div class="time">
@@ -1457,11 +1460,11 @@
                  который должен соответствовать
                  высоким требованиям и врача, и пациента
                 </p>
-                <button type="submit" class="record_btn">Записаться на прием<span class="flare"></span></button>
+                <button type="submit" class="record_btn open-form">Записаться на прием<span class="flare"></span></button>
             </div>
             <div class="doctors-img">
-                <img class="doctors-img-1" src="./img/Илья_Мазалов.png" alt="Илья_Мазалов">
-                <img class="doctors-img-2" src="./img/Значок_Видео-2.png" alt="значок-плей">
+                <img class="doctors-img-1" src="./img/Ilya_mazalov.png" alt="Илья_Мазалов">
+                <img class="doctors-img-2 video_1_play" src="./img/znachok-video2.png" alt="значок-плей">
             </div>
         </div>
         <div class="slider_doctors">
@@ -1578,7 +1581,7 @@
                     <li class="desc_item">Консультация – бесплатно!</li>
                 </ul>
             </div>
-            <img class="main-13-up-image" src="./img/фон-13.png" alt="фон">
+            <img class="main-13-up-image" src="./img/fone-13.png" alt="фон">
         </div>
         <div class="main-13-down">
             <div class="block-13-left">
@@ -1622,7 +1625,7 @@
 
     
                     <div class="block-2">
-                        <img class="block-2-icons-video" src="./img/Значок Видео.png" alt="значок плей видео">
+                        <img class="block-2-icons-video video_1_play" src="./img/znachok-video2.png" alt="значок плей видео">
                         <div class="block-2-video-wrapper">
                             <div class="block-2-video-img">
                                 <!-- Заставка для видео -->
@@ -1728,7 +1731,7 @@
             <div class="no_all_tooth-14">
                 <div class="video-14">
                     <img src="./img/all_tooth-14.png" alt="все зубы за 1 день">
-                    <img class="video-14-icons" src="./img/Значок Видео.png" alt="значок плей видео">
+                    <img class="video-14-icons video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>
 
                 <div class="desc-14">
@@ -1789,7 +1792,7 @@
 
             </div>
             <div class="content-15_img">
-                <img src="./img/фото-15блок.png" alt="фото-15-блок">
+                <img class="photo-15" src="./img/photo-15.png" alt="фото-15-блок">
                 <div class="doctor-15">
                     <p class="name-15">Мазалов<br> Илья Витальевич</p>
                     <p class="desc-15">Врач-стоматолог, челюстно-лицевой хирург</p>
@@ -1848,6 +1851,7 @@
                     <p class="money">На 1 000 000 рублей</p>
                     <p class="desc">Пожизненная гарантия от производителя. Используем импланты проверенных и надежных брендов.</p>
                 </div>
+                <img class="krug" src="./img/krug.png" alt="круг">
             </div>
         </div>
     </div>
@@ -1862,62 +1866,62 @@
             <div class="content-17-left">
                 <div class="block">
                    <p class="text-17">Почему появляется СУХОСТЬ ВО РТУ и как с этим бороться?</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">Как выбрать ЗУБНУЮ ЩЕТКУ? Сколько стоит хорошая щетка?</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">5 способов ПРОФИЛАКТИКИ КАРИЕСА ДОМА. Как правильно чистить зубы?</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">КАК ЛЕЧИТЬ ЗУБЫ БЕЗ БОЛИ? Методы обезболивания в стоматологии</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">Нужно ли на самом деле УДАЛЯТЬ НЕРВ? Депульпация - больно или нет?</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">Как чистить зубы с брекетами ПРАВИЛЬНО?! Уход за брекетами и элайнерами дома!</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">Откололся зуб, что делать? Причины сколов на зубах</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">Как восстановить потерянные зубы? Какой протез выбрать?</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">Что делать, если болит зуб? Виды боли и первая помощь!</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">Виниры за 300 рублей!? Красивую улыбку за 2 минуты?</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">Пахнет изо рта? Причины неприятного запаха. Как убрать галитоз?</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
                 <div class="block">
                    <p class="text-17">Что делать, если кровоточат десны? Первая помощь в домашних условиях!</p>
-                   <img class="icons_video-17" width="38" height="38" src="./img/Значок Видео.png" alt="значок плей видео">
+                   <img class="icons_video-17 video_1_play" width="38" height="38" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>                          
             </div>
             <div class="content-17-right">
                 <div class="img-screen">
                     <img class="screen-17" src="./img/screen-17.png" width="690" height="430" alt="заставка">
                     <p>ВОСПАЛИЛАСЬ ДЕСНА ПОД КОРОНКОЙ /<br><span> Болит десна под коронкой, как лечить?</span></p>
-                    <img class="icons_video-17 icons_video-17-position" width="86" height="86" src="./img/Значок Видео.png" alt="значок плей видео">
+                    <img class="icons_video-17 video_1_play icons_video-17-position" width="86" height="86" src="./img/znachok-video.png" alt="значок плей видео">
                 </div>
                 <div class="buttons-17">
                     <button class="questions">Задать вопрос врачу</button>
-                    <button class="make_an_appointment">Записаться на прием<span class="flare"></span></button>
+                    <button class="make_an_appointment open-form">Записаться на прием<span class="flare"></span></button>
                 </div>
             </div>
         </div>
@@ -1959,19 +1963,19 @@
 
         <div class="smile-18" id="credit">
             <div class="smile_video">
-                <img class="video-18" src="./img/видео-18.png" alt="заставка">
-                <img class="video_icons-18" src="./img/Значок Видео.png" alt="значок плей видео">
+                <img class="video-18" src="./img/video-18.png" alt="заставка">
+                <img class="video_icons-18 video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
             </div> 
             <div class="smile_desc">
                 <h3 class="h3-18">Представьте, что уже через 2 приёма вы будете <span>улыбаться полноценно,</span> не прикрывая рот рукой</h3>
                 <p class="treatment">Лечение в рассрочку <span>0% до 18 месяцев<br> без первого взноса от банка партнера</span></p>
                 <div class="record-18">
                     <span>Не откладывайте лечение</span>
-                    <img src="./img/стрелка-закорючка.png" alt="стрелка">
-                    <button class="make_an_appointment">Записаться на прием<span class="flare"></span></button>
+                    <img class="arrow_mad-18" src="./img/strelka-zakoruchka.png" alt="стрелка">
+                    <button class="make_an_appointment open-form">Записаться на прием<span class="flare"></span></button>
                 </div>              
             </div>
-            <img class="photo-doctor-18" src="./img/Фото доктора-18.png" alt="фото доктора">
+            <img class="photo-doctor-18" src="./img/photo-doctor-18.png" alt="фото доктора">
         </div>
     </div>
 </section>
@@ -1983,15 +1987,15 @@
         <h2 class="h2-19">Рейтинги</h2>
         <div class="slides-19">
             <div class="slide-1">
-                <img class="img-19" src="./img/Яндекс.png" alt="логотип яндекс">
+                <img class="img-19" src="./img/yandex.png" alt="логотип яндекс">
                 <p>5.0 <span>/из 5.0</span></p>
             </div>
             <div class="slide-2">
-                <img class="img-19" src="/img/Гугл.png" alt="логотип гугл">
+                <img class="img-19" src="./img/google.png" alt="логотип гугл">
                 <p>5.0 <span>/из 5.0</span></p>
             </div>
             <div class="slide-3">
-                <img class="img-19" src="./img/продокторов.png" alt="логотип продокторов">
+                <img class="img-19" src="./img/prodoctorov.png" alt="логотип продокторов">
                 <p>5.0 <span>/из 5.0</span></p>
             </div>
             <div class="slide-4">
@@ -2003,7 +2007,7 @@
                 <p>5.0 <span>/из 5.0</span></p>
             </div>
             <div class="slide-6">
-                <img class="img-19" src="/img/yell.png" alt="логотип yell">
+                <img class="img-19" src="./img/yell.png" alt="логотип yell">
                 <p>5.0 <span>/из 5.0</span></p>
             </div>
             <div class="slide-7">
@@ -2023,7 +2027,7 @@
         <div class="blocks-20">
             <div class="block-1">
                 <div class="block-1-1">
-                    <img src="./img/яндекс-20.png" alt="логотип яндекс">
+                    <img src="./img/yandex-20.png" alt="логотип яндекс">
                     <p>4,4<span>/5</span></p>
                     <div class="rating-result">
                         <span class="active"></span>	
@@ -2108,7 +2112,7 @@
                                 </ul>
                             </div>
                             <div class="main__content-4_header_right-video">
-                                <img class="main__content-4_header_right-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
+                                <img class="main__content-4_header_right-video-icons video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
                                 <div class="main__content-4_header_right-video-wrapper">
             
                                     <div class="main__content-4_header_right-video-img">
@@ -2124,16 +2128,16 @@
                         <div class="main__content-4_main-block">
                             <div class="main__content-4_main-block-video">
                                 <picture>    
-                                    <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
-                                    <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
-                                    <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                
+                                    <source srcset="./img/photo-videootziv-70.png" type="image/png" media="(max-width: 1200px)">
+                                    <img class="main__content-4_main-block-video-img" src="./img/photo-videootziv.png" alt="фото на видеоотзыв">
                                 </picture>
                                 
-                                <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
+                                <img class="main__content-4_main-block-video-icons video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
                             </div>
                             <div class="main__content-4_main-block-desc">
                                 <div class="main__content-4_main-block-desc-1">
-                                    <img src="./img/запятые.png" alt="запятые">
+                                    <img src="./img/zapatiye-sinie.png" alt="запятые">
                                     <div>После операции моя жизнь изменилась, это невероятно!</div>
                                     <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                                 </div>
@@ -2141,14 +2145,14 @@
                                 <div class="main__content-4_main-block-desc-img">
             
                                     <picture>    
-                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
-                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
-                                        <img src="./img/фото-ДО.png" alt="фото до">
+                                        <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/photo-do.png" alt="фото до">
                                     </picture>
                                     <picture>    
-                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
-                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
-                                        <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                                        <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/photo-posle.png" alt="фото после">
                                     </picture>
             
                                 </div>
@@ -2158,16 +2162,16 @@
                         <div class="main__content-4_main-block">
                             <div class="main__content-4_main-block-video">
                                 <picture>    
-                                    <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
-                                    <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
-                                    <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                
+                                    <source srcset="./img/photo-videootziv-70.png" type="image/png" media="(max-width: 1200px)">
+                                    <img class="main__content-4_main-block-video-img" src="./img/photo-videootziv.png" alt="фото на видеоотзыв">
                                 </picture>
                                 
-                                <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
+                                <img class="main__content-4_main-block-video-icons video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
                             </div>
                             <div class="main__content-4_main-block-desc">
                                 <div class="main__content-4_main-block-desc-1">
-                                    <img src="./img/запятые.png" alt="запятые">
+                                    <img src="./img/zapatiye-sinie.png" alt="запятые">
                                     <div>После операции моя жизнь изменилась, это невероятно!</div>
                                     <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                                 </div>
@@ -2175,14 +2179,14 @@
                                 <div class="main__content-4_main-block-desc-img">
             
                                     <picture>    
-                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
-                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
-                                        <img src="./img/фото-ДО.png" alt="фото до">
+                                        <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/photo-do.png" alt="фото до">
                                     </picture>
                                     <picture>    
-                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
-                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
-                                        <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                                        <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/photo-posle.png" alt="фото после">
                                     </picture>
             
                                 </div>
@@ -2192,16 +2196,16 @@
                         <div class="main__content-4_main-block">
                             <div class="main__content-4_main-block-video">
                                 <picture>    
-                                    <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
-                                    <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
-                                    <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                
+                                    <source srcset="./img/photo-videootziv-70.png" type="image/png" media="(max-width: 1200px)">
+                                    <img class="main__content-4_main-block-video-img" src="./img/photo-videootziv.png" alt="фото на видеоотзыв">
                                 </picture>
                                 
-                                <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
+                                <img class="main__content-4_main-block-video-icons video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
                             </div>
                             <div class="main__content-4_main-block-desc">
                                 <div class="main__content-4_main-block-desc-1">
-                                    <img src="./img/запятые.png" alt="запятые">
+                                    <img src="./img/zapatiye-sinie.png" alt="запятые">
                                     <div>После операции моя жизнь изменилась, это невероятно!</div>
                                     <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                                 </div>
@@ -2209,14 +2213,14 @@
                                 <div class="main__content-4_main-block-desc-img">
             
                                     <picture>    
-                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
-                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
-                                        <img src="./img/фото-ДО.png" alt="фото до">
+                                        <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/photo-do.png" alt="фото до">
                                     </picture>
                                     <picture>    
-                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
-                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
-                                        <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                                        <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/photo-posle.png" alt="фото после">
                                     </picture>
             
                                 </div>
@@ -2226,16 +2230,16 @@
                         <div class="main__content-4_main-block">
                             <div class="main__content-4_main-block-video">
                                 <picture>    
-                                    <source srcset="./img/Фото_видеоотзыв.png" type="image/png" media="(max-width: 768px)">
-                                    <source srcset="./img/Фото_видеоотзыва-70.png" type="image/png" media="(max-width: 1200px)">
-                                    <img class="main__content-4_main-block-video-img" src="./img/Фото_видеоотзыв.png" alt="фото на видеоотзыв">
+                                
+                                    <source srcset="./img/photo-videootziv-70.png" type="image/png" media="(max-width: 1200px)">
+                                    <img class="main__content-4_main-block-video-img" src="./img/photo-videootziv.png" alt="фото на видеоотзыв">
                                 </picture>
                                 
-                                <img class="main__content-4_main-block-video-icons" src="./img/Значок Видео.png" alt="значок плей видео">
+                                <img class="main__content-4_main-block-video-icons video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
                             </div>
                             <div class="main__content-4_main-block-desc">
                                 <div class="main__content-4_main-block-desc-1">
-                                    <img src="./img/запятые.png" alt="запятые">
+                                    <img src="./img/zapatiye-sinie.png" alt="запятые">
                                     <div>После операции моя жизнь изменилась, это невероятно!</div>
                                     <p>У меня появилось стремление к жизни. Потому что, действительно, от зубов ведь многое зависит. Я даже ...</p>
                                 </div>
@@ -2243,14 +2247,14 @@
                                 <div class="main__content-4_main-block-desc-img">
             
                                     <picture>    
-                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 768px)">       
-                                        <source srcset="./img/фото-ДО-70.png" type="image/png" media="(max-width: 1200px)">       
-                                        <img src="./img/фото-ДО.png" alt="фото до">
+                                        <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/photo-do-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/photo-do.png" alt="фото до">
                                     </picture>
                                     <picture>    
-                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 768px)">       
-                                        <source srcset="./img/фото-ПОСЛЕ-70.png" type="image/png" media="(max-width: 1200px)">       
-                                        <img src="./img/фото-ПОСЛЕ.png" alt="фото после">
+                                        <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 768px)">       
+                                        <source srcset="./img/photo-posle-70.png" type="image/png" media="(max-width: 1200px)">       
+                                        <img src="./img/photo-posle.png" alt="фото после">
                                     </picture>
             
                                 </div>
@@ -2428,7 +2432,7 @@
                 <div class="block-23-form">
                     <form class="block-23-input" id="form-6" action="spasibo.html">
                         <input type="tel" class="phone-mask" id="fb_phone" name="input-23-name" required placeholder="Ваш номер телефона">
-                        <button>Записаться на приём <span class="flare"></span></button>
+                        <button>Записаться на приём<span class="flare"></span></button>
                     </form>
     
                     <div class="block-23-checkbox">
@@ -2448,8 +2452,8 @@
 
             </div>
             <div class="block-23-video">
-                <img class="icons-video-23" src="./img/Значок Видео.png" alt="значок плей видео">
-                <img class="video-23" src="./img/Фото-доктора-23.png" width="570" height="572" alt="фото доктора">
+                <img class="icons-video-23 video_1_play" src="./img/znachok-video.png" alt="значок плей видео">
+                <img class="video-23" src="./img/photo-doctora-23.png" width="570" height="572" alt="фото доктора">
             </div>
         </div>
        

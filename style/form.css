@@ -1,6 +1,6 @@
 /* Всплывающая форма */
 .form-2{
-    position: absolute;
+    position: fixed;
     z-index: 999;
     left: 0;
     right: 0;
