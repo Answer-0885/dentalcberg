@@ -131,6 +131,9 @@
 
 
 .header-menu-list>li{
+    display: flex;
+    align-items:center;
+    justify-content: center;
     font-size: 1.5rem;
     line-height: 100%;
     text-decoration: none;
@@ -260,7 +263,8 @@
         display: none;
     }
 
-    .header-up__version-visually-impaired {
+    .header-up__version-visually-impaired,
+    .header-menu__button {
         display: none;
     }
 
@@ -318,7 +322,7 @@
         height: 100% ;
         box-shadow: 0 5px 6px rgba(36, 36, 36, 0.37);
         top: 78px;
-        left: 150%;
+        left: -150%;
         transition: all 0.5s ease;
         z-index: 100;
 
@@ -332,6 +336,7 @@
         text-align: center;
         border: 20px solid #3C3D75;
         margin-top: 0;
+        
     }
 
     .header-menu__button {

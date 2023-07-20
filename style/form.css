@@ -1,5 +1,7 @@
 /* Всплывающая форма */
-.form-2{
+.form-2,
+.form-3,
+.form-4{
     position: fixed;
     z-index: 999;
     left: 0;
@@ -14,6 +16,7 @@
     border-radius: 30px;
     display: none;
 }
+
 .form-2__block {
     padding: 50px;
     display: flex;
@@ -22,11 +25,31 @@
     justify-content: center;
 }
 
+.text-area {
+    width: 42rem;
+    font-size: 2rem;
+    text-align: center;
+    max-height: 10rem;
+    border-radius: 30px;
+    padding: 0 1rem;
+    border: none;
+    margin-bottom: 1rem;
+    color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-area::placeholder {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
 .form-2__header {
     margin-bottom: 5rem;
     font-weight: 500;
     text-align: center;
     font-size: 4rem;
+    line-height: 150%;
     text-transform: uppercase;
     color: #6A5AF3;
 }
@@ -34,7 +57,6 @@
 .form-2__name,
 .form-2__telephone{
     width: 42rem;
-    font-size: 1.5rem;
     text-align: center;
     height: 5rem;
     border-radius: 30px;

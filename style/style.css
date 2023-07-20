@@ -3533,7 +3533,8 @@ input[type=radio] {
 
 /* cтрелки 10 блока влево и вправо */
 
-.main__content-10_flex_single-stage {
+.main__content-10_flex_single-stage,
+.main__content-10_flex_two-stage {
     position: relative;
 }
 
@@ -5491,6 +5492,11 @@ input[type=radio] {
     font-weight: 400;
     line-height: 100%;
 }
+.rating-result svg{
+    width: 8.4rem;
+    height: 1.2rem;
+
+}
 
 
 /* Двадцать второй блок
@@ -5588,19 +5594,11 @@ input[type=radio] {
 .rating-result-22 {
 	margin: 0 auto;
 }
-.rating-result-22 span {
-	padding: 0;
-	font-size: 2rem;
-	line-height: 1;
-    color: #FFCD1C;
+.rating-result-22 svg{
+	width: 8.4rem;
+    height: 1.2rem;
 }
-.rating-result-22 > span:before {
-	content: '★';
-}
-.rating-result-22 > span.active {
-	color: gold;
-	text-shadow: 0.1rem 0.1rem #c60;
-}
+
 
 .client_rating p {
     font-size: 2rem;
@@ -6011,17 +6009,23 @@ input[type=radio] {
     z-index: 5;
 }
 
+/* .contacts-2 {
+    display: none !important;
+
+} */
+
 .no-active-25{
     opacity: 0.5;
     color: #8FA7C1;
 }
 
 .tab-2 .contacts-25{
-    display: none !important;
     position: absolute;
     margin-top: 3rem;
     display: flex;
     gap: 2rem;
+    opacity: 0;
+    z-index: 10;
 }
 
 .contacts-25 .address-1,
@@ -6092,6 +6096,7 @@ input[type=radio] {
     align-items: center;
     justify-content: flex-start;
     max-width: 19.5rem;
+    text-decoration: none;
 }
 
 .contacts-25 .address-1 .travel p{
