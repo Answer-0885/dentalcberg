@@ -1411,6 +1411,16 @@ Select c dropdown на JS
     display: inline-block;
     vertical-align: middle;
 }
+.hide-1::after,
+.hide-2::after,
+.hide-3::after {
+    content:url(../img/strelka-vniz.svg);
+    transform: rotate(180deg);
+    width: 1.2rem;
+    margin-left: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /* Пятый блок */
 .main__content-5 {
@@ -5611,7 +5621,6 @@ input[type=radio] {
 }
 
 .btn_feedback-22 {
-    display: block;
     margin-top: 4rem;
     margin-left: auto;
     margin-right: auto;
