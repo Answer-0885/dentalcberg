@@ -786,39 +786,6 @@ input::placeholder{
     }
 }
 
-/* .main__content-3_select {
-    padding: 1.375em 3rem;
-    width: 69rem;
-    height: 7rem;
-    margin-top: 3rem;
-    background: #FFFFFF;
-    border: 0.1rem solid #D6DFE8;
-    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.16);
-    border-radius: 3.5rem;
-    appearance: none;
-    background: url("../img/Стрелка.svg") 96% / 15% no-repeat #eee;
-    background-size: 10% 10%;
-    cursor: pointer;
-}
-
-select option{
-    background: #FFFFFF;
-    border: 0.1rem solid #D6DFE8;
-    box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.16);
-    border-radius: 3.5rem;
-}
-
-select option[value="1"]:after{
-    background-image: '../img/Switzerland.svg';
-} */
-
-
-/* ---------------------------------------- */
-
-/* *******************
-Select c dropdown на JS
-******************* */
-
 .dropdown {
 	position: relative;
 }
@@ -843,18 +810,11 @@ Select c dropdown на JS
     cursor: pointer;
 }
 
-/* .dropdown__button::after {
-    content:url(../img/Switzerland.svg);
-    margin-left: 1rem;
-    vertical-align: middle;
-} */
 
 .dropdown__button:focus, .dropdown__button--active {
 	outline: none;
 	box-shadow: 0rem 0rem 0rem 0.2rem rgb(245, 69, 69);
 }
-
-
 
 .dropdown__list {
 	display: none;
@@ -895,24 +855,26 @@ Select c dropdown на JS
 	border-radius: 0.6rem 0.6rem 0 0;
 }
 
-.dropdown__list-item-1::after,
-.dropdown__list-item-4::after {
-    content:url(../img/Switzerland.svg);
-    margin-left: 1rem;
-    vertical-align: middle;
+.dropdown__button, 
+.dropdown__list-item-1,
+.dropdown__list-item-2,
+.dropdown__list-item-3,
+.dropdown__list-item-4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.dropdown__list-item-2::after {
-    content:url(../img/Israel.svg);
+.dropdown__button svg,
+.dropdown__list-item-1 svg,
+.dropdown__list-item-2 svg,
+.dropdown__list-item-3 svg,
+.dropdown__list-item-4 svg{
+    width: 3rem;
+    height: 2rem;    
     margin-left: 1rem;
-    vertical-align: middle;
 }
 
-.dropdown__list-item-3::after {
-    content:url(../img/SouthKorea.svg);
-    margin-left: 1rem;
-    vertical-align: middle;
-}
 
 .dropdown__list-item:hover {
     color: #272727;
@@ -939,6 +901,12 @@ Select c dropdown на JS
     box-shadow: 0rem 0rem 4rem rgba(0, 0, 0, 0.16);
     border-radius: 2rem;
     margin-top: 5.8rem;
+}
+
+.noris,
+.osstem,
+.straumann {
+    display: none
 }
 
 .main__content-3_var-1_up{
@@ -992,49 +960,23 @@ Select c dropdown на JS
     margin-top: 3rem;
 }
 
-.main__content-3_block_checkbox input{
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-}
 
-
-.main__content-3_block_checkbox label{
+.main__content-3_block_checkbox{
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 140%;
     color: #FFFFFF;
     cursor: pointer;
-    /* Убирает текст из под инпута */
-    display:flex;
-    align-items:baseline;
-}
+    margin-bottom: 2rem;
 
-.main__content-3_block_checkbox {
-    margin-bottom: 1rem;
-}
-
-.main__content-3_block_checkbox input + label:before{
-    content: '';
-    display: inline-block;
-    width: 1.8rem;
-    height: 1.8rem;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 0.1rem solid #adb5bd;
-    border-radius: 1.6rem;
-    margin-right: 0.8rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-    background-color: #FFFFFF;
-    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
 }
 
 
-.main__content-3_block_checkbox input:checked+label::before {
-    border-color: #0b76ef;
-    background-image: url(../img/galka.svg);
+.main__content-3_block_checkbox::before {
+    content: url(../img/galka-belofiolet.png);
+    margin-right: 0.5rem;
 }
 
 /* Кнопка Закрепить стоимость по акции */
@@ -1148,8 +1090,8 @@ Select c dropdown на JS
     background-image: url('../img/galka.svg');
     background-position: 50% 50%;
     border-radius: 50px;
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2.5rem;
+    height: 2.5rem;
     margin-right: 1.5rem;
 }
 /* Правый блок */
@@ -1494,6 +1436,7 @@ Select c dropdown на JS
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .main__content-5_advantages_list {
@@ -1716,7 +1659,16 @@ Select c dropdown на JS
 }
 
 .main__content-6_tab-block {
+    position: relative;
     margin-top: 3.2rem;
+}
+
+.svg-6 {
+    position: absolute;
+    width: 55rem;
+    height: 57.1rem;
+    left:-200px;
+    top:-150px;
 }
 
 .main__content-6_tab {
@@ -2058,14 +2010,17 @@ Select c dropdown на JS
     line-height: 140%;
     display: flex;
     align-items:center;
+    margin-bottom: 1.5rem;
 }
 
 .main__content-6_main_li_tab-2:before {
     content: url(../img/galka.svg);
     width: 2.5rem;
     height: 2.5rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
+
+
 
 .main__content-6_main_span_tab-2 {
     max-width: 55rem;
@@ -3759,16 +3714,19 @@ input[type=radio] {
     background-image:url(../img/arrow_right_active.png);
 }
 
+
+
 /* слайдер 11 блока */
 .slider_doctors {
     position: relative;
-    max-width: 145rem;
+    max-width: 137rem;
 }
 
 .slider_doctors_right {
-    margin-top: -12rem;
     position: absolute;
+    margin-top: -12rem;
     margin-left: 20rem;
+    overflow:hidden;
     display: flex;
     gap: 2rem;
     max-width: 130rem;
@@ -3809,8 +3767,10 @@ input[type=radio] {
     height: 17rem;
     border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0rem 0rem 3rem 0rem rgba(0, 0, 0, 0.16);
-    padding-top: 2rem;
+    box-shadow: 0rem 0rem 1.5rem 0rem rgba(0, 0, 0, 0.16);
+    padding-top: 1.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
     padding-left: 1.5rem;
     cursor: pointer;
 }
@@ -4386,6 +4346,7 @@ input[type=radio] {
 .osstem-14,
 .straumann-14,
 .no_all_tooth-14 {
+    position: relative;
     padding: 3rem;
     border-radius: 2rem;
     background: #FFF;
@@ -4394,6 +4355,39 @@ input[type=radio] {
     align-items: center;
     justify-content:space-between;
 }
+
+.nobel-14 svg{
+    position: absolute;
+    left: 70rem;
+    width: 25rem;
+    height: 21.2rem;
+    bottom: 0;
+}
+
+.osstem-14 svg{
+    position: absolute;
+    left: 90rem;
+    width: 25rem;
+    height: 21.2rem;
+    bottom: 0;
+}
+
+.straumann-14 svg{
+    position: absolute;
+    left: 30rem;
+    width: 25rem;
+    height: 21.2rem;
+    bottom: 0;
+}
+
+.no_all_tooth-14 svg{
+    position: absolute;
+    left: 70rem;
+    width: 25rem;
+    height: 21.2rem;
+    bottom: 0;
+}
+
 .no_all_tooth-14 {
     margin-top: 4rem;
     display: none;
@@ -5121,35 +5115,53 @@ input[type=radio] {
     margin-left: 1.5rem;
 }
 
-.slides-18 {
+.slides-18,
+.slides-18-2 {
     position: relative;
     display: flex;
-    gap: 3rem;
-    margin-bottom: 12rem;
-    justify-content: flex-start;
-
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 141rem;
 }
 
+.swiper3,
+.swiper4 {
+    overflow: hidden;
+}
+.swiper4 {
+    display: none;
+}
 
+.swiper-pagination-3,
+.swiper-pagination-4 {
+    
+    text-align: center;
+}
+
+.swiper-pagination-3 span,
+.swiper-pagination-4 span{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
 
 .slides-18 .slide-1,
 .slides-18 .slide-2,
-.slides-18 .slide-3,
-.slides-18 .slide-4 {
+.slides-18 .slide-3 {
     cursor: pointer;
 }
 .slides-18 .slide-1 img,
 .slides-18 .slide-2 img,
 .slides-18 .slide-3 img {
-    width: 45rem;
-    height: 33rem;
-    max-width: 1410px;
+    max-width: 65rem;
+    height: 100%;
 }
 
-.slides-18 .slide-4 img{
+/* .slides-18 .slide-4 img{
     width: 13rem;
     height: 33rem;
-}
+} */
 
 /* DOTS-18 */
 
@@ -5211,6 +5223,7 @@ input[type=radio] {
 
 .smile-18 {
     position: relative;
+    margin-top: 6rem;
     display: flex;
     gap: 3rem;
     padding: 2rem 0rem 2rem 2rem;
@@ -5817,7 +5830,14 @@ input[type=radio] {
     top: 3rem;
     cursor: pointer;
     transition: 0.5s;
+    width: 8rem;
+    height: 8rem;
 }
+
+.block-23-video .video-23 {
+    width: 57rem;
+    height: 57rem;
+ }
 
 .icons-video-23:hover {
     transform: scale(1.2) rotate(360deg);
@@ -5828,6 +5848,7 @@ input[type=radio] {
 
 .main__content-24 {
     margin-top: 12rem;
+    padding-bottom: 7rem;
 }
 
 .h2-24 {
@@ -5841,21 +5862,12 @@ input[type=radio] {
 .license-24 {
     margin-top: 4rem;
     display: flex;
-    width: 157.2rem;
-    overflow: hidden;
     gap: 2.2rem;
     align-items: center;
+    padding-bottom: 10rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
-
-.icons-video-23 {
-    width: 8rem;
-    height: 8rem;
-}
-
-.block-23-video .video-23 {
-    width: 57rem;
-    height: 57rem;
- }
 
 .license-24 .license-1{
     display: flex;
@@ -5866,13 +5878,14 @@ input[type=radio] {
     padding: 1.5rem 0.8rem;
     border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
+    box-shadow: 0rem 0rem 1.5rem 0rem rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 
-.license-24 .license-1 img{
-    max-width: 30.2rem;
-    max-height: 44.2rem;
+.swiper-pagination span{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
 }
 
 @media (max-width: 1400px) {

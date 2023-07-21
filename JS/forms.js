@@ -2,12 +2,13 @@ const popUp = () => {
     const openForm = document.querySelectorAll('.open-form');
     const openFormQuestion = document.querySelectorAll('.open_form_questions');
     const openFormConsultation = document.querySelector('.main__content-5_desc-button');
+    const openFormAction = document.querySelector('.main__content-3_button');
     const form2 = document.querySelector('.form-2');
     const form3 = document.querySelector('.form-3');
     const form4 = document.querySelector('.form-4');
+    const form5 = document.querySelector('.form-5');
     const overlay = document.querySelector('.overlay');
     const body = document.querySelector('body');
-    console.log(openFormQuestion);
 
    //Открываем форму - Записаться на приём
    openForm.forEach(btn => {
@@ -66,6 +67,24 @@ const popUp = () => {
 	   });
     });
 
+   // Закрепить стоимость по акции
+   openFormAction.addEventListener('click', (e) => {
+	   e.preventDefault();
+	   form5.style.display = 'block';
+	   overlay.style.display = 'block';
+       body.style.overflow = 'hidden';
+	   animate({
+		  duration: 600,
+		  timing(timeFraction) {
+			 return timeFraction;
+		  },
+		  draw(progress) {
+			form3.style.opacity = progress;
+			 overlay.style.opacity = progress;
+		  }
+	   });
+    });
+
 
 
      // Закрываем и форму и видео при нажатии на крестик или оверлай 
@@ -75,6 +94,7 @@ const popUp = () => {
             form2.style.display = 'none';
             form3.style.display = 'none';
             form4.style.display = 'none';
+            form5.style.display = 'none';
             body.style.overflow = 'auto';
         };
     });
