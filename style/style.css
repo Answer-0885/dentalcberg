@@ -3071,14 +3071,18 @@ input[type=radio] {
 .main__content-10_flex_single-stage,
 .main__content-10_flex_two-stage {
     display: flex;
-    gap: 3rem;
     align-items:flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 4rem;
-    flex-wrap: wrap;
+    max-width: 141rem;
 }
 
-.main__content-10_flex_two-stage {
+.swiper5,
+.swiper6 {
+    overflow: hidden;
+}
+
+.swiper6 {
     display: none;
 }
 
@@ -3090,9 +3094,13 @@ input[type=radio] {
 .main__content-10_flex_two-stage .flex-6 {
     position: relative;
     padding: 2rem;
+    margin: 1.5rem;
     border-radius: 2rem;
     background: #FFF;
-    box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
+    max-width: 45rem;
+    max-height: 100%;
+    cursor: pointer;
+    box-shadow: 0rem 0rem 1.5rem 0rem rgba(0, 0, 0, 0.16);
 }
 
 .flex-1 .title,
@@ -3515,18 +3523,29 @@ input[type=radio] {
 
 /* cтрелки 10 блока влево и вправо */
 
-.main__content-10_flex_single-stage,
+/* .main__content-10_flex_single-stage,
 .main__content-10_flex_two-stage {
     position: relative;
+} */
+
+.main__content-10 {
+    position: relative; 
 }
 
-.swiper_10_btn{
+.swiper_10_btn,
+.swiper_10_btn-2{
     position:absolute;
     cursor:pointer;
-    top: 45%;
-    z-index:5;
+    top: 60%;
+    z-index: 5;
     width: 4rem;
-    height: 4rem
+    height: 4rem;
+}
+.swiper_10_btn-2{
+    display: none;
+}
+.swiper_10_btn{
+    display: flex;
 }
 
 .swiper_10_btn.prev{
@@ -3539,12 +3558,22 @@ input[type=radio] {
     background-position:50% 50%
 }
 
+.swiper_10_btn-2.prev{
+    background-image:url(../img/arrow_left.png);
+    background-position:50% 50%;
+}
+
+.swiper_10_btn-2.next{
+    background-image:url(../img/arrow_right.png);
+    background-position:50% 50%
+}
+
 .left-10 {
-    left: -5rem;
+    left: 20rem;
 }
 
 .right-10 {
-    right: -5rem;    
+    right: 20rem;    
 }
 
 @media (max-width:1400px) {
@@ -3831,19 +3860,22 @@ input[type=radio] {
 
 .slider_doctors_right .slide-1 img,
 .slider_doctors_right .slide-2 img,
-.slider_doctors_right .slide-3 img {
+.slider_doctors_right .slide-3 img, 
+.slider_doctors_right .slide-4 img {
     border-radius: 15px;
     margin-left: -5rem;
 }
 
 .slider_doctors_right .slide-5 img {
-    margin-left: 3.2rem;   
-} 
+    border-radius: 15px;
+    margin-left: 1rem;
+}
 
-.slider_doctors_right .slide-5 .no-active {
+
+/* .slider_doctors_right .slide-5 .no-active {
     opacity: 0.4;
    
-}
+} */
 
 .slide-1.slide-active {
     border-radius: 1.5rem;
