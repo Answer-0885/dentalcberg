@@ -5406,6 +5406,7 @@ display: flex;
 /* РЕЙТИНГИ */
 .main__content-19 {
     padding-top: 12rem;
+  
 }
 
 .h2-19 {
@@ -5420,8 +5421,33 @@ display: flex;
     position: absolute;
     display: flex;
     gap: 2rem;
-    background: #F5F8FD;
+    padding: 1.5rem;
+    /* Исчезновения */
+    /* visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear; */
+    /* Появление */
+    /* visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear; */
 }
+
+#slider {
+    opacity:1;
+    transition: opacity 1s; 
+}
+
+#slider.fadeOut {
+    opacity:0;
+}
+
+
+.swiper7 {
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
 
 
 @media (max-width:1400px) {
@@ -5454,6 +5480,8 @@ display: flex;
 .slides-19 .slide-6,
 .slides-19 .slide-7 {
     display: flex;
+    max-width: 23rem;
+    height: 19rem;
     flex-direction: column;
     align-items:center;
     justify-content: space-between;
@@ -5465,7 +5493,7 @@ display: flex;
 .slides-19 .slide-7 {
     display: none;
     opacity: 0.3;
-    background: linear-gradient(270deg, #f1eaea 0%, #f8f8f8 100%);
+    background: linear-gradient(270deg, #f1eaea 0%, #ee0808 100%);
 }
 
 .slides-19 .img-19 {
@@ -5498,7 +5526,7 @@ display: flex;
 /* Двадцатый блок */
 /* ИНТЕРНЕТ СПРАВОЧНИКИ */
 .main__content-20 {
-    margin-top: 37rem;
+    margin-top: 14rem;
 }
 
 .h2-20 {
@@ -5943,6 +5971,7 @@ display: flex;
     font-weight: 500;
     line-height: 130%;
     text-transform: uppercase;
+    text-align: left;
 }
 
 
@@ -5967,6 +5996,15 @@ display: flex;
     background: #FFF;
     box-shadow: 0rem 0rem 1.5rem 0rem rgba(0, 0, 0, 0.16);
     cursor: pointer;
+}
+
+
+/* - Установка при наведении - */
+.license-24 .license-1:hover{
+    transform: scale(1.4, 1.4);
+    z-index: 10;
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
 }
 
 .swiper-pagination span{

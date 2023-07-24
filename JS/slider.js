@@ -5,9 +5,9 @@ const slider = () => {
     let ulDots = document.querySelector('.main__content-8_swiper-dots');
  
  
-    let timeInterval = 1000;
+   //  let timeInterval = 1000;
     let currentSlide = 0;
-    let interval;
+    //let interval;
  
     const prevSlide = (elems, index, strClass) => {
        elems[index].classList.remove(strClass);
@@ -30,12 +30,12 @@ const slider = () => {
    //     nextSlide(dots, currentSlide, 'dot-active');
    //  }
  
-   //  const startSlide = (timer = 1500) => {
-   //     interval = setInterval(autoSlide, timer);
+   //   const startSlide = (timer = 1500) => {
+   //      interval = setInterval(autoSlide, timer);
+   //   }
+   //  const stopSlide = () => {
+   //     clearInterval(interval);
    //  }
-    const stopSlide = () => {
-       clearInterval(interval);
-    }
  
     content8.addEventListener('click', (e) => {
        e.preventDefault()
@@ -68,16 +68,16 @@ const slider = () => {
        nextSlide(slides, currentSlide, 'swiper-item-active');
        nextSlide(dots, currentSlide, 'dot-active');
     })
-    content8.addEventListener('mouseenter', (e) => {
-       if (e.target.matches('.dot, .main__content-8_swiper-btn') || e.target.matches('.main__content-8_swiper-item')) {
-          stopSlide();
-       }
-    }, true)
-    content8.addEventListener('mouseleave', (e) => {
-       if (e.target.matches('.dot, .main__content-8_swiper-btn') || e.target.matches('.main__content-8_swiper-item')) {
-          startSlide(timeInterval);
-       }
-    }, true)
+   //  content8.addEventListener('mouseenter', (e) => {
+   //     if (e.target.matches('.dot, .main__content-8_swiper-btn') || e.target.matches('.main__content-8_swiper-item')) {
+   //        stopSlide();
+   //     }
+   //  }, true)
+   //  content8.addEventListener('mouseleave', (e) => {
+   //     if (e.target.matches('.dot, .main__content-8_swiper-btn') || e.target.matches('.main__content-8_swiper-item')) {
+   //        startSlide(timeInterval);
+   //     }
+   //  }, true)
     // Добавляем точки для слайдера
     const dotAdd = () => {
        for (let i = 0; i < slides.length; i++) {
