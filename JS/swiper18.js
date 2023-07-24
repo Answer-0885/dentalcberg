@@ -6,10 +6,10 @@ const swiper18 = () => {
           prevEl: '.benefits__arrow--left',
        },
        loop: true,
-       autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-       },
+      //  autoplay: {
+      //     delay: 2000,
+      //     disableOnInteraction: false,
+      //  },
        pagination: {
          el: '.swiper-pagination-3',
          clickable: true,
@@ -31,11 +31,11 @@ const swiper18 = () => {
          nextEl: '.benefits__arrow--right',
          prevEl: '.benefits__arrow--left',
       },
-      loop: true,
-      autoplay: {
-         delay: 2000,
-         disableOnInteraction: false,
-      },
+      // loop: true,
+      // autoplay: {
+      //    delay: 2000,
+      //    disableOnInteraction: false,
+      // },
       pagination: {
         el: '.swiper-pagination-4',
         clickable: true,

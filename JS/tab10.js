@@ -15,21 +15,28 @@ const tab10 = () => {
                 twoStage.style.display = 'flex';
         
                 btn1.style.display = 'none';
-                btn2.style.display = 'block';
+                btn2.style.display = 'flex';
         
                 btnSingleStage.classList.remove('button_active');
                 btnTwoStage.classList.add('button_active');
             })
+        })
+        btnSwiper1.forEach(btn1 => {
+            btnSwiper2.forEach(btn2 => {
             btnSingleStage.addEventListener('click', ()=>{
                 singleStage.style.display = 'flex';
                 twoStage.style.display = 'none';
-                btn1.style.display = 'block';
+
+                btn1.style.display = 'flex';
                 btn2.style.display = 'none';
+
                 btnSingleStage.classList.add('button_active');
                 btnTwoStage.classList.remove('button_active');
             })
         })
-    })
+            })
+        })
+
 
 
 }

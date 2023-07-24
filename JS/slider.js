@@ -1,10 +1,11 @@
 const slider = () => {
+    const content8 = document.querySelector('.main__content-8');
     const sliderBlock = document.querySelector('.main__content-8_swiper-list');
     const slides = document.querySelectorAll('.main__content-8_swiper-item');
     let ulDots = document.querySelector('.main__content-8_swiper-dots');
  
  
-    let timeInterval = 4000;
+    let timeInterval = 1000;
     let currentSlide = 0;
     let interval;
  
@@ -36,7 +37,7 @@ const slider = () => {
        clearInterval(interval);
     }
  
-    sliderBlock.addEventListener('click', (e) => {
+    content8.addEventListener('click', (e) => {
        e.preventDefault()
        let dots = document.querySelectorAll('.dot');
  
@@ -67,13 +68,13 @@ const slider = () => {
        nextSlide(slides, currentSlide, 'swiper-item-active');
        nextSlide(dots, currentSlide, 'dot-active');
     })
-    sliderBlock.addEventListener('mouseenter', (e) => {
-       if (e.target.matches('.dot, .main__content-8_swiper-btn')) {
+    content8.addEventListener('mouseenter', (e) => {
+       if (e.target.matches('.dot, .main__content-8_swiper-btn') || e.target.matches('.main__content-8_swiper-item')) {
           stopSlide();
        }
     }, true)
-    sliderBlock.addEventListener('mouseleave', (e) => {
-       if (e.target.matches('.dot, .main__content-8_swiper-btn')) {
+    content8.addEventListener('mouseleave', (e) => {
+       if (e.target.matches('.dot, .main__content-8_swiper-btn') || e.target.matches('.main__content-8_swiper-item')) {
           startSlide(timeInterval);
        }
     }, true)
@@ -88,7 +89,7 @@ const slider = () => {
        ulDots.children[0].classList.add('dot-active');
     };
  
-    if (sliderBlock && slides && ulDots) {
+    if (content8 && slides && ulDots) {
        dotAdd();
        startSlide(timeInterval);
     }

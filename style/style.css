@@ -1520,7 +1520,7 @@ input::placeholder{
 }
 
 .main__content-5_advantages_list:before {
-    content: url(../img/galka.svg);
+    content: url(../img/galka-belofiolet.png);
     width: 2.5rem;
     height: 2.5rem;
     vertical-align:top;
@@ -2270,45 +2270,51 @@ input::placeholder{
     font-weight: 500;
 }
 
+/* -------------------------------------- */
+
+/* -------------------------------------- */
+
+
+
 /* - СЛАЙДЕР - */
 .main__content-8_swiper-list {
     position: relative;
-    height: 65rem;
-    list-style-type: none;
-    text-align: center;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 4rem;
+    list-style: none;
+    width:93rem;
+    height: 56rem;
+    overflow: hidden;
 }
-.main__content-8_swiper-item{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:100%;
-    opacity:0;
-    transition:opacity .5s
+
+.main__content-8_swiper-item {
+    border-radius: 20px;
+    /* opacity:0;
+    transition:opacity .5s; */
+    display: none;
 }
 
 .main__content-8_swiper-item img{
-    position:absolute;
-    top:50%;
-    left:50%;
-    width: 93rem;
+    width:93rem;
     height: 56rem;
-    transform:translate(-50%,-50%)
+
 }
 
 .swiper-item-active{
-    opacity:1;
-    transition:opacity .5s;
+    display: block;
+    /* opacity:1;
+    transition:opacity .5s; */
 }
 
 .main__content-8_swiper-btn{
-    position:absolute;
+    position:absolute; 
     cursor:pointer;
-    top:50%;
+    top:25rem;
     z-index:5;
     width:4rem;
-    height:4rem
+    height:4rem;
 }
 
 .main__content-8_swiper-btn.prev{
@@ -2321,14 +2327,15 @@ input::placeholder{
     background-position:50% 50%
 }
 
-
-
 .left-8 {
-    left: 18rem;
+    top: 46rem;
+    left: 45rem;
+
 }
 
 .right-8 {
-    right: 18rem;    
+    top: 46rem;
+    right: 45rem;    
 }
 
 @media (max-width: 992px) {
@@ -2349,7 +2356,8 @@ input::placeholder{
 
 .main__content-8_swiper-dots{
     position:absolute;
-    top: 100%;
+    top: 90%;
+    left: 0;
     width:100%;
     display:flex;
     justify-content:center;
@@ -2389,14 +2397,14 @@ input::placeholder{
 
 .main__content-8_swiper_span.left {
     position: absolute;
-    left: 23rem;
-    top: 6.5rem
+    left: 48rem;
+    top: 22rem
 }
 
 .main__content-8_swiper_span.right {
     position: absolute;
-    right: 23rem;
-    top: 6.5rem
+    right: 48rem;
+    top: 22rem
 }
 
 
@@ -3545,9 +3553,9 @@ input[type=radio] {
     display: none;
 }
 .swiper_10_btn{
-    display: flex;
-}
+display: flex;
 
+}
 .swiper_10_btn.prev{
     background-image:url(../img/arrow_left.png);
     background-position:50% 50%;

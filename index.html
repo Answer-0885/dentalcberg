@@ -23,7 +23,6 @@
     <script type="text/javascript" src="./JS/tab14.js" defer></script>
     <script type="text/javascript" src="./JS/quiz.js" defer></script>
     <script type="text/javascript" src="./JS/address.js" defer></script>
-    <script type="text/javascript" src="./JS/slider10.js" defer></script>
     <script type="text/javascript" src="./JS/dropDown.js" defer></script>
     <script type="text/javascript" src="./JS/mask.js" defer></script>
     <script type="text/javascript" src="./JS/swiper24.js" defer></script>
@@ -31,8 +30,18 @@
     <script type="text/javascript" src="./JS/tab18.js" defer></script>
     <script type="text/javascript" src="./JS/swiper18.js" defer></script>
     <script type="text/javascript" src="./JS/swiper10.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="./JS/menu.js" defer></script>
+    <!-- Скрипты -->
+    <!-- <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script> -->
+    <script src="./JS/jquery.event.move.js" type="text/javascript"></script>
+    <script src="./JS/jquery.twentytwenty.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+          $(".before-after").twentytwenty();
+        });
+      </script>
+    <link rel="stylesheet" href="./style/twentytwenty.css" type="text/css" media="screen" />
     <title>Центр дентальной травматологии ICEBERG</title>
 </head>
 
@@ -872,24 +881,56 @@
 </div>
 </section>
 
+
+
     <!------- Восьмой блок - РЕЗУЛЬТАТЫ ДО/ПОСЛЕ ------->
-<section class="main__content-8">
-    <div class="container wrap">
-        <h2>РЕЗУЛЬТАТЫ <span>ДО/ПОСЛЕ</span></h2>
-        <ul class="main__content-8_swiper-list">
-            <li class="main__content-8_swiper-item"><img src="./img/do-posle.png" alt="фото до и после"></li>
-            <li class="main__content-8_swiper-item"><img src="./img/do-posle.png" alt="фото до и после"></li>
-            <li class="main__content-8_swiper-item"><img src="./img/do-posle.png" alt="фото до и после"></li>
-            <li class="main__content-8_swiper-item"><img src="./img/do-posle.png" alt="фото до и после"></li>
+    <section class="main__content-8">
+        <div class="container wrap">
+            <h2>РЕЗУЛЬТАТЫ <span>ДО/ПОСЛЕ</span></h2>
+
+
+            <ul class="main__content-8_swiper-list">
+                <li class="main__content-8_swiper-item before-after swiper-item-active">
+                        <!-- Картинка  "до" -->
+                        <img class="before-after__item" src="./img/DO.png" alt="фото до"/>
+                       
+                        <!-- Картинка  "после" -->
+                        <img class="before-after__item" src="./img/do-posle.png" alt="фото после" />      
+                </li>
+                <li class="main__content-8_swiper-item before-after swiper-item-active">
+                        <!-- Картинка  "до" -->
+                        <img class="before-after__item" src="./img/DO.png" alt="фото до"/>
+                       
+                        <!-- Картинка  "после" -->
+                        <img class="before-after__item" src="./img/do-posle.png" alt="фото после" />      
+                </li>
+                <li class="main__content-8_swiper-item before-after swiper-item-active">
+                        <!-- Картинка  "до" -->
+                        <img class="before-after__item" src="./img/DO.png" alt="фото до"/>
+                       
+                        <!-- Картинка  "после" -->
+                        <img class="before-after__item" src="./img/do-posle.png" alt="фото после" />      
+                </li>
+                <li class="main__content-8_swiper-item before-after swiper-item-active">
+                        <!-- Картинка  "до" -->
+                        <img class="before-after__item" src="./img/DO.png" alt="фото до"/>
+                       
+                        <!-- Картинка  "после" -->
+                        <img class="before-after__item" src="./img/do-posle.png" alt="фото после" />      
+                </li>
+
+
+
+            </ul>
             <a href="#" class="main__content-8_swiper-btn prev left-8" id="arrow-left-8"></a>
             <a href="#" class="main__content-8_swiper-btn next right-8" id="arrow-right-8"></a>
             <ul class="main__content-8_swiper-dots">
             </ul>
             <span class="main__content-8_swiper_span left">ДО</span>
             <span class="main__content-8_swiper_span right">ПОСЛЕ</span>
-        </ul>
-    </div>
-</section>
+        </div>
+    </section>
+    
 
 <!-- Девятый блок - УЗНАЙТЕ СТОИМОСТЬ ЛЕЧЕНИЯ ВСЕГО ЗА 1 МИНУТУ -->
 

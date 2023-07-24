@@ -5,10 +5,10 @@ const swiper10 = () => {
           prevEl: '.tab-1__arrow--left',
        },
        loop: true,
-       autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-       },
+    //    autoplay: {
+    //       delay: 2000,
+    //       disableOnInteraction: false,
+    //    },
      mousewheel: true,
        keyboard: true,
 
@@ -27,10 +27,10 @@ const swiper10 = () => {
             prevEl: '.tab-2__arrow--left',
         },
         loop: true,
-        autoplay: {
-           delay: 2000,
-           disableOnInteraction: false,
-        },
+        // autoplay: {
+        //    delay: 2000,
+        //    disableOnInteraction: false,
+        // },
       mousewheel: true,
         keyboard: true,
  
