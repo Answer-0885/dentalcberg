@@ -9,7 +9,7 @@ const swiper10 = () => {
     //       delay: 2000,
     //       disableOnInteraction: false,
     //    },
-     mousewheel: true,
+   //   mousewheel: true,
        keyboard: true,
 
        breakpoints: {
@@ -31,7 +31,7 @@ const swiper10 = () => {
         //    delay: 2000,
         //    disableOnInteraction: false,
         // },
-      mousewheel: true,
+      // mousewheel: true,
         keyboard: true,
  
         breakpoints: {

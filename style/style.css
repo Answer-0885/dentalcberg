@@ -2329,13 +2329,13 @@ input::placeholder{
 
 .left-8 {
     top: 46rem;
-    left: 45rem;
+    left: 35rem;
 
 }
 
 .right-8 {
     top: 46rem;
-    right: 45rem;    
+    right: 35rem;    
 }
 
 @media (max-width: 992px) {
@@ -2397,13 +2397,13 @@ input::placeholder{
 
 .main__content-8_swiper_span.left {
     position: absolute;
-    left: 48rem;
+    left: 39rem;
     top: 22rem
 }
 
 .main__content-8_swiper_span.right {
     position: absolute;
-    right: 48rem;
+    right: 39rem;
     top: 22rem
 }
 
@@ -3577,11 +3577,11 @@ display: flex;
 }
 
 .left-10 {
-    left: 20rem;
+    left: 12rem;
 }
 
 .right-10 {
-    right: 20rem;    
+    right: 12rem;    
 }
 
 @media (max-width:1400px) {

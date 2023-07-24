@@ -17,22 +17,22 @@ const slider = () => {
        elems[index].classList.add(strClass);
     }
  
-    const autoSlide = () => {
-       let dots = document.querySelectorAll('.dot');
+   //  const autoSlide = () => {
+   //     let dots = document.querySelectorAll('.dot');
  
-       prevSlide(slides, currentSlide, 'swiper-item-active');
-       prevSlide(dots, currentSlide, 'dot-active');
-       currentSlide++;
-       if (currentSlide >= slides.length) {
-          currentSlide = 0;
-       }
-       nextSlide(slides, currentSlide, 'swiper-item-active');
-       nextSlide(dots, currentSlide, 'dot-active');
-    }
+   //     prevSlide(slides, currentSlide, 'swiper-item-active');
+   //     prevSlide(dots, currentSlide, 'dot-active');
+   //     currentSlide++;
+   //     if (currentSlide >= slides.length) {
+   //        currentSlide = 0;
+   //     }
+   //     nextSlide(slides, currentSlide, 'swiper-item-active');
+   //     nextSlide(dots, currentSlide, 'dot-active');
+   //  }
  
-    const startSlide = (timer = 1500) => {
-       interval = setInterval(autoSlide, timer);
-    }
+   //  const startSlide = (timer = 1500) => {
+   //     interval = setInterval(autoSlide, timer);
+   //  }
     const stopSlide = () => {
        clearInterval(interval);
     }
@@ -91,7 +91,7 @@ const slider = () => {
  
     if (content8 && slides && ulDots) {
        dotAdd();
-       startSlide(timeInterval);
+      //  startSlide(timeInterval);
     }
  }
 slider();

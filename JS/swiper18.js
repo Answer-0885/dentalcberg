@@ -14,7 +14,7 @@ const swiper18 = () => {
          el: '.swiper-pagination-3',
          clickable: true,
      },
-     mousewheel: true,
+   //   mousewheel: true,
        keyboard: true,
 
        breakpoints: {
@@ -40,7 +40,7 @@ const swiper18 = () => {
         el: '.swiper-pagination-4',
         clickable: true,
     },
-    mousewheel: true,
+   //  mousewheel: true,
       keyboard: true,
 
       breakpoints: {

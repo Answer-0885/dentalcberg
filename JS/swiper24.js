@@ -15,7 +15,7 @@ const swiper24 = () => {
          el: '.swiper-pagination',
          clickable: true,
      },
-     mousewheel: true,
+   //   mousewheel: true,
        keyboard: true,
 
        breakpoints: {

@@ -15,7 +15,7 @@ const swiper11 = () => {
        pagination: {
          el: '.swiper-pagination'
      },
-     mousewheel: true,
+   //   mousewheel: true,
        keyboard: true,
 
        breakpoints: {
