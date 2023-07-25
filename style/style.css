@@ -57,7 +57,7 @@ body{
     font-size: 1.6rem;
     line-height: 140%;
     background-color: #F5F8FD;
-    background-image: url(../img/phone-1.png);
+    background-image: url(../img/phone-1.jpg);
     background-position: top center;
     background-size: 100% 93rem;
     background-repeat: no-repeat;
@@ -719,7 +719,7 @@ input::placeholder{
     margin-top: 12rem;
     width: 100%;
     height: 100%;
-    background-image: url(../img/phone-3block.png);
+    background-image: url(../img/phone-3block.jpg);
     background-repeat:no-repeat;
     background-size: cover;
 }
@@ -856,20 +856,14 @@ input::placeholder{
 }
 
 .dropdown__button, 
-.dropdown__list-item-1,
-.dropdown__list-item-2,
-.dropdown__list-item-3,
-.dropdown__list-item-4 {
+.dropdown__list-item {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
 .dropdown__button svg,
-.dropdown__list-item-1 svg,
-.dropdown__list-item-2 svg,
-.dropdown__list-item-3 svg,
-.dropdown__list-item-4 svg{
+.dropdown__list-item svg{
     width: 3rem;
     height: 2rem;    
     margin-left: 1rem;
@@ -2955,16 +2949,17 @@ input[type=radio] {
     line-height: 100%;
 }
 
-.block_input-5_link  {
-    text-decoration: none;
-    color: #FFF;
+.dropdown-5-list{
+    list-style: none;
 }
 
-.block_input-5_messenger {
+
+.whatsapp_5,
+.telegram_5  {
+    color: #FFF;
     width: 30rem;
     height: 5rem;
     border-radius: 3rem;
-    background: #25D266;
     border: none;
     cursor:pointer;
     font-size: 1.5rem;
@@ -2975,15 +2970,27 @@ input[type=radio] {
     align-items: center;
 
 }
-
-.block_input-5_messenger:before{
+.whatsapp_5 {
+    background: #25D266;
+}
+.telegram_5 {
+    background: #178DF1;
+}
+.whatsapp_5:before,
+.telegram_5:before{
     content: url(../img/belaya-strelka-vniz.png);
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
 
-.block_input-5_messenger:after{
+.whatsapp_5:after{
     content: url(../img/whatsapp.svg);
+    margin-left: 13rem;
+    margin-right: 0.7rem;
+}
+
+.telegram_5:after{
+    content: url(../img/telegram.svg);
     margin-left: 13rem;
     margin-right: 0.7rem;
 }
@@ -3672,7 +3679,7 @@ input[type=radio] {
     padding-left: 3rem;
     border-radius: 2rem;
     background: linear-gradient(90deg, rgba(64, 154, 248, 0.25) 7.89%, rgba(64, 154, 248, 0.00) 100%);
-    background-image: url(../img/phone-11.png);
+    background-image: url(../img/phone-11.jpg);
     background-repeat: no-repeat;
     display: flex; 
 }
@@ -3814,6 +3821,17 @@ input[type=radio] {
     display: flex;
     gap: 2rem;
     max-width: 130rem;
+
+}
+
+.gradient-11 {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 5;
+    width: 40rem;
+    height: 22rem;
+    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 
 @media (max-width:1400px) {
@@ -4958,7 +4976,7 @@ input[type=radio] {
 .content-16-flex .flex-box-right .insurance-2 {
     border-radius: 2rem;
     background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.52) 31.39%, rgba(255, 255, 255, 0.00) 100%);
-    background-image: url(../img/strahovka-16.png);
+    background-image: url(../img/strahovka-16.jpg);
     background-size: cover;
     width: 45rem;
     height: 48.5rem;
@@ -5431,7 +5449,6 @@ input[type=radio] {
 /* РЕЙТИНГИ */
 .main__content-19 {
     padding-top: 12rem;
-  
 }
 
 .h2-19 {
@@ -5440,10 +5457,10 @@ input[type=radio] {
     line-height: 130%;
     text-transform: uppercase;
     margin-bottom: 4rem;
+
 }
 
 .slides-19 {
-    position: absolute;
     display: flex;
     gap: 2rem;
     padding: 1.5rem;
@@ -5470,8 +5487,18 @@ input[type=radio] {
 .swiper7 {
     overflow: hidden;
     cursor: pointer;
-
+    position: relative; 
 }
+.gradient {
+    position: absolute;
+    top: 0rem;
+    z-index: 5;
+    width: 40rem;
+    height: 22rem;
+    background: linear-gradient(270deg, #F5F8FD 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+
 
 
 
@@ -5518,7 +5545,6 @@ input[type=radio] {
 .slides-19 .slide-7 {
     display: none;
     opacity: 0.3;
-    background: linear-gradient(270deg, #f1eaea 0%, #ee0808 100%);
 }
 
 .slides-19 .img-19 {
@@ -6179,11 +6205,6 @@ input[type=radio] {
     z-index: 5;
 }
 
-/* .contacts-2 {
-    display: none !important;
-
-} */
-
 .no-active-25{
     opacity: 0.5;
     color: #8FA7C1;
@@ -6203,7 +6224,7 @@ input[type=radio] {
 .contacts-25 .time,
 .contacts-25 .parking{
     flex-shrink: 0;
-    max-width: 28rem;
+    width: 28rem;
     padding: 1.8rem 5rem 1.8rem 1.8rem;
     border-radius: 2rem;
     background: #FFF;
@@ -6283,10 +6304,12 @@ input[type=radio] {
 
 /* Двадцать шестой блок */
 /* Карта местоположения клиники */
-.map-26 {
+.map-26-1,
+.map-26-2 {
     margin-top: 8rem;
 }
-.map-26 iframe{
+.map-26-1 iframe,
+.map-26-2 iframe{
     display: block;
     text-align: center;
     width: 100%;
