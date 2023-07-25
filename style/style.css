@@ -1707,7 +1707,11 @@ input::placeholder{
 .main__content-6_tab_active {
     color: #FFF;
     font-weight: 500;
-    background-color:#409AF8;
+    background-image: url(../img/plashka-6.svg);
+    background-repeat: no-repeat;
+    box-shadow: 0rem 0rem 0rem 0rem;
+    width: 28rem;
+    height: 6rem;
 }
 
 .main__content-6_main_tab-1,
@@ -2978,20 +2982,20 @@ input[type=radio] {
 }
 .whatsapp_5:before,
 .telegram_5:before{
-    content: url(../img/belaya-strelka-vniz.png);
+    content: url(../img/click_hand.svg);
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
 
 .whatsapp_5:after{
     content: url(../img/whatsapp.svg);
-    margin-left: 13rem;
+    margin-left: 12rem;
     margin-right: 0.7rem;
 }
 
 .telegram_5:after{
     content: url(../img/telegram.svg);
-    margin-left: 13rem;
+    margin-left: 12rem;
     margin-right: 0.7rem;
 }
 
@@ -3085,9 +3089,13 @@ input[type=radio] {
 .content-14 .button_active,
 .button-18 .btn-left.button_active,
 .button-18 .btn-right.button_active{
-    background: #409AF8;
     color: #fff;
     font-weight: 700;
+    background-image: url(../img/plashka.svg);
+    background-repeat: no-repeat;
+    box-shadow: 0rem 0rem 0rem 0rem;
+    width: 29rem;
+    height: 6.2rem;
 }
 
 /* Флекс контейнеры 10 блока */
@@ -3829,8 +3837,8 @@ input[type=radio] {
     top: 0rem;
     right: 0rem;
     z-index: 5;
-    width: 40rem;
-    height: 22rem;
+    width: 25rem;
+    height: 17rem;
     background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 
@@ -3969,15 +3977,17 @@ input[type=radio] {
     align-items: center;
     justify-content: center;
     padding: 1.2rem 2rem;
-    border-radius: 2rem;
+
     width: 29rem;
     height: 6.2rem;
     flex-shrink: 0;
-    background-color: #409AF8;
-    margin-bottom: -2rem;
+    /* background-color: #409AF8; */
+    margin-bottom: -4rem;
     margin-top: 4rem;
     position: relative;
     z-index: 5;
+    background-image: url(../img/plashka.svg);
+    background-repeat: no-repeat;
 }
 
 .main__content-12 .block-1,
@@ -4213,6 +4223,9 @@ input[type=radio] {
     font-size: 1.4rem;
     line-height: 100%;
     cursor: pointer;
+    /* --------------- */
+    position: relative;
+    overflow: hidden;
 }
 
 .block-13-checkbox {
@@ -4426,12 +4439,12 @@ input[type=radio] {
 
 .content-14 button {
     width: 29rem;
-    max-width: 29rem;
-    max-height: 4.7rem;
+    height: 4.7rem;
     flex-shrink: 0;
     color: #8FA7C1;
     text-align: center;
     font-size: 1.6rem;
+    font-weight: 700;
     line-height: 140%;
     background: linear-gradient(140.32deg, #FFFFFF 48.01%, rgba(255, 255, 255, 0) 110.28%);
     box-shadow: 1rem 1rem 2rem rgba(47, 138, 244, 0.2);
