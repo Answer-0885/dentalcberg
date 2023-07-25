@@ -3091,9 +3091,18 @@ input[type=radio] {
 /* Кнопка ACTIVE */
 
 .main__content-10_button .button_active,
-.content-14 .button_active,
 .button-18 .btn-left.button_active,
 .button-18 .btn-right.button_active{
+    color: #fff;
+    font-weight: 700;
+    border-radius: 25.5px;
+    background: #409AF8;
+    box-shadow: 0rem 0rem 0rem 0rem;
+    width: 29rem;
+    height: 5rem;
+}
+
+.content-14 .button_active {
     color: #fff;
     font-weight: 700;
     background-image: url(../img/plashka.svg);
@@ -5239,9 +5248,9 @@ input[type=radio] {
     color: #8FA7C1;
     text-align: center;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 120%;
-    padding: 1.6rem 3rem;
+    padding: 1.6rem 2rem;
     cursor: pointer;
 }
 
