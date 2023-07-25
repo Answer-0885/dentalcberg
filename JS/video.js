@@ -15,6 +15,7 @@ const video = () => {
 				overlay.style.display = 'block';
 				body.style.overflow = 'hidden';
 				video.play();
+				// video.requestFullscreen();
 		animate({
 			duration: 600,
 			timing(timeFraction) {

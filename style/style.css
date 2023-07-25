@@ -206,9 +206,14 @@ input::placeholder{
     margin-right: auto;
     top: 15rem;
     left: 0;
-    right: 0;
+    right: 0; 
     text-align: center;
     display: none;
+    /* top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; */
+    width: 80rem;
     overflow: visible;
     background: rgba(255,255,255,.6);
 }
@@ -299,7 +304,8 @@ input::placeholder{
 
 .photo-doctor-1 {
     position: relative;
-    margin-top: -22rem; 
+    margin-top: -17.3rem; 
+    margin-left: -2rem;
 }
 
 @media (max-width: 1400px) {
@@ -459,7 +465,7 @@ input::placeholder{
     align-items:flex-start;
     justify-content:space-between;
     padding: 2rem 5rem;
-
+    margin-top: -4rem;
 }
 
 
@@ -2775,6 +2781,7 @@ input[type=radio] {
 .img-block-9 {
     width: 33rem;
     height: 26.4rem;
+    margin-bottom: -5px;
 }
 
 .main__content-9_step-1_right .doctor {
@@ -3026,8 +3033,6 @@ input[type=radio] {
 .main__content-9-block_right-img {
     margin-left: 11rem;
     margin-bottom: -1rem;
-    width: 78.5rem;
-    height: 60.6rem;
 }
 .main__content-9-block_right-img img{
     width: 78.5rem;
