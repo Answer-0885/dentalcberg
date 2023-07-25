@@ -1745,6 +1745,10 @@ input::placeholder{
     display: none;
 }
 
+.d-block {
+    display: block;
+}
+
 .main__content-6_main_tab-1 h3,
 .main__content-6_main_tab-2 h3,
 .main__content-6_main_tab-3 h3{
@@ -2407,7 +2411,12 @@ input::placeholder{
     top: 22rem
 }
 
-
+.krug-8 {
+    position: absolute;
+    right: 30rem;
+    bottom: 0rem;
+    z-index: -1;
+}
 
 /* Девятый блок */
 
@@ -3544,7 +3553,7 @@ input[type=radio] {
 .swiper_10_btn-2{
     position:absolute;
     cursor:pointer;
-    top: 60%;
+    top: 650px;
     z-index: 5;
     width: 4rem;
     height: 4rem;
@@ -3553,7 +3562,7 @@ input[type=radio] {
     display: none;
 }
 .swiper_10_btn{
-display: flex;
+    display: flex;
 
 }
 .swiper_10_btn.prev{
@@ -3583,6 +3592,17 @@ display: flex;
 .right-10 {
     right: 12rem;    
 }
+
+
+/* Стрелки вверх и вниз внутри карточек */
+
+
+
+.reinforced_prosthesis {
+    display: none;
+}
+
+
 
 @media (max-width:1400px) {
     
@@ -4096,11 +4116,16 @@ display: flex;
 
 .main-13-up .desc .desc_item{
     margin-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 140%; /* 25.2px */
 }
 
 .main-13-up .desc .desc_item:before{
-    content: url(../img/galka-fioletovaya.png);
+    content: url(../img/galka-fiolet.svg);
+    vertical-align: middle;
     margin-right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .block-13-left {
@@ -6001,11 +6026,18 @@ display: flex;
 
 /* - Установка при наведении - */
 .license-24 .license-1:hover{
-    transform: scale(1.4, 1.4);
-    z-index: 10;
-    -o-transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
+    z-index: 5;
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
 }
+.license-24 .license-1:active{
+    transform: scale(1.5, 1.5);
+    z-index: 5;
+    -o-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+}
+
 
 .swiper-pagination span{
     width: 2rem;

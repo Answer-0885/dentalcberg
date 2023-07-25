@@ -7,6 +7,25 @@ const tab10 = () => {
     const btnSwiper1 = document.querySelectorAll('.swiper_10_btn');
     const btnSwiper2 = document.querySelectorAll('.swiper_10_btn-2');
 
+    const arrowUp = document.querySelectorAll('.arrow-up-10');
+    const arrowDown = document.querySelectorAll('.arrow-down-10'); 
+    const secondStage = document.querySelectorAll('.second_stage'); 
+    const reinforcedProsthesis = document.querySelectorAll('.reinforced_prosthesis'); 
+
+              secondStage.forEach((secondBtn, i) => {             
+                secondBtn.addEventListener('click', (e)=>{ 
+                    if(arrowUp[i].style.display === 'block') {
+                        arrowDown[i].style.display='block';  
+                        arrowUp[i].style.display='none';
+                        reinforcedProsthesis[i].style.display='none';  
+                    } else {
+                        arrowDown[i].style.display='none';  
+                        arrowUp[i].style.display='block';
+                        reinforcedProsthesis[i].style.display='flex';   
+                    }
+                    })
+                  })
+
 
     btnSwiper1.forEach(btn1 => {
         btnSwiper2.forEach(btn2 => {
