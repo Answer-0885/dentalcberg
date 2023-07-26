@@ -1454,7 +1454,7 @@ input::placeholder{
 .main__content-5_advantages_ul {
     list-style: none;   
     margin-top: 3rem; 
-    height: 11rem;
+    max-height: 11rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1465,7 +1465,7 @@ input::placeholder{
     color: #FFF;
     font-size: 1.8rem;
     line-height: 120%;
-    width: 38rem;
+    max-width: 38rem;
     display:flex;
     align-items:center;
 }
@@ -1513,6 +1513,7 @@ input::placeholder{
         align-items:center;
         margin-left: auto;
         margin-right: auto;
+        vertical-align:middle;
     }
     .main__content-5_advantages_list br{
         display: none;
@@ -1520,12 +1521,19 @@ input::placeholder{
 }
 
 .main__content-5_advantages_list:before {
-    content: url(../img/galka-belofiolet.png);
+    content: '';
+    background-image: url(../img/galka-belofiolet.png);
+    background-position: center center;
+    border-radius: 5rem;
     width: 2.5rem;
     height: 2.5rem;
-    vertical-align:top;
     margin-right: 1rem;
 }
+
+@media (max-width: 1200px) {
+
+} 
+
 /* Пятый блок нижняя часть */
 .main__content-5_down_layout {
     width: 135rem;
@@ -2346,6 +2354,17 @@ input::placeholder{
     right: 35rem;    
 }
 
+@media (max-width: 1400px) {
+    .left-8 {
+        left: 17rem;
+    }
+    
+    .right-8 {
+        right: 17rem;    
+    }
+
+}
+
 @media (max-width: 992px) {
     .main__content-8_swiper-btn{
         top:50%;
@@ -3073,6 +3092,7 @@ input[type=radio] {
     margin-top: 4rem;
     display: flex;
     gap: 3rem;
+    position: relative;
 }
 
 .main__content-10_button button{
@@ -3088,6 +3108,14 @@ input[type=radio] {
 }
 
 
+
+.krug-10 {
+    position: absolute;
+    right: 5rem;
+    top: -3rem;
+}
+
+
 /* Кнопка ACTIVE */
 
 .main__content-10_button .button_active,
@@ -3098,8 +3126,8 @@ input[type=radio] {
     border-radius: 25.5px;
     background: #409AF8;
     box-shadow: 0rem 0rem 0rem 0rem;
-    width: 29rem;
-    height: 5rem;
+    max-width: 29rem;
+    max-height: 5rem;
 }
 
 .content-14 .button_active {
@@ -3116,16 +3144,20 @@ input[type=radio] {
 
 .main__content-10_flex_single-stage,
 .main__content-10_flex_two-stage {
-    display: flex;
+    /* display: flex;
     align-items:flex-start;
-    justify-content: flex-start;
+    justify-content: flex-start; */
     margin-top: 4rem;
-    max-width: 141rem;
+    max-width: 139rem; 
+    /* max-height: 100rem; */
+    /* max-width: 141rem; */
 }
+
 
 .swiper5,
 .swiper6 {
     overflow: hidden;
+
 }
 
 .swiper6 {
@@ -3147,6 +3179,22 @@ input[type=radio] {
     max-height: 100%;
     cursor: pointer;
     box-shadow: 0rem 0rem 1.5rem 0rem rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width:1400px) {
+    .main__content-10_flex_single-stage .flex-1,
+    .main__content-10_flex_single-stage .flex-2,
+    .main__content-10_flex_single-stage .flex-3,
+    .main__content-10_flex_two-stage .flex-4,
+    .main__content-10_flex_two-stage .flex-5,
+    .main__content-10_flex_two-stage .flex-6 {
+        padding: 1.5rem;
+        margin: 0.7rem;
+        max-width: 45rem;
+        max-height: 100%;
+        cursor: pointer;
+        box-shadow: 0rem 0rem 1.5rem 0rem rgba(0, 0, 0, 0.16);
+    } 
 }
 
 .flex-1 .title,
@@ -3554,7 +3602,7 @@ input[type=radio] {
 .flex-5 .iceberg {
     margin-top: 1rem;
     display: flex;
-    width: 41rem;
+    max-width: 42rem;
     padding: 0.9rem 7.2rem;
     justify-content: center;
     align-items: center;
@@ -3587,6 +3635,9 @@ input[type=radio] {
     width: 4rem;
     height: 4rem;
 }
+
+
+
 .swiper_10_btn-2{
     display: none;
 }
@@ -3622,6 +3673,30 @@ input[type=radio] {
     right: 12rem;    
 }
 
+@media (max-width:1400px) {
+    .swiper_10_btn,
+    .swiper_10_btn-2{
+        top: 600px;
+        width: 3.5rem;
+        height: 3.5rem;
+        opacity: 0.7;
+    }
+    .swiper_10_btn.left-10 {
+        left: 0rem;
+    }
+    
+    .swiper_10_btn.right-10 {
+        right: 0rem;    
+    }
+    .swiper_10_btn-2.left-10 {
+        left: 0rem;
+    }
+    
+    .swiper_10_btn-2.right-10 {
+        right: 0rem;    
+    }
+}
+
 
 /* Стрелки вверх и вниз внутри карточек */
 
@@ -3637,12 +3712,7 @@ input[type=radio] {
     
     .main__content-10_flex_single-stage,
     .main__content-10_flex_two-stage {
-        display: flex;
-        gap: 2rem;
-        align-items:flex-start;
-        justify-content: center;
         margin-top: 4rem;
-        flex-wrap: wrap;
     }
     .left-10 {
         left: -1.4rem;
@@ -3859,17 +3929,17 @@ input[type=radio] {
 @media (max-width:1400px) {
 
     .slider_doctors_right {
-        max-width: 120rem;
+        max-width: 128rem;
     }   
 }
 
 
-@media (max-width:1200px) {
+/* @media (max-width:1200px) {
 
     .slider_doctors_right {
-        max-width: 100rem;
+        max-width: 128rem;
     }   
-}
+}  */
 
 @media (max-width:992px) {
 
@@ -5519,6 +5589,7 @@ input[type=radio] {
 .gradient {
     position: absolute;
     top: 0rem;
+    right: -0.2rem;
     z-index: 5;
     width: 40rem;
     height: 22rem;
@@ -5533,15 +5604,11 @@ input[type=radio] {
     .h2-19 {
         font-size: 4rem;
     }
-    .slides-19 {
-        overflow: hidden;
-        max-width: 149rem;
-    }      
 }
 
 @media (max-width:1200px) {
     .slides-19 {
-        max-width: 145rem;
+        max-width: 140rem;
     }       
 }
 
@@ -5569,6 +5636,19 @@ input[type=radio] {
     background: #FFF;
     box-shadow: 0rem 0rem 2rem 0rem rgba(171, 175, 183, 0.50);
 }
+
+@media (max-width:1200px) {
+    .slides-19 .slide-1,
+    .slides-19 .slide-2,
+    .slides-19 .slide-3,
+    .slides-19 .slide-4,
+    .slides-19 .slide-5,
+    .slides-19 .slide-6,
+    .slides-19 .slide-7 {
+        max-width: 26rem; 
+    }     
+}
+
 .slides-19 .slide-7 {
     display: none;
     opacity: 0.3;
@@ -5647,7 +5727,7 @@ input[type=radio] {
 .blocks-20 .block-1-2,
 .blocks-20 .block-1-3,
 .blocks-20 .block-1-4 {
-    width: 33rem;
+    max-width: 33rem;
     display: flex;
     align-items:center;
     justify-content: space-between;

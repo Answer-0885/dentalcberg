@@ -12,16 +12,17 @@ const tab10 = () => {
     const secondStage = document.querySelectorAll('.second_stage'); 
     const reinforcedProsthesis = document.querySelectorAll('.reinforced_prosthesis'); 
 
+    // Открываем и закрываем вкладки на карточках
               secondStage.forEach((secondBtn, i) => {             
                 secondBtn.addEventListener('click', (e)=>{ 
                     if(arrowUp[i].style.display === 'block') {
-                        arrowDown[i].style.display='block';  
-                        arrowUp[i].style.display='none';
+                        arrowDown[i].style.display='block' 
+                        arrowUp[i].style.display='none'
                         reinforcedProsthesis[i].style.display='none';  
                     } else {
-                        arrowDown[i].style.display='none';  
-                        arrowUp[i].style.display='block';
-                        reinforcedProsthesis[i].style.display='flex';   
+                        arrowDown[i].style.display='none' 
+                        arrowUp[i].style.display='block'
+                        reinforcedProsthesis[i].style.display='flex'   
                     }
                     })
                   })
@@ -30,11 +31,11 @@ const tab10 = () => {
     btnSwiper1.forEach(btn1 => {
         btnSwiper2.forEach(btn2 => {
             btnTwoStage.addEventListener('click', ()=>{
-                singleStage.style.display = 'none';
-                twoStage.style.display = 'flex';
+                singleStage.style.display = 'none'
+                twoStage.style.display = 'flex'
         
-                btn1.style.display = 'none';
-                btn2.style.display = 'flex';
+                btn1.style.display = 'none'
+                btn2.style.display = 'flex'
         
                 btnSingleStage.classList.remove('button_active');
                 btnTwoStage.classList.add('button_active');

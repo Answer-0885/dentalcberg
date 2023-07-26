@@ -13,9 +13,9 @@ const swiper10 = () => {
        keyboard: true,
 
        breakpoints: {
- 
+
           // Если ширина окна больше или равна 576px
-          576: {
+          1400: {
              slidesPerView: 3,
              spaceBetween: 1
           }
