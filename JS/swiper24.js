@@ -10,7 +10,7 @@ const swiper24 = () => {
           delay: 2000,
           disableOnInteraction: false,
        },
-       slidesPerView: 4,
+      //  slidesPerView: 4,
        pagination: {
          el: '.swiper-pagination',
          clickable: true,
@@ -20,11 +20,16 @@ const swiper24 = () => {
 
        breakpoints: {
  
-          // Если ширина окна больше или равна 576px
-        //   576: {
-        //      slidesPerView: 4,
-        //      spaceBetween: 10
-        //   }
+          // Если ширина окна больше или равна 1400px
+          576: {
+             slidesPerView: 4,
+             spaceBetween: 10
+          },
+         //  // Если ширина окна больше или равна 1200px
+         //  576: {
+         //     slidesPerView: 3,
+         //     spaceBetween: 5
+         //  }
        }
     });
  };

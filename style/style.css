@@ -152,8 +152,10 @@ input::placeholder{
 
 .main__content-block_button:before,
 .main__content-5_desc-button::before {
-    content: url(../img/consultation.svg);
-   
+    display: inline-block;
+   content: url(../img/consultation.svg);
+   width: 2.5rem;
+   height: 2.5rem;
 }
 
 
@@ -321,6 +323,14 @@ input::placeholder{
         margin-left: -2rem;
     }    
 }
+@media (max-width: 768px) {
+    .photo-doctor-1 {
+        position: relative;
+        margin-top: -25rem; 
+        margin-left: -8.5rem;
+        z-index: -1;
+    }   
+}
 
 
 .main__content-photo_name{
@@ -359,6 +369,7 @@ input::placeholder{
         right: 0;
         bottom: 10%;
     }  
+
 }
 
 @media (max-width: 576px) {
@@ -510,11 +521,13 @@ input::placeholder{
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        margin-top: 0rem;
     }   
     .regalia__1,
     .regalia__2,
     .regalia__3,
     .regalia__4 {
+        font-size: 2rem;
         max-width: 50rem;  
     }
 }
@@ -975,15 +988,23 @@ input::placeholder{
 
 
 .main__content-3_block_checkbox::before {
-    content: url(../img/galka-belofiolet.png);
+    content: '';
+    background-image: url(../img/galka-belofiolet.png);
+    background-position: center center;
+    border-radius: 5rem;
+    width: 2rem;
+    height: 2rem;
     margin-right: 0.5rem;
 }
 
 /* Кнопка Закрепить стоимость по акции */
 
 .main__content-3_button::before {
+    display: inline-block;
     content: url(../img/procent.svg);
     margin-right: 1.1rem;
+    width: 2rem;
+    height: 1.7rem;
 }
 
 .main__content-3_button {
@@ -1086,6 +1107,7 @@ input::placeholder{
 }
 
 .main__content-4_header_left-list::before {
+    display: block;
     content: '';
     background-image: url('../img/galka.svg');
     background-position: 50% 50%;
@@ -1142,6 +1164,8 @@ input::placeholder{
 
 .main__content-4_header_right-video-icons {
     position: absolute;
+    width: 8.8rem;
+    height: 8.8rem;
     right: 0;
     bottom: 0;
     cursor: pointer;
@@ -1270,15 +1294,13 @@ input::placeholder{
     .main__content-4_main {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 2rem;
-        row-gap: 6rem;
+        row-gap: 2rem;
     } 
     .main__content-4_main-block-desc {
         position: relative;
-        margin: -6rem auto 0;
         z-index: 10;
         width: 90rem;
-        margin: -6rem auto 5rem;
+        margin: -2rem auto 5rem;
     }
     .main__content-4_main-block-desc-1 div{
         width: 50rem;
@@ -1306,6 +1328,10 @@ input::placeholder{
         list-style: circle;
         width: 80%;
         font-size: 2rem;
+    }
+    .main__content-4_main-block-video-icons {
+        left: 35rem;
+        bottom: 3rem;  
     }
   
 }
@@ -1504,16 +1530,11 @@ input::placeholder{
         margin-top: -2.5rem;
     } 
     .main__content-5_advantages_ul {
-        flex-direction:row;
-        justify-content: center;
+
     }
     .main__content-5_advantages_list {
-        width: 40rem;
+        margin-left: 0rem;
         font-size: 2rem;
-        align-items:center;
-        margin-left: auto;
-        margin-right: auto;
-        vertical-align:middle;
     }
     .main__content-5_advantages_list br{
         display: none;
@@ -1618,6 +1639,7 @@ input::placeholder{
     background-size:cover;
 }
 
+
 /* Описание в пятом блоке */
 
 .main__content-5_desc h3{
@@ -1628,7 +1650,6 @@ input::placeholder{
     font-size: 3rem;
     line-height: 140%;
     margin-left: -10rem;
-
 }
 
 
@@ -1648,12 +1669,26 @@ input::placeholder{
 @media (max-width: 768px) {
     .main__content-5_desc h3{
         margin-top: 5rem;  
+        margin-left: -1rem;
     }
     .main__content-5_desc p{
         margin-top: 6rem;
-
+        margin-left: -3rem;
         font-size: 1.8rem;
+    }
+    .main__content-5_video_main-wrap-1 {
+        width: 36rem;
+        height: 36rem;
+    }
+    .main__content-5_video_main-wrap-2 {
+        width: 28rem;
+        height: 28rem;
+        border-radius: 50rem;
 
+    }
+    .main__content-5_video_main-img{
+        width: 26rem;
+        height: 26rem;
     }
 }
 
@@ -1695,6 +1730,7 @@ input::placeholder{
 
 .svg-6 {
     position: absolute;
+    z-index: -1;
     width: 55rem;
     height: 57.1rem;
     left:-200px;
@@ -1703,7 +1739,7 @@ input::placeholder{
 
 .main__content-6_tab {
     width: 27rem;
-    height: 6rem;
+    max-height: 6rem;
     border-radius: 1rem;
     background: #FFF;
     box-shadow: 1rem 1rem 2rem 0rem rgba(47, 138, 244, 0.20);
@@ -1724,8 +1760,15 @@ input::placeholder{
     background-image: url(../img/plashka-6.svg);
     background-repeat: no-repeat;
     box-shadow: 0rem 0rem 0rem 0rem;
-    width: 28rem;
-    height: 6rem;
+    max-width: 28rem;
+}
+
+@media (max-width: 1400px) {
+    .main__content-6_tab_active {
+        transform: scale(1.1);
+        width: 27rem;
+        height: 6rem;
+    }
 }
 
 .main__content-6_main_tab-1,
@@ -1797,7 +1840,10 @@ input::placeholder{
 
 .main__content-6_main_li:before {
     content: url(../img/galka.svg);
+    width: 3.5rem;
+    height: 3.5rem;
     margin-right: 1rem;
+
 }
 
 .main__content-6_main_block-span {
@@ -1818,12 +1864,12 @@ input::placeholder{
     margin-top: 4rem;
 }
 
-.main__content-6_main_advantage {
+/* .main__content-6_main_advantage-block{
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 140%;
     margin-bottom: 1.1rem;
-}
+} */
 
 .main__content-6_main_advantage-1,
 .main__content-6_main_advantage-1_tab-2,
@@ -1831,7 +1877,7 @@ input::placeholder{
     margin-top: 2.2rem;
 }
 
-.main__content-6_main_advantage-1_tab-2,
+/* .main__content-6_main_advantage-1_tab-2,
 .main__content-6_main_advantage-2_tab-2,
 .main__content-6_main_advantage-3_tab-2,
 .main__content-6_main_advantage-1_tab-3,
@@ -1839,7 +1885,7 @@ input::placeholder{
 .main__content-6_main_advantage-3_tab-3 {
     display: flex;
     align-items: center;
-}
+} */
 
 .main__content-6_main_advantage-1, 
 .main__content-6_main_advantage-2, 
@@ -1851,7 +1897,10 @@ input::placeholder{
 .main__content-6_main_advantage-2_tab-3, 
 .main__content-6_main_advantage-3_tab-3 {
     margin-bottom: 1.1rem;
+    display: flex;
+    align-items: center; 
 }
+
 .main__content-6_main_advantage-1_tab-2, 
 .main__content-6_main_advantage-2_tab-2, 
 .main__content-6_main_advantage-3_tab-2 {
@@ -1879,10 +1928,11 @@ input::placeholder{
 .main__content-6_main_advantage-1_tab-3:before, 
 .main__content-6_main_advantage-2_tab-3:before, 
 .main__content-6_main_advantage-3_tab-3:before {
+    display: inline-block;
     content: url(../img/galka-fiolet.svg);
+    flex-shrink: 0;
     width: 2.5rem;
     height: 2.5rem;
-    vertical-align: middle; 
     margin-right: 1rem;
 }
 
@@ -2036,7 +2086,7 @@ input::placeholder{
     .main__content-6_button_sign_up,
     .main__content-6_button_sign_up_tab-2,
     .main__content-6_button_sign_up_tab-3 {
-        justify-content: flex-end;
+        justify-content: center;
         font-size: 1.4rem;
         width: 35rem;
     }  
@@ -2088,8 +2138,8 @@ input::placeholder{
         height: 25.2rem; 
     }  
     .main__content-6_main_right_icons-video {
-        width: 50px;
-        height: 50px;
+        width: 5rem;
+        height: 5rem;
     }
 }
 @media (max-width: 768px) {
@@ -2225,6 +2275,8 @@ input::placeholder{
 
 .main__content-7-block-flex-1_img-videoplay{
     position: absolute;
+    width: 6rem;
+    height: 6rem;
     left: -1rem;
     top: 13.5rem;
     cursor: pointer;
@@ -2346,7 +2398,6 @@ input::placeholder{
 .left-8 {
     top: 46rem;
     left: 35rem;
-
 }
 
 .right-8 {
@@ -2379,6 +2430,12 @@ input::placeholder{
         right: 12rem;    
     }
 
+}
+@media (max-width: 768px) {
+    .main__content-8_swiper-btn{
+        width:7rem;
+        height:7rem
+    } 
 }
 
 .main__content-8_swiper-dots{
@@ -2433,6 +2490,17 @@ input::placeholder{
     right: 39rem;
     top: 22rem
 }
+
+@media (max-width: 768px) { 
+    .main__content-8_swiper_span.left {
+        left: 20rem;
+    }
+    
+    .main__content-8_swiper_span.right {
+        right: 20rem;
+    }
+}
+
 
 .krug-8 {
     position: absolute;
@@ -3008,13 +3076,17 @@ input[type=radio] {
 }
 .whatsapp_5:before,
 .telegram_5:before{
-    content: url(../img/click_hand.svg);
+    content: url(../img/strelka-vniz.svg);
+    width: 1.6rem;
+    height: 1rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
 
 .whatsapp_5:after{
     content: url(../img/whatsapp.svg);
+    width: 3.5rem;
+    height: 3.5rem;
     margin-left: 12rem;
     margin-right: 0.7rem;
 }
@@ -3441,6 +3513,17 @@ input[type=radio] {
     width: 19.5rem;
 }
 
+.installation .price {
+    width: 1.6rem;
+    height: 1.6rem;
+  
+}
+.ability_to_eat .price {
+    width: 1.6rem;
+    height: 1.6rem;
+  
+}
+
 .flex-1 .hr-10,
 .flex-2 .hr-10,
 .flex-3 .hr-10,
@@ -3630,10 +3713,11 @@ input[type=radio] {
 .swiper_10_btn-2{
     position:absolute;
     cursor:pointer;
-    top: 650px;
+    top: 60%;
     z-index: 5;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
 }
 
 
@@ -3646,23 +3730,25 @@ input[type=radio] {
 
 }
 .swiper_10_btn.prev{
-    background-image:url(../img/arrow_left.png);
+    background-image:url(../img/arrow_left.svg);
     background-position:50% 50%;
 }
 
 .swiper_10_btn.next{
-    background-image:url(../img/arrow_right.png);
-    background-position:50% 50%
+    background-image:url(../img/arrow_left.svg);
+    background-position:50% 50%;
+    transform: rotate(180deg);
 }
 
 .swiper_10_btn-2.prev{
-    background-image:url(../img/arrow_left.png);
+    background-image:url(../img/arrow_left.svg);
     background-position:50% 50%;
 }
 
 .swiper_10_btn-2.next{
-    background-image:url(../img/arrow_right.png);
-    background-position:50% 50%
+    background-image:url(../img/arrow_left.svg);
+    background-position:50% 50%;
+    transform: rotate(180deg);
 }
 
 .left-10 {
@@ -3676,10 +3762,16 @@ input[type=radio] {
 @media (max-width:1400px) {
     .swiper_10_btn,
     .swiper_10_btn-2{
-        top: 600px;
-        width: 3.5rem;
-        height: 3.5rem;
-        opacity: 0.7;
+        width: 6rem;
+        height: 6rem;
+        opacity: 0.6;
+        border-radius: 100%;
+        border: 0.1rem solid #070707;
+    }
+    .swiper_10_btn:hover,
+    .swiper_10_btn-2:hover{
+        background-color:#409AF8;
+        opacity: 1;
     }
     .swiper_10_btn.left-10 {
         left: 0rem;
@@ -3697,35 +3789,18 @@ input[type=radio] {
     }
 }
 
+@media (max-width:1200px) {
+    .swiper_10_btn,
+    .swiper_10_btn-2{
+        width: 6rem;
+        height: 6rem;
 
-/* Стрелки вверх и вниз внутри карточек */
-
-
-
-.reinforced_prosthesis {
-    display: none;
-}
-
-
-
-@media (max-width:1400px) {
-    
-    .main__content-10_flex_single-stage,
-    .main__content-10_flex_two-stage {
-        margin-top: 4rem;
-    }
-    .left-10 {
-        left: -1.4rem;
-    }
-    
-    .right-10 {
-        right: -1.4rem;    
     }
 }
 
 @media (max-width:992px) {
     .swiper_10_btn{
-        top: 45%;
+        top: 60%;
         width: 6rem;
         height: 6rem;
         opacity: 0.7;
@@ -3738,6 +3813,20 @@ input[type=radio] {
         right: -2rem;    
     }   
 }
+
+
+
+/* Стрелки вверх и вниз внутри карточек */
+
+
+
+.reinforced_prosthesis {
+    display: none;
+}
+
+
+
+
 
 
 /* 11 БЛОК - НАША КОМАНДА */
@@ -3791,6 +3880,8 @@ input[type=radio] {
 /* Кнопка запуска видео 11 блока*/
 .main__content-11 .doctors-img .doctors-img-2{
     position: absolute;
+    width: 8.8rem;
+    height: 8.8rem;
     left: 16rem;
     bottom: 13rem;
     cursor: pointer;
@@ -3827,7 +3918,9 @@ input[type=radio] {
 }
 
 .main__content-11 .doctors .result:before{
-    content: url(../img/zapatiye.png);
+    content: url(../img/zapatiye.svg);
+    width: 18rem;
+    height: 12rem;
     margin-right: 2rem;
 }
 
@@ -3944,8 +4037,13 @@ input[type=radio] {
 @media (max-width:992px) {
 
     .slider_doctors_right {
-        max-width: 77rem;
-        gap: 1.2rem;
+        max-width: 120rem;
+    }    
+}
+@media (max-width:768px) {
+
+    .slider_doctors_right {
+        max-width: 114rem;
     }    
 }
 
@@ -4159,6 +4257,8 @@ input[type=radio] {
 .block-1 .icons_sign,
 .block-2 .icons_sign {
     position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
     bottom: 50%;
     right: -2rem;
 }
@@ -4201,7 +4301,7 @@ input[type=radio] {
 .main-13-up-image {
     width: 57rem;
     height: 46rem;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .main-13-up .desc {
@@ -4227,12 +4327,14 @@ input[type=radio] {
 }
 
 .main-13-up .desc .desc_item{
+    display: flex;
+    align-items: center;
     margin-bottom: 1rem;
     font-size: 1.8rem;
     line-height: 140%; /* 25.2px */
 }
 
-.main-13-up .desc .desc_item:before{
+.desc_item:before{
     content: url(../img/galka-fiolet.svg);
     vertical-align: middle;
     margin-right: 1rem;
@@ -4451,6 +4553,27 @@ input[type=radio] {
     background-size:cover;
 }
 
+@media (max-width: 768px) {
+    .main-13-down {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -8.5rem;
+        flex-direction: column;
+    }
+    .block-13-left {
+        align-self:flex-start;
+        margin-left: 3rem;
+
+    }
+    .block-13-right {
+        align-self:flex-end;
+        margin-top: -1.4rem;
+        margin-left: 0rem;
+        margin-right: 15rem;
+     
+    }
+}
+
 .watch-13 {
     margin-top: 2.4rem;
 }
@@ -4466,17 +4589,22 @@ input[type=radio] {
 .watch-13 .metro {
     margin-left: 8rem;
     margin-right: 3rem;
-
 }
 
 .watch-13 .metro:before {
-    content: url(../img/metro-blue.png);
+    display: inline-block;
+    content: url(../img/metro-blue.svg);
+    width: 3rem;
+    height: 3rem;
     vertical-align: middle;
     margin-right: 1rem;
 }
 
 .watch-13 .hours:before{
-    content: url(../img/watch-blue.png);
+    display: inline-block;
+    content: url(../img/watch-blue.svg);
+    width: 3rem;
+    height: 3rem;
     vertical-align: middle;
     margin-right: 1rem;   
 }
@@ -4562,6 +4690,13 @@ input[type=radio] {
     display: flex;
     align-items: center;
     justify-content:space-between;
+}
+.nobel-14 img,
+.osstem-14 img,
+.straumann-14 img,
+.no_all_tooth-14 img{
+    width: 30rem;
+    height: 22rem;
 }
 
 .nobel-14 svg{
@@ -4655,8 +4790,11 @@ input[type=radio] {
 }
 
 .garanty-14 .for_life:before {
-    content: url(../img/galka-14.png);
-    margin-right: 1rem;
+    display: inline-block;
+    content: url(../img/galka-14.svg);
+
+    width: 2.6rem;
+    height: 1.9rem;
 }
 
 .garanty-14 .flex-14 {
@@ -5153,10 +5291,18 @@ input[type=radio] {
 
 /* Кнопка запуска видео */
 
-.content-17-left .icons_video-17,
+.content-17-left .icons_video-17 {
+    cursor: pointer;
+    transition: 0.5s;
+    width: 3.8rem;
+    height: 3.8rem;
+}
+
 .content-17-right .icons_video-17 {
     cursor: pointer;
     transition: 0.5s;
+    width: 8.6rem;
+    height: 8.6rem;
 }
 
 .icons_video-17:hover {
@@ -5361,15 +5507,18 @@ input[type=radio] {
 
 .slides-18 .slide-1,
 .slides-18 .slide-2,
-.slides-18 .slide-3 {
+.slides-18 .slide-3,
+.slides-18-2 .slide-1,
+.slides-18-2 .slide-2,
+.slides-18-2 .slide-3 {
     cursor: pointer;
-
-
-
 }
 .slides-18 .slide-1 img,
 .slides-18 .slide-2 img,
-.slides-18 .slide-3 img {
+.slides-18 .slide-3 img,
+.slides-18-2 .slide-1 img,
+.slides-18-2 .slide-2 img,
+.slides-18-2 .slide-3 img {
     max-width: 65rem;
     height: 100%;
 }
@@ -5393,7 +5542,8 @@ input[type=radio] {
 }
 
 @media (max-width: 1400px) {
-    .slides-18 {
+    .slides-18,
+    .slides-18-2 {
         gap: 3rem;
         justify-content: center;
     }
@@ -5405,17 +5555,43 @@ input[type=radio] {
     } 
 }
 @media (max-width: 1200px) {
-    .slider-18-dots {
+    .slides-18 .slide-1 img,
+    .slides-18 .slide-2 img,
+    .slides-18 .slide-3 img,
+    .slides-18-2 .slide-1 img,
+    .slides-18-2 .slide-2 img,
+    .slides-18-2 .slide-3 img {
+        max-width: 50rem;
+    }
+    /* .slider-18-dots {
         top: 350px;
-  } 
+  }  */
 } 
 @media (max-width: 992px) {
+    .slides-18 .slide-1 img,
+    .slides-18 .slide-2 img,
+    .slides-18 .slide-3 img,
+    .slides-18-2 .slide-1 img,
+    .slides-18-2 .slide-2 img,
+    .slides-18-2 .slide-3 img {
+        max-width: 48rem;
+    }
     .slider-18-dots {
         top: 270px;
   }  
 }
+@media (max-width: 768px) {
+    .slides-18 .slide-1 img,
+    .slides-18 .slide-2 img,
+    .slides-18 .slide-3 img,
+    .slides-18-2 .slide-1 img,
+    .slides-18-2 .slide-2 img,
+    .slides-18-2 .slide-3 img {
+        max-width: 45rem;
+    }
+}
 
-.slider-18-dots .dot-18{
+/* .slider-18-dots .dot-18{
     cursor:pointer;
     height:1.6rem;
     width:1.6rem;
@@ -5424,16 +5600,16 @@ input[type=radio] {
     border:solid #CED9E5;
     display:inline-block;
     transition:background-color,transform .4s;
-}
+} */
 
-.slider-18-dots .dot-active{
+/* .slider-18-dots .dot-active{
     background-color:#409AF8;
     transform:scale(1.2);
 }
 .slider-18-dots .dot-18:hover{
     background-color:#409AF8;
     transform:scale(1.2);
-}
+} */
 
 /* Улыбка 18 блок */
 
@@ -5457,6 +5633,8 @@ input[type=radio] {
 
 .video_icons-18 {
     position: absolute;
+    width: 8.8rem;
+    height: 8.8rem;
     left: 46rem;
     top: 3rem;
     cursor: pointer;
@@ -5561,25 +5739,8 @@ input[type=radio] {
     display: flex;
     gap: 2rem;
     padding: 1.5rem;
-    /* Исчезновения */
-    /* visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear; */
-    /* Появление */
-    /* visibility: visible;
-    opacity: 1;
-    transition: opacity 2s linear; */
-}
 
-#slider {
-    opacity:1;
-    transition: opacity 1s; 
 }
-
-#slider.fadeOut {
-    opacity:0;
-}
-
 
 .swiper7 {
     overflow: hidden;
@@ -5615,7 +5776,7 @@ input[type=radio] {
 @media (max-width:992px) {
     .slides-19 {
         max-width: 141rem;
-    }       
+    }     
 }
 
 .slides-19 .slide-1,
@@ -5636,6 +5797,30 @@ input[type=radio] {
     background: #FFF;
     box-shadow: 0rem 0rem 2rem 0rem rgba(171, 175, 183, 0.50);
 }
+.slides-19 .slide-1 img {
+    width: 14rem;
+    height: 5.4rem;
+}
+.slides-19 .slide-2 img{
+    width: 16rem;
+    height: 5.5rem;
+}
+.slides-19 .slide-3 img {
+    width: 19.8rem;
+    height: 1.8rem;
+}
+.slides-19 .slide-4 img {
+    width: 18.8rem;
+    height: 4rem;
+}
+.slides-19 .slide-5 img {
+    width: 14.7rem;
+    height: 5.5rem;
+}
+.slides-19 .slide-6 img {
+    width: 15.8rem;
+    height: 7rem;
+}
 
 @media (max-width:1200px) {
     .slides-19 .slide-1,
@@ -5647,6 +5832,22 @@ input[type=radio] {
     .slides-19 .slide-7 {
         max-width: 26rem; 
     }     
+}
+@media (max-width:992px) {
+    .slides-19 .slide-1,
+    .slides-19 .slide-2,
+    .slides-19 .slide-3,
+    .slides-19 .slide-4,
+    .slides-19 .slide-5,
+    .slides-19 .slide-6,
+    .slides-19 .slide-7 {
+        max-width: 40rem; 
+        height: 25rem;
+    }
+    .gradient {
+        height: 28rem;
+       
+    }       
 }
 
 .slides-19 .slide-7 {
@@ -5710,7 +5911,7 @@ input[type=radio] {
     display: flex;
     gap: 3rem;
     justify-content: space-between;
-    align-items:center
+    align-items:center;
 }
 
 .blocks-20 a{
@@ -5727,7 +5928,8 @@ input[type=radio] {
 .blocks-20 .block-1-2,
 .blocks-20 .block-1-3,
 .blocks-20 .block-1-4 {
-    max-width: 33rem;
+    width: 33rem;
+    height: 8rem;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -5737,6 +5939,21 @@ input[type=radio] {
     box-shadow: 0rem 0rem 2rem 0rem rgba(171, 175, 183, 0.50);
 }
 
+@media (max-width: 992px) {
+    .blocks-20 {
+        gap: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .blocks-20 .block-1-1,
+    .blocks-20 .block-1-2,
+    .blocks-20 .block-1-3,
+    .blocks-20 .block-1-4 {
+        max-width: 31rem;
+        padding: 1.5rem 1.5rem;
+      
+    }
+}
 .blocks-20 .block-1-1>p,
 .blocks-20 .block-1-2>p,
 .blocks-20 .block-1-3>p,
@@ -5746,9 +5963,6 @@ input[type=radio] {
     font-size: 2.6rem;
     font-weight: 700;
     line-height: 100%; 
-    /* margin-left: 3rem;
-    margin-right: 3rem; */
-
 }
 
 .blocks-20 .block-1-1>p span,
@@ -5761,12 +5975,35 @@ input[type=radio] {
     line-height: 100%; 
 }
 
+.blocks-20 .block-1-1 .yandex-svg {
+  width: 9rem;
+  height: 3.4rem;  
+}
+
+.blocks-20 .block-1-2 .gis-svg {
+    width: 8.1rem;
+    height: 3.4rem;
+}
+
+.blocks-20 .block-1-3 .google-svg {
+    width: 9.2rem;
+    height: 3rem;
+}
+
+.blocks-20 .block-1-4 .prodoctorov-svg {
+    width: 12.5rem;
+    height: 1.2rem;
+}
+
+
+
 /* Звездочки рейтинга */
 .rating-result p{
     color: #8FA7C1;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 100%;
+
 }
 .rating-result svg{
     width: 8.4rem;
@@ -6156,6 +6393,11 @@ input[type=radio] {
     cursor: pointer;
 }
 
+.license-24 .license-1 img{
+    width: 100%;
+    height: auto;
+}
+
 
 /* - Установка при наведении - */
 .license-24 .license-1:hover{
@@ -6181,6 +6423,7 @@ input[type=radio] {
 @media (max-width: 1400px) {
     .h2-24 {
         font-size: 4rem;
+        margin-left: 2rem;
     }
     .license-24 {
         width: 149rem;
@@ -6188,10 +6431,14 @@ input[type=radio] {
     }
 }
 @media (max-width: 1200px) {
+    .h2-24 {
+        margin-bottom: 7rem;
+    }
     .license-24 {
         width: 147.5rem;
         gap: 1.5rem;
     }
+
 
 }
 @media (max-width: 992px) {
@@ -6281,7 +6528,10 @@ input[type=radio] {
 }
 
 .tabs-25 .metro::before {
-    content: url(../img/metro-blue.png);
+    display: inline-block;
+    content: url(../img/metro-blue.svg);
+    width: 3rem;
+    height: 3rem;
     vertical-align: middle;
     margin-right: 1rem;
 }
@@ -6352,27 +6602,38 @@ input[type=radio] {
     font-weight: 700;
     margin-bottom: 1.9rem;
 }
-
 .contacts-25 .address-1 h3::before {
-    content: url(../img/ikonka-mestopologenie.png);
+    display: inline-block;
+    content: url(../img/ikonka-mestopologenie.svg);
+    width: 3.1rem;
+    height: 3.8rem;
     vertical-align: middle;
     margin-right: 1rem;
 }
 
 .contacts-25 .telephone h3::before {
-    content: url(../img/icons-tel.png);
+    display: inline-block;
+    content: url(../img/icons-tel.svg);
+    width: 3rem;
+    height: 3rem;
     vertical-align: middle;
     margin-right: 1rem;
 }
 
 .contacts-25 .time h3::before {
-    content: url(../img/watch-blue.png);
+    display: inline-block;
+    content: url(../img/watch-blue.svg);
+    width: 3rem;
+    height: 3rem;
     vertical-align: middle;
     margin-right: 1rem;
 }
 
 .contacts-25 .parking h3::before {
-    content: url(../img/parking.png);
+    display: inline-block;
+    content: url(../img/parking.svg);
+    width: 3.8rem;
+    height: 3.8rem;
     vertical-align: middle;
     margin-right: 1rem;
 }
@@ -6393,10 +6654,15 @@ input[type=radio] {
     gap: 1.5rem;
     align-items: center;
     justify-content: flex-start;
-    max-width: 19.5rem;
+    width: 19.5rem;
+    height: auto;
     text-decoration: none;
 }
 
+.contacts-25 .address-1 .travel img{
+    width: 3.6rem;
+    height: 3.6rem;
+}
 .contacts-25 .address-1 .travel p{
     color: #FFF;
     font-size: 1.5rem;
@@ -6451,19 +6717,25 @@ input[type=radio] {
 }
 
 .iceberg-footer {
-    max-width: 30rem;
+    width: 30rem;
     color: #FFF;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 130%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .iceberg-footer:before {
-    content: url(../img/iceberg-footer.png);
+    content: '';
+    background-image: url(../img/iceberg-footer.svg); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 18rem;
+    height: 7rem;
     margin-right: 1.5rem;
-    vertical-align: middle;
 }
 
 .footer-left .text {
@@ -6487,13 +6759,17 @@ input[type=radio] {
 }
 
 .footer-left .metro-1:before {
-    content: url(../img/metro-footer.png);
+    content: url(../img/metro-footer.svg);
+    width: 3.5rem;
+    height: 3.5rem;
     margin-right: 1.5rem;
     vertical-align: middle;
 }
 
 .footer-left .metro-2:before {
-    content: url(../img/metro-footer.png);
+    content: url(../img/metro-footer.svg);
+        width: 3.5rem;
+    height: 3.5rem;
     margin-right: 1.5rem;
     vertical-align: middle;
 }
@@ -6635,7 +6911,10 @@ input[type=radio] {
     display: none;
 }
 
-
+.footer .card svg{
+   width: 33rem;
+   height: 7rem; 
+}
 
 .footer-right .socseti p{
     color: #FFF;
@@ -6673,6 +6952,11 @@ input[type=radio] {
 .footer-down .text-contraindications {
     margin-top: 5rem;
 }
+.footer-down .text-contraindications svg{
+    width: 141rem;
+    height: 10,4rem;
+
+}
 
 @media (max-width: 1400px) {
     .footer-down .text-contraindications svg{
@@ -6682,13 +6966,18 @@ input[type=radio] {
 }
 
 
-    .smooth{
-        display: block;
+.smooth{
+    display: block;
+}
+
+.smooth-scroll {
+    position: fixed;
+    right: 4.5rem;
+    bottom: 5rem;
+    z-index: 100;
     }
 
-    .smooth-scroll {
-        position: fixed;
-        right: 4.5rem;
-        bottom: 5rem;
-        z-index: 100;
-        }
+.smooth-scroll svg {
+    width: 8rem;
+    height: 8rem;
+}
