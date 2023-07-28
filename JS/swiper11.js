@@ -10,8 +10,8 @@ const swiper11 = () => {
           delay: 2000,
           disableOnInteraction: false,
        },
-       slidesPerView: 5,
-       spaceBetween: 10,
+      //  slidesPerView: 5,
+      //  spaceBetween: 10,
        pagination: {
          el: '.swiper-pagination'
      },
@@ -21,10 +21,15 @@ const swiper11 = () => {
        breakpoints: {
  
           // Если ширина окна больше или равна 576px
-        //   576: {
-        //      slidesPerView: 4,
-        //      spaceBetween: 10
-        //   }
+          360: {
+             slidesPerView: 4,
+             spaceBetween: 10
+          },
+          // Если ширина окна больше или равна 576px
+          768: {
+             slidesPerView: 5,
+             spaceBetween: 10
+          }
        }
     });
  };

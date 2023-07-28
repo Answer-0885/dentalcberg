@@ -1529,12 +1529,10 @@ input::placeholder{
         margin-left: 0;
         margin-top: -2.5rem;
     } 
-    .main__content-5_advantages_ul {
-
-    }
     .main__content-5_advantages_list {
         margin-left: 0rem;
         font-size: 2rem;
+        max-width: 40rem;
     }
     .main__content-5_advantages_list br{
         display: none;
@@ -1585,6 +1583,8 @@ input::placeholder{
     align-items: flex-end;
 
 }
+
+
 .main__content-5_video_main p {
     width: 30.5rem;
     margin-bottom: 9rem;
@@ -1608,6 +1608,7 @@ input::placeholder{
     margin-left: 4.5rem;
     margin-top: 6rem;
 }
+
 
 .main__content-5_video_main-icons {
     position: absolute;
@@ -1692,6 +1693,26 @@ input::placeholder{
     }
 }
 
+@media (max-width: 576px) {
+    .main__content-5_video_main-wrap-1 {
+        width: 37rem;
+        height: 37rem;
+        align-items:center;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 4.5rem;
+    }
+    .main__content-5_desc h3{
+        margin-top: 3rem;
+        height: 8.4rem;
+        margin-left: -10rem;
+    }
+    .main__content-5_desc {
+
+        margin-right: 3rem;
+    }
+}
+
 .main__content-5_desc-button{
     margin-left: auto;
     margin-right: 0;
@@ -1721,6 +1742,13 @@ input::placeholder{
 
 .main__content-6_block {
     display: flex;
+}
+
+@media (max-width: 576px) {
+    .main__content-6_block {
+        margin-left: 8rem;
+
+    } 
 }
 
 .main__content-6_tab-block {
@@ -1820,10 +1848,19 @@ input::placeholder{
     font-weight: 500;
 }
 
-.main__content-6_main_ul {
-    list-style-type: none;
+.main__content-6_main_one-two {
     display: flex;
     margin-top: 2rem;
+}
+
+.main__content-6_main_one {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__content-6_main_two {
+    display: flex;
+    flex-direction: column;
 }
 
 .main__content-6_main_li {
@@ -1846,10 +1883,20 @@ input::placeholder{
 
 }
 
-.main__content-6_main_block-span {
-    display: flex;
+@media (max-width: 576px) {
+    .main__content-6_main_one-two {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    } 
+    .main__content-6_main_tab-1,
+    .main__content-6_main_tab-2,
+    .main__content-6_main_tab-3 {
+        width: 75rem;
+    }
+} 
 
-}
+
 
 .main__content-6_main_span {
     width: 28.6rem;
@@ -2037,6 +2084,7 @@ input::placeholder{
     margin-left: 3rem;
 }
 
+
 .main__content-6_main_right_icons-video {
     position: absolute;
     right: 8rem;
@@ -2072,6 +2120,28 @@ input::placeholder{
     overflow: hidden; 
 }
 
+@media (max-width: 576px) {
+    .main__content-6_main_right_icons-video {
+        right: 0rem;
+        top: 0rem;
+    }
+    .main__content-6_button_sign_up,
+    .main__content-6_button_sign_up_tab-2,
+    .main__content-6_button_sign_up_tab-3 {
+        position: absolute  ;
+        left: auto;
+        right: 17rem;
+        bottom: -16rem;
+    }
+    .main__content-6_main_right_img-video,
+    .main__content-6_main_right_img-video_tab-2,
+    .main__content-6_main_right_img-video_tab-3 {
+        display: none;
+    }
+    .main__content-6_main_li_tab-2 {
+        margin-top: 1rem;
+    }
+} 
 
 .main__content-6_button_sign_up:before,
 .main__content-6_button_sign_up_tab-2:before,
@@ -2431,11 +2501,25 @@ input::placeholder{
     }
 
 }
+
 @media (max-width: 768px) {
     .main__content-8_swiper-btn{
         width:7rem;
         height:7rem
     } 
+}
+@media (max-width: 576px) {
+    .main__content-8_swiper-btn{
+        width:8rem;
+        height:8rem
+    } 
+    .left-8 {
+        left: 5rem;
+    }
+    
+    .right-8 {
+        right: 5rem;    
+    }
 }
 
 .main__content-8_swiper-dots{
@@ -2498,6 +2582,15 @@ input::placeholder{
     
     .main__content-8_swiper_span.right {
         right: 20rem;
+    }
+}
+@media (max-width: 576px) { 
+    .main__content-8_swiper_span.left {
+        left: 11rem;
+    }
+    
+    .main__content-8_swiper_span.right {
+        right: 11rem;
     }
 }
 
@@ -2858,6 +2951,22 @@ input[type=radio] {
         width: 63rem;
     }
 }
+@media (max-width: 576px) {
+    .main__content-9_step-1_right {
+        display: none;
+    }
+    .img-9_step-1 {
+        width: 24rem;
+        height: 28rem;
+    }
+    .main__content-9_step-1_left {
+        margin: auto;
+    }
+    .main__content-9-block_right-img {
+        margin-left: 0rem;
+        margin-bottom: -1rem;
+    }
+}
 
 .main__content-9_step-1_right img:first-child {
     margin-top: -2.5rem;
@@ -3128,6 +3237,23 @@ input[type=radio] {
 .main__content-9-block_right-img img{
     width: 78.5rem;
     height: 60.6rem;
+}
+
+@media (max-width: 576px) {
+    .main__content-9_step-1_right {
+        display: none;
+    }
+    .img-9_step-1 {
+        width: 24rem;
+        height: 28rem;
+    }
+    .main__content-9_step-1_left {
+        margin: auto;
+    }
+    .main__content-9-block_right-img {
+        margin-left: 1rem;
+        margin-bottom: -1.5rem;
+    }
 }
 
 /* Десятый блок */
@@ -4046,6 +4172,21 @@ input[type=radio] {
         max-width: 114rem;
     }    
 }
+@media (max-width:576px) {
+
+    .slider_doctors_right {
+        max-width: 97rem;
+    }  
+    .main__content-11 .doctors-img .doctors-img-1 {
+        margin-left: 10.2rem;
+
+    }  
+    .slider_doctors_left {
+        position: relative;
+        margin-top: 5rem;
+        margin-left: 8rem;
+    }
+}
 
 
 
@@ -4201,7 +4342,13 @@ input[type=radio] {
     font-weight: 700;
     line-height: 120%;
     margin: 0 auto;
+}
 
+@media (max-width: 576px) {
+    .block-1_5 .result {
+        width: 17rem;
+        height: 17rem;
+    }
 }
 
 .block-1_1 .img,
@@ -4238,6 +4385,8 @@ input[type=radio] {
 }
 
 
+
+
 .block-1 .block-1_1,
 .block-1 .block-1_2,
 .block-1 .block-1_3,
@@ -4251,7 +4400,13 @@ input[type=radio] {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .block-1_5 {
+        padding-top: 0rem;
+    }  
 }
 
 .block-1 .icons_sign,
@@ -4573,6 +4728,24 @@ input[type=radio] {
      
     }
 }
+@media (max-width: 768px) {
+    .main-13-down {
+        margin-top: -1.5rem;
+
+    }
+    .block-13-left {
+        align-self:flex-start;
+        margin-left: 3rem;
+
+    }
+    .block-13-right {
+        align-self:flex-end;
+        margin-top: -1.4rem;
+        margin-left: 0rem;
+        margin-right: 15rem;
+     
+    }
+}
 
 .watch-13 {
     margin-top: 2.4rem;
@@ -4691,6 +4864,8 @@ input[type=radio] {
     align-items: center;
     justify-content:space-between;
 }
+
+
 .nobel-14 img,
 .osstem-14 img,
 .straumann-14 img,
@@ -4736,9 +4911,8 @@ input[type=radio] {
     display: none;
 }
 
-.desc-14 {
-    margin-left: 3rem;
-}
+
+
 
 .h3-14 {
     font-size: 2rem;
@@ -4792,7 +4966,6 @@ input[type=radio] {
 .garanty-14 .for_life:before {
     display: inline-block;
     content: url(../img/galka-14.svg);
-
     width: 2.6rem;
     height: 1.9rem;
 }
@@ -4868,6 +5041,15 @@ input[type=radio] {
     align-self: flex-start;
     margin-left: -22rem;
 }
+
+@media (max-width: 576px) {
+    .no_all_tooth-14 .desc-14 {
+        align-self: center;
+        margin-left: 0rem;
+    }   
+}
+
+
 
 
 /* Пятнадцатый блок */
@@ -5000,10 +5182,11 @@ input[type=radio] {
     font-size: 1.2rem;
     line-height: 130%;
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 
 .block-15-form .contacts .call:before{
+    display: inline-block;
     content: url(../img/metka-onlain-fioletovaya.png);
     padding-right: 0.9rem;
 }
@@ -5025,6 +5208,35 @@ input[type=radio] {
 .photo-15 {
     width: 67.3rem;
     height: 55.5rem;
+}
+
+@media (max-width: 576px) {
+    .content-15_desc {
+        position: relative;
+        z-index: 50;
+    }
+    .block-15-form .contacts {
+        gap: 1rem;
+    }
+    
+    .block-15-form .contacts .call{
+        font-size: 1.2rem;
+        line-height: 130%;
+        display: flex;
+        align-items: baseline;
+    }
+    .block-15-form .contacts .call:before{
+        content: url(../img/metka-onlain-fioletovaya.png);
+        padding-right: 0.9rem;
+    }
+    
+    .block-15-form .contacts .telephone a{
+        color: #272727;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+    }
 }
 
 .content-15_img .doctor-15{
@@ -5102,6 +5314,10 @@ input[type=radio] {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
 
 }
 
@@ -5118,7 +5334,8 @@ input[type=radio] {
 .content-16-flex .flex-box-1 .flex-box-block-1 p:before,
 .content-16-flex .flex-box-2 .flex-box-block-1 p:before,
 .content-16-flex .flex-box-3 .flex-box-block-1 p:before{
-    content: url(../img/galka-14.png);
+    display: inline-block;
+    content: url(../img/galka-14.svg);
     width: 2.2rem;
     height: 1.6rem;
     margin-right: 1.5rem;
@@ -5204,7 +5421,10 @@ input[type=radio] {
 }
 
 .content-16-flex .flex-box-right .insurance p:before{
-    content: url(../img/galka-14.png);
+    display: inline-block;
+    content: url(../img/galka-14.svg);
+    width: 2.2rem;
+    height: 1.6rem;
     margin-right: 1rem;
 }
 
@@ -5218,6 +5438,7 @@ input[type=radio] {
     text-align: center;
     margin-top: -6rem;
 }
+
 
 
 .content-16-flex .flex-box-right .insurance-2 .money{
@@ -5954,6 +6175,22 @@ input[type=radio] {
       
     }
 }
+@media (max-width: 576px) {
+    .blocks-20 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .blocks-20 .block-1-1,
+    .blocks-20 .block-1-2,
+    .blocks-20 .block-1-3,
+    .blocks-20 .block-1-4 {
+        padding: 1.5rem 1.5rem;
+        margin: 0 auto;   
+    }
+}
 .blocks-20 .block-1-1>p,
 .blocks-20 .block-1-2>p,
 .blocks-20 .block-1-3>p,
@@ -6329,10 +6566,6 @@ input[type=radio] {
     position: relative;
 }
 
-.video-23 {
-    width: 5.7rem;
-    height: 5.82rem
-}
 
 .icons-video-23 {
     position: absolute;
@@ -6347,6 +6580,16 @@ input[type=radio] {
 .block-23-video .video-23 {
     width: 57rem;
     height: 57rem;
+ }
+
+ @media (max-width: 576px) {
+    .block-23-video .video-23 {
+        width: 42rem;
+        height: 42rem;
+     }
+     .blocks-23-flex {
+        gap: 2rem;
+    }
  }
 
 .icons-video-23:hover {
@@ -6586,6 +6829,17 @@ input[type=radio] {
     border-radius: 2rem;
     background: #FFF;
     box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 576px) {
+    .contacts-25 .address-1,
+    .contacts-25 .telephone,
+    .contacts-25 .time,
+    .contacts-25 .parking{
+        width: 25rem;
+        padding: 1.8rem;
+       
+    }    
 }
 
 .contacts-25 .telephone,
