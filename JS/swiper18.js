@@ -23,6 +23,11 @@ const swiper18 = () => {
           576: {
              slidesPerView: 3,
              spaceBetween: 10
+          },
+          // Если ширина окна больше или равна 320px
+          320: {
+             slidesPerView: 2,
+             spaceBetween: 10
           }
        }
     });
@@ -48,6 +53,11 @@ const swiper18 = () => {
          // Если ширина окна больше или равна 576px
          576: {
             slidesPerView: 3,
+            spaceBetween: 10
+         },
+         // Если ширина окна больше или равна 320px
+         320: {
+            slidesPerView: 2,
             spaceBetween: 10
          }
       }

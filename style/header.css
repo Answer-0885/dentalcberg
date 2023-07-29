@@ -252,6 +252,7 @@
         width: 100%;
     }
     
+
     .header-up {
         display: grid;
         grid-template-columns: 1fr 210px 1fr 1fr;
@@ -270,7 +271,7 @@
 
    .header-body__burger-menu {
         position: relative;
-        left:700px; 
+        left:900px; 
         width: 30px;
         height: 45px;
         display: block;
@@ -320,82 +321,6 @@
         transition: 0.4s;
     }
 
-/* 
-    .header-body__burger-menu {
-        width: 60px;
-        height: 35px;
-
-        margin-left: auto;
-        margin-right: 0rem;
-        margin-top: 3rem;
-        margin-bottom: -10rem;
-        transform: rotate(0deg);
-        transition: .5s ease-in-out;
-        cursor: pointer;
-    }
-    .header-body__burger-menu span {
-        display: block;
-        position: absolute;
-        height: 5px;
-        width: 50%;
-        background: #3C3D75;
-        opacity: 1;
-        transform: rotate(0deg);
-        transition: .25s ease-in-out;
-    }
-    .header-body__burger-menu span:nth-child(even) {
-        left: 50%;
-        border-radius: 0 9px 9px 0;
-    }
-    .header-body__burger-menu span:nth-child(odd) {
-        left:0px;
-        border-radius: 9px 0 0 9px;
-    }
-    .header-body__burger-menu span:nth-child(1), 
-    .header-body__burger-menu span:nth-child(2) {
-        top: 0px;
-    }
-    .header-body__burger-menu span:nth-child(3), 
-    .header-body__burger-menu span:nth-child(4) {
-        top: 15px;
-    }
-    .header-body__burger-menu span:nth-child(5), 
-    .header-body__burger-menu span:nth-child(6) {
-        top: 30px;
-    }
-    .header-body__burger-menu.open span:nth-child(1),
-    .header-body__burger-menu.open span:nth-child(6) {
-        transform: rotate(45deg);
-    }
-    .header-body__burger-menu.open span:nth-child(2),
-    .header-body__burger-menu.open span:nth-child(5) {
-        transform: rotate(-45deg);
-    }
-    .header-body__burger-menu.open span:nth-child(1) {
-        left: 5px;
-        top: 7px;
-    }
-    .header-body__burger-menu.open span:nth-child(2) {
-        left: calc(50% - 5px);
-        top: 7px;
-    }
-    .header-body__burger-menu.open span:nth-child(3) {
-        left: -50%;
-        opacity: 0;
-    }
-    .header-body__burger-menu.open span:nth-child(4) {
-        left: 100%;
-        opacity: 0;
-    }
-    .header-body__burger-menu.open span:nth-child(5) {
-        left: 5px;
-        top: 29px;
-    }
-    .header-body__burger-menu.open span:nth-child(6) {
-        left: calc(50% - 5px);
-        top: 29px;
-    } */
-
     .header-menu{
         display: block;
         position: absolute;
@@ -407,8 +332,8 @@
         left: -150%;
         transition: all 0.5s ease;
         z-index: 100;
-
     }
+
     .header-menu-list {
         flex-direction: column;
         background-image: url(../img/phone-1.png);
@@ -416,9 +341,10 @@
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        border: 20px solid #3C3D75;
+        border: 5px solid #3C3D75;
         margin-top: 0;
-        
+        height: 93.5vh;
+        padding: 10rem;
     }
 
     .header-menu__button {
@@ -475,17 +401,6 @@
 
     .header-menu{
         top: 65px;
-        height: 200vh;
-    }
-
-    .header-menu__button {
-        margin-top: 2rem;
-        width: 35rem;
-        height: 8rem;
-        font-size: 2.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center
     }
 
     .header-menu li {
@@ -498,31 +413,46 @@
 }
 
 @media (max-width:390px) {
+
     .header-up { 
-        grid-template-columns: 200rem 1fr;
+        grid-template-columns: 80rem 1fr;
     }
+
+    .header-menu-list {
+        margin-top: 0;
+        height: 111vh;
+        padding: 10rem;
+    }
+
     .header-body__burger-menu {
         left:330px; 
         top: 0.5rem;
     }
+
     .header-up__metro {
         display: none;
     }
+
     .header-up__opening-hours {
         display: none;
     }
+
     .header-up__messenger {
         display: none;
     }
+
     .header-up__version-visually-impaired {
         display: none;
     }
+
     .header-up__telephone {
         display: none;
     }
+
     .header-up__logo a img {
         width: 100px;
     }
+
     .header-up__logo p br{
         display: none;
     }

@@ -989,7 +989,7 @@ input::placeholder{
 
 .main__content-3_block_checkbox::before {
     content: '';
-    background-image: url(../img/galka-belofiolet.png);
+    background-image: url(../img/galka-belofiolet.svg);
     background-position: center center;
     border-radius: 5rem;
     width: 2rem;
@@ -1143,15 +1143,26 @@ input::placeholder{
 }
 
 .main__content-4_header_right-ul{
-    list-style: circle;
-    width: 33rem;
-    padding-left: 2.2rem;
+    list-style: none;
+    width: 36rem;
     font-size: 1.6rem;
     line-height: 140%;
 }
 
 .main__content-4_header_right-list {
     margin-bottom: 0.7rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.main__content-4_header_right-list:before {
+    display: inline-block;
+    content: url('../img/ellipse.svg');
+    margin-right: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    flex-shrink: 0;
 }
 
 /* Видео 2 */
@@ -1237,6 +1248,8 @@ input::placeholder{
 
 .main__content-4_main-block-desc-1 img{
     margin-bottom: 2rem;
+    width: 6.1rem;
+    height: 4rem;
 }
 
 .main__content-4_main-block-desc-1 div{
@@ -1325,7 +1338,7 @@ input::placeholder{
         list-style-type: none;
     }
     .main__content-4_header_right-ul{
-        list-style: circle;
+        list-style: none;
         width: 80%;
         font-size: 2rem;
     }
@@ -1339,14 +1352,6 @@ input::placeholder{
     .main__content-4_header{
         justify-content: center;
         flex-wrap: wrap;
-    }
-    .main__content-4_header{
-        margin-top: 12rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 7rem;
-        margin-bottom: 8rem;
     }
     .main__content-4_header_left p{
         /* Улыбка, как в молодости ВСЕГО ЗА 1 ДЕНЬ */
@@ -4179,6 +4184,7 @@ input[type=radio] {
     }  
     .main__content-11 .doctors-img .doctors-img-1 {
         margin-left: 10.2rem;
+        margin-bottom: -1rem;
 
     }  
     .slider_doctors_left {
@@ -4495,6 +4501,7 @@ input[type=radio] {
     margin-right: 1rem;
     width: 2.5rem;
     height: 2.5rem;
+    flex-shrink: 0;
 }
 
 .block-13-left {
@@ -4928,6 +4935,16 @@ input[type=radio] {
     margin-top: 1.3rem;
 }
 
+@media (max-width: 576px) {
+    .h3-14 {
+        margin-left: 2rem;
+    }
+    
+    .country-14 {
+        margin-left: 2rem;
+    }
+}
+
 .nobel-14 .country-14:before,
 .straumann-14 .country-14:before {
     content: url(../img/Switzerland.svg);
@@ -4943,18 +4960,29 @@ input[type=radio] {
 
 .desc-14-list {
     margin-top: 2.1rem;
-    list-style-type: circle;
+    list-style-type: none;
     padding-left: 2rem;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 150%;
 }
+.desc-14-item::before {
+    display: inline-block;
+    content: url('../img/ellipse.svg');
+    margin-right: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
+ 
+
+} 
 
 .garanty-14 {
     border-radius: 1rem;
     background: #409AF8;
     padding: 3rem;
 }
+
+
 
 .garanty-14 .for_life {
     color: #FFF;
@@ -4976,6 +5004,15 @@ input[type=radio] {
     gap: 4.5rem;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .garanty-14 .flex-14 {
+        margin-top: 2rem;
+
+        gap: 3rem;
+
+    }
 }
 
 .garanty-14 .flex-14 .action,
@@ -5060,12 +5097,16 @@ input[type=radio] {
 
 .content-15_flex {
     display: flex;
-    padding-top: 5rem;
+
     padding-left: 3rem;
     padding-right: 3rem;
     /* padding-bottom: 5rem; */
     border-radius: 2rem;
     background: linear-gradient(180deg, #E1EAFA 0%, #F1F5FC 100%);
+}
+
+.content-15_desc {
+    padding-top: 5rem;
 }
 
 .h2-15 {
@@ -5187,7 +5228,9 @@ input[type=radio] {
 
 .block-15-form .contacts .call:before{
     display: inline-block;
-    content: url(../img/metka-onlain-fioletovaya.png);
+    content: url(../img/metka-onlain-fioletovaya.svg);
+    width: 1.2rem;
+    height: 1.2rem;
     padding-right: 0.9rem;
 }
 
@@ -5217,6 +5260,7 @@ input[type=radio] {
     }
     .block-15-form .contacts {
         gap: 1rem;
+        margin-top: 1.5rem;
     }
     
     .block-15-form .contacts .call{
@@ -5224,10 +5268,6 @@ input[type=radio] {
         line-height: 130%;
         display: flex;
         align-items: baseline;
-    }
-    .block-15-form .contacts .call:before{
-        content: url(../img/metka-onlain-fioletovaya.png);
-        padding-right: 0.9rem;
     }
     
     .block-15-form .contacts .telephone a{
@@ -5237,6 +5277,10 @@ input[type=radio] {
         line-height: normal;
         text-decoration: none;
     }
+    .photo-15 {
+        margin-bottom: -61rem;
+    }
+    
 }
 
 .content-15_img .doctor-15{
@@ -5318,7 +5362,11 @@ input[type=radio] {
 }
 
 @media (max-width: 576px) {
+    .content-16-flex {
+        margin-top: 0rem;
+        gap: 1rem;
 
+    }
 }
 
 .content-16-flex .flex-box-1 .flex-box-block-1 p,
@@ -5439,6 +5487,14 @@ input[type=radio] {
     margin-top: -6rem;
 }
 
+@media (max-width:576px) {
+    .content-16-flex .flex-box-right .insurance-2 {
+        width: 38rem;
+        height: 48.5rem;
+        background-position: 40% 40%;
+    }
+}
+
 
 
 .content-16-flex .flex-box-right .insurance-2 .money{
@@ -5492,6 +5548,15 @@ input[type=radio] {
 .content-17-flex {
     display: flex;
     margin-top: 3rem;
+}
+
+@media (max-width:576px) {
+    .content-17-flex {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:center;
+    }   
 }
 
 .content-17-left {
@@ -5560,18 +5625,6 @@ input[type=radio] {
     height: 43rem;
 }  
 
-/* @media (max-width: 1400px) {
-    .screen-17 {
-        width: 570px;
-        height: 345px;
-    }    
-}
-@media (max-width: 1200px) {
-    .screen-17 {
-        width: 450px;
-        height: 300px;
-    }    
-} */
 
 .content-17-right p span{
     font-weight: 500;
@@ -5589,6 +5642,15 @@ input[type=radio] {
     justify-content: center;
     gap: 2rem;
 }
+
+@media (max-width:576px) {
+    .buttons-17 {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        gap: 6rem;
+    }  
+}
+
 
 .buttons-17 .questions{
     border-radius: 4rem;
@@ -5609,6 +5671,8 @@ input[type=radio] {
 
 .buttons-17 .questions:before{
     content:url(../img/FAQ-white.svg); 
+    width: 1.9rem;
+    height: 1.8rem;
     display: inline-block;
     vertical-align: middle;
 
@@ -5636,6 +5700,13 @@ input[type=radio] {
     overflow: hidden; 
 }
 
+@media (max-width:576px) {
+    .record-18 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 .buttons-17 .make_an_appointment:before,
 .record-18 .make_an_appointment:before {
@@ -5643,6 +5714,7 @@ input[type=radio] {
     width: 1.8rem;
     height: 2.3rem;
 }
+
 
 
 /* Восемнадцатый блок */
@@ -5709,13 +5781,13 @@ input[type=radio] {
 .swiper4 {
     overflow: hidden;
 }
+
 .swiper4 {
     display: none;
 }
 
 .swiper-pagination-3,
 .swiper-pagination-4 {
-    
     text-align: center;
 }
 
@@ -5811,26 +5883,16 @@ input[type=radio] {
         max-width: 45rem;
     }
 }
-
-/* .slider-18-dots .dot-18{
-    cursor:pointer;
-    height:1.6rem;
-    width:1.6rem;
-    margin:0 1rem;
-    border-radius:50%;
-    border:solid #CED9E5;
-    display:inline-block;
-    transition:background-color,transform .4s;
-} */
-
-/* .slider-18-dots .dot-active{
-    background-color:#409AF8;
-    transform:scale(1.2);
+@media (max-width: 576px) {
+    .slides-18 .slide-1 img,
+    .slides-18 .slide-2 img,
+    .slides-18 .slide-3 img,
+    .slides-18-2 .slide-1 img,
+    .slides-18-2 .slide-2 img,
+    .slides-18-2 .slide-3 img {
+        max-width: 40rem;
+    }
 }
-.slider-18-dots .dot-18:hover{
-    background-color:#409AF8;
-    transform:scale(1.2);
-} */
 
 /* Улыбка 18 блок */
 
@@ -5919,6 +5981,24 @@ input[type=radio] {
     }
 }
 
+@media (max-width:576px) {
+    .record-18 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5rem;
+    }
+    .record-18 .make_an_appointment {
+        align-self: flex-end;
+        margin-right: 1rem;
+    }
+    .arrow_mad-18 {
+        transform: rotate(30deg);
+    }
+
+}
+
 
 .record-18 span{
     font-size: 1.8rem;
@@ -5940,6 +6020,11 @@ input[type=radio] {
     height: 39.9rem;
 }
 
+@media (max-width:1400px) {
+    .photo-doctor-18 {
+        display: none;
+    }
+}
 
 /* Девятнадцатый блок */
 /* РЕЙТИНГИ */
@@ -5978,6 +6063,11 @@ input[type=radio] {
     background: linear-gradient(270deg, #F5F8FD 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 
+@media (max-width:992px) {
+    .gradient {
+        right: -0.4rem;   
+    }   
+}
 
 
 
@@ -6548,8 +6638,10 @@ input[type=radio] {
 }
 
 .block-23-form .contacts .call:before{
-    content: url(../img/metka-onlain-fioletovaya.png);
+    content: url(../img/metka-onlain-fioletovaya.svg);
     padding-right: 0.9rem;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 .block-23-form .contacts .telephone a{
@@ -7046,6 +7138,12 @@ input[type=radio] {
     line-height: 160%;
     max-height: 7rem;
     max-width: 80.3rem;
+}
+
+@media (max-width: 576px) {
+    .footer-left .tinkoff p{
+       font-size: 1.5rem;
+    }
 }
 
 .footer-left .tinkoff svg{
