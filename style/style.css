@@ -4166,14 +4166,12 @@ input[type=radio] {
     font-weight: 700;
     line-height: 120%;
 }
+.flex-2 .iceberg svg,
+.flex-5 .iceberg svg{
+    width: 2.6rem;
+    height: 2.6rem;
+}
 
-
-/* cтрелки 10 блока влево и вправо */
-
-/* .main__content-10_flex_single-stage,
-.main__content-10_flex_two-stage {
-    position: relative;
-} */
 
 .main__content-10 {
     position: relative; 
