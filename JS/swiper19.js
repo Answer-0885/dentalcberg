@@ -29,6 +29,11 @@ const swiper19 = () => {
            576: {
               slidesPerView: 4,
               spaceBetween: 10
+           },
+          // Если ширина окна больше или равна 768px
+           360: {
+              slidesPerView: 3,
+              spaceBetween: 10
            }
        }
     });
