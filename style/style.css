@@ -153,9 +153,9 @@ input::placeholder{
 .main__content-block_button:before,
 .main__content-5_desc-button::before {
     display: inline-block;
-   content: url(../img/consultation.svg);
-   width: 2.5rem;
-   height: 2.5rem;
+    content: url(../img/consultation.svg);
+    width: 2.5rem;
+    height:2.5rem;
 }
 
 
@@ -439,14 +439,15 @@ input::placeholder{
     }
 
     .main__content-block_button {
-        font-size: 1.6rem;
+        font-size: 2.5rem;
         width: 42rem;
         height: 7rem;
     }
 
-    .main__content-block_button:before {
+
+    /* .main__content-block_button:before {
         content: url(../img/consultation-390.svg);
-    }
+    } */
     
     .main__content-block_input-checkbox {
         width: 2.5rem;
@@ -809,6 +810,7 @@ input::placeholder{
 	position: relative;
 }
 
+
 .dropdown__button {
 	position: relative;
 	display: block;
@@ -830,6 +832,7 @@ input::placeholder{
 }
 
 
+
 .dropdown__button:focus, .dropdown__button--active {
 	outline: none;
 	box-shadow: 0rem 0rem 0rem 0.2rem rgb(245, 69, 69);
@@ -841,20 +844,19 @@ input::placeholder{
 	position: absolute;
 	left: 0;
 	top: 5rem;
-
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-
 	background: #FFFFFF;
 	box-shadow: 0rem 0.4rem 0.8rem rgba(176, 198, 225, 0.6);
 	overflow: hidden;
     color: #8FA7C1;
 	border-radius: 0.5rem 0.5rem 3.5rem 3.5rem;
 	width: 100%;
-
 	z-index: 1;
 }
+
+
 
 .dropdown__list--visible {
 	display: block;
@@ -897,7 +899,25 @@ input::placeholder{
 	display: none;
 }
 /* ---------------------------------------- */
+@media (max-width: 390px) {
+    .dropdown__button {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        font-size: 3rem;
+    }
+    .dropdown__list {
+        width: 100%;
+    }
+    
+    .dropdown__list-item {
+        font-size: 3rem;
+        width: 100%;
+        height: 15rem;
+        padding: 1.5rem 1.5rem;
 
+    }
+}
 
 
 
@@ -1138,6 +1158,7 @@ input::placeholder{
     padding: 2.5rem;
 }
 
+
 .main__content-4_header_right-text p {
     /* Цифровая стоматология - это: */
     width: 29.5rem;
@@ -1147,6 +1168,7 @@ input::placeholder{
     line-height: 140%;
     margin-bottom: 1.5rem;
 }
+
 
 .main__content-4_header_right-ul{
     list-style: none;
@@ -1161,6 +1183,8 @@ input::placeholder{
     display: flex;
     align-items: baseline;
 }
+
+
 
 .main__content-4_header_right-list:before {
     display: inline-block;
@@ -1272,6 +1296,7 @@ input::placeholder{
     width: 38.6rem;
 }
 
+
 .main__content-4_main-block-video-img {
     border-radius: 20px;
     background: linear-gradient(90deg, #5F5963 15.48%, rgba(95, 89, 99, 0.00) 26.46%, rgba(95, 89, 99, 0.00) 75.15%, #5F5963 84.69%);    
@@ -1375,7 +1400,34 @@ input::placeholder{
     .main__content-4_main-block-video-icons {
         left: 13rem; 
     }
+    .main__content-4_header_left-list {
+        font-size: 3rem; 
+    } 
+    .main__content-4_header_right-text  {
+        width: 100%;
+    }  
+    .main__content-4_header_right-text p {
+        /* Цифровая стоматология - это: */
+        width: 100%;
+        height: 4rem;
+        font-size: 3rem;
+    }
+    .main__content-4_header_right-ul{
+        width: 86%;
+        font-size: 3rem;
+    }
+    .main__content-4_main-block-desc-1 div{
+        width: 100%;
+        font-size: 2.3rem;
+    }
+    
+    .main__content-4_main-block-desc-1 p{
+        font-size: 2.3rem;
+        width: 100%;
+    }
 }
+
+
 
 .main__content-4_main-block-desc-img {
     z-index: 10;
@@ -1400,6 +1452,8 @@ input::placeholder{
     margin: 5rem auto 0;
     cursor: pointer;
 }
+
+
 
 .main__content-4_main-button::before, 
 .btn_feedback-22::before {
@@ -1427,6 +1481,23 @@ input::placeholder{
     margin-left: 1rem;
     display: inline-block;
     vertical-align: middle;
+}
+
+@media (max-width: 390px) {
+    .main__content-4_main-button,
+    .btn_feedback-22 {
+        font-size: 3.5rem;
+        padding: 2.2rem 3rem;
+    } 
+    .main__content-4_main-button::before, 
+    .btn_feedback-22::before {
+        width: 3rem;
+}
+
+    .main__content-4_main-button::after,
+    .btn_feedback-22::after {
+        width: 2.6rem;
+}
 }
 
 /* Пятый блок */
@@ -2563,6 +2634,7 @@ input::placeholder{
     }
 }
 
+
 .main__content-7-block-flex-1 {
     display: flex;
     padding-left: 2rem;
@@ -2624,6 +2696,8 @@ input::placeholder{
     margin-bottom: 0.5rem;
 }
 
+
+
 /* Кнопка запуска видео */
 
 .main__content-7-block-flex-1_img-videoplay{
@@ -2663,12 +2737,39 @@ input::placeholder{
     font-weight: 700;
 }
 
+@media (max-width: 390px) {
+    .main__content-7-block-h2 {
+        font-size: 5rem;
+    }
+    .main__content-7-block-flex-1_content p:first-child,
+    .main__content-7-block-flex-2_content p:first-child,
+    .main__content-7-block-flex-3_content p:first-child,  
+    .main__content-7-block-flex-4_content p:first-child  {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 140%;
+        text-transform: uppercase;
+        margin-top: 3rem;
+    }
+    .main__content-7-block-flex-1_content ul {
+        font-size: 2.5rem;
+        max-width: 100%;
+    }
+    .main__content-7-block-flex-2_content p:last-child, 
+    .main__content-7-block-flex-3_content p:last-child,
+    .main__content-7-block-flex-4_content p:last-child  {
+        font-size: 2.4rem;
+        line-height: 120%;
+    } 
+}
+
 
 /* Восьмой блок РЕЗУЛЬТАТЫ ДО/ПОСЛЕ */
 .main__content-8 {
     padding-top: 12rem;
     padding-bottom: 12rem;
     position: relative;
+    text-align: center;
 }
 
 .main__content-8 h2{
@@ -2705,7 +2806,7 @@ input::placeholder{
     margin-right: auto;
     margin-top: 4rem;
     list-style: none;
-    width:93rem;
+    width:90rem;
     height: 56rem;
     overflow: hidden;
 }
@@ -2802,6 +2903,20 @@ input::placeholder{
     
     .right-8 {
         right: 5rem;    
+    }
+}
+@media (max-width: 390px) {
+    .main__content-8_swiper-btn{
+        width:10rem;
+        height:10rem;
+        opacity: 0.3;
+    } 
+    .left-8 {
+        left: 2rem;
+    }
+    
+    .right-8 {
+        right: 2rem;    
     }
 }
 
@@ -3298,7 +3413,49 @@ input[type=radio] {
     .main__content-9-block_right-img {
         display: none;
     }
-
+    .main__content-9_step-1_left-radio p .label_1-1,
+    .main__content-9_step-1_left-radio p .label_2-1{
+        font-size: 2.2rem;
+    } 
+    .main__content-9_step-1_left-radio p .label_1-2,
+    .main__content-9_step-2_left-radio p .label_2-2,
+    .main__content-9_step-3_left-radio p .label_3-7,
+    .main__content-9_step-4_left-radio p .label_4-4{
+        font-size: 2.2rem;
+    }
+    .main__content-9_step-1_left-radio p,
+    .main__content-9_step-2_left-radio p,
+    .main__content-9_step-3_left-radio p,
+    .main__content-9_step-4_left-radio p{
+        width: 100%;
+    }
+    .main__content-9_step-1_left h3,
+    .main__content-9_step-2_left h3,
+    .main__content-9_step-3_left h3,
+    .main__content-9_step-4_left h3{
+        font-size: 2.6rem;
+    }
+    .main__content-9_step-1_left h3 span,
+    .main__content-9_step-2_left h3 span,
+    .main__content-9_step-3_left h3 span,
+    .main__content-9_step-4_left h3 span{
+        font-size: 2.6rem;
+    }
+    .step-5-p1 {
+        font-size: 3rem;
+    }
+    
+    .step-5-p2 {
+        font-size: 2.4rem;
+    }
+    
+    .step-5-p3 {
+        font-size: 2.4rem;
+    }
+    
+    .step-5-p4 {
+        font-size: 2.4rem;
+    }
 }
 
 .main__content-9_step-1_right img:first-child {
@@ -3596,6 +3753,54 @@ input[type=radio] {
         align-items: center;
         flex-direction: column;
         gap: 1.5rem;
+    }   
+    .block_input-5_name,
+    .block_input-5_tel {
+        width: 50rem;
+        height: 8rem;
+        border-radius: 30rem;
+    }
+    
+    .block_input-5_name::placeholder,
+    .block_input-5_tel::placeholder {
+        font-size: 3.5rem;
+    }
+    .whatsapp_5,
+    .telegram_5  {
+        color: #FFF;
+        width: 50rem;
+        height: 8rem;
+        border-radius: 30rem;
+        font-size: 3rem;
+
+    }
+    .whatsapp_5:before,
+    .telegram_5:before{
+        width: 3rem;
+        height: 2rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .whatsapp_5:after{
+        width: 7.5rem;
+        height: 7.5rem;
+        margin-left: 12rem;
+        margin-right: 0.7rem;
+    }
+    
+    .telegram_5:after{
+        margin-left: 12rem;
+        margin-right: 0.7rem;
+    }
+    .block_input-5_record {
+        width: 50rem;
+        height: 8rem;
+        padding: 2.2rem 3rem;
+        gap: 1rem;
+
+        border-radius: 30rem;
+        font-size: 3rem;
     }
 }
 
@@ -5160,14 +5365,81 @@ input[type=radio] {
 
     .block-13-left {
         align-self: center;
-        margin-left: 0;
+        margin-left: -1rem;
     }
+    .block-13-left {
+        max-height: 30rem;
+        padding-left: 4rem;
+        padding-top: 2.5rem;
+        padding-right: 3rem;
+        padding-bottom: 3.7rem;
+        border-radius: 2rem;
+        max-width: 100%;
+        width: 100%;
+    }
+
     .block-13-right {
         align-self: center;
         margin-top: 1.5rem;
         margin-left: 0rem;
         margin-right: 0rem;
+        max-width: 100%;
+        max-height: 30rem;
     }
+    .block-13-right .block-2{
+        margin-right: 0rem;
+        margin-top: 0rem;
+    }
+
+
+
+
+    .block-13-right p {
+        font-size: 3rem;
+
+    }
+    .block-13-right .list-right {
+        font-size: 2.2rem;
+        line-height: 130%;
+        width: 80%;
+    }
+
+    .main-13-down .block-13-input {
+        display: flex;
+        align-items: center; 
+        justify-content: center;   
+        gap: 3rem;
+    }
+    
+    .block-13-input input {
+        border-radius: 3rem;
+        max-width: 40rem;
+        width: 40rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+  
+    .block-13-left input::placeholder {
+        font-size: 2rem;
+    }
+    
+    .block-13-left button{
+        max-width: 40rem;
+        width: 40rem;
+        height: 5rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+    .block-13-left .contacts .call{
+        font-size: 1.8rem;
+        line-height: 130%;
+    }
+    .block-13-left .contacts .call:before{
+        content: url(../img/metka-onlain390.svg);
+        padding-right: 0.9rem;   
+    }
+
 }
 
 .watch-13 {
@@ -5224,6 +5496,12 @@ input[type=radio] {
     line-height: 130%;
 }
 
+@media (max-width: 390px) {
+    .main__content-14 h2{
+        font-size: 5rem;
+    }
+}
+
 .main__content-14 h2 span{
     font-weight: 700;
     color: #409AF8;
@@ -5240,6 +5518,13 @@ input[type=radio] {
     margin-bottom: 1rem;
     line-height: 130%;
 }
+
+@media (max-width: 390px) {
+    .list-14 .item-14 {
+        font-size: 2.5rem;
+    }
+}
+
 
 .content-14 {
     margin-top: 4rem;
@@ -5260,6 +5545,18 @@ input[type=radio] {
     padding: 1rem 2rem;
     border:none;
     cursor: pointer;
+}
+
+@media (max-width: 390px) {
+    .content-14 button {
+        width: 35rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+    .content-14 .button_active {
+        width: 35rem;
+        height: 5rem;
+    }
 }
 
 .content-14 button:first-child {
@@ -5288,14 +5585,21 @@ input[type=radio] {
     justify-content:space-between;
 }
 
-
-
 .nobel-14 img,
 .osstem-14 img,
 .straumann-14 img,
 .no_all_tooth-14 img{
     width: 30rem;
     height: 22rem;
+}
+
+@media (max-width: 390px) {
+    .nobel-14 img,
+    .osstem-14 img,
+    .straumann-14 img,
+    .no_all_tooth-14 img{
+        display: none;
+    }   
 }
 
 .nobel-14 svg{
@@ -5350,6 +5654,12 @@ input[type=radio] {
     line-height: 130%;
 }
 
+@media (max-width: 390px) {
+    .h3-14 {
+        font-size: 2.6rem;
+    }   
+}
+
 .country-14 {
     display: inline-block;
     color: #96B1CE;
@@ -5365,6 +5675,12 @@ input[type=radio] {
     
     .country-14 {
         margin-left: 2rem;
+    }
+}
+@media (max-width: 390px) {   
+    .country-14 {
+        font-size: 2rem;
+        margin-top: 1.3rem;
     }
 }
 
@@ -5388,14 +5704,35 @@ input[type=radio] {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+@media (max-width: 390px) {
+    .desc-14-list {
+        margin-top: 2.1rem;
+        padding-left: 2rem;
+        font-size: 2rem;
+    }
+}
+
+
 .desc-14-item::before {
     display: inline-block;
     content: url('../img/ellipse.svg');
-    margin-right: 1rem;
     width: 0.8rem;
     height: 0.8rem;
 } 
+
+@media (max-width: 390px) {
+    .desc-14-item::before {
+        position: absolute;
+        left: 3rem;
+        width: 1rem;
+        height: 1rem;
+    } 
+}
 
 .garanty-14 {
     border-radius: 1rem;
@@ -5430,11 +5767,12 @@ input[type=radio] {
 @media (max-width: 576px) {
     .garanty-14 .flex-14 {
         margin-top: 2rem;
-
         gap: 3rem;
-
     }
+    
 }
+
+
 
 .garanty-14 .flex-14 .action,
 .garanty-14 .flex-14 .regular_price {
@@ -5507,6 +5845,35 @@ input[type=radio] {
     }   
 }
 
+@media (max-width: 390px) {
+    .no_all_tooth-14 .desc-14 {
+        margin-left: -15rem;
+    } 
+}
+
+@media (max-width: 390px) {
+
+    .garanty-14 .flex-14 {
+        margin-top: 2rem;
+        gap: 3rem;
+    }
+
+    .garanty-14 {
+        padding: 3rem;
+        min-width: 30rem;
+    }   
+   
+    .garanty-14 .for_life {
+        font-size: 2rem;
+    }
+    
+    .garanty-14 .for_life:before {
+        width: 2rem;
+        height: 1.4rem;
+        margin-right: 0.5rem;
+    }
+}
+
 
 
 
@@ -5546,6 +5913,12 @@ input[type=radio] {
     }
 }
 
+@media (max-width:390px) {
+    .h2-15 {
+        font-size: 5.5rem;
+    }
+}
+
 
 .content-15_flex .content-15_desc .desc-15_700 {
     font-size: 1.8rem;
@@ -5559,6 +5932,17 @@ input[type=radio] {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 130%;
+}
+
+@media (max-width:390px) {
+    .content-15_flex .content-15_desc .desc-15_700 {
+        font-size: 2.3rem;
+    }
+    
+    .content-15_flex .content-15_desc .desc-15_500 {
+        font-size: 2rem;
+    }
+    
 }
 /* ------------------------- */
 
@@ -5612,6 +5996,7 @@ input[type=radio] {
     overflow: hidden;
 }
 
+
 .block-15-checkbox {
     margin-top: 2.1rem;
     margin-left: 5rem;
@@ -5621,6 +6006,37 @@ input[type=radio] {
     width: 1.8rem;
     height: 1.8rem;
     vertical-align: middle;
+}
+
+@media (max-width:390px) {
+    .block-15-form .block-15-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        gap: 2rem;
+    }
+    .block-15-input input {
+        border-radius: 30rem;
+        max-width: 60rem;
+        width: 60rem;
+        height: 6rem;
+        font-size: 2rem;
+    }
+    
+    .block-15-form input::placeholder {
+        font-size: 2rem;
+    }
+    
+    .block-15-form button{
+        max-width: 60rem;
+        width: 60rem;
+        height: 6rem;
+        gap: 1rem;
+        border-radius: 30rem;
+        font-size: 2rem;
+    }  
+
+    
 }
 
 .block-15_span,
@@ -5709,6 +6125,17 @@ input[type=radio] {
     .content-15_img{
         display: none;
     }
+    .block-15-form .contacts .call{
+        font-size: 1.6rem;
+    }
+    
+    .block-15-form .contacts .telephone a{
+        color: #272727;
+        font-size: 2.6rem;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+    }
 }
 
 .content-15_img .doctor-15{
@@ -5775,6 +6202,8 @@ input[type=radio] {
     justify-content: space-between;
 }
 
+
+
 .content-16-flex .flex-box-1 .flex-box-block-1,
 .content-16-flex .flex-box-2 .flex-box-block-1,
 .content-16-flex .flex-box-3 .flex-box-block-1{
@@ -5794,6 +6223,20 @@ input[type=radio] {
         margin-top: 0rem;
         gap: 1rem;
 
+    }
+}
+@media (max-width: 390px) {
+    .content-16-flex {
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .h2-16 {
+        font-size: 5rem;
+    }
+    .h2-16 span{
+        font-size: 5rem;
     }
 }
 
@@ -5843,6 +6286,16 @@ input[type=radio] {
     line-height: 150%;
 }
 
+@media (max-width: 390px) {
+    .content-16-flex .flex-box-block-2 .p1 {
+        font-size: 2.6rem;
+    }
+    
+    .content-16-flex .flex-box-block-2 .p2 {
+        font-size: 2.2rem;
+    }
+}
+
 .content-16-flex .flex-box-1, 
 .content-16-flex .flex-box-2,
 .content-16-flex .flex-box-3 {
@@ -5871,6 +6324,8 @@ input[type=radio] {
     justify-content: center;
     align-items: center;
 }
+
+
 
 .krug {
     position: absolute;
@@ -5924,7 +6379,6 @@ input[type=radio] {
 }
 
 
-
 .content-16-flex .flex-box-right .insurance-2 .money{
     color: #272727;
     font-size: 1.8rem;
@@ -5942,6 +6396,26 @@ input[type=radio] {
     margin-top: 1rem;
 }
 
+@media (max-width:390px) {
+    .content-16-flex .flex-box-right {
+        margin-top: 5rem;
+    }
+    .content-16-flex .flex-box-right .insurance-2 .money{
+        margin-top: 8rem;
+        font-size: 2.8rem;
+    }
+    
+    .content-16-flex .flex-box-right .insurance-2 .desc{
+        font-size: 2.4rem;
+    }
+    .content-16-flex .flex-box-right .insurance-2 {
+        width: 50rem;
+        height: 63rem;
+        padding: 2rem;
+    }
+}
+
+
 /* Семнадцатый блок
 ОТВЕЧАЕМ НА ВАШИ ВОПРОСЫ  */
 .main__content-17 {
@@ -5954,6 +6428,12 @@ input[type=radio] {
     font-size: 3.6rem;
     line-height: 130%;
     text-transform: uppercase;
+}
+
+@media (max-width: 390px) {
+    .h2-17 {
+        font-size: 5rem;
+    }
 }
 
 
@@ -6003,6 +6483,14 @@ input[type=radio] {
     justify-content: space-between;
 }
 
+@media (max-width: 390px) {
+    .content-17-left {
+        grid-template-columns: 1fr;
+        gap: 1.5rem 3.9rem;
+        flex-wrap: wrap;
+    }  
+}
+
 /* Кнопка запуска видео */
 
 .content-17-left .icons_video-17 {
@@ -6033,6 +6521,8 @@ input[type=radio] {
     line-height: 130%; 
 }
 
+
+
 .content-17-right .img-screen {
     position: relative;
  
@@ -6052,6 +6542,7 @@ input[type=radio] {
     width: 69rem;
     height: 43rem;
 }  
+
 
 
 .content-17-right p span{
@@ -6077,6 +6568,40 @@ input[type=radio] {
         margin-bottom: 5rem;
         gap: 6rem;
     }  
+}
+
+@media (max-width: 390px) {
+    .content-17-right {
+        width: 100%;
+        height: auto;
+        margin-left: 0rem;
+    }
+    .content-17-left .text-17 {
+        font-size: 2.8rem;
+    }
+    .content-17-left .icons_video-17 {
+        width: 7rem;
+        height: 7rem;
+    }
+    .content-17-right .img-screen {
+        text-align: center;  
+    }
+    .content-17-right .img-screen .screen-17{
+        text-align: center;  
+        width: 85rem;
+        height: auto;
+    }
+    .content-17-right .img-screen p {
+        bottom: 2rem;
+        left: 5rem;
+        color: #FFF;
+        font-size: 2.2rem;
+    }
+    .icons_video-17-position {
+        position: absolute;
+        right: 5rem;
+        top: 3rem;
+    }
 }
 
 
@@ -6128,14 +6653,6 @@ input[type=radio] {
     overflow: hidden; 
 }
 
-@media (max-width:576px) {
-    .record-18 {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-
 .buttons-17 .make_an_appointment:before,
 .record-18 .make_an_appointment:before {
     content: url(../img/record.svg);
@@ -6143,6 +6660,40 @@ input[type=radio] {
     height: 2.3rem;
 }
 
+@media (max-width:576px) {
+    .record-18 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:390px) {
+    .buttons-17 .questions{
+        border-radius: 10rem;
+        padding: 2.2rem 2rem;
+        font-size: 2rem;    
+        width: 40rem;
+    }
+    .buttons-17 .questions:before{
+        content:url(../img/FAQ-white.svg); 
+        width: 2.8rem;
+        height: 2.8rem;  
+    }
+    .buttons-17 .make_an_appointment,
+.record-18 .make_an_appointment{
+    border-radius: 10rem;
+    width: 40rem;
+    font-size: 2rem;
+}
+
+.buttons-17 .make_an_appointment:before,
+.record-18 .make_an_appointment:before {
+    content: url(../img/record.svg);
+    width: 2.5rem;
+    height: 3rem;
+}
+
+}
 
 
 /* Восемнадцатый блок */
@@ -6171,6 +6722,16 @@ input[type=radio] {
     line-height: 130%;
 }
 
+@media (max-width:390px) {
+    .h2-18 {
+        font-size: 5rem;
+    }
+    .p-18 {
+        margin-top: 2rem;
+        font-size: 2.4rem;
+    }
+}
+
 .button-18 {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -6189,6 +6750,36 @@ input[type=radio] {
     line-height: 120%;
     padding: 1.6rem 2rem;
     cursor: pointer;
+}
+
+@media (max-width:390px) {
+    .h2-18 {
+        font-size: 5rem;
+    }
+    .p-18 {
+        margin-top: 2rem;
+        font-size: 2.4rem;
+    }
+    .button-18 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .button-18 .btn-left,
+    .button-18 .btn-right {
+        border-radius: 5rem;
+        font-size: 2.2rem;
+    }
+    .button-18 .btn-left.button_active,
+    .button-18 .btn-right.button_active{
+        color: #fff;
+        font-weight: 700;
+        border-radius: 25.5px;
+        background: #409AF8;
+        box-shadow: 0rem 0rem 0rem 0rem;
+        max-width: 100%;
+        max-height: 100%;
+}
 }
 
 .button-18 .btn-right{
@@ -6244,11 +6835,6 @@ input[type=radio] {
     height: 100%;
 }
 
-/* .slides-18 .slide-4 img{
-    width: 13rem;
-    height: 33rem;
-} */
-
 /* DOTS-18 */
 
 .slider-18-dots {
@@ -6284,9 +6870,6 @@ input[type=radio] {
     .slides-18-2 .slide-3 img {
         max-width: 50rem;
     }
-    /* .slider-18-dots {
-        top: 350px;
-  }  */
 } 
 @media (max-width: 992px) {
     .slides-18 .slide-1 img,
@@ -6318,9 +6901,18 @@ input[type=radio] {
     .slides-18-2 .slide-1 img,
     .slides-18-2 .slide-2 img,
     .slides-18-2 .slide-3 img {
-        max-width: 40rem;
+        max-width: 48rem;
+    }
+    .slides-18 .slide-1,
+    .slides-18 .slide-2,
+    .slides-18 .slide-3,
+    .slides-18-2 .slide-1,
+    .slides-18-2 .slide-2,
+    .slides-18-2 .slide-3 {
+        max-width: 48rem;
     }
 }
+
 
 /* Улыбка 18 блок */
 
@@ -6334,10 +6926,27 @@ input[type=radio] {
     background: linear-gradient(180deg, #E1EAFA 0%, #F1F5FC 100%);
 }
 
+
+
 .video-18 {
     width: 53rem;
     height: 34rem;
     border-radius: 15px;
+}
+
+@media (max-width: 390px) {
+    .smile-18 {
+        margin-top: 6rem;
+        flex-wrap: wrap;
+        border-radius: 5rem;
+        justify-content: center;
+        padding: 2rem;
+    }  
+    .video-18 {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
 }
 
 /* Кнопка запуска видео */
@@ -6356,6 +6965,16 @@ input[type=radio] {
     transform: scale(1.2) rotate(360deg);
 }
 
+@media (max-width: 390px) {
+
+    .video_icons-18 {
+        width: 12rem;
+        height: 12rem;
+        left: 70rem;
+        top: 5rem;
+    }  
+}
+
 /* ----------------------------- */
 
 .smile_desc {
@@ -6369,6 +6988,7 @@ input[type=radio] {
     line-height: 130%;
     margin-bottom: 2rem;
 }
+
 
 
 .h3-18 span{
@@ -6427,7 +7047,6 @@ input[type=radio] {
 
 }
 
-
 .record-18 span{
     font-size: 1.8rem;
     font-weight: 700;
@@ -6451,6 +7070,28 @@ input[type=radio] {
 @media (max-width:1400px) {
     .photo-doctor-18 {
         display: none;
+    }
+}
+@media (max-width: 390px) {
+    .smile_desc {
+        padding-top: 1rem;
+        max-width: 100%;
+    }    
+    .h3-18 {
+        font-size: 3.5rem;
+    }
+    .smile_desc .treatment {
+        font-size: 2.5rem;
+        max-width: 100%;
+        width: 100%;
+    }
+    .record-18 span{
+        font-size: 2.6rem;
+    }
+    .arrow_mad-18 {
+        width: 9rem;
+        height: 5rem;
+        margin-left: 15rem;
     }
 }
 
@@ -6689,8 +7330,7 @@ input[type=radio] {
     .blocks-20 .block-1-3,
     .blocks-20 .block-1-4 {
         max-width: 31rem;
-        padding: 1.5rem 1.5rem;
-      
+        padding: 1.5rem 1.5rem;    
     }
 }
 @media (max-width: 576px) {
@@ -6709,6 +7349,8 @@ input[type=radio] {
         margin: 0 auto;   
     }
 }
+
+
 .blocks-20 .block-1-1>p,
 .blocks-20 .block-1-2>p,
 .blocks-20 .block-1-3>p,
@@ -6750,6 +7392,70 @@ input[type=radio] {
     height: 1.2rem;
 }
 
+@media (max-width: 390px) {
+    .blocks-20 {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .h2-20 {
+        font-size: 5rem;
+    }
+    .p20 {
+        font-size: 2.6rem;
+    }
+    .blocks-20 .block-1-1,
+    .blocks-20 .block-1-2,
+    .blocks-20 .block-1-3,
+    .blocks-20 .block-1-4 {
+        width: 87.5rem;
+        padding: 1.5rem 1.5rem;
+        border-radius: 3rem;
+        margin: 0 auto;  
+        max-width: 100%; 
+        height: 20rem;
+        display: grid;
+        grid-template-columns: 32rem auto 22rem;
+    }
+    .blocks-20 .block-1-1 .yandex-svg {
+        width: 22.5rem;
+        height: 8.5rem;  
+      }
+      
+      .blocks-20 .block-1-2 .gis-svg {
+          width: 20rem;
+          height: 8.5rem;
+      }
+      
+      .blocks-20 .block-1-3 .google-svg {
+          width: 23rem;
+          height: 7.5rem;
+      }
+      
+      .blocks-20 .block-1-4 .prodoctorov-svg {
+          width: 31rem;
+          height: 3rem;
+      }
+      .blocks-20 .block-1-1>p,
+      .blocks-20 .block-1-2>p,
+      .blocks-20 .block-1-3>p,
+      .blocks-20 .block-1-4>p {
+        font-size: 6rem;
+        text-align: center;
+        margin-left: -10rem;
+    }
+      .blocks-20 .block-1-1>p span,
+      .blocks-20 .block-1-2>p span,
+      .blocks-20 .block-1-3>p span,
+      .blocks-20 .block-1-4>p span{
+        font-size: 4.5rem;
+    }
+    .blocks-20 .block-1 a {
+        font-size: 3rem;
+    }
+}
+
 
 
 /* Звездочки рейтинга */
@@ -6764,6 +7470,18 @@ input[type=radio] {
     width: 8.4rem;
     height: 1.2rem;
 
+}
+
+@media (max-width: 390px) {
+    .rating-result p{
+        font-size: 3rem;
+        line-height: 140%;
+    }
+    .rating-result svg{
+        width: 21rem;
+        height: 3rem;
+    
+    }  
 }
 
 
@@ -6846,6 +7564,38 @@ input[type=radio] {
     line-height: 140%;
 }
 
+@media (max-width: 390px) {
+    .blocks-22-flex {
+        margin-top: 3.2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .block-22 {
+        max-height: 100%;
+        max-height: 80rem;
+        height: 80rem;
+
+    }
+    .block-22 .feedback {
+        max-width: 100%;
+        max-height: 80rem;
+        font-size: 3.1rem;
+    }
+    .block-22 .date{
+        font-size: 3.1rem;
+    }
+    .block-22 .date-name{
+        margin-top: 14rem;
+    }
+    
+    .block-22 .name-client{
+        color: #272727;
+        font-size: 4.5rem;
+
+    }
+}
+
 /* стилизация скроллбара */
 .block-22 .feedback::-webkit-scrollbar {
     width: 0.4rem;
@@ -6886,6 +7636,24 @@ input[type=radio] {
     margin-left: auto;
     margin-right: auto;
 
+}
+
+@media (max-width: 390px) {
+    .rating-result-22 svg{
+        width: 25rem;
+        height: 4rem;
+    }
+    .client_rating p {
+        font-size: 4.5rem;
+    }
+    
+    .client_rating p span{
+        color: #8FA7C1;
+        font-size: 3.1rem;
+    }
+    .client_rating {
+        margin-top: -14rem;
+    }
 }
 
 
@@ -6949,8 +7717,21 @@ input[type=radio] {
     display: grid;
     margin-top: 3rem;
     grid-template-columns: 1fr 1fr;
-    gap: 4.4rem;
-    
+    gap: 4.4rem;    
+}
+
+@media (max-width:390px) {
+    .block-23-desc-grid {
+        grid-template-columns: 1fr;
+        gap: 4.4rem;    
+    }
+    .h2-23 {
+        font-size: 5rem;
+    }
+    .block-23-desc .text-23 {
+        font-size: 3.5rem;
+
+    }
 }
 
 .block-23-desc-grid .block-grid{
@@ -6968,6 +7749,17 @@ input[type=radio] {
 .block-23-desc-grid .block-grid p{
     font-size: 1.6rem;
     line-height: 150%;
+}
+
+@media (max-width:390px) {
+    .block-23-desc-grid .block-grid img{
+        width: 17rem;
+        height: 17rem;
+    }
+    
+    .block-23-desc-grid .block-grid p{
+        font-size: 3.5rem;
+    }
 }
 
 /* Форма 23 блока */
@@ -7027,6 +7819,53 @@ input[type=radio] {
     vertical-align: middle;
     width: 1.8rem;
     height: 2.3rem;
+}
+
+@media (max-width:390px) {
+    .block-23-form .block-23-input {
+        flex-direction: column;
+    }
+    
+    .block-23-form input {
+        max-width: 33rem;
+        font-size: 4rem;
+        padding: 2.3rem 4rem;
+    }
+    
+    .block-23-form input::placeholder {
+        color: #8FA7C1;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 100%;
+    }
+    
+    .block-23-form button{
+        display: flex;
+        width: 33rem;
+        height: 7rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-shrink: 0;
+        border:none;
+        border-radius: 3.5rem;
+        background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
+        color: #FFF;
+        font-size: 1.6rem;
+        line-height: 100%;
+        cursor: pointer;
+        /* ------------------------ */
+        position: relative;
+        overflow: hidden; 
+    }
+    
+    .block-23-form button::before{
+        content: url(../img/record.svg);
+        vertical-align: middle;
+        width: 1.8rem;
+        height: 2.3rem;
+    }
 }
 
 .block-23-checkbox {

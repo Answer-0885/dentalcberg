@@ -420,13 +420,18 @@
 
     .header-menu-list {
         margin-top: 0;
-        height: 111vh;
+        height: 91.5vh;
         padding: 10rem;
     }
 
     .header-body__burger-menu {
         left:330px; 
         top: 0.5rem;
+    }
+
+    .header-menu-list>li>a {
+        font-size: 14px;
+        margin-top: 3rem;
     }
 
     .header-up__metro {
