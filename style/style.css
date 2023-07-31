@@ -405,7 +405,8 @@ input::placeholder{
     }
     .main__content-photo {
         margin-top: 32rem;
-        margin-left: -25rem;
+        margin-left: -15.5rem;
+        margin-right: 0;
     }
     .main__content_ul {
         margin-bottom: 20rem;
@@ -433,15 +434,17 @@ input::placeholder{
     .main__content-block_input{
         width: 52rem;
         height: 9rem;
+        border-radius: 15rem;
     }
     .main__content-block_input::placeholder{
         font-size: 2.5rem;
     }
 
     .main__content-block_button {
-        font-size: 2.5rem;
-        width: 42rem;
-        height: 7rem;
+        font-size: 2.1rem;
+        width: 52rem;
+        height: 9rem;
+        border-radius: 15rem;
     }
 
 
@@ -7826,47 +7829,35 @@ input[type=radio] {
         flex-direction: column;
     }
     
-    .block-23-form input {
-        max-width: 33rem;
-        font-size: 4rem;
+    .block-23-input input {
+        max-width: 100%;
+        width: 70rem;
+        font-size: 3rem;
         padding: 2.3rem 4rem;
+        border-radius: 15rem;
     }
     
     .block-23-form input::placeholder {
-        color: #8FA7C1;
-        text-align: center;
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 100%;
+        font-size: 3rem;
+
     }
     
     .block-23-form button{
-        display: flex;
-        width: 33rem;
-        height: 7rem;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        flex-shrink: 0;
-        border:none;
-        border-radius: 3.5rem;
-        background: linear-gradient(90deg, #409AF8 0%, #5D4DE8 100%);
-        color: #FFF;
-        font-size: 1.6rem;
-        line-height: 100%;
-        cursor: pointer;
-        /* ------------------------ */
-        position: relative;
-        overflow: hidden; 
+        width: 70rem;
+        border-radius: 15rem; 
+        font-size: 3rem;
+        padding: 2.3rem 4rem;
     }
     
     .block-23-form button::before{
         content: url(../img/record.svg);
         vertical-align: middle;
-        width: 1.8rem;
-        height: 2.3rem;
+        width: 3rem;
+        height: 3.8rem;
     }
 }
+
+
 
 .block-23-checkbox {
     margin-top: 2.1rem;
@@ -7879,6 +7870,7 @@ input[type=radio] {
     vertical-align: middle;
 }
 
+
 .block-23_span,
 .block-23_span a{
     color: #8FA7C1;
@@ -7888,6 +7880,8 @@ input[type=radio] {
     font-weight: 400;
     line-height: 130%;
 }
+
+
 
 .block-23-form .contacts {
     display: flex;
@@ -7917,6 +7911,40 @@ input[type=radio] {
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
+}
+
+@media (max-width:390px) {
+    .block-23-checkbox {
+        text-align: center;
+    }
+    .block-23_span,
+    .block-23_span a{
+        font-size: 2rem;
+    }
+    .block-23-input-checkbox {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        vertical-align: middle;
+    }
+    .block-23-form .contacts {
+        justify-content: center;
+    }
+    .block-23-form .contacts .call{
+        font-size: 2rem;
+        align-items: center;
+    }
+    .block-23-form .contacts .call:before{
+        content: url(../img/metka-onlain-fioletovaya.svg);
+        padding-right: 0.9rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        vertical-align: middle;
+    }
+    .block-23-form .contacts .telephone a{
+
+        font-size: 4rem;
+    }
 }
 
 /* Кнопка запуска видео */
