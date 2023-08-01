@@ -4664,6 +4664,15 @@ input[type=radio] {
     line-height: 120%;
 }
 
+@media (max-width: 390px) {
+    .doctors-img-p {
+        position: absolute;
+        padding: 1.5rem;
+        top: 30rem;
+        right: 38rem;        
+    }
+}
+
 .main__content-11 .doctors-img .doctors-img-2:hover {
     transform: scale(1.2) rotate(360deg);
 }
