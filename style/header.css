@@ -84,6 +84,7 @@
 
 .header-up__version-visually-impaired{
     cursor: pointer;
+    display: none;
 }
 
 
