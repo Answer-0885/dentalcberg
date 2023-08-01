@@ -799,14 +799,22 @@ input::placeholder{
     
 }
 
+.block-3-390 {
+    display: none;
+}
+
 @media (max-width: 390px) {
+
     .main__content-3 {
         background-position: 10% 40%;
     }
+
     .main__content-3_block {
         justify-content: center;
+        flex-direction: column;
         gap: 3rem;
     }
+
 }
 
 .dropdown {
@@ -939,6 +947,8 @@ input::placeholder{
     margin-top: 5.8rem;
 }
 
+
+
 .noris,
 .osstem,
 .straumann {
@@ -992,6 +1002,38 @@ input::placeholder{
     color: #8FA7C1;
 }
 
+@media (max-width: 390px) {
+    .main__content-3_var-1{
+        position: relative;
+        width: 75rem;
+        height: 32rem;
+        margin: 5.8rem auto 0;
+        border-radius: 2rem;
+    } 
+    .main__content-3_var-1_up{
+        position: absolute;
+        left: 30%;
+        right: 70%;
+        top: -4rem;
+        width: 30rem;
+        height: 8rem;
+        border-radius: 4rem;
+        font-size: 3rem;
+    }
+    .main__content-3_var-1_desc{
+        padding-top: 9rem;
+        font-size: 3rem;
+
+    }
+    .main__content-3_var-1_cost{
+        font-size: 6rem;
+    }
+    .main__content-3_var-1_nocost{
+        font-size: 4rem;
+
+    }
+}
+
 .main__content-3_block {
     margin-top: 3rem;
 }
@@ -1018,6 +1060,28 @@ input::placeholder{
     width: 2rem;
     height: 2rem;
     margin-right: 0.5rem;
+}
+
+@media (max-width: 390px) {
+    .main__content-3_block_checkbox{
+        font-size: 3.5rem;
+    } 
+    .main__content-3_block_checkbox br{
+        display: none;
+    } 
+    .main__content-3_block_checkbox::before {
+        border-radius: 5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 1.5rem;
+    }
+    .block-3-390 {
+        display: block;
+    }
+
+    .block-3-none {
+        display: none;
+    }
 }
 
 /* Кнопка Закрепить стоимость по акции */
@@ -1059,8 +1123,18 @@ input::placeholder{
 
 @media (max-width: 390px) {
     .main__content-3_button {
-        margin-left: 10rem;
-    }   
+        margin-left: 7.5rem;
+        margin-top: 7rem;
+        width: 75rem;
+        height: 10rem;
+        border-radius: 5rem;
+        font-size: 3rem;
+    } 
+     
+    .main__content-3_button::before {
+        width: 3rem;
+        height: 2.6rem;
+    } 
 }
 
 .main__content-3_button_flare,
@@ -5368,7 +5442,7 @@ input[type=radio] {
 
     .block-13-left {
         align-self: center;
-        margin-left: -1rem;
+        margin-left: -0.5rem;
     }
     .block-13-left {
         max-height: 30rem;
@@ -8364,6 +8438,8 @@ input[type=radio] {
     gap: 4rem;
 }
 
+
+
 .footer-left .address{
     display: flex;
     align-items:center;
@@ -8412,6 +8488,35 @@ input[type=radio] {
 .footer-left .metro-2 {
     display: flex;
     align-items: center;
+}
+
+.logo-footer-390 {
+    display: none;
+}
+
+@media (max-width: 390px) {
+    .iceberg-footer {
+        display: none;
+    }  
+    .logo-footer-390 {
+        display: block;
+        margin: 0 auto 6rem;
+    }
+    .footer-left .address{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        gap: 2rem;
+        flex-shrink: 0;
+    }
+    .footer-left .metro-1,
+    .footer-left .metro-2 {
+        display: none;
+    }
+    .footer-up {
+        flex-direction: column-reverse;
+    }
+
 }
 
 .footer-left .metro-1:before {
@@ -8507,6 +8612,41 @@ input[type=radio] {
     margin-bottom: 1.5rem;
 }
 
+@media (max-width: 390px) {
+
+    .list-footer {
+        display: none;
+    }
+
+    .footer-left .tinkoff {
+        border-radius: 3rem;
+        margin-top: 0rem;
+        max-width:100%;
+        width: 100%;
+        max-height: 100%;
+        height: 21rem;
+    }
+    
+    .footer-left .tinkoff p{
+        font-size: 3rem;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .footer-left .tinkoff svg{
+        width: 220px;
+        height: 90px;
+    }
+    .requisites-footer .year,
+    .requisites-footer .legal_address,
+    .requisites-footer .requisites-iceberg,
+    .requisites-footer .license {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+}
+
 .footer-right {
     display: flex;
     flex-direction: column;
@@ -8530,6 +8670,9 @@ input[type=radio] {
     line-height: 130%;
     margin-top: 0.5rem;
 }
+
+
+
 .footer-right .questions p,
 .footer-right .socseti p{
     margin-bottom: 1.3rem;
@@ -8573,6 +8716,45 @@ input[type=radio] {
     display: none;
 }
 
+@media (max-width: 390px) {
+    .footer-right {
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .footer-right .telephone a{
+        font-size: 5rem;
+    }
+    .footer-right .telephone {
+        text-align: center;
+    }
+    
+    .footer-right .telephone p,
+    .footer-right .questions p{
+        font-size: 3rem;
+    }  
+    .footer-right .telephone,
+    .footer-right .questions {
+        font-size: 3rem;
+        text-align: center;
+    } 
+    .footer-right .questions img,
+    .footer-right .socseti img {
+        width: 8rem; 
+        height: 8rem; 
+        border-radius: 12.5rem;
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+    } 
+    .footer-right .socseti {
+        text-align: center;
+    } 
+    .footer-right .socseti p{
+        font-size: 3rem;
+        width: 75rem;
+    } 
+}
+
 .footer .card svg{
    width: 33rem;
    height: 7rem; 
@@ -8592,6 +8774,13 @@ input[type=radio] {
 .footer-down-flex{
     display: flex;
     gap: 3rem;
+}
+
+@media (max-width: 390px) {
+    .footer-down-flex{
+        flex-direction: column;
+    }
+    
 }
 
 .footer-down-flex .text{
@@ -8627,6 +8816,35 @@ input[type=radio] {
     }  
 }
 
+@media (max-width: 390px) {
+    .hr-footer {
+        display: none;
+    }
+    .footer-down-flex .text{
+        font-size: 2.5rem;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .footer-down .text-policy,
+    .footer-down .text-policy a {
+        font-size: 2.5rem;
+        max-width: 100%;
+        text-align: center;
+    }
+    .footer .card svg{
+        width: 100rem;
+        height: 18rem; 
+        max-width: 100%;
+     }
+    .footer .card{
+        text-align: center;
+     }
+     .footer-down .text-contraindications svg{
+        margin-bottom: 3rem;
+    }  
+}
+
 
 .smooth{
     display: block;
@@ -8637,7 +8855,11 @@ input[type=radio] {
     right: 4.5rem;
     bottom: 5rem;
     z-index: 100;
-    }
+    opacity: 0.5;
+}
+.smooth-scroll:hover {
+    opacity: 1;
+}
 
 .smooth-scroll svg {
     width: 8rem;
