@@ -37,8 +37,13 @@ const swiper10 = () => {
         breakpoints: {
   
            // Если ширина окна больше или равна 576px
-           576: {
+           390: {
               slidesPerView: 3,
+              spaceBetween: 1
+           },
+           // Если ширина окна больше или равна 576px
+           320: {
+              slidesPerView: 1,
               spaceBetween: 1
            }
         }

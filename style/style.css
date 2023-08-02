@@ -65,6 +65,7 @@ body{
 }
 
 
+
 /* Основной контент */
 
 .h1{
@@ -87,6 +88,12 @@ body{
     margin-top: 5rem;
     display: flex;
     position: relative;
+}
+
+@media (max-width: 320px) {
+    .main__content {
+        justify-content: center;
+    }
 }
 
 
@@ -408,6 +415,12 @@ input::placeholder{
         margin-left: -15.5rem;
         margin-right: 0;
     }
+    @media (max-width: 320px) {
+        .main__content-photo {
+            display: none;
+        }
+    }
+    
     .main__content_ul {
         margin-bottom: 20rem;
         width: 55rem;
@@ -430,6 +443,20 @@ input::placeholder{
     .main__content_icons-video {
         top: 17rem;
         z-index: 10;
+    }
+
+    @media (max-width: 320px) {
+        .main__content_desc{
+            left: 22rem;
+            top: 16rem;
+            font-size: 2.2rem;
+            width: 150px;
+        }
+        .main__content_icons-video {
+            left: 5rem;
+            top: 17rem;
+            z-index: 10;
+        }
     }
     .main__content-block_input{
         width: 52rem;
@@ -565,6 +592,14 @@ input::placeholder{
     }
 }
 
+@media (max-width: 320px) {
+    .regalia {
+        padding-top:7rem;
+        padding-bottom:7rem;
+        margin-top: 5rem;
+
+    }
+}
 /* Блок-2 */
 .main__content-2 {
     display: flex;
@@ -606,13 +641,19 @@ input::placeholder{
 }
 
 
-
-
 .main__content-2_block-1_img {
     margin-left: -15.3rem;
     margin-top: -2rem;
     width: 48.8rem;
     height: 40rem;
+}
+@media (max-width: 320px) {
+    .main__content-2_block-1_img {
+        margin-left: -15.3rem;
+        margin-top: 18rem;
+        width: 48.8rem;
+        height: 40rem;
+    }
 }
 
 
@@ -1136,6 +1177,17 @@ input::placeholder{
         height: 2.6rem;
     } 
 }
+@media (max-width: 390px) {
+    .main__content-3_button {
+        margin-left: 5.5rem;
+        margin-top: 7rem;
+        width: 60rem;
+        height: 10rem;
+        font-size: 3rem;
+    } 
+     
+
+}
 
 .main__content-3_button_flare,
 .main__content-5_desc-button_flare,
@@ -1503,6 +1555,27 @@ input::placeholder{
         width: 100%;
     }
 }
+@media (max-width: 320px) {
+    .main__content-4_main-block-desc {
+        width: 100%;
+    }
+    .main__content-4_header_left p{
+    /* Улыбка, как в молодости ВСЕГО ЗА 1 ДЕНЬ */
+        width: 80rem;
+        height: auto;
+        font-size: 4.5rem;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #409AF8;
+        text-align: center;
+    }
+    .main__content-4_header_left-list {
+        font-size: 2.5rem; 
+        text-align: center;
+        padding-left: 4rem;
+
+    } 
+}
 
 
 
@@ -1736,7 +1809,13 @@ input::placeholder{
         max-width: 100%;
     }
 }
-    
+
+@media (max-width: 390px) {
+
+    .main__content-5_all-on-4_layout {
+        height: auto;
+    }
+}   
 
 .main__content-5_advantages_list:before {
     content: '';
@@ -1794,6 +1873,11 @@ input::placeholder{
 }
 
 @media (max-width: 390px) {
+    .main__content-5_video_main p {
+        display: none;
+    }
+}
+@media (max-width: 320px) {
     .main__content-5_video_main p {
         display: none;
     }
@@ -1891,7 +1975,6 @@ input::placeholder{
         width: 28rem;
         height: 28rem;
         border-radius: 50rem;
-
     }
     .main__content-5_video_main-img{
         width: 26rem;
@@ -1916,6 +1999,24 @@ input::placeholder{
     .main__content-5_desc {
 
         margin-right: 3rem;
+    }
+}
+@media (max-width: 320px) {
+    .main__content-5_video_main-wrap-1 {
+        width: 24rem;
+        height: 24rem;
+    }
+    .main__content-5_video_main-wrap-2 {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 100rem;
+    }
+    .main__content-5_video_main-img{
+        width: 20rem;
+        height: 20rem;
+    }
+    .main__content-5_video {
+        align-self: flex-end;
     }
 }
 
@@ -1945,6 +2046,12 @@ input::placeholder{
     .main__content-6_h2{
         width: 81rem;
         font-size: 5rem;
+    }
+}
+@media (max-width: 320px) {
+    .main__content-6_h2{
+        width: 100%;
+        font-size: 4rem;
     }
 }
 
@@ -2092,6 +2199,12 @@ input::placeholder{
         padding-right: 5rem;
         padding-top: 5rem;
         padding-bottom: 5rem;
+    }
+}
+@media (max-width: 320px) {
+    .main__content-6_tab-block {
+        left: -145px;
+        top: 270px;
     }
 }
 
@@ -2650,6 +2763,17 @@ input::placeholder{
     }
 } 
 
+@media (max-width: 390px) {
+    .main__content-6_button_sign_up,
+    .main__content-6_button_sign_up_tab-2,
+    .main__content-6_button_sign_up_tab-3 {
+        font-size: 3rem;
+        line-height: 130%;
+        width: 63rem;
+
+    }
+}
+
 /* Седбмой блок */
 /* ПРОВОДИМ ЛЕЧЕНИЕ ПО
 МЕЖДУНАРОДНЫМ СТАНДАРТАМ КАЧЕСТВА */
@@ -2706,6 +2830,15 @@ input::placeholder{
     .main__content-7-block-h2 {
         text-align: center;
         font-size: 4rem;
+    }
+}
+@media (max-width: 320px) {
+    .main__content-7-block-flex-1, 
+    .main__content-7-block-flex-2, 
+    .main__content-7-block-flex-3, 
+    .main__content-7-block-flex-4 {
+        max-width: 100rem;
+        max-height: 45rem;
     }
 }
 
@@ -2896,7 +3029,19 @@ input::placeholder{
 .main__content-8_swiper-item img{
     width:93rem;
     height: 56rem;
+}
 
+@media(max-width:320px) {
+    .main__content-8_swiper-list {
+        width:73rem;
+        height: 50rem;
+        overflow: hidden;
+    }
+    .main__content-8_swiper-item img{
+        width:73rem;
+        height: 50rem;
+    }
+    
 }
 
 .swiper-item-active{
@@ -3533,6 +3678,8 @@ input[type=radio] {
     }
 }
 
+
+
 .main__content-9_step-1_right img:first-child {
     margin-top: -2.5rem;
     width: 18rem;
@@ -3876,6 +4023,40 @@ input[type=radio] {
 
         border-radius: 30rem;
         font-size: 3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .main__content-9_step-1_left-flex {
+        display: grid;
+        grid-template-columns: 25rem 25rem;
+        text-align: center;
+    } 
+    .step-1_procent {
+        width: 60rem;
+        height: 0.4rem;
+        border-radius: 1rem;
+        background: #FFF;
+    }
+    .main__content-9_step-1 {
+        padding-left: 1.5rem;
+
+    }
+    
+    .step-1_procent-load {
+        width: 12rem;
+    }
+    .step-2_procent-load {
+        width: 24rem;
+    }
+    .step-3_procent-load {
+        width: 36rem;
+    }
+    .step-4_procent-load {
+        width: 48rem;
+    }
+    .step-5_procent-load {
+        width: 100%;
     }
 }
 
@@ -4605,13 +4786,14 @@ input[type=radio] {
 
 .main__content-11 .doctors {
     display: flex; 
+    justify-content: space-between;
+    position: relative;
     padding-top: 5rem;
     padding-left: 3rem;
     border-radius: 2rem;
     background: linear-gradient(90deg, rgba(64, 154, 248, 0.25) 7.89%, rgba(64, 154, 248, 0.00) 100%);
     background-image: url(../img/phone-11.jpg);
     background-repeat: no-repeat;
-
 }
 
 
@@ -4622,24 +4804,31 @@ input[type=radio] {
     display: none;
 }
 
-.main__content-11 .doctors-img{
-    position: relative;
-}
-
 .main__content-11 .doctors-img .doctors-img-1{
     margin-top: -6.9rem;
-    margin-left: 13.2rem;
-    width: 67.3rem;
-    height: 55rem;
-   
+    margin-right: 5rem;
+    width: auto;
+    height: 55rem;  
 }
+
+@media (max-width:320px) {
+    .main__content-11 .doctors-img .doctors-img-1{
+        margin-top: -6.9rem;
+        margin-right: 5rem;
+        width: auto;
+        height: 40rem;  
+    }
+}
+
+
+
 
 /* Кнопка запуска видео 11 блока*/
 .main__content-11 .doctors-img .doctors-img-2{
     position: absolute;
     width: 8.8rem;
     height: 8.8rem;
-    left: 16rem;
+    left: 76rem;
     bottom: 13rem;
     cursor: pointer;
     transition: 0.5s;
@@ -4649,7 +4838,7 @@ input[type=radio] {
 .doctors-img-p {
     position: absolute;
     padding: 1.5rem;
-    top: 30rem;
+    top: 35rem;
     right: 32rem;
     z-index: 5;
     width: 25rem;
@@ -4661,8 +4850,22 @@ input[type=radio] {
     color: #272727;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 120%;
-    
+    line-height: 120%; 
+}
+@media (max-width:320px) {
+    .doctors-img-p {
+        display: none;
+    }
+    .main__content-11 .doctors-img .doctors-img-2{
+        position: absolute;
+        width: 8.8rem;
+        height: 8.8rem;
+        left: 20rem;
+        bottom: 13rem;
+        cursor: pointer;
+        transition: 0.5s;
+        z-index: 10;
+    }
 }
 .doctors-img-p span{
     color: #272727;
@@ -4890,6 +5093,25 @@ input[type=radio] {
         border-radius: 3.5rem;
         margin-top: 4rem; 
         width: 41.5rem;
+    }
+}
+@media (max-width:320px) {
+
+    .slider_doctors_right {
+        max-width: 56rem;
+    } 
+    .main__content-11 .doctors .record_btn {
+        text-align: center;
+        font-size: 2.2rem;
+        line-height: 100%;
+        border-radius: 3.5rem;
+        margin-top: 4rem; 
+        width: 30rem;
+    }
+    .main__content-11 .doctors .record_btn:before {
+        content: url(../img/record.svg);
+        width: 2.8rem;
+        height: 3.5rem;
     }
 }
 
@@ -5534,13 +5756,14 @@ input[type=radio] {
         width: 80%;
     }
 
+ 
     .main-13-down .block-13-input {
         display: flex;
-        align-items: center; 
-        justify-content: center;   
+        align-items: center;
+        justify-content: center;
         gap: 3rem;
     }
-    
+
     .block-13-input input {
         border-radius: 3rem;
         max-width: 40rem;
@@ -5572,9 +5795,31 @@ input[type=radio] {
 
 }
 
+@media (max-width: 320px) {
+    .block-13-right {
+        align-self: center;
+        margin-top: 1.5rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        max-width: 100%;
+        max-height: 50rem;
+    }
+    .main-13-down .block-13-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+    
+}
+
 .watch-13 {
     margin-top: 2.4rem;
 }
+
+
 
 .watch-13 .metro,
 .watch-13 .hours{
@@ -5587,6 +5832,21 @@ input[type=radio] {
 .watch-13 .metro {
     margin-left: 8rem;
     margin-right: 3rem;
+}
+
+@media (max-width: 320px) {
+    .watch-13 {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 1rem;
+    }
+    .watch-13 .metro {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    
+    
 }
 
 .watch-13 .metro:before {
@@ -6149,7 +6409,6 @@ input[type=radio] {
     .block-15-input input {
         border-radius: 30rem;
         max-width: 60rem;
-        width: 60rem;
         height: 6rem;
         font-size: 2rem;
     }
@@ -6734,6 +6993,13 @@ input[type=radio] {
         top: 3rem;
     }
 }
+@media (max-width: 320px) {
+    .content-17-right .img-screen .screen-17{
+        text-align: center;  
+        width: 72rem;
+        height: auto;
+    }
+}
 
 
 .buttons-17 .questions{
@@ -6915,6 +7181,12 @@ input[type=radio] {
 
 .button-18 .btn-right{
     margin-left: 1.5rem;
+}
+
+@media (max-width: 320px) {
+    .button-18 .btn-right{
+        margin-left: 0rem;
+    }
 }
 
 .slides-18,
@@ -7102,6 +7374,15 @@ input[type=radio] {
         width: 12rem;
         height: 12rem;
         left: 70rem;
+        top: 5rem;
+    }  
+}
+@media (max-width: 320px) {
+
+    .video_icons-18 {
+        width: 12rem;
+        height: 12rem;
+        left: 55rem;
         top: 5rem;
     }  
 }
@@ -7587,6 +7868,22 @@ input[type=radio] {
     }
 }
 
+@media (max-width:320px) {
+    .blocks-20 .block-1-1,
+    .blocks-20 .block-1-2,
+    .blocks-20 .block-1-3,
+    .blocks-20 .block-1-4 {
+        width: 100%;
+        padding: 1.5rem 1.5rem;
+        border-radius: 3rem;
+        margin: 0 auto;  
+        max-width: 100%; 
+        height: 20rem;
+        display: grid;
+        grid-template-columns: 32rem auto 22rem;
+    } 
+}
+
 
 
 /* Звездочки рейтинга */
@@ -7784,6 +8081,16 @@ input[type=radio] {
     }
     .client_rating {
         margin-top: -14rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .rating-result-22 svg{
+        width: 20rem;
+        height: 3.5rem;
+    }
+    .client_rating p {
+        font-size: 3.5rem;
     }
 }
 
@@ -8260,6 +8567,12 @@ input[type=radio] {
         font-size: 4rem;
     }
 }
+@media (max-width:320px) {
+    .h2-25 {
+        font-size: 4rem;
+        width: 100%;
+    }
+}
 
 .tabs-25 {
     margin-top: 3rem;
@@ -8372,6 +8685,33 @@ input[type=radio] {
     }    
 }
 
+@media (max-width: 320px) {
+    .contacts-25 .address-1,
+    .contacts-25 .telephone,
+    .contacts-25 .time,
+    .contacts-25 .parking{
+        width: 18rem;
+        height: auto;
+        padding: 1rem;      
+    } 
+    .tab-1 .contacts-25{
+        margin-top: 3rem;
+        gap: 1rem;
+        z-index: 5;
+    }
+    
+    .no-active-25{
+        opacity: 0.5;
+        color: #8FA7C1;
+    }
+    
+    .tab-2 .contacts-25{
+        margin-top: 3rem;
+        gap: 1rem;
+
+    }   
+}
+
 .contacts-25 .telephone,
 .contacts-25 .time,
 .contacts-25 .parking{
@@ -8457,6 +8797,16 @@ input[type=radio] {
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 140%;
+}
+@media (max-width: 320px) {
+    .contacts-25 .address-1 .travel img{
+        display: none;
+    }  
+    .contacts-25 .address-1 .travel {
+        width: 100%;
+        height: auto;
+
+    }
 }
 
 /* Двадцать шестой блок */

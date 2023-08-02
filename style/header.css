@@ -470,3 +470,16 @@
     }
     
 }
+@media (max-width:320px) {
+    .header-up__logo > p {
+        display: none;
+    }  
+    .header-body__burger-menu {
+        left:260px; 
+        top: 0.5rem;
+    }
+    .header-up { 
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
