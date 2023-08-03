@@ -3,7 +3,7 @@ const swiper11 = () => {
 
     const swiper = new Swiper('.swiper2', {
       on: {
-         transitionEnd :  () => {
+         slideChange :  () => {
             const slides11 = document.querySelector('.slides-11');
             const slides = document.querySelector('.slide_number .span1');
             const slidesSpan = document.querySelector('.slide_number .span2');
@@ -17,107 +17,38 @@ const swiper11 = () => {
 
             let quanitySlide = slideLength.length; 
 
-            let activeIndex = swiper.activeIndex - 1;
+            let activeIndex = swiper.activeIndex;
             let realIndex = swiper.realIndex + 1;
+            let currentIndex = swiper.realIndex;
 
             slidesSpan.innerHTML = '/ ' + quanitySlide;
             slides.innerHTML = realIndex;
 
-            slideLength.forEach((slideActive, i)=>{
-               doctors.forEach((doctor, idx) => {
-                  if((idx) === activeIndex) {
-           
-                     doctors[idx].style.display = 'flex'
-          
+
+                  doctors.forEach((doctor, idx) => {   
+
+                     if((idx) === currentIndex) {
+                        doctors[idx].style.display = 'flex'          
                   }
                     else {
-
                      doctors[idx].style.display = 'none'
-   
                   }
+
                })
-            })
 
-
-
-
-            // slideActive.matches('div.swiper-slide.swiper-slide-active'
 // -----------------------------------------
 
-            // const slides1 = slides11.querySelectorAll('.swiper-slide');
-            // let currentSlide = 0;
-            // const nextSlide = (elems, index, strClass) => {
-            //    elems[index].classList.add(strClass);
-            // }
-
-            // if (currentSlide >= slides.length) {
-            //    currentSlide = 0;
-            // }
-            // if (currentSlide < 0) {
-            //    currentSlide = slides.length - 1;
-            // }
-
-            // nextSlide(slides1, currentSlide, 'swiper-active-11');
-
-// ---------------------------------------------
-            // if(realIndex == 1) {
-
-            //    console.log(realIndex);
-            //    doctors1.style.display = 'flex'
-            //    doctors2.style.display = 'none'
-            //    doctors3.style.display = 'none'
-            //    doctors4.style.display = 'none'
-            //    doctors5.style.display = 'none'
-            // } 
-            // else if (realIndex == 2) {
-
-            //    console.log(realIndex);
-            //    doctors1.style.display = 'none'
-            //    doctors2.style.display = 'flex'
-            //    doctors3.style.display = 'none'
-            //    doctors4.style.display = 'none'
-            //    doctors5.style.display = 'none'
-            // }
-            // else if (realIndex == 3) {
-
-            //    console.log(realIndex);
-            //    doctors1.style.display = 'none'
-            //    doctors2.style.display = 'none'
-            //    doctors3.style.display = 'flex'
-            //    doctors4.style.display = 'none'
-            //    doctors5.style.display = 'none'
-            // }
-            // else if (realIndex == 4) {
-
-            //    console.log(realIndex);
-            //    doctors1.style.display = 'none'
-            //    doctors2.style.display = 'none'
-            //    doctors3.style.display = 'none'
-            //    doctors4.style.display = 'flex'
-            //    doctors5.style.display = 'none'
-            // }
-            // else if (realIndex == 5) {
-
-            //    console.log(realIndex);
-            //    doctors1.style.display = 'none'
-            //    doctors2.style.display = 'none'
-            //    doctors3.style.display = 'none'
-            //    doctors4.style.display = 'none'
-            //    doctors5.style.display = 'flex'
-            // } else {
-            //    return
-            // }
          }},
        navigation: {
           nextEl: '.benefits__arrow--right',
-         //  prevEl: '.benefits__arrow--left',
+          prevEl: '.benefits__arrow--left',
        },
        loop: true,
-       loopedSlides: 5,
-        autoplay: {
-           delay: 2000,
-           disableOnInteraction: false,
-        },
+      //  loopedSlides: 10,
+      //   autoplay: {
+      //      delay: 5000,
+      //      disableOnInteraction: false,
+      //   },
 
        pagination: {
          el: '.swiper-pagination'
@@ -135,12 +66,15 @@ const swiper11 = () => {
           // Если ширина окна больше или равна 360px
           360: {
              slidesPerView: 3,
-             spaceBetween: 10
+             spaceBetween: 10 
           },
           // Если ширина окна больше или равна 576px
           768: {
-             slidesPerView: 'auto',
-            //  slidesPerView: 'auto',
+             slidesPerView: 4,
+             spaceBetween: 10,
+          },
+          992: {
+             slidesPerView: 5,
              spaceBetween: 10,
           }
        }
