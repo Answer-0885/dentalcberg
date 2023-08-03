@@ -3,17 +3,13 @@ const swiper11 = () => {
 
     const swiper = new Swiper('.swiper2', {
       on: {
-         slideChange :  () => {
+         realIndexChange :  () => {
             const slides11 = document.querySelector('.slides-11');
             const slides = document.querySelector('.slide_number .span1');
             const slidesSpan = document.querySelector('.slide_number .span2');
             const slideLength = slides11.querySelectorAll('.swiper-slide');
             const doctors = document.querySelectorAll('.main__content-11 .doctors');
-            const doctors1 = document.querySelector('.doctors.d-1');
-            const doctors2 = document.querySelector('.doctors.d-2');
-            const doctors3 = document.querySelector('.doctors.d-3');
-            const doctors4 = document.querySelector('.doctors.d-4');
-            const doctors5 = document.querySelector('.doctors.d-5');
+
 
             let quanitySlide = slideLength.length; 
 
@@ -26,15 +22,36 @@ const swiper11 = () => {
 
 
                   doctors.forEach((doctor, idx) => {   
-
                      if((idx) === currentIndex) {
                         doctors[idx].style.display = 'flex'          
                   }
                     else {
                      doctors[idx].style.display = 'none'
                   }
-
                })
+
+            //    doctors.forEach((doctor, idx) => {   
+            //       slideLength.forEach((slideActive, i) => {
+            //          slideActive.addEventListener('click', (e)=> {
+                        
+            //          if((e.target[i]) !== currentIndex) {
+
+            //             doctors[i].style.display = 'flex' 
+                           
+            //             doctors[idx].style.display = 'none' 
+            //             console.log(doctors[i]);
+            //             console.log(doctors[idx]);
+
+            //             // slideActive[i].classList.add('swiper-slide-active')    
+            //             // slideActive[idx].classList.remove('swiper-slide-active')     
+
+            //           } 
+
+            //       })
+            //    })
+            // })
+
+
 
 // -----------------------------------------
 
@@ -43,8 +60,8 @@ const swiper11 = () => {
           nextEl: '.benefits__arrow--right',
           prevEl: '.benefits__arrow--left',
        },
-       loop: true,
-      //  loopedSlides: 10,
+        loop: true,
+      // //  loopedSlides: 10,
       //   autoplay: {
       //      delay: 5000,
       //      disableOnInteraction: false,
