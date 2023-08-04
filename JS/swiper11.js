@@ -3,11 +3,11 @@ const swiper11 = () => {
 
     const swiper = new Swiper('.swiper2', {
       on: {
-         realIndexChange :  () => {
+         slideChange :  (e) => {
             const slides11 = document.querySelector('.slides-11');
             const slides = document.querySelector('.slide_number .span1');
             const slidesSpan = document.querySelector('.slide_number .span2');
-            const slideLength = slides11.querySelectorAll('.swiper-slide');
+            const slideLength = slides11.querySelectorAll('div');
             const doctors = document.querySelectorAll('.main__content-11 .doctors');
 
 
@@ -28,50 +28,74 @@ const swiper11 = () => {
                     else {
                      doctors[idx].style.display = 'none'
                   }
-               })
-
-            //    doctors.forEach((doctor, idx) => {   
-            //       slideLength.forEach((slideActive, i) => {
-            //          slideActive.addEventListener('click', (e)=> {
-                        
-            //          if((e.target[i]) !== currentIndex) {
-
-            //             doctors[i].style.display = 'flex' 
-                           
-            //             doctors[idx].style.display = 'none' 
-            //             console.log(doctors[i]);
-            //             console.log(doctors[idx]);
-
-            //             // slideActive[i].classList.add('swiper-slide-active')    
-            //             // slideActive[idx].classList.remove('swiper-slide-active')     
-
-            //           } 
-
-            //       })
-            //    })
-            // })
+               })           
 
 
 
 // -----------------------------------------
 
-         }},
-       navigation: {
-          nextEl: '.benefits__arrow--right',
-          prevEl: '.benefits__arrow--left',
-       },
-        loop: true,
-      // //  loopedSlides: 10,
-      //   autoplay: {
-      //      delay: 5000,
-      //      disableOnInteraction: false,
-      //   },
+         }
+      },
+      slideChangeStart :  (e) => {
+
+         const slides11 = document.querySelector('.slides-11');
+         const slideLength = slides11.querySelectorAll('div');
+         const doctors = document.querySelectorAll('.main__content-11 .doctors');
+         // определяет реальный индекс
+         let index = swiper.eq(swiper.activeIndex).attr('data-swiper-slide-index');
+ 
+         doctors.forEach((doctor, idx) => {   
+            slideLength.forEach((slideActive, i) => {
+               slideActive.addEventListener('click', (e)=> {
+                  // При клике на слайд открывается соответсвующий контент
+               if(e.target[index] === doctors[idx]) {
+                  return    
+
+                } else if (e.target[index] !== doctors[idx]) {
+                  // открывает тот слайд индекс с которым совпадает
+                  doctors[i].style.display = 'flex' 
+                  // остальные слайды закрывает   
+                  doctors[idx].style.display = 'none' 
+
+                }
+
+            })
+         })
+      })
+      },
+
+      // останавливает слайд при наведении
+      // on: {
+      //    init() {
+      //       document.querySelector(".slides-11").addEventListener("mouseover", function( ) {
+      //          swiper.autoplay.stop();
+      //      });
+      //      document.querySelector(".slides-11").addEventListener("mouseout", function( ) {
+      //       swiper.autoplay.start();
+      //   });
+      //    }
+      //  },
+      navigation: {
+         nextEl: '.benefits__arrow--right',
+         prevEl: '.benefits__arrow--left',
+      },
+        loop: true, 
+      //   centeredSlides: false,
+        autoplay: {
+           delay: 5000,
+           disableOnInteraction: false,
+        },
+
+      slideToClickedSlide: true,// ОЧЕНЬ ВАЖНО !!! при клике делает активным слайд
 
        pagination: {
-         el: '.swiper-pagination'
+         el: '.swiper-pagination',
+         // clickable: true,
+         // type: 'fraction',
      },
    //   mousewheel: true,
        keyboard: true,
+
 
        breakpoints: {
  
@@ -91,8 +115,8 @@ const swiper11 = () => {
              spaceBetween: 10,
           },
           992: {
-             slidesPerView: 5,
-             spaceBetween: 10,
+            slidesPerView: 5,
+            spaceBetween: 10,
           }
        }
     });
