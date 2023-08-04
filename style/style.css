@@ -7911,8 +7911,9 @@ input[type=radio] {
       .blocks-20 .block-1-4>p span{
         font-size: 4.5rem;
     }
-    .blocks-20 .block-1 a {
-        font-size: 3rem;
+    .blocks-20 .block-1-4 .prodoctorov-svg {
+        width: 25rem;
+        height: 3rem;
     }
 }
 
@@ -7929,6 +7930,9 @@ input[type=radio] {
         height: 20rem;
         display: grid;
         grid-template-columns: 32rem auto 22rem;
+    } 
+    .blocks-20 .block-1-4 svg{
+
     } 
 }
 
