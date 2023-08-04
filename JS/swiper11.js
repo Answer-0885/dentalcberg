@@ -88,11 +88,11 @@ const swiper11 = () => {
 
       slideToClickedSlide: true,// ОЧЕНЬ ВАЖНО !!! при клике делает активным слайд
 
-       pagination: {
-         el: '.swiper-pagination',
+      // pagination: {
+        // el: '.swiper-pagination',
          // clickable: true,
          // type: 'fraction',
-     },
+    // },
    //   mousewheel: true,
        keyboard: true,
 
