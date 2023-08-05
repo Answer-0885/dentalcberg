@@ -11,12 +11,14 @@
     margin-right: auto;
     top: 150px;
     text-align: center;
-    max-width: 80rem;
-    max-height: 80rem;
+    max-width: 70rem;
+    max-height: 75rem;
     background-color:#d8dadb;
     border-radius: 30px;
     display: none;
 }
+
+
 
 .form-2__block {
     padding: 50px;
@@ -90,4 +92,30 @@
     text-align: center;
     margin-top: 20px;
     font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .form-2,
+    .form-3,
+    .form-4,
+    .form-5{
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 150px;
+        text-align: center;
+        max-width: 70rem;
+        max-height: 65rem;
+        background-color:#d8dadb;
+        border-radius: 30px;
+        display: none;
+    }   
+  
+.form-2__block {
+    padding: 30px;
+}  
+
 }

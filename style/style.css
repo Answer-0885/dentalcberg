@@ -270,6 +270,13 @@ input::placeholder{
 .close__video:after {
     transform: rotate(-45deg);
 }
+@media (max-width: 576px) {
+    .close__video:before,
+    .close__video:after {
+        top: 2.3rem;;
+        left: 1.35rem;
+    }
+}
 
 /* Кнопка запуска видео */
 
