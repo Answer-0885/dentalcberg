@@ -1092,7 +1092,6 @@ input::placeholder{
     font-size: 1.6rem;
     line-height: 140%;
     color: #FFFFFF;
-    cursor: pointer;
     margin-bottom: 2rem;
 
     display: flex;
