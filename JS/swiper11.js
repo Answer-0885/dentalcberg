@@ -10,22 +10,31 @@ const swiper11 = () => {
             const slideLength = slides11.querySelectorAll('div');
             const doctors = document.querySelectorAll('.main__content-11 .doctors');
 
-
+            // Определяет общее количество слайдов
             let quanitySlide = slideLength.length; 
-
-            let activeIndex = swiper.activeIndex;
+            // Определяет номер текущего слайда   
             let realIndex = swiper.realIndex + 1;
+
+            // Определяет активный индекс из уникальных   
+            let activeIndex = swiper.activeIndex;
+            
+            // Определяет индекс текщуего слайда
             let currentIndex = swiper.realIndex;
 
+            // Добавляем на страницу общее количество слайдов
             slidesSpan.innerHTML = '/ ' + quanitySlide;
+            // Добавляем на страницу номер текущего слайда
             slides.innerHTML = realIndex;
 
+            // Перебираем блоки с докторами 
 
-                  doctors.forEach((doctor, idx) => {   
+                  doctors.forEach((doctor, idx) => {  
+            // и если индекс блока совпадает с индексом текущего слайда, то он выводится на экран 
                      if((idx) === currentIndex) {
                         doctors[idx].style.display = 'flex'          
                   }
                     else {
+                     // В противном случае блок будет закрыт
                      doctors[idx].style.display = 'none'
                   }
                })           
@@ -41,7 +50,7 @@ const swiper11 = () => {
          const slides11 = document.querySelector('.slides-11');
          const slideLength = slides11.querySelectorAll('div');
          const doctors = document.querySelectorAll('.main__content-11 .doctors');
-         // определяет реальный индекс
+         // определяет реальный индекс без сбоя при переходе от последнего к первому
          let index = swiper.eq(swiper.activeIndex).attr('data-swiper-slide-index');
  
          doctors.forEach((doctor, idx) => {   
