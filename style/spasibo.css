@@ -3,6 +3,20 @@
     text-align: center;
 }
 
+.error {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.error-404 {
+    color: #409AF8;
+    font-size: 8rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
 .spasibo-header {
     color: #409AF8;
     font-size: 4.8rem;
@@ -23,6 +37,9 @@
 }
 
 .spasibo a {
+    text-decoration: none;
+}
+.error a {
     text-decoration: none;
 }
 

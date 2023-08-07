@@ -7289,7 +7289,7 @@ input[type=radio] {
 .slides-18-2 .slide-1 img,
 .slides-18-2 .slide-2 img,
 .slides-18-2 .slide-3 img {
-    max-width: 65rem;
+    max-width: 46rem;
     height: 100%;
 }
 
@@ -7359,15 +7359,7 @@ input[type=radio] {
     .slides-18-2 .slide-1 img,
     .slides-18-2 .slide-2 img,
     .slides-18-2 .slide-3 img {
-        max-width: 48rem;
-    }
-    .slides-18 .slide-1,
-    .slides-18 .slide-2,
-    .slides-18 .slide-3,
-    .slides-18-2 .slide-1,
-    .slides-18-2 .slide-2,
-    .slides-18-2 .slide-3 {
-        max-width: 48rem;
+        max-width: 41rem;
     }
 }
 

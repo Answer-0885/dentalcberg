@@ -22,12 +22,12 @@ const swiper18 = () => {
           // Если ширина окна больше или равна 576px
           576: {
              slidesPerView: 3,
-             spaceBetween: 10
+             spaceBetween: 9
           },
           // Если ширина окна больше или равна 320px
           320: {
              slidesPerView: 2,
-             spaceBetween: 10
+             spaceBetween: 9
           }
        }
     });
@@ -53,12 +53,12 @@ const swiper18 = () => {
          // Если ширина окна больше или равна 576px
          576: {
             slidesPerView: 3,
-            spaceBetween: 10
+            spaceBetween: 9
          },
          // Если ширина окна больше или равна 320px
          320: {
             slidesPerView: 2,
-            spaceBetween: 10
+            spaceBetween: 5
          }
       }
    });
