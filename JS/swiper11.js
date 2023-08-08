@@ -111,12 +111,14 @@ const swiper11 = () => {
           // Если ширина окна больше или равна 576px
           320: {
              slidesPerView: 2,
-             spaceBetween: 10
+             spaceBetween: 10,
+             autoplay: false, 
           },
           // Если ширина окна больше или равна 360px
           360: {
              slidesPerView: 3,
-             spaceBetween: 10 
+             spaceBetween: 10,
+             autoplay: false, 
           },
           // Если ширина окна больше или равна 576px
           768: {
