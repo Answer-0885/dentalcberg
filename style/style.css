@@ -674,6 +674,12 @@ input::placeholder{
         margin-left: -30.5rem;
     } 
 }
+@media (max-width: 360px) {
+
+    .main__content-photo {
+        margin-left: -32.5rem;
+    } 
+}
 
 @media (max-width: 350px) {
     .main__content-photo {
@@ -853,12 +859,23 @@ input::placeholder{
     width: 48.8rem;
     height: 40rem;
 }
-@media (max-width: 320px) {
+@media (max-width: 576px) {
     .main__content-2_block-1_img {
         margin-left: -15.3rem;
-        margin-top: 18rem;
-        width: 48.8rem;
-        height: 40rem;
+        margin-top: auto;
+        margin-right: 0;
+        margin-bottom: 0rem;
+        width: 50rem;
+        height: auto;
+    }
+}
+@media (max-width: 420px) {
+    .main__content-2_block-1_img {
+        margin-left: -20.3rem;
+    }
+    .main__content-2_block-1_ul {
+        position: relative;
+        z-index: 5;
     }
 }
 
@@ -1404,6 +1421,16 @@ input::placeholder{
         width: 80rem;
     } 
 }
+@media (max-width: 345px) {
+    .main__content-3_button {
+        width: 76rem;
+    } 
+}
+@media (max-width: 330px) {
+    .main__content-3_button {
+        width: 74rem;
+    } 
+}
 
 @media (max-width: 320px) {
     .main__content-3_button {
@@ -1805,6 +1832,15 @@ input::placeholder{
         padding-left: 4rem;
 
     } 
+}
+@media (max-width: 330px) {
+    .main__content-4_header_left p{
+    /* Улыбка, как в молодости ВСЕГО ЗА 1 ДЕНЬ */
+        width: 75rem;
+        height: auto;
+        font-size: 4.5rem;
+    }
+
 }
 
 
@@ -3255,6 +3291,16 @@ input::placeholder{
     height: 56rem;
 }
 
+@media(max-width:380px) {
+    .main__content-8_swiper-list {
+        width:87rem;
+
+    }
+    .main__content-8_swiper-item img{
+        width:87rem;
+    }
+    
+}
 @media(max-width:370px) {
     .main__content-8_swiper-list {
         width:85rem;
@@ -3265,6 +3311,16 @@ input::placeholder{
     }
     
 }
+@media(max-width:360px) {
+    .main__content-8_swiper-list {
+        width:83rem;
+
+    }
+    .main__content-8_swiper-item img{
+        width:83rem;
+    }
+    
+}
 @media(max-width:350px) {
     .main__content-8_swiper-list {
         width:79rem;
@@ -3272,6 +3328,16 @@ input::placeholder{
     }
     .main__content-8_swiper-item img{
         width:79rem;
+    }
+    
+}
+@media(max-width:340px) {
+    .main__content-8_swiper-list {
+        width:76rem;
+
+    }
+    .main__content-8_swiper-item img{
+        width:76rem;
     }
     
 }
@@ -5478,6 +5544,12 @@ input[type=radio] {
         max-width: 68rem;
     } 
 }    
+@media (max-width:360px) {
+
+    .slider_doctors_right {
+        max-width: 64rem;
+    } 
+}    
 @media (max-width:350px) {
 
     .slider_doctors_right {
@@ -6189,7 +6261,7 @@ input[type=radio] {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 365px) {
     .block-13-right {
         align-self: center;
         margin-top: 1.5rem;
@@ -6228,7 +6300,7 @@ input[type=radio] {
     margin-right: 3rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .watch-13 {
         display: flex;
         flex-direction: column;
@@ -6239,7 +6311,11 @@ input[type=radio] {
         margin-left: 0rem;
         margin-right: 0rem;
     }
-    
+    .watch-13 .metro,
+    .watch-13 .hours{
+        font-size: 2.4rem;
+
+}
     
 }
 

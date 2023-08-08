@@ -241,8 +241,10 @@
                     </ul>
             </div>
                 <div class="main__content-2_block-1_right">
-                    <img loading="lazy" src="./img/photo-bolyachin.png" class="main__content-2_block-1_img" alt="фото доктора">
-                   
+                    <picture>
+                        <source srcset="./img/bolyachin-460.png" type="image/png" media="(max-width: 460px)">
+                        <img loading="lazy" src="./img/photo-bolyachin.png" class="main__content-2_block-1_img" alt="фото доктора">
+                    </picture>
                 </div>
                 
         </div>
@@ -3776,7 +3778,7 @@
 
     <script>
         // Скрипт который оптимизирует загрузку CSS файлов
-        
+
         /* CSS #1 */
         let giftofspeed = document.createElement('link');
         giftofspeed.rel = 'stylesheet';
