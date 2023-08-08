@@ -568,13 +568,22 @@
          left:330px; 
      }
  }   
+@media (max-width:380px) {
+    
+    .header-body__burger-menu {
+         left:320px; 
+     }
+ }   
 @media (max-width:370px) {
     
     .header-body__burger-menu {
-         left:315px; 
+         left:310px; 
      }
      .header-up__logo > p {
         display: none;
+    } 
+     .header-up__logo {
+        width: 85%;
     } 
  }   
 @media (max-width:350px) {
