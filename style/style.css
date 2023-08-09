@@ -644,12 +644,13 @@ input::placeholder{
         margin-left: -20rem;
     } 
 }
-@media (max-width: 390px) {
+@media (max-width: 393px) {
 
     .main__content-photo {
-        margin-left: -24rem;
+        margin-left: -25rem;
     } 
 }
+
 @media (max-width: 385px) {
 
     .main__content-photo {
@@ -2309,7 +2310,7 @@ input::placeholder{
     margin-bottom: 4rem;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .main__content-6_h2{
         width: 81rem;
         font-size: 5rem;
@@ -2334,9 +2335,20 @@ input::placeholder{
 
 @media (max-width: 610px) {
     .main__content-6_block {
-        margin-left: 8rem;
+        margin-left: 10rem;
     } 
 }
+@media (max-width: 414px) {
+    .main__content-6_block {
+        margin-left: 2rem;
+    } 
+}
+@media (max-width: 393px) {
+    .main__content-6_block {
+        margin-left: 10rem;
+    } 
+}
+
 
 
 .main__content-6_tab-block {
@@ -2389,7 +2401,7 @@ input::placeholder{
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .main__content-6_tab {
         width: 25rem;
         height: 7rem;
@@ -2445,7 +2457,7 @@ input::placeholder{
     }    
 } 
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .main__content-6 {
         position: relative;
         margin-bottom: 18rem;  
@@ -2469,7 +2481,7 @@ input::placeholder{
         padding-bottom: 5rem;
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .main__content-6_tab-block {
         left: -145px;
         top: 270px;
@@ -2495,7 +2507,7 @@ input::placeholder{
     width: 49.9rem;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .main__content-6_main_tab-1 h3,
     .main__content-6_main_tab-2 h3,
     .main__content-6_main_tab-3 h3{
@@ -2874,7 +2886,7 @@ input::placeholder{
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .main__content-6_main_right_icons-video {
         right: 5rem;
         top: 5rem;
@@ -2908,7 +2920,7 @@ input::placeholder{
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .main__content-6_main_cost {
         flex-direction: column;
     }
@@ -3019,7 +3031,7 @@ input::placeholder{
     }
 } 
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .main__content-6_button_sign_up,
     .main__content-6_button_sign_up_tab-2,
     .main__content-6_button_sign_up_tab-3 {
@@ -5495,9 +5507,21 @@ input[type=radio] {
         max-width: 77rem;
     }    
 }
+@media (max-width:414px) {
+
+    .slider_doctors_right {
+        max-width: 75.5rem;
+    }    
+}
 
 
 
+@media (max-width:393px) {
+
+    .slider_doctors_right {
+        max-width: 70.5rem;
+    } 
+}   
 @media (max-width:390px) {
 
     .slider_doctors_right {
@@ -6070,7 +6094,7 @@ input[type=radio] {
 .block-13-right {
     position: relative;
     margin-left: 6rem;
-    max-width: 57rem;
+    max-width: 56rem;
     max-height: 21rem;
     padding-left: 4rem;
     padding-top: 2.5rem;
@@ -6880,7 +6904,7 @@ input[type=radio] {
     vertical-align: middle;
 }
 
-@media (max-width:390px) {
+@media (max-width:393px) {
     .block-15-form .block-15-input {
         display: flex;
         flex-direction: column;
@@ -7007,8 +7031,14 @@ input[type=radio] {
         height: auto;
     }
 }
+@media (max-width: 414px) {
+    .photo-15 {
+        width: 50rem;
+        height: auto;
+    }
+}
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .content-15_img{
         display: none;
     }
@@ -7850,7 +7880,7 @@ input[type=radio] {
     border-radius: 15px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .smile-18 {
         margin-top: 6rem;
         flex-wrap: wrap;
@@ -7881,7 +7911,7 @@ input[type=radio] {
     transform: scale(1.2) rotate(360deg);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 393px) {
 
     .video_icons-18 {
         width: 12rem;
@@ -7997,7 +8027,7 @@ input[type=radio] {
         display: none;
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 393px) {
     .smile_desc {
         padding-top: 1rem;
         max-width: 100%;
@@ -9194,6 +9224,15 @@ input[type=radio] {
     .contacts-25 .time,
     .contacts-25 .parking{
         width: 21.5rem;
+        padding: 1.8rem;      
+    }    
+}
+@media (max-width: 393px) {
+    .contacts-25 .address-1,
+    .contacts-25 .telephone,
+    .contacts-25 .time,
+    .contacts-25 .parking{
+        width: 20.8rem;
         padding: 1.8rem;      
     }    
 }

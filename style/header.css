@@ -569,6 +569,12 @@
          left:355px; 
      }
  }   
+@media (max-width:393px) {
+    
+    .header-body__burger-menu {
+         left:335px; 
+     }
+ }   
 @media (max-width:390px) {
     
     .header-body__burger-menu {
