@@ -115,7 +115,7 @@ const swiper11 = () => {
              autoplay: false, 
           },
           // Если ширина окна больше или равна 360px
-          360: {
+          576: {
              slidesPerView: 3,
              spaceBetween: 10,
              autoplay: false, 

@@ -5,20 +5,31 @@ const swiper10 = () => {
           prevEl: '.tab-1__arrow--left',
        },
        loop: true,
+      //  centeredSlides: true,
     //    autoplay: {
     //       delay: 2000,
     //       disableOnInteraction: false,
     //    },
    //   mousewheel: true,
        keyboard: true,
+       slideToClickedSlide: true,
 
        breakpoints: {
 
-          // Если ширина окна больше или равна 576px
-          1400: {
-             slidesPerView: 3,
-             spaceBetween: 1
-          }
+           768: {
+            slidesPerView: 3,
+            spaceBetween: 5
+         },
+         // Если ширина окна больше или равна 576px
+         576: {
+            slidesPerView: 2,
+            spaceBetween: 1
+         },
+         // Если ширина окна больше или равна 576px
+         320: {
+            slidesPerView: 1,
+            spaceBetween: 1
+         }
        }
     });
     const swiper6 = new Swiper('.swiper6', {
