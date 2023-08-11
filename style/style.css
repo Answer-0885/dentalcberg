@@ -6725,11 +6725,6 @@ input[type=radio] {
 }
 
 
-@media (max-width: 390px) {
-    .no_all_tooth-14 .desc-14 {
-        margin-left: -15rem;
-    } 
-}
 
 @media (max-width: 390px) {
 
