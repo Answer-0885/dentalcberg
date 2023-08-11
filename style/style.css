@@ -204,6 +204,7 @@ body{
     line-height: 150%;
     display: flex;
     align-items:baseline;
+    white-space: nowrap;
 }
 
 .main__content_list:before {
@@ -464,7 +465,9 @@ input::placeholder{
 }
 @media (max-width: 785px) {
   
-
+    .main__content-photo {
+        margin-top: 18rem;
+    }  
     .photo-doctor-1 {
         margin-left: calc(100vw - 130rem);
     } 
@@ -482,6 +485,7 @@ input::placeholder{
 }
 @media (max-width: 650px) {
     .photo-doctor-1 {
+        margin-top: -140px;
         margin-left: calc(100vw - 130rem);
     }  
 }
@@ -758,7 +762,7 @@ input::placeholder{
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        margin-top: 0rem;
+        margin-top: -4rem;
     }   
     .regalia__1,
     .regalia__2,
@@ -5942,9 +5946,6 @@ input[type=radio] {
     margin-left: 3rem;
 }
 
-@media (max-width: 390px) {
-
-}
 
 .block-13-left svg {
     position: absolute;
@@ -5952,6 +5953,15 @@ input[type=radio] {
     top: 1rem;
     width: 4rem;
     height: 4rem;
+}
+
+@media (max-width: 365px) {
+    .block-13-left svg {
+        left: -1rem;
+        top: 1rem;
+        width: 8rem;
+        height: 8rem;
+    }
 }
 
 .main-13-down {
@@ -6014,6 +6024,7 @@ input[type=radio] {
     height: 1.8rem;
     vertical-align: middle;
 }
+
 
 .block-13_span,
 .block-13_span a{
@@ -6177,13 +6188,10 @@ input[type=radio] {
     .main-13-down {
         margin-top: 1.5rem;
     }
-
     .block-13-left {
         align-self: center;
         margin-left: -0.5rem;
-    }
-    .block-13-left {
-        max-height: 30rem;
+        max-height: 40rem;
         padding-left: 4rem;
         padding-top: 2.5rem;
         padding-right: 3rem;
@@ -6228,11 +6236,11 @@ input[type=radio] {
     }
 
     .block-13-input input {
-        border-radius: 3rem;
-        max-width: 40rem;
-        width: 40rem;
-        height: 5rem;
+        max-width: 100%;
+        width: calc(50% - 1rem);
+        height: 7rem;
         font-size: 2rem;
+        border-radius: 5rem;
     }
   
     .block-13-left input::placeholder {
@@ -6240,12 +6248,13 @@ input[type=radio] {
     }
     
     .block-13-left button{
-        max-width: 40rem;
-        width: 40rem;
-        height: 5rem;
+        max-width: 100%;
+        width: calc(50% - 1rem);
+        height: 7rem;
         justify-content: center;
         align-items: center;
         font-size: 2rem;
+        border-radius: 5rem;
     }
     .block-13-left .contacts .call{
         font-size: 1.8rem;
@@ -6273,9 +6282,22 @@ input[type=radio] {
         align-items: center;
         justify-content: center;
         gap: 3rem;
+    } 
+    .block-13-input input {
+        max-width: 100%;
+        width: calc(100% - 1rem);
+
+    }
+  
+    .block-13-left input::placeholder {
+        font-size: 3rem;
     }
     
-    
+    .block-13-left button{
+        max-width: 100%;
+        width: calc(100% - 1rem);
+        font-size: 3rem;
+    }
 }
 
 .watch-13 {
@@ -8898,9 +8920,14 @@ input[type=radio] {
         vertical-align: middle;
     }
     .block-23-form .contacts .telephone a{
-
         font-size: 4rem;
     }
+}
+
+@media (max-width:350px) {
+    .block-23-form .contacts .telephone a{
+        font-size: 3.4rem;
+    } 
 }
 
 /* Кнопка запуска видео */
@@ -9219,7 +9246,7 @@ input[type=radio] {
     .contacts-25 .telephone,
     .contacts-25 .time,
     .contacts-25 .parking{
-        width: 20rem;
+        width: 19rem;
         padding: 1.8rem;      
     }    
 }
