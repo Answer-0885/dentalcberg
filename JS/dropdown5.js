@@ -1,7 +1,7 @@
 const dropDown5 = () => {
     // const dropDownList = document.querySelector('.dropdown-5-list');
-    const whatsapp = document.querySelector('.dropdown-5-item-1');
-    const telegram = document.querySelector('.dropdown-5-item-2');
+    const whatsapp = document.querySelector('.dropdown-5-item-1')
+    const telegram = document.querySelector('.dropdown-5-item-2')
 
 
     whatsapp.addEventListener('click', () =>{
