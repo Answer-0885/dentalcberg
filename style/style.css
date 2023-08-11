@@ -1754,6 +1754,11 @@ input::placeholder{
     }
   
 }
+@media (max-width: 710px){
+    .main__content-4_header{
+        gap: 1rem;
+    }
+}   
 @media (max-width: 630px){
     .main__content-4_header{
         justify-content: center;
@@ -1980,7 +1985,7 @@ input::placeholder{
 .main__content-5_advantages_list {
     color: #FFF;
     font-size: 1.8rem;
-    line-height: 120%;
+    line-height: 140%;
     max-width: 38rem;
     display:flex;
     align-items:center;
@@ -2312,6 +2317,7 @@ input::placeholder{
 
 .main__content-6_block {
     display: flex;
+    max-width: 141rem;
 }
 
 @media (max-width: 610px) {
@@ -2417,7 +2423,7 @@ input::placeholder{
 .main__content-6_main_tab-1,
 .main__content-6_main_tab-2,
 .main__content-6_main_tab-3 {
-    width: 120rem;
+    max-width: 120rem;
     border-radius: 2rem;
     background: #FFF;
     box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
@@ -2434,7 +2440,8 @@ input::placeholder{
     .main__content-6_main_tab-1,
     .main__content-6_main_tab-2,
     .main__content-6_main_tab-3 {
-        width: 110rem;
+        max-width: 108rem;
+        width: 100rem;
     }    
 } 
 
@@ -2806,7 +2813,8 @@ input::placeholder{
     .main__content-6_button_sign_up_tab-3 {
         justify-content: center;
         font-size: 1.4rem;
-        width: 35rem;
+        width: 30rem;
+        margin-left: -5rem;
     }  
 } 
 
@@ -2861,9 +2869,12 @@ input::placeholder{
     }
 }
 @media (max-width: 768px) {
-    .main__content-6_main_right_img-video {
-        width: 33rem;
-        height: 23rem; 
+    .main__content-6_main_right_img-video,
+    .main__content-6_main_right_img-video_tab-2,
+    .main__content-6_main_right_img-video_tab-3 {
+        width: auto;
+        height: 14rem; 
+        margin-left: -10rem;
     }  
 
 }
@@ -5155,13 +5166,20 @@ input[type=radio] {
     height: 55rem;  
 }
 
-@media (max-width:500px) {
+@media (max-width:640px) {
     .main__content-11 .doctors-img .doctors-img-1{
         width: 100%;
         height: 55rem;  
         object-fit: cover;
     }
 }
+/* @media (max-width:500px) {
+    .main__content-11 .doctors-img .doctors-img-1{
+        width: 100%;
+        height: 55rem;  
+        object-fit: cover;
+    }
+} */
 @media (max-width:390px) {
     .main__content-11 .doctors-img .doctors-img-1{
         width: auto;
@@ -7071,6 +7089,15 @@ input[type=radio] {
     max-width: 19rem;
 }
 
+@media (max-width: 576px) {
+    .content-15_img .doctor-15{
+        right: calc(100% - 60rem);
+        top: 60%;
+    }
+}
+
+
+
 .content-15_img .doctor-15 .name-15{
     text-align: right;
     font-size: 1.8rem;
@@ -8968,10 +8995,16 @@ input[type=radio] {
     height: 57rem;
  }
 
+ @media (max-width: 640px) {
+    .block-23-video .video-23 {
+        width: auto;
+        height: 42rem;
+     }
+ }
  @media (max-width: 610px) {
     .block-23-video .video-23 {
-        width: 42rem;
-        height: 42rem;
+        width: auto;
+        height: 38rem;
      }
      .blocks-23-flex {
         gap: 2rem;
