@@ -263,16 +263,6 @@ input::placeholder{
     height:2.5rem;
 }
 
-@media (max-width: 460px) {
-    .main__content-block_button:before,
-    .main__content-5_desc-button::before {
-        display: inline-block;
-        content: url(../img/consultation.svg);
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-}
-
 
 .main__content-block_personal-data{
     margin-top: 2rem;
@@ -627,7 +617,7 @@ input::placeholder{
     }
 
     .main__content-block_button {
-        font-size: 3rem;
+        font-size: 2.2rem;
         width: 52rem;
         height: 9rem;
         border-radius: 15rem;
@@ -1825,7 +1815,6 @@ input::placeholder{
     }
     .main__content-4_header_left-list {
         font-size: 2.5rem; 
-        text-align: center;
         padding-left: 4rem;
 
     } 
