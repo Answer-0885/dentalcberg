@@ -8570,7 +8570,7 @@ input[type=radio] {
 
 .block-22 {
     padding: 2rem;
-    max-height: 25rem;
+    max-height: max-content;
     border-radius: 2rem;
     background: #FFF;
     box-shadow: 0rem 0rem 4rem 0rem rgba(0, 0, 0, 0.16);
@@ -8614,8 +8614,8 @@ input[type=radio] {
 
 .block-22 .feedback{
     overflow-y: scroll;
-    max-width: 69rem;
-    max-height: 13rem;
+    max-width: 100%;
+    height: auto;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 140%;
