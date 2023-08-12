@@ -72,15 +72,15 @@
 
 
 .header-up__messenger img {
-    width: 3rem;
-    height: 3rem;
+    width: 3.7rem;
+    height: 3.7rem;
     cursor: pointer;
-
 }
 
-.header-up__messenger img:first-child {
-    margin-right: 1rem;
+.header-up__messenger_whatsapp {
+    margin-right: 2rem;
 }
+
 
 .header-up__version-visually-impaired{
     cursor: pointer;
@@ -116,7 +116,7 @@
 
 
 .hr_header {
-    width: 118rem;
+    width: calc(100% - 25rem);
 }
 
 
@@ -152,17 +152,10 @@
     transition: 0.5s;
 }
 
-.header-menu-list>li:hover {
+.header-menu-list>li>a:hover {
     display: block;
     transition: 0.5s;
     transform: scale(1.2);
-    color: #409AF8;
-}
-
-.header-menu-list>li>a:hover {
-
-    transition: 0.5s;
-
     color: #409AF8;
 }
 
