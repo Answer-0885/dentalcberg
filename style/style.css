@@ -7227,9 +7227,7 @@ input[type=radio] {
 
 @media (max-width: 576px) {
     .content-16-flex {
-        margin-top: 0rem;
         gap: 1rem;
-
     }
 }
 @media (max-width: 393px) {
