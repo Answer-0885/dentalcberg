@@ -45,6 +45,7 @@
 .text-area::placeholder {
     font-size: 2rem;
     padding-top: 1rem;
+    color: #8FA7C1;
 }
 
 .form-2__header {
