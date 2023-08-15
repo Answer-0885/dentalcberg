@@ -4489,7 +4489,6 @@ input[type=radio] {
 .swiper5,
 .swiper6 {
     overflow: hidden;
-
 }
 
 .swiper6 {
@@ -4513,6 +4512,22 @@ input[type=radio] {
     cursor: pointer;
     box-shadow: 0rem 0rem 1.5rem 0rem rgba(0, 0, 0, 0.16);
 }
+/* .main__content-10_flex_single-stage .flex-1:hover,
+.main__content-10_flex_single-stage .flex-2:hover,
+.main__content-10_flex_single-stage .flex-3:hover,
+.main__content-10_flex_single-stage .flex-4:hover
+{
+    transform: scale(1.2) rotate(360deg);
+    position: relative;
+    padding: 2rem;
+    margin: 1.5rem;
+    border-radius: 2rem;
+    background: #FFF;
+    max-width: 45rem;
+    max-height: 100%;
+    cursor: pointer;
+    box-shadow: 0rem 0rem 1.5rem 0rem rgba(0, 0, 0, 0.16);
+} */
 
 @media (max-width:1400px) {
     .main__content-10_flex_single-stage .flex-1,
@@ -7806,13 +7821,18 @@ input[type=radio] {
         box-shadow: 0rem 0rem 0rem 0rem;
         max-width: 100%;
         max-height: 100%;
-}
+    }
 }
 
 .button-18 .btn-right{
     margin-left: 1.5rem;
 }
 
+@media (max-width: 365px) {
+    .button-18 .btn-right{
+        margin-top:1.5rem;
+    }
+}
 @media (max-width: 320px) {
     .button-18 .btn-right{
         margin-left: 0rem;

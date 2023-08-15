@@ -6,10 +6,10 @@ const swiper18 = () => {
           prevEl: '.benefits__arrow--left',
        },
        loop: true,
-       autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-       },
+      //  autoplay: {
+      //     delay: 2000,
+      //     disableOnInteraction: false,
+      //  },
        pagination: {
          el: '.swiper-pagination-3',
          clickable: true,

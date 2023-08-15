@@ -90,10 +90,10 @@ const swiper11 = () => {
       },
         loop: true, 
       //   centeredSlides: false,
-      //   autoplay: {
-      //      delay: 5000,
-      //      disableOnInteraction: false,
-      //   },
+        autoplay: {
+           delay: 5000,
+           disableOnInteraction: false,
+        },
 
       slideToClickedSlide: true,// ОЧЕНЬ ВАЖНО !!! при клике делает активным слайд
 
